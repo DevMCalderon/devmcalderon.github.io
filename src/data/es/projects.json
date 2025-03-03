@@ -13,43 +13,19 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/vetsoft/1.png",
+              "path": "/assets/img/projects/veterinary/1.png",
               "alt": "Panel Administrativo Veterinaria",
               "caption": "Panel Administrativo Veterinaria"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/vetsoft/2.png",
+              "path": "/assets/img/projects/veterinary/2.png",
               "alt": "Panel Administrativo Veterinaria",
               "caption": "Panel Administrativo Veterinaria"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/vetsoft/3.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
-            },
-            {
-              "id": 4,
-              "path": "/assets/img/projects/vetsoft/4.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
-            },
-            {
-              "id": 5,
-              "path": "/assets/img/projects/vetsoft/5.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
-            },
-            {
-              "id": 6,
-              "path": "/assets/img/projects/vetsoft/6.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
-            },
-            {
-              "id": 7,
-              "path": "/assets/img/projects/vetsoft/7.png",
+              "path": "/assets/img/projects/veterinary/3.png",
               "alt": "Panel Administrativo Veterinaria",
               "caption": "Panel Administrativo Veterinaria"
             }
