@@ -1,85 +1,106 @@
 [
   {
+    "id": 1,
     "img": "/assets/img/skill_icons/react.png",
     "label": "React"
   },
   {
+    "id": 2,
     "img": "/assets/img/skill_icons/laravel.svg",
     "label": "Laravel"
   },
   {
+    "id": 3,
     "img": "/assets/img/skill_icons/vue.png",
     "label": "Vue.Js"
   },
   {
+    "id": 4,
     "img": "/assets/img/skill_icons/js.png",
     "label": "JavaScript"
   },
   {
+    "id": 5,
     "img": "/assets/img/skill_icons/php.png",
     "label": "PHP"
   },
   {
+    "id": 6,
     "img": "/assets/img/skill_icons/node.svg",
     "label": "Node.Js"
   },
   {
+    "id": 7,
     "img": "/assets/img/skill_icons/css.png",
     "label": "CSS3"
   },
   {
+    "id": 8,
     "img": "/assets/img/skill_icons/bootstrap.svg",
     "label": "Bootstrap"
   },
   {
+    "id": 9,
     "img": "/assets/img/skill_icons/tw.png",
     "label": "Tailwind CSS"
   },
   {
+    "id": 10,
     "img": "/assets/img/skill_icons/wp.svg",
     "label": "Wordpress"
   },
   {
+    "id": 11,
     "img": "/assets/img/skill_icons/sql.png",
     "label": "MySQL"
   },
   {
+    "id": 12,
     "img": "/assets/img/skill_icons/html.png",
     "label": "HTML5"
   },
   {
+    "id": 13,
     "img": "/assets/img/skill_icons/figma.png",
     "label": "Figma"
   },
   {
+    "id": 14,
     "img": "/assets/img/skill_icons/adobexd.png",
     "label": "Adobe XD"
   },
   {
+    "id": 15,
     "img": "/assets/img/flags/flag-us.svg",
     "label": "t('skills.english_skill')"
   },
   {
+    "id": 16,
     "img": "/assets/img/flags/flag-mx.svg",
     "label": "t('skills.spanish_skill')"
   },
   {
+    "id": 17,
     "img": "/assets/img/skill_icons/electron.png",
     "label": "Electron"
   },
   {
+    "id": 18,
     "img": "/assets/img/skill_icons/git.png",
     "label": "Git"
   },
   {
+    "id": 19,
     "img": "/assets/img/skill_icons/postman.png",
     "label": "Postman"
   },
   {
+    "id": 20,
     "img": "/assets/img/skill_icons/scrum.png",
     "label": "SCRUM"
   },
   {
+    "id": 21,
     "img": "/assets/img/skill_icons/photoshop.png",
     "label": "Photoshop"
   }

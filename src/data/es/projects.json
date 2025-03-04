@@ -7,7 +7,12 @@
       "projects": [
         {
           "title": "Panel Administrativo para Veterinarias",
-          "disciplines_covered": ["Desarrollo FrontEnd", "Desarrollo BackEnd", "Diseño de Interfaces (UI/UX)", "Arquitectura de Bases de Datos"],
+          "disciplines_covered": [
+            "Desarrollo FrontEnd",
+            "Desarrollo BackEnd",
+            "Diseño de Interfaces (UI/UX)",
+            "Arquitectura de Bases de Datos"
+          ],
           "short_description": "Panel de administración web para veterinarias, desde la arquitectura en MySQL hasta el diseño UI/UX con Vue.js. Implementé una API RESTful en Laravel, gestioné roles y permisos con middleware y optimicé consultas en el frontend. Además, mejoré la eficiencia con componentes reutilizables y trabajé en un entorno ágil con SCRUM, asegurando escalabilidad.",
           "large_description": "Desarrollé una aplicación web robusta utilizando Laravel y Vue.js, implementando módulos como autenticación de usuarios, gestión avanzada de roles y permisos, y un sistema de notificaciones en tiempo real. Superé retos como la optimización de consultas complejas en el backend para mejorar el rendimiento y la integración fluida entre frontend y backend. Trabajé estrechamente con mi equipo para garantizar una implementación eficiente y escalable, contribuyendo con soluciones estratégicas a problemas técnicos. A través de la colaboración, logramos un producto final que no solo cumple con los requisitos del cliente, sino que también mejora la experiencia del usuario.",
           "images": [
@@ -30,158 +35,28 @@
               "caption": "Panel Administrativo Veterinaria"
             }
           ],
-          "technologies_used": ["Laravel", "Vue.Js", "Bootstrap","MySQL", "JavaScript", "PHP", "HTML5", "CSS3", "Git", "SCRUM"],
-          "secondary_technologies": ["Framer Motion", "react-tooltip", "react-router-dom", "react-mailchimp-subscribe", "i18next", "nodemailer", "cors", "dotenv"],
-          "sections": [
-            {
-              "title": "Portada y Resumen Ejecutivo",
-              "data" : [
-                {
-                  "type": "image",
-                  "value": ""
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Proposito del Proyecto"
-                },
-                {
-                  "type": "text",
-                  "value": "Consequat qui amet consectetur culpa velit dolore nisi laborum reprehenderit veniam sint consectetur fugiat magna."
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Objetivos Generales"
-                },
-                {
-                  "type": "text",
-                  "value": "Consequat qui amet consectetur culpa velit dolore nisi laborum reprehenderit veniam sint consectetur fugiat magna."
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Logros"
-                },
-                {
-                  "type": "text",
-                  "value": "Consequat qui amet consectetur culpa velit dolore nisi laborum reprehenderit veniam sint consectetur fugiat magna."
-                }
-              ]
-            },
-            {
-              "title": "Diseño y Arquitectura",
-              "data" : [
-                {
-                  "type": "subtitle",
-                  "value": "Estructura de navegación"
-                },
-                {
-                  "type": "image",
-                  "value": ""
-                },
-                {
-                  "type": "text",
-                  "value": "Consequat qui amet consectetur culpa velit dolore nisi laborum reprehenderit veniam sint consectetur fugiat magna."
-                }
-              ]
-            },
-            {
-              "title": "Implementación",
-              "data" : [
-                {
-                  "type": "subtitle",
-                  "value": "Lenguaje de programación utilizado"
-                },
-                {
-                  "type": "text",
-                  "value": "Proident proident Lorem ex excepteur deserunt."
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Herramientas y tecnologías"
-                },
-                {
-                  "type": "text",
-                  "value": "Enim id sint magna sint ullamco ut esse Lorem sint incididunt sunt sit non quis."
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Desafios enfrentados"
-                },
-                {
-                  "type": "text",
-                  "value": "Anim pariatur ut irure ut aliquip voluptate est culpa tempor veniam."
-                }
-              ]
-            },
-            {
-              "title": "Caracteristicas principales",
-              "data" : [
-                {
-                  "type": "subtitle",
-                  "value": "Laborum in id eiusmod enim dolore excepteur."
-                },
-                {
-                  "type": "image",
-                  "value": ""
-                },
-                {
-                  "type": "text",
-                  "value": "Proident proident Lorem ex excepteur deserunt."
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Laborum in id eiusmod enim dolore excepteur."
-                },
-                {
-                  "type": "image",
-                  "value": ""
-                },
-                {
-                  "type": "text",
-                  "value": "Proident proident Lorem ex excepteur deserunt."
-                } 
-              ]
-            }
+          "technologies_used": [
+            "Laravel",
+            "Vue.Js",
+            "Bootstrap",
+            "MySQL",
+            "JavaScript",
+            "PHP",
+            "HTML5",
+            "CSS3",
+            "Git",
+            "SCRUM"
+          ],
+          "secondary_technologies": [
+            "Framer Motion",
+            "react-tooltip",
+            "react-router-dom",
+            "react-mailchimp-subscribe",
+            "i18next",
+            "nodemailer",
+            "cors",
+            "dotenv"
           ]
-        },
-        {
-          "title": "Business Staraaatup",
-          "description": "Deaaasign & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
         }
       ]
     },
@@ -193,36 +68,6 @@
           "title": "Business Startup",
           "description": "Design & Development",
           "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
         }
       ]
     },
@@ -230,51 +75,6 @@
       "category": "Contribuciones a Comunidad",
       "description": "Contribuyo a la comunidad mediante proyectos de código abierto y participación activa en la creación de contenido. Mi objetivo es compartir experiencia y conocimientos mientras me sumerjo aún más en mis áreas de dominio.",
       "projects": [
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
         {
           "title": "Business Startup",
           "description": "Design & Development",

@@ -38,7 +38,7 @@ const ProjectItemCard = ( {title, technologies_used, disciplines_covered, short_
       transition={{duration: 0.5}}
     >
     
-      <Link to={link} className="projectItemCard rounded-3xl p-6 flex w-full flex-wrap md:flex-nowrap justify-center group">
+      <Link to={link} className="projectItemCard rounded-3xl p-6 flex flex-wrap md:flex-nowrap justify-center group">
         {/* image carousel */}
         <div className='w-full md:w-3/12 lg:w-4/12 group'>
           {images && images.length > 0 && (
@@ -79,13 +79,13 @@ const ProjectItemCard = ( {title, technologies_used, disciplines_covered, short_
                   imgPath = { image.path }
                   title = { title }
                   key={index}
-                  classes="rounded-xl overflow-hidden border-[0.15rem] border-solid border-slate-600 group-hover:border-slate-500"
+                  classes="rounded-xl overflow-hidden border-[0.15rem] border-solid border-slate-600 group-hover:border-slate-500 max-h-[10.2rem] w-full object-cover object-top"
                 />
               ))}
             </Carousel>
           )}
         </div>
-          
+        
         
         {/* text and icons */}
         <div className="text-left ml-0 md:ml-6">
