@@ -52,7 +52,7 @@ const Skills = () => {
                     >
                       <img
                         className='rounded-lg w-8 h-8 md:w-9 mx-auto md:mx-0 md:mr-3'
-                        src={item.img}
+                        src={item.img_path}
                         alt={item.label}
                         />
                       <h5 className='text-base mt-1.5 md:mt-0'>

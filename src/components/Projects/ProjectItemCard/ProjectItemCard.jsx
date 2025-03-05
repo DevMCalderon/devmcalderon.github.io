@@ -111,7 +111,7 @@ const ProjectItemCard = ( {title, technologies_used, disciplines_covered, short_
                   >
                     <img
                       className='rounded-sm w-5 h-[1.2rem] mx-auto mr-1.5'
-                      src={tech ? tech.img : ''}
+                      src={tech ? tech.img_path : ''}
                       alt={technologyName}
                     />
                     <h5 className='text-xs lg:text-sm mt-1.5 md:mt-0'>
