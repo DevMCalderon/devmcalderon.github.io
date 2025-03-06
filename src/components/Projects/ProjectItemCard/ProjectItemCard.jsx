@@ -101,7 +101,7 @@ const ProjectItemCard = ( {title, technologies_used, disciplines_covered, short_
             <div className="flex flex-wrap h-auto gap-y-2 gap-x-3 mb-1.5">
               {technologies_used && technologies_used.map((technologyName, index) => {
                 // search for technology in imgSkillsJson.json
-                const tech = imgSkillsJson.find(item => item.label === technologyName) || {};
+                const tech = imgSkillsJson.find(item => item.id === technologyName) || {};
                 return (
                   // display technology icon and name
                   <div

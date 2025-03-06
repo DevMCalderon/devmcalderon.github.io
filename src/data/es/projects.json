@@ -35,18 +35,7 @@
               "caption": "Panel Administrativo Veterinaria"
             }
           ],
-          "technologies_used": [
-            "2",
-            "Vue.Js",
-            "Bootstrap",
-            "MySQL",
-            "JavaScript",
-            "PHP",
-            "HTML5",
-            "CSS3",
-            "Git",
-            "SCRUM"
-          ],
+          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
           "secondary_technologies": [
             "Framer Motion",
             "react-tooltip",
