@@ -6,7 +6,217 @@
       "description": "Soluciones web multiplataforma que se adapten a sus necesidades específicas. Desde planificación, documentación y desarrollo hasta la implementación y mantenimiento, mi compromiso es brindarle la mejor plataforma web que maximizará la productividad y gestión de su empresa.",
       "projects": [
         {
-          "title": "Panel Administrativo para Veterinarias",
+          "title": "Panel Administrativo Multiproposito para Veterinaria",
+          "disciplines_covered": [
+            "Desarrollo FrontEnd",
+            "Desarrollo BackEnd",
+            "Diseño de Interfaces (UI/UX)",
+            "Arquitectura de Bases de Datos"
+          ],
+          "short_description": "Panel de administración web para veterinarias, desde la arquitectura en MySQL hasta el diseño UI/UX con Vue.js. Implementé una API RESTful en Laravel, gestioné roles y permisos con middleware y optimicé consultas en el frontend. Además, mejoré la eficiencia con componentes reutilizables y trabajé en un entorno ágil con SCRUM, asegurando escalabilidad.",
+          "large_description": "Desarrollé una aplicación web robusta utilizando Laravel y Vue.js, implementando módulos como autenticación de usuarios, gestión avanzada de roles y permisos, y un sistema de notificaciones en tiempo real. Superé retos como la optimización de consultas complejas en el backend para mejorar el rendimiento y la integración fluida entre frontend y backend. Trabajé estrechamente con mi equipo para garantizar una implementación eficiente y escalable, contribuyendo con soluciones estratégicas a problemas técnicos. A través de la colaboración, logramos un producto final que no solo cumple con los requisitos del cliente, sino que también mejora la experiencia del usuario.",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/veterinary/1.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/veterinary/2.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/veterinary/3.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            }
+          ],
+          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
+          "secondary_technologies": [
+            "Framer Motion",
+            "react-tooltip",
+            "react-router-dom",
+            "react-mailchimp-subscribe",
+            "i18next",
+            "nodemailer",
+            "cors",
+            "dotenv"
+          ]
+        },
+        {
+          "title": "Sistema Administrativo de Ventas para Cafeteria",
+          "disciplines_covered": [
+            "Desarrollo FrontEnd",
+            "Desarrollo BackEnd",
+            "Diseño de Interfaces (UI/UX)",
+            "Arquitectura de Bases de Datos"
+          ],
+          "short_description": "Panel de administración web para veterinarias, desde la arquitectura en MySQL hasta el diseño UI/UX con Vue.js. Implementé una API RESTful en Laravel, gestioné roles y permisos con middleware y optimicé consultas en el frontend. Además, mejoré la eficiencia con componentes reutilizables y trabajé en un entorno ágil con SCRUM, asegurando escalabilidad.",
+          "large_description": "Desarrollé una aplicación web robusta utilizando Laravel y Vue.js, implementando módulos como autenticación de usuarios, gestión avanzada de roles y permisos, y un sistema de notificaciones en tiempo real. Superé retos como la optimización de consultas complejas en el backend para mejorar el rendimiento y la integración fluida entre frontend y backend. Trabajé estrechamente con mi equipo para garantizar una implementación eficiente y escalable, contribuyendo con soluciones estratégicas a problemas técnicos. A través de la colaboración, logramos un producto final que no solo cumple con los requisitos del cliente, sino que también mejora la experiencia del usuario.",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/coffee-shop/1.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/coffee-shop/2.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/coffee-shop/3.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            }
+          ],
+          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
+          "secondary_technologies": [
+            "Framer Motion",
+            "react-tooltip",
+            "react-router-dom",
+            "react-mailchimp-subscribe",
+            "i18next",
+            "nodemailer",
+            "cors",
+            "dotenv"
+          ]
+        },
+        {
+          "title": "Sistema de Publicación y Postulación a Vacantes Empleo",
+          "disciplines_covered": [
+            "Desarrollo FrontEnd",
+            "Desarrollo BackEnd",
+            "Diseño de Interfaces (UI/UX)",
+            "Arquitectura de Bases de Datos"
+          ],
+          "short_description": "Panel de administración web para veterinarias, desde la arquitectura en MySQL hasta el diseño UI/UX con Vue.js. Implementé una API RESTful en Laravel, gestioné roles y permisos con middleware y optimicé consultas en el frontend. Además, mejoré la eficiencia con componentes reutilizables y trabajé en un entorno ágil con SCRUM, asegurando escalabilidad.",
+          "large_description": "Desarrollé una aplicación web robusta utilizando Laravel y Vue.js, implementando módulos como autenticación de usuarios, gestión avanzada de roles y permisos, y un sistema de notificaciones en tiempo real. Superé retos como la optimización de consultas complejas en el backend para mejorar el rendimiento y la integración fluida entre frontend y backend. Trabajé estrechamente con mi equipo para garantizar una implementación eficiente y escalable, contribuyendo con soluciones estratégicas a problemas técnicos. A través de la colaboración, logramos un producto final que no solo cumple con los requisitos del cliente, sino que también mejora la experiencia del usuario.",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/job-vacancies/1.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/job-vacancies/2.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/job-vacancies/3.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            }
+          ],
+          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
+          "secondary_technologies": [
+            "Framer Motion",
+            "react-tooltip",
+            "react-router-dom",
+            "react-mailchimp-subscribe",
+            "i18next",
+            "nodemailer",
+            "cors",
+            "dotenv"
+          ]
+        },
+        {
+          "title": "Red Social para Publicación de Imagenes",
+          "disciplines_covered": [
+            "Desarrollo FrontEnd",
+            "Desarrollo BackEnd",
+            "Diseño de Interfaces (UI/UX)",
+            "Arquitectura de Bases de Datos"
+          ],
+          "short_description": "Panel de administración web para veterinarias, desde la arquitectura en MySQL hasta el diseño UI/UX con Vue.js. Implementé una API RESTful en Laravel, gestioné roles y permisos con middleware y optimicé consultas en el frontend. Además, mejoré la eficiencia con componentes reutilizables y trabajé en un entorno ágil con SCRUM, asegurando escalabilidad.",
+          "large_description": "Desarrollé una aplicación web robusta utilizando Laravel y Vue.js, implementando módulos como autenticación de usuarios, gestión avanzada de roles y permisos, y un sistema de notificaciones en tiempo real. Superé retos como la optimización de consultas complejas en el backend para mejorar el rendimiento y la integración fluida entre frontend y backend. Trabajé estrechamente con mi equipo para garantizar una implementación eficiente y escalable, contribuyendo con soluciones estratégicas a problemas técnicos. A través de la colaboración, logramos un producto final que no solo cumple con los requisitos del cliente, sino que también mejora la experiencia del usuario.",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/veterinary/1.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/veterinary/2.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/veterinary/3.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            }
+          ],
+          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
+          "secondary_technologies": [
+            "Framer Motion",
+            "react-tooltip",
+            "react-router-dom",
+            "react-mailchimp-subscribe",
+            "i18next",
+            "nodemailer",
+            "cors",
+            "dotenv"
+          ]
+        },
+        {
+          "title": "Panel para Creación y Publicación de Tutorias Escolares con API de Zoom",
+          "disciplines_covered": [
+            "Desarrollo FrontEnd",
+            "Desarrollo BackEnd",
+            "Diseño de Interfaces (UI/UX)",
+            "Arquitectura de Bases de Datos"
+          ],
+          "short_description": "Panel de administración web para veterinarias, desde la arquitectura en MySQL hasta el diseño UI/UX con Vue.js. Implementé una API RESTful en Laravel, gestioné roles y permisos con middleware y optimicé consultas en el frontend. Además, mejoré la eficiencia con componentes reutilizables y trabajé en un entorno ágil con SCRUM, asegurando escalabilidad.",
+          "large_description": "Desarrollé una aplicación web robusta utilizando Laravel y Vue.js, implementando módulos como autenticación de usuarios, gestión avanzada de roles y permisos, y un sistema de notificaciones en tiempo real. Superé retos como la optimización de consultas complejas en el backend para mejorar el rendimiento y la integración fluida entre frontend y backend. Trabajé estrechamente con mi equipo para garantizar una implementación eficiente y escalable, contribuyendo con soluciones estratégicas a problemas técnicos. A través de la colaboración, logramos un producto final que no solo cumple con los requisitos del cliente, sino que también mejora la experiencia del usuario.",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/veterinary/1.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/veterinary/2.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/veterinary/3.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            }
+          ],
+          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
+          "secondary_technologies": [
+            "Framer Motion",
+            "react-tooltip",
+            "react-router-dom",
+            "react-mailchimp-subscribe",
+            "i18next",
+            "nodemailer",
+            "cors",
+            "dotenv"
+          ]
+        },
+        {
+          "title": "Plataforma de Juegos Educativos para Niños de Primaria",
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
