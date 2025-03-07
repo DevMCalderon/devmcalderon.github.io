@@ -103,5 +103,20 @@
     "id": 21,
     "img_path": "/assets/img/skill_icons/photoshop.png",
     "label": "Photoshop"
+  },
+  {
+    "id": 22,
+    "img_path": "/assets/img/skill_icons/photoshop.png",
+    "label": "Vite"
+  },
+  {
+    "id": 22,
+    "img_path": "/assets/img/skill_icons/photoshop.png",
+    "label": "Blade Templates"
+  },
+  {
+    "id": 23,
+    "img_path": "/assets/img/skill_icons/photoshop.png",
+    "label": "Laravel Breeze"
   }
 ]
