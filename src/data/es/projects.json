@@ -119,7 +119,7 @@
               "caption": "Panel Administrativo Veterinaria"
             }
           ],
-          "technologies_used": [ 2, 9],
+          "technologies_used": [ 2, 9, 24, 23, 11, 5, 22, 7, 12 ],
           "secondary_technologies": [
             "Framer Motion",
             "react-tooltip",
@@ -161,7 +161,7 @@
               "caption": "Panel Administrativo Veterinaria"
             }
           ],
-          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
+          "technologies_used": [ 2],
           "secondary_technologies": [
             "Framer Motion",
             "react-tooltip",
