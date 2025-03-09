@@ -7,6 +7,7 @@
       "projects": [
         {
           "title": "Panel Administrativo Multiproposito para Veterinaria",
+          "technologies_used": [ 2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
@@ -35,7 +36,6 @@
               "caption": "Panel Administrativo Veterinaria"
             }
           ],
-          "technologies_used": [ 2, 3, 4, 5, 7, 8, 11, 12, 18, 20],
           "secondary_technologies": [
             "Framer Motion",
             "react-tooltip",
@@ -49,6 +49,7 @@
         },
         {
           "title": "Sistema Administrativo de Ventas para Cafeteria",
+          "technologies_used": [ 1, 2, 9, 4, 5, 11, 18, 7, 12, 22],
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
@@ -77,7 +78,6 @@
               "caption": "Panel Administrativo Veterinaria"
             }
           ],
-          "technologies_used": [ 1, 2, 4, 5, 7, 9, 11, 12, 18, 22],
           "secondary_technologies": [
             "Framer Motion",
             "react-tooltip",
@@ -91,6 +91,7 @@
         },
         {
           "title": "Sistema de Publicación y Postulación a Vacantes Empleo",
+          "technologies_used": [ 2, 24, 25, 9, 23, 5, 11, 22, 7, 12, 18 ],
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
@@ -119,7 +120,6 @@
               "caption": "Panel Administrativo Veterinaria"
             }
           ],
-          "technologies_used": [ 2, 9, 24, 23, 11, 5, 22, 7, 12 ],
           "secondary_technologies": [
             "Framer Motion",
             "react-tooltip",
@@ -133,6 +133,7 @@
         },
         {
           "title": "Red Social para Publicación de Imagenes",
+          "technologies_used": [ 2, 24, 25, 9, 5, 11, 7, 12, 18, 22],
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
@@ -161,7 +162,6 @@
               "caption": "Panel Administrativo Veterinaria"
             }
           ],
-          "technologies_used": [ 2],
           "secondary_technologies": [
             "Framer Motion",
             "react-tooltip",
@@ -175,6 +175,7 @@
         },
         {
           "title": "Panel para Creación y Publicación de Tutorias Estudiantiles con API de Zoom",
+          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
@@ -203,7 +204,6 @@
               "caption": "Panel Administrativo Veterinaria"
             }
           ],
-          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
           "secondary_technologies": [
             "Framer Motion",
             "react-tooltip",
@@ -217,6 +217,7 @@
         },
         {
           "title": "Plataforma de Juegos Educativos para Niños de Primaria",
+          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
@@ -245,7 +246,6 @@
               "caption": "Panel Administrativo Veterinaria"
             }
           ],
-          "technologies_used": [ 2, 3, 8, 11, 4, 5, 12, 7, 18, 20],
           "secondary_technologies": [
             "Framer Motion",
             "react-tooltip",
