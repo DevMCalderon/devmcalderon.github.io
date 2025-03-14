@@ -105,23 +105,18 @@
     "label": "Photoshop"
   },
   {
-    "id": 22,
-    "img_path": "/assets/img/skill_icons/photoshop.png",
-    "label": "Vite"
-  },
-  {
     "id": 23,
-    "img_path": "/assets/img/skill_icons/photoshop.png",
+    "img_path": "/assets/img/skill_icons/breeze.png",
     "label": "Laravel Breeze"
   },
   {
     "id": 24,
-    "img_path": "/assets/img/skill_icons/photoshop.png",
+    "img_path": "/assets/img/skill_icons/livewire.png",
     "label": "Laravel Livewire"
   },
   {
     "id": 25,
-    "img_path": "/assets/img/skill_icons/photoshop.png",
+    "img_path": "/assets/img/skill_icons/blade.png",
     "label": "Blade Templates"
   }
 ]
