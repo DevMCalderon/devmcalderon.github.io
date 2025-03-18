@@ -92,13 +92,13 @@
         {
           "title": "JobMatch",
           "technologies_used": [ 2, 24, 25, 9, 23, 5, 11, 7, 12, 18 ],
+          "short_description": "Plataforma web de reclutamiento y postulación laboral, donde recruiters pueden gestionar y publicar vacantes, y desarrolladores pueden postularse con su CV en PDF. Incorpora un sistema de búsqueda avanzada por nombre, categoría y salario, notificaciones en tiempo real y confirmación de cuenta por correo. Diseñada para optimizar el proceso de contratación con eficiencia y usabilidad.",
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
             "Diseño de Interfaces (UI/UX)",
             "Arquitectura de Bases de Datos"
           ],
-          "short_description": "Plataforma web de reclutamiento y postulación laboral, donde recruiters pueden gestionar y publicar vacantes, y desarrolladores pueden postularse con su CV en PDF. Incorpora un sistema de búsqueda avanzada por nombre, categoría y salario, notificaciones en tiempo real y confirmación de cuenta por correo. Diseñada para optimizar el proceso de contratación con eficiencia y usabilidad.",
           "large_description": "Plataforma de reclutamiento y postulación a empleos. Registro como recruiter o como desarrollador, los recruiters pueden crear y publicar vacantes y los desarrolladores pueden aplicarse a ellas. Se agregó un sistema de busqueda de vacantes que permite filtrar por nombre, categoría y salario mensual. Envio de correo de confirmación de cuenta tras registro. Sistema de notificaciones cuando un desarrollador se postula a una vacante. Los desarrolladores pueden subir su cv en un archivo pdf cuando se postulan a una vacante.",
           "images": [
             {
@@ -132,16 +132,16 @@
           ]
         },
         {
-          "title": "Red Social para Publicación de Imagenes",
+          "title": "PicConnect",
           "technologies_used": [ 2, 24, 25, 9, 5, 11, 7, 12, 18],
+          "short_description": "Plataforma social para compartir imágenes, con creaión de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento.",
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
             "Diseño de Interfaces (UI/UX)",
             "Arquitectura de Bases de Datos"
           ],
-          "short_description": "Panel de administración web para veterinarias, desde la arquitectura en MySQL hasta el diseño UI/UX con Vue.js. Implementé una API RESTful en Laravel, gestioné roles y permisos con middleware y optimicé consultas en el frontend. Además, mejoré la eficiencia con componentes reutilizables y trabajé en un entorno ágil con SCRUM, asegurando escalabilidad.",
-          "large_description": "Desarrollé una aplicación web robusta utilizando Laravel y Vue.js, implementando módulos como autenticación de usuarios, gestión avanzada de roles y permisos, y un sistema de notificaciones en tiempo real. Superé retos como la optimización de consultas complejas en el backend para mejorar el rendimiento y la integración fluida entre frontend y backend. Trabajé estrechamente con mi equipo para garantizar una implementación eficiente y escalable, contribuyendo con soluciones estratégicas a problemas técnicos. A través de la colaboración, logramos un producto final que no solo cumple con los requisitos del cliente, sino que también mejora la experiencia del usuario.",
+          "large_description": "Red Social de Publicación de Imágenes, creación dinamica de url para perfiles de ususario, publicación de posts, subida de imagenes, sistema de seguidores, seguidos, likes y contador de estos, publicación de comentarios en posts, sistema de muestra de publicaciones de usuarios a los que se sigue, cambio de foto de perfil.",
           "images": [
             {
               "id": 1,
