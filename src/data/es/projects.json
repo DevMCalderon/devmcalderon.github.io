@@ -174,7 +174,7 @@
           ]
         },
         {
-          "title": "Panel para Creación y Publicación de Tutorias Estudiantiles con API de Zoom",
+          "title": "EduLink",
           "technologies_used": [ 2, 3, 11, 4, 5, 12, 7, 18],
           "disciplines_covered": [
             "Desarrollo FrontEnd",
@@ -182,8 +182,8 @@
             "Diseño de Interfaces (UI/UX)",
             "Arquitectura de Bases de Datos"
           ],
-          "short_description": "Panel de administración web para veterinarias, desde la arquitectura en MySQL hasta el diseño UI/UX con Vue.js. Implementé una API RESTful en Laravel, gestioné roles y permisos con middleware y optimicé consultas en el frontend. Además, mejoré la eficiencia con componentes reutilizables y trabajé en un entorno ágil con SCRUM, asegurando escalabilidad.",
-          "large_description": "Desarrollé una aplicación web robusta utilizando Laravel y Vue.js, implementando módulos como autenticación de usuarios, gestión avanzada de roles y permisos, y un sistema de notificaciones en tiempo real. Superé retos como la optimización de consultas complejas en el backend para mejorar el rendimiento y la integración fluida entre frontend y backend. Trabajé estrechamente con mi equipo para garantizar una implementación eficiente y escalable, contribuyendo con soluciones estratégicas a problemas técnicos. A través de la colaboración, logramos un producto final que no solo cumple con los requisitos del cliente, sino que también mejora la experiencia del usuario.",
+          "short_description": "Plataforma de tutorías en línea integrada con Zoom, diseñada para ofrecer un aprendizaje accesible y colaborativo. Permite a estudiantes y tutores gestionar, filtrar y participar en tutorías de manera eficiente. Automatiza la creación de videollamadas y la gestión de solicitudes, mientras los profesores validan la aprobación de nuevos tutores.",
+          "large_description": "Plataforma de tutorías en línea con integración a API de Zoom. ofrece herramientas para que estudiantes y tutores puedan acceder a tutorías de manera eficiente y accesible, buscando enriquecer el proceso de aprendizaje de los estudiantes, con un enfoque de enseñanza comodo  que promueve la cercania y colaboración entre alumnos. Automatiza la creación de reuniones de videollamadas y la gestion de solicitudes de las mismas. Permite a alumnos y profesores gestionar y filtrar tutorías, los alumnos pueden crear o inscribirse en tutorias. Al crear una tutoría se genera automáticamente una videollamada de Zoom con los datos proporcionados por el alumno. Los profesores administran las solicitudes para impartir tutorias de cada alumno y deciden su aprobación o rechazo.",
           "images": [
             {
               "id": 1,
