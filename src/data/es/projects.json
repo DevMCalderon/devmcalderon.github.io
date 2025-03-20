@@ -176,13 +176,13 @@
         {
           "title": "EduLink",
           "technologies_used": [ 2, 3, 11, 4, 5, 12, 7, 18],
+          "short_description": "Plataforma de tutorías en línea integrada con Zoom, diseñada para ofrecer un aprendizaje accesible y colaborativo. Permite a estudiantes y tutores gestionar, filtrar y participar en tutorías de manera eficiente. Automatiza la creación de videollamadas y la gestión de solicitudes, mientras los profesores validan la aprobación de nuevos tutores.",
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
             "Diseño de Interfaces (UI/UX)",
             "Arquitectura de Bases de Datos"
           ],
-          "short_description": "Plataforma de tutorías en línea integrada con Zoom, diseñada para ofrecer un aprendizaje accesible y colaborativo. Permite a estudiantes y tutores gestionar, filtrar y participar en tutorías de manera eficiente. Automatiza la creación de videollamadas y la gestión de solicitudes, mientras los profesores validan la aprobación de nuevos tutores.",
           "large_description": "Plataforma de tutorías en línea con integración a API de Zoom. ofrece herramientas para que estudiantes y tutores puedan acceder a tutorías de manera eficiente y accesible, buscando enriquecer el proceso de aprendizaje de los estudiantes, con un enfoque de enseñanza comodo  que promueve la cercania y colaboración entre alumnos. Automatiza la creación de reuniones de videollamadas y la gestion de solicitudes de las mismas. Permite a alumnos y profesores gestionar y filtrar tutorías, los alumnos pueden crear o inscribirse en tutorias. Al crear una tutoría se genera automáticamente una videollamada de Zoom con los datos proporcionados por el alumno. Los profesores administran las solicitudes para impartir tutorias de cada alumno y deciden su aprobación o rechazo.",
           "images": [
             {
@@ -216,15 +216,57 @@
           ]
         },
         {
-          "title": "LearnPlay",
-          "technologies_used": [ 5, 4, 12, 7, 18],
+          "title": "DASC UABCS",
+          "technologies_used": [ 10, 5, 4, 12, 7],
+          "short_description": "Sitio web informativo para el Departamento de Sistemas Computacionales de la UABCS. Optimiza la gestión de contenidos, reduciendo la carga de trabajo de profesores y mejorando el acceso a información clave para estudiantes. Incluye herramientas de accesibilidad, diseño supervisado por docentes y desarrollo a medida con integraciones optimizadas.",
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
             "Diseño de Interfaces (UI/UX)",
             "Arquitectura de Bases de Datos"
           ],
+          "large_description": "Sitio web informativo para el Departamento de Sistemas Computacionales (DASC) de la Universidad Autónoma de Baja California Sur (UABCS). El proyecto se redujo la carga de trabajo de los profesores, simplificando el proceso de actualización de contenidos de forma visual, rapida e intuitiva y se mejoro la experiencia de los estudiantes brindandoles un acceso eficiente a la información relevante. El sitio ofrece información completa sobre el catalogo de carreras, actividades, horarios, contactos, noticias y enlaces de interes, así como ofrece herramientas de accesibilidad para personas especiales. Se Trabajo colaborativamente. Se realizó el diseño completamente bajo supervición de los profesores. Se implementaron funcionalidades programadas a medidas de las necesidades del departamento así como se integraron algunos plugins para optimizar el flujo de desarrollo.",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/dasc-uabcs/1.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/dasc-uabcs/2.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/dasc-uabcs/3.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            }
+          ],
+          "secondary_technologies": [
+            "Framer Motion",
+            "react-tooltip",
+            "react-router-dom",
+            "react-mailchimp-subscribe",
+            "i18next",
+            "nodemailer",
+            "cors",
+            "dotenv"
+          ]
+        },
+        {
+          "title": "LearnPlay",
+          "technologies_used": [ 5, 4, 12, 7, 18],
           "short_description": "Sitio web educativo para niños de primaria, ofrece una experiencia de aprendizaje interactiva y divertida mediante tres mini-juegos centrados en operaciones matemáticas básicas, reconocimiento de patrones y lectura de reloj analógico. Implementa sistema de vidas, desbloqueo de niveles con localStorage, optimización con componentes reutilizables y carga dinámica de datos desde archivos JSON.",
+          "disciplines_covered": [
+            "Desarrollo FrontEnd",
+            "Desarrollo BackEnd",
+            "Diseño de Interfaces (UI/UX)",
+            "Arquitectura de Bases de Datos"
+          ],
           "large_description": "Sitio web de videojuegos educativos para niños de primaria, brinda a los niños una experiencia accesible, divertida y educativa con tres mini-juegos enfocados en el aprendizaje de operaciones básicas como suma, resta, reconocimiento de patrones, secuencias numéricas y lectura de un reloj analógico. Sistema de vidas almacenado en localStorage que resta vidas al cometer errores, sistema de desbloqueo de niveles con aumento de dificultad, uso de componentes reutilizables y carga de información renderizada desde archivos json para evitar repeticion de código.",
           "images": [
             {
