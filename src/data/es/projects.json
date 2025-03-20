@@ -134,7 +134,7 @@
         {
           "title": "PicConnect",
           "technologies_used": [ 2, 24, 25, 9, 5, 11, 7, 12, 18],
-          "short_description": "Plataforma social para compartir imágenes, con creaión de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento.",
+          "short_description": "Red social para compartir imágenes, con creaión de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento.",
           "disciplines_covered": [
             "Desarrollo FrontEnd",
             "Desarrollo BackEnd",
@@ -216,7 +216,7 @@
           ]
         },
         {
-          "title": "Plataforma de Juegos Educativos para Niños de Primaria",
+          "title": "LearnPlay",
           "technologies_used": [ 5, 4, 12, 7, 18],
           "disciplines_covered": [
             "Desarrollo FrontEnd",
@@ -224,8 +224,8 @@
             "Diseño de Interfaces (UI/UX)",
             "Arquitectura de Bases de Datos"
           ],
-          "short_description": "Panel de administración web para veterinarias, desde la arquitectura en MySQL hasta el diseño UI/UX con Vue.js. Implementé una API RESTful en Laravel, gestioné roles y permisos con middleware y optimicé consultas en el frontend. Además, mejoré la eficiencia con componentes reutilizables y trabajé en un entorno ágil con SCRUM, asegurando escalabilidad.",
-          "large_description": "Desarrollé una aplicación web robusta utilizando Laravel y Vue.js, implementando módulos como autenticación de usuarios, gestión avanzada de roles y permisos, y un sistema de notificaciones en tiempo real. Superé retos como la optimización de consultas complejas en el backend para mejorar el rendimiento y la integración fluida entre frontend y backend. Trabajé estrechamente con mi equipo para garantizar una implementación eficiente y escalable, contribuyendo con soluciones estratégicas a problemas técnicos. A través de la colaboración, logramos un producto final que no solo cumple con los requisitos del cliente, sino que también mejora la experiencia del usuario.",
+          "short_description": "Sitio web educativo para niños de primaria, ofrece una experiencia de aprendizaje interactiva y divertida mediante tres mini-juegos centrados en operaciones matemáticas básicas, reconocimiento de patrones y lectura de reloj analógico. Implementa sistema de vidas, desbloqueo de niveles con localStorage, optimización con componentes reutilizables y carga dinámica de datos desde archivos JSON.",
+          "large_description": "Sitio web de videojuegos educativos para niños de primaria, brinda a los niños una experiencia accesible, divertida y educativa con tres mini-juegos enfocados en el aprendizaje de operaciones básicas como suma, resta, reconocimiento de patrones, secuencias numéricas y lectura de un reloj analógico. Sistema de vidas almacenado en localStorage que resta vidas al cometer errores, sistema de desbloqueo de niveles con aumento de dificultad, uso de componentes reutilizables y carga de información renderizada desde archivos json para evitar repeticion de código.",
           "images": [
             {
               "id": 1,
