@@ -9,7 +9,7 @@ const AboutMe = () => {
   const paragraphStyles = 'mb-2 textShadow text-[#ccc]'
 
   return (
-    <section className="bg_semitransparent text-center md:text-start mt-0" id="aboutMe">
+    <section className="bg_semitransparent bg-container_color2 bg-opacity-90 text-center md:text-start mt-0" id="aboutMe">
       
       {/* separador */}
       <div className="px-6 md:px-14 lg:px-24">

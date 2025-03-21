@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { getSlugFromURL, getURLFromSlug } from '../../routes';
+import { getSlugFromURL, getURLFromSlug } from '@/routes';
 
 const BreadCrumb = () => {
   const [ t ] = useTranslation("global");  
@@ -34,7 +34,7 @@ const BreadCrumb = () => {
   
   return(
     <>
-      <div className='text-start italic mb-3 text-text_dark-gray container_color3 px-7 py-[1.2rem] rounded-[1.2rem] w-fit border-solid border-[1px] border-[#babec3] '>
+      <div className='text-start italic mb-3 text-text_dark-gray bg-transparent px-7 py-[1.2rem] rounded-[1.2rem] w-fit border-solid border-[1px] border-neon_color1 '>
         {breadcrumbItems.map((item, index) => (
           <React.Fragment key={item.to}>
             <Link to={item.to} 

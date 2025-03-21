@@ -20,7 +20,6 @@
   .bannerList {
     @apply py-0.5 px-0.5;
   }
-  
   .projectItemCard {
     @apply transition-all ease-in-out duration-200
     shadow-[var(--containerShadow2)] hover:shadow-[var(--containerShadow3)] cursor-pointer
@@ -29,6 +28,9 @@
   }
   .app-container {
     @apply flex flex-col min-h-screen;
+  }
+  .language-list li:hover, li.selected {
+    @apply bg-container_color3;
   }
 }
 
@@ -75,13 +77,9 @@
   --dark_link_color:#0040a6;
   --dark_link_color_hover:#f6ff00;
   --dark_link_color_hover2:#0059e8;
-  --container_color2:rgb(var(--container_color2_aux)); /*used in about-me and projects*/
-  --container_color2_aux:23, 25, 57; /*used in skills*/
-  --container_color3:rgb(224, 224, 233);/*Used in articles*/
   --container_color4:#b9b9e7;/*Used in select tab projects*/
   --container_color5:#15193e; /*used in footer*/
-  --container_color6:rgba(12, 11, 39, 0.85); /*used in skills*/
-  --container_color7:#1f256c; /*used in projects_category_common*/
+  --container_color7:rgb(15, 14, 50); /*used in projects_category_common*/
   --container_color8:#161440cc; /*used in footer*/
   --bg_color1:#172565;
   --success_color:rgb(146, 255, 146);
@@ -313,14 +311,6 @@ p.danger {
   font-size: 1.4rem;
 }
 
-.bg_semitransparent {
-  background: rgba(var(--container_color2_aux), 0.90);
-}
-.bgContainer2 {
-  background: var(--container_color2);
-  
-}
-
 /* hr separator */
 .hr5 {
   border: 0;
@@ -339,7 +329,7 @@ p.danger {
   font-family: var(--normal-font-family);
 }
 .bg_projects_category_common {
-  background-image: linear-gradient( var(--container_color7), var(--container_color7));
+  background: var(--container_color7);
 }
 .containerShadow1{
   box-shadow: 0 7px 10px 2px rgba(0,0,0,0.5);

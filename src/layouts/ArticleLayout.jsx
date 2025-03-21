@@ -13,7 +13,7 @@ const ArticleLayout = () => {
           <Outlet />
         </section>
         <ScrollToTop />
-      </div>  
+      </div>
       <Footer />
     </>
   );

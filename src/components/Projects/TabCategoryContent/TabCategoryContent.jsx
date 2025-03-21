@@ -15,7 +15,7 @@ const TabCategoryContent = (props) => {
   const [ t ] = useTranslation("global");
   let navigate = useNavigate();
 
-  const mostrarRegistros = props.projects.slice(0, 6);
+  const mostrarRegistros = props.projects.slice(0, 7);
 
   const toggleMostrarMas = (e) => {
     e.preventDefault();

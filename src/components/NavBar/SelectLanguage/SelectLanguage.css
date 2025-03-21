@@ -95,6 +95,3 @@
   border-radius: 5px;
   padding: 0 13px;
 }
-.language-list li:hover, li.selected {
-  background: var(--container_color3);
-}
