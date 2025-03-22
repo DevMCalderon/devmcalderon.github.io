@@ -32,6 +32,10 @@
   .language-list li:hover, li.selected {
     @apply bg-container_color3;
   }
+  .fondoxd {
+    background: linear-gradient(90deg, rgb(17, 19, 60) 10%, theme('colors.container_color2') 50%);
+    
+  }
 }
 
 

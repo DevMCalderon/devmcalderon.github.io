@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
-import BreadCrumb from "../../components/Breadcrumb/Breadcrumb";
-import { routes } from '../../routes';
-import ProjectsListGrid from "./ProjectsListGrid/ProjectsListGrid";
-import ProjectImage from "./ProjectImage/ProjectImage";
 import { useTranslation } from "react-i18next";
+
+import BreadCrumb from "@/components/Breadcrumb/Breadcrumb";
+import { routes } from '@/routes';
+import ProjectsListGrid from "@/components/Projects/ProjectsListGrid/ProjectsListGrid";
+import ProjectImage from "@/components/Projects/ProjectImage/ProjectImage";
 
 const ProjectsCategoryCommon = ({ title, description, categories, projects, projectInfo, projectCategory }) => {
   const [ t] = useTranslation("global");
 
   return (
     <>
-      <div className="pb-[150px] bg-container_color2 min-h-screen shadow-2xl text-white">
-  {/* background-image: linear-gradient(to right, var(--container_color4) 15%, var(--container_color7) 50%); */}
-        
+      <div className="pb-[150px] min-h-screen shadow-2xl text-white 
+      fondoxd
+      ">
+      {/* bg-container_color2  */}
         {/* header */}
         <div className="w-full pt-24 pb-14 bg_projects_category_common mb-7">
           <h1 className="text-center font-bold text-white text-[3rem] ">{ title }</h1>
@@ -27,9 +29,9 @@ const ProjectsCategoryCommon = ({ title, description, categories, projects, proj
           </div>
           { !projectInfo &&
           <>
-              <p className="mx-auto text-white mb-7 w-[90%] md:w-4/5 lg:mx-30">
-                {description}
-              </p>
+            <p className="mx-auto text-white mb-7 w-[90%] md:w-4/5 lg:mx-30">
+              {description}
+            </p>
           </>
           }
           {/* content */}
