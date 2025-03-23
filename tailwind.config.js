@@ -44,7 +44,7 @@ export default {
         'container_color3': 'rgb(224, 224, 233)',
         'container_color4': 'var(--container_color4)',
         'container_color5': 'var(--container_color5)',
-        'container_color6': 'rgba(12, 11, 39)',
+        'container_color6': 'rgb(16, 17, 46)',
         'default_md_text_size': 'var(--default_md_text_size)',
         'gradient_color1': 'var(--gradient_color1)',
         'gradient_color2': 'var(--gradient_color2)',
