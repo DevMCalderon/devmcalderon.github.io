@@ -32,7 +32,7 @@ const Skills = () => {
             <div className=' mx-auto px-3 md:px-14 lg:px-14'>
               <div 
                 className='containerShadow1 shadow-2xl pt-12 pb-16 px-[28px] md:py-[50px] md:px-[40px] lg:px-24
-                  rounded-[55px] text-center mt-[-60px] bg-container_color6 bg-opacity-[85%]'
+                  rounded-[55px] text-center mt-[-60px] bg-container_color2 bg-opacity-[85%]'
               >
               
                 <CustomHeader
