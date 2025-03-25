@@ -11,13 +11,10 @@ const ProjectsCategoryCommon = ({ title, description, categories, projects, proj
 
   return (
     <>
-      <div className="pb-[150px] min-h-screen shadow-2xl text-white 
-      fondoxd
-      ">
-      {/* bg-container_color2  */}
+      <div className="pb-[150px] min-h-screen shadow-2xl text-white fondoxd">
         {/* header */}
-        <div className="w-full pt-24 pb-14 bg_projects_category_common mb-7">
-          <h1 className="text-center font-bold text-white text-[3rem] ">{ title }</h1>
+        <div className="w-full pt-20 pb-8 bg_projects_category_common mb-5">
+          <h1 className="text-center font-bold text-white text-[2.6rem] ">{ title }</h1>
         </div>
         
         {/* main content */}
