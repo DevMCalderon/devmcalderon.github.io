@@ -1,0 +1,19 @@
+{
+  "disciplines_covered": [
+    "Desarrollo FrontEnd",
+    "Desarrollo BackEnd",
+    "Diseño de Interfaces (UI/UX)",
+    "Arquitectura de Bases de Datos"
+  ],
+  "large_description": "Desarrollé una aplicación web robusta utilizando Laravel y Vue.js, implementando módulos como autenticación de usuarios, gestión avanzada de roles y permisos, y un sistema de notificaciones en tiempo real. Superé retos como la optimización de consultas complejas en el backend para mejorar el rendimiento y la integración fluida entre frontend y backend. Trabajé estrechamente con mi equipo para garantizar una implementación eficiente y escalable, contribuyendo con soluciones estratégicas a problemas técnicos. A través de la colaboración, logramos un producto final que no solo cumple con los requisitos del cliente, sino que también mejora la experiencia del usuario.",
+  "secondary_technologies": [
+    "Framer Motion",
+    "react-tooltip",
+    "react-router-dom",
+    "react-mailchimp-subscribe",
+    "i18next",
+    "nodemailer",
+    "cors",
+    "dotenv"
+  ]
+}
