@@ -1,10 +1,11 @@
 import { useContext } from "react";
+import { Navigate, useParams } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
+
+import { getNameByURL, getParentURLByCurrentURL } from '../../routes';
 import { ArticleProjectsContext } from "../../contexts/ArticleProjectsContext";
 import ProjectsCategoryCommon from "../../components/Projects/ProjectsCategoryCommon";
 
-import { Navigate, useParams } from 'react-router-dom';
-import { getNameByURL, getParentURLByCurrentURL } from '../../routes';
-import { useTranslation } from "react-i18next";
 import projectsJSON_en from "../../data/en/projects.json";
 import projectsJSON_es from "../../data/es/projects.json";
 import NotFound from "../NotFound/NotFound";
