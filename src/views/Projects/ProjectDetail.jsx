@@ -45,10 +45,10 @@ const ProjectDetail= () => {
     <>
       {projectsInfo ? (
        <ProjectsCategoryCommon 
-            projectCategory={categoryData.category} 
-            projectInfo={projectsInfo} 
-            title={t(`projectDetail.title`)+`: ${projectsInfo.title}`} 
-            description={idProject}  
+            projectCategory={categoryData.category}
+            projectInfo={projectsInfo}
+            title={projectsInfo.title}
+            description={idProject}
         />
         ) : (
           <NotFound />

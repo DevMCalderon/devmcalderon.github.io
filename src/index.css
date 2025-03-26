@@ -32,10 +32,9 @@
   .language-list li:hover, li.selected {
     @apply bg-container_color3;
   }
-  .fondoxd {
+  /* .projects_category_common_bg {
     background: linear-gradient(90deg, rgb(17, 19, 60) 10%, theme('colors.container_color2') 50%);
-    
-  }
+  } */
 }
 
 
@@ -331,9 +330,6 @@ p.danger {
 }
 .normal_font_family_aux {
   font-family: var(--normal-font-family);
-}
-.bg_projects_category_common {
-  background: var(--container_color7);
 }
 .containerShadow1{
   box-shadow: 0 7px 10px 2px rgba(0,0,0,0.5);

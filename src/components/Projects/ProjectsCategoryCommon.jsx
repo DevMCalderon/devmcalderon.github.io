@@ -11,19 +11,20 @@ const ProjectsCategoryCommon = ({ title, description, categories, projects, proj
 
   return (
     <>
-      <div className="pb-[150px] min-h-screen shadow-2xl text-white fondoxd">
+      <div className="pb-36 min-h-screen shadow-2xl text-white bg-container_color1">
         {/* header */}
-        <div className="w-full pt-20 pb-8 bg_projects_category_common mb-5">
-          <h1 className="text-center font-bold text-white text-[2.6rem] ">{ title }</h1>
-        </div>
+        <div className="w-full pt-24 bg-container_color6 mb-5"></div>
         
         {/* main content */}
         <div className="w-9/12 mx-auto">
           
+          {/* title */}
+          <h1 className="text-center font-bold text-white text-[2.6rem]">{ title }</h1>
+          
           {/* breadcrumb */}
-          <div className="mb-7">
-            <BreadCrumb />
-          </div>
+          <BreadCrumb />
+          
+          
           { !projectInfo &&
           <>
             <p className="mx-auto text-white mb-7 w-[90%] md:w-4/5 lg:mx-30">
@@ -71,12 +72,14 @@ const ProjectsCategoryCommon = ({ title, description, categories, projects, proj
               {/* Project detail */}
               {projectInfo &&
                 <div className="">
-                  <h2 className="text-4xl text-white">{t(`projectDetail.subtitle`)+':'}</h2>
-                    <div className="w-full md:w-3/4 mx-auto my-6">
+                  {/* <h2 className="text-4xl text-white">{t(`projectDetail.subtitle`)+':'}</h2> */}
+                    
+                    {/* project image */}
+                    <div className="w-full mx-auto my-6">
                       <ProjectImage
                         imgPath = { projectInfo.imgPath }
                         title = { projectInfo.title }
-                        classes="rounded-[2.2rem]"
+                        classes="rounded-[1rem] w-full h-auto"
                       />
                     </div>
               

@@ -40,6 +40,7 @@ export default {
         'dark_link_color_hover2': 'var(--dark_link_color_hover2)',
         'link_disabled_color': 'var(--link_disabled_color)',
         'pink_color2': 'var(--pink_color2)',
+        'container_color1': '#131636',
         'container_color2': 'rgb(15, 18, 56)',
         'container_color3': 'rgb(224, 224, 233)',
         'container_color4': 'var(--container_color4)',

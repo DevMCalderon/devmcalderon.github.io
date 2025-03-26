@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 import { getSlugFromURL, getURLFromSlug } from '@/routes';
 
-const BreadCrumb = () => {
-  const [ t ] = useTranslation("global");  
+const BreadCrumb = ({ classes }) => {
+  const [ t ] = useTranslation("global");
   
   const url=location.pathname;
   // p
@@ -35,11 +35,13 @@ const BreadCrumb = () => {
   
   return(
     <>
-      <div className='text-start italic mb-3 text-text_dark-gray bg-transparent px-7 py-[1.2rem] rounded-[1.2rem] w-fit border-solid border-[1px] border-neon_color1 '>
+      <div className={`${classes} text-start italic mb-8 text-text_dark-gray bg-transparent px-7 py-[1.2rem] rounded-[1.2rem]
+        w-fit border-solid border-[1px] border-neon_color1`}
+      >
         {breadcrumbItems.map((item, index) => (
           <React.Fragment key={item.to}>
-            <Link to={item.to} 
-              className='text-[20.5px] text-link_color hover:text-link_color_hover hover:underline px-[0.8rem]'> 
+            <Link to={item.to}
+              className='text-[20.5px] text-link_color hover:text-link_color_hover hover:underline px-[0.8rem]'>
               {item.label}
               {/* {t(`navbar.${item.label}`)} */}
             </Link>
