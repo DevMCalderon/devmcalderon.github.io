@@ -1,13 +1,15 @@
 {
   "description": "Me especializo en desarrollo web, creando desde interfaces atractivas hasta plataformas funcionales y expresivas. Mi enfoque es la excelencia, asegurando siempre resultados de alta calidad.",
-  "categories": [
+  "categories": 
+  [
     {
       "category": "Apps y Plataformas Web",
       "description": "Desarrollo soluciones web adaptadas a lo que realmente necesita su empresa. Me ocupo de todo el proceso: desde la planificación y documentación hasta el desarrollo, implementación y mantenimiento. Mi objetivo es entregarle una plataforma eficiente que optimice su productividad y facilite la gestión de su negocio.",
-      "projects": [
+      "projects": 
+      [
         {
           "title": "VetCore Pro",
-          "article_id": "veterinary",
+          "article_id": 1,
           "technologies_used": [ 2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
           "short_description": "Sistema para la gestión de clínicas veterinarias, optimiza el control de clientes, mascotas, empresas, citas e inventario. Trabajé colaborativamente con SCRUM, participando en la arquitectura de base de datos y el diseño UI/UX. Implementé una API RESTful, gestioné roles y permisos con middleware, y mejoré la mantenibilidad y escalabilidad con componentes reutilizables, y más.",
           "images": [
@@ -35,7 +37,8 @@
           "title": "SmartOrder",
           "technologies_used": [ 1, 2, 9, 4, 5, 11, 18, 7, 12 ],
           "short_description": "Sistema de pedidos y gestión para restaurantes con acceso diferenciado según privilegios. Los clientes pueden seleccionar productos, gestionar su carrito y realizar pedidos, mientras que los empleados administran órdenes en tiempo real y pueden marcar compras como completadas o deshabilitar productos del catálogo.",
-          "images": [
+          "images":
+          [
             {
               "id": 1,
               "path": "/assets/img/projects/coffee-shop/1.png",
@@ -60,7 +63,8 @@
           "title": "JobMatch",
           "technologies_used": [ 2, 24, 25, 9, 23, 5, 11, 7, 12, 18 ],
           "short_description": "Plataforma web de reclutamiento y postulación laboral, donde recruiters pueden gestionar y publicar vacantes, y desarrolladores pueden postularse con su CV en PDF. Incorpora un sistema de búsqueda avanzada por nombre, categoría y salario, notificaciones en tiempo real y confirmación de cuenta por correo. Diseñada para optimizar el proceso de contratación con eficiencia y usabilidad.",
-          "images": [
+          "images":
+          [
             {
               "id": 1,
               "path": "/assets/img/projects/job-vacancies/1.png",
@@ -85,7 +89,8 @@
           "title": "PicConnect",
           "technologies_used": [ 2, 24, 25, 9, 5, 11, 7, 12, 18],
           "short_description": "Red social para compartir imágenes, con creaión de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento.",
-          "images": [
+          "images":
+          [
             {
               "id": 1,
               "path": "/assets/img/projects/upload-images/1.png",
@@ -186,7 +191,8 @@
     {
       "category": "Contribuciones a Comunidad",
       "description": "Participo activamente en la comunidad a través de proyectos de código abierto y creación de contenido. Me motiva compartir conocimientos mientras sigo profundizando en mis áreas de especialización.",
-      "projects": [
+      "projects":
+      [
         {
           "title": "Business Startup",
           "description": "Design & Development",
@@ -197,7 +203,8 @@
     {
       "category": "Interfaces y Prototipos",
       "description": "Diseño interfaces de usuario que combinan estética y funcionalidad. Busco crear experiencias que sean cómodas, pero también memorables.",
-      "projects": [
+      "projects":
+      [
         {
           "title": "Business Startup",
           "description": "Design & Development",

@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import BreadCrumb from "@/components/Breadcrumb/Breadcrumb";
 import { routes } from '@/routes';
 import ProjectsListGrid from "@/components/Projects/ProjectsListGrid/ProjectsListGrid";
-import ProjectImage from "@/components/Projects/ProjectImage/ProjectImage";
 
-const ProjectsCategoryCommon = ({ title, description, categories, projects, projectInfo, projectCategory }) => {
+const ProjectsCategoryCommon = ({ projectInfo,title, description, categories, projects, projectCategory }) => {
   const [ t] = useTranslation("global");
 
   return (
@@ -32,81 +31,47 @@ const ProjectsCategoryCommon = ({ title, description, categories, projects, proj
             </p>
           </>
           }
+          
           {/* content */}
           <div className="justify-center text-center">
+            <Outlet />
               
-              {/* categories links list */}
-              { categories &&
-                <div className="flex justify-center">
-                  <div className="w-full">
-                    <span className="text-[1.78rem] text-white mb-2">Categories:</span>
-                    <hr className="mb-3 w-1/3 mx-auto"/>
-                    <ul className="w-fit mx-auto mt-2 list-disc text-white">
-                      {categories.map((category, index)=> (
-                        <li className="py-2 px-3" key={index}>
-                          <Link
-                            to={`${routes[category.category]}`}
-                            className="text-link_color hover:text-link_color_hover hover:underline"
-                          >
-                            {category.category}
-                          </Link>
-                        </li>
-                      ))} 
-                    </ul>
-                  </div>
+            {/* categories links list */}
+            { categories &&
+              <div className="flex justify-center">
+                <div className="w-full">
+                  <span className="text-[1.78rem] text-white mb-2">Categories:</span>
+                  <hr className="mb-3 w-1/3 mx-auto"/>
+                  <ul className="w-fit mx-auto mt-2 list-disc text-white">
+                    {categories.map((category, index)=> (
+                      <li className="py-2 px-3" key={index}>
+                        <Link
+                          to={`${routes[category.category]}`}
+                          className="text-link_color hover:text-link_color_hover hover:underline"
+                        >
+                          {category.category}
+                        </Link>
+                      </li>
+                    ))} 
+                  </ul>
                 </div>
-              }
-                
-              {/* project items list */}
-              {projects && (
-                <>
-                  <h3 className="text-[1.78rem] text-white mb-2">Projects list:</h3>
-                  <hr className="mb-6 w-1/3 mx-auto" />
-                  <ProjectsListGrid
-                    projects={projects}
-                    category={title}
-                  />
-                </>
-              )}
+              </div>
+            }
               
-              {/* Project detail */}
-              {projectInfo &&
-                <div className="">
-                  {/* <h2 className="text-4xl text-white">{t(`projectDetail.subtitle`)+':'}</h2> */}
-                    
-                    {/* project image */}
-                    <div className="w-full mx-auto my-6">
-                      <ProjectImage
-                        imgPath = { projectInfo.imgPath }
-                        title = { projectInfo.title }
-                        classes="rounded-[1rem] w-full h-auto"
-                      />
-                    </div>
+            {/* project items list */}
+            {projects && (
+              <>
+                <h3 className="text-[1.78rem] text-white mb-2">Projects list:</h3>
+                <hr className="mb-6 w-1/3 mx-auto" />
+                <ProjectsListGrid
+                  projects={projects}
+                  category={title}
+                />
+              </>
+            )}
               
-                  <div>
-                    <h3 className="text-3xl">
-                      {t(`projectDetail.Description`)+':'}
-                    </h3>
-                    <p className="text-white">
-                      {projectInfo.description}
-                    </p>
-                  </div>
-                  
-                  <div>
-                    <h3 className="text-3xl">
-                      {t(`projectDetail.Category`)+':'}
-                    </h3>
-                    <p className="text-white">
-                      {projectCategory}
-                    </p>
-                  </div>
-                  
-                  
-                </div>
-              }
          </div>
         </div>
-
         
       </div>
     </>

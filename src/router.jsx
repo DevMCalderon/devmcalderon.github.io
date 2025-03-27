@@ -9,8 +9,8 @@ import App from "./App";
 import ArticleLayout from "./layouts/ArticleLayout";
 import ProjectsCategoryOverview from "./views/Projects/ProjectsCategoryOverview";
 import ProjectsCategoriesIndex from "./views/Projects/ProjectsCategoriesIndex";
-import ArticleProjectsLayout from "./layouts/ArticleProjectsLayout";
 import ProjectDetail from "./views/Projects/ProjectDetail";
+import ProjectsCategoryCommon from "./components/Projects/ProjectsCategoryCommon";
 
 const RootLayout = () => (
   <>
@@ -35,7 +35,6 @@ const router = createBrowserRouter(
           children: [
             {
               path: "/projects",
-              element: <ArticleProjectsLayout />,
               children: [
                 {
                   path: routes["Projects"],
@@ -55,7 +54,14 @@ const router = createBrowserRouter(
                 },
                 {
                   path: "/projects/:idCategory/:idProject",
-                  element: <ProjectDetail />,
+                  // element: <ProjectDetail />,
+                  element: <ProjectsCategoryCommon />,
+                  children: [
+                    {
+                      path: "/projects/:idCategory/:idProject",
+                      element: <ProjectDetail />,
+                    },
+                  ],
                 },
               ],
             },
