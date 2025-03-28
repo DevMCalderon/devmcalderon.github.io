@@ -67,7 +67,8 @@
   },
   "projects": {
     "title": "Proyectos Destacados",
-    "select_category": "Selecciona una categoría para ver los proyectos que he desarrollado en esa área"
+    "select_category": "Selecciona una categoría para ver los proyectos que he desarrollado en esa área",
+    "project_categories": "Categorias de Proyectos"
   },
   "about_me": {
     "more_about_me": "Acerca de mí",

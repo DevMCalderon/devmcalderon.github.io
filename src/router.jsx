@@ -8,7 +8,7 @@ import ScrollRestoration from "@/components/ScrollRestoration/ScrollRestoration"
 import App from "./App";
 import ArticleLayout from "./layouts/ArticleLayout";
 import ProjectsCategoryOverview from "./views/Projects/ProjectsCategoryOverview";
-import ProjectsCategoriesIndex from "./views/Projects/ProjectsCategoriesIndex";
+import AllProjectCategoryList from "./views/Projects/AllProjectCategoryList";
 import ProjectDetail from "./views/Projects/ProjectDetail";
 import ProjectsCategoryCommon from "./components/Projects/ProjectsCategoryCommon";
 
@@ -36,7 +36,7 @@ const router = createBrowserRouter(
           [
             {
               path: routes["Projects"],
-              element: <ProjectsCategoriesIndex />,
+              element: <AllProjectCategoryList />,
             },
             {
               path: routes["Web Platforms & Applications"],

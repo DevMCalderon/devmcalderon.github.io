@@ -35,7 +35,7 @@ const BreadCrumb = ({ classes }) => {
   
   return(
     <>
-      <div className={`${classes} text-start italic mb-8 text-text_dark-gray bg-transparent px-7 py-[1.2rem] rounded-[1.2rem]
+      <nav className={`${classes} text-start italic mb-8 text-text_dark-gray bg-transparent px-7 py-[1.2rem] rounded-[1.2rem]
         w-fit border-solid border-[1px] border-neon_color1`}
       >
         {breadcrumbItems.map((item, index) => (
@@ -49,7 +49,7 @@ const BreadCrumb = ({ classes }) => {
             {/* {' / '} */}
           </React.Fragment>
         ))}
-      </div>
+      </nav>
     </>
   );
 }

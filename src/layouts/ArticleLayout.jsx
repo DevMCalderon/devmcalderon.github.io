@@ -1,17 +1,17 @@
 import { Outlet, useLocation } from "react-router-dom";
 
 import { ArticleProjectsContext } from '@/contexts/ArticleProjectsContext'
-import projectsJSON from '@/data/en/projects'
-import Footer from "../components/Footer/Footer";
-import NavBar from "../components/NavBar/NavBar";
-import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
+import projectsJSON from '@/data/es/projects'
+import Footer from "@/components/Footer/Footer";
+import NavBar from "@/components/NavBar/NavBar";
 import BreadCrumb from "@/components/Breadcrumb/Breadcrumb";
+import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 const ArticleLayout = () => {
   const location = useLocation();
   const URL = location.pathname; // Obtén la URL actual
 
-  console.log("provider", URL, projectsJSON);
+  // console.log("provider", URL, projectsJSON);
 
   return(
     <>
@@ -28,7 +28,7 @@ const ArticleLayout = () => {
           <div className="w-9/12 mx-auto">
           
           <BreadCrumb />
-            
+
           <ArticleProjectsContext.Provider value={{ projectsJSON, URL }}>
             <Outlet />
           </ArticleProjectsContext.Provider>

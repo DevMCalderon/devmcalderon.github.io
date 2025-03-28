@@ -9,8 +9,7 @@ const ProjectsCategoryCommon = ({ projectInfo,title, description, categories, pr
 
   return (
     <>
-          {/* title */}
-          <h1 className="text-center font-bold text-white text-[2.6rem]">{ title }</h1>
+
           
           
           { !projectInfo &&
