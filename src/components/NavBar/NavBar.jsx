@@ -9,7 +9,7 @@ import "@/components/NavBar/NavBar.css";
 
 import logo from "@/assets/img/logo.png";
 
-const NavBar = () => {
+const NavBar = ({ hasBackgroundColor }) => {
   const [activateLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
 
@@ -37,8 +37,14 @@ const NavBar = () => {
   return (
     <>
       {/* NAVBAR */}
-      <header>
-        <nav className={`${scrolled ? 'scrolled' : ''} navbar`}>
+      <header className={`${hasBackgroundColor ? 'pt-28' : ''}`}>
+        <nav
+          className={`
+            navbar
+            ${scrolled ? 'scrolled bg-opacity-0' : 'bg-opacity-100'}
+            ${ hasBackgroundColor ? 'bg-container_color6' : ''}
+          `}
+        >
           <div className="mx-auto max-w-[90vw] flex justify-between">
 
             {/* left side */}

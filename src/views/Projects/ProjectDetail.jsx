@@ -49,6 +49,7 @@ const ProjectDetail= () => {
   
   // getProjectsDataByCategoryName();
 
+  // no hace falta hacer todo esto aqui, sacarlo
   useEffect(() => {
     const fetchProjectData = () => {
       // encuentra la categoria por su nombre
@@ -73,16 +74,16 @@ const ProjectDetail= () => {
               
               {/* project image */}
               <div className="w-full mx-auto my-6">
-                {/* <ProjectImage
-                  imgPath = { projectsInfo.imgPath }
-                  title = { projectsInfo.title }
+                <ProjectImage
+                  imgPath = { projectInfo.imgPath }
+                  title = { projectInfo.title }
                   classes="rounded-[1rem] w-full h-auto"
-                /> */}
+                />
               </div>
         
             <div>
               <h3 className="text-3xl">
-                {t(`projectsDetail.Description`)+':'}
+                {t(`projectDetail.Description`)+':'}
               </h3>
               <p className="text-white">
                 {/* {projectsInfo.description} */}
@@ -91,7 +92,7 @@ const ProjectDetail= () => {
             
             <div>
               <h3 className="text-3xl">
-                {/* {t(`projectsDetail.Category`)+':'} */}
+                {t(`projectDetail.Category`)+':'}
               </h3>
               <p className="text-white">
                 {/* {projectsInfo.Category} */}

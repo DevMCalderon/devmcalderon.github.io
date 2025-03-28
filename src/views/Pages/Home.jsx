@@ -10,18 +10,17 @@ function Home() {
   
   return (
     <>
+      <div className="app-container bgBanner1">
       <NavBar />
-      <div className="app-container">
-        <div className='bgBanner1'>
+        <main>
           <Banner />
           <Skills />
           <ProjectsSection />
           <AboutMe />
-        </div>
+        </main>
         <Contact />
       </div>
       <Footer />
-      
     </>
   );
 }

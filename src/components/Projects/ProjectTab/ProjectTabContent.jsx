@@ -10,14 +10,12 @@ const variants = {
   closed: { opacity: 0 },
 }
 
-// el componente TabCategoryContent se encarga de renderizar el contenido de cada categoría de las tabs cuando se hace click en una de ellas
-const TabCategoryContent = (props) => {
+// este componente se encarga de renderizar el contenido de cada categoría de las tabs cuando se hace click en una de ellas
+const ProjectTabContent = (props) => {
   const [ t ] = useTranslation("global");
   let navigate = useNavigate();
 
-  const mostrarRegistros = props.projects.slice(0, 7);
-
-  const toggleMostrarMas = (e) => {
+  const toggleDisplayMore = (e) => {
     e.preventDefault();
     // console.log(props.category);
     
@@ -25,7 +23,6 @@ const TabCategoryContent = (props) => {
 
     navigate(newURL); // Perform navigation immediately
   };
-  
 
   return (
     <>
@@ -43,19 +40,21 @@ const TabCategoryContent = (props) => {
             {props.description}
           </p>
           
-          {/* lista de proyectos */}
+          {/* listado de proyectos */}
           <ProjectsListGrid
-            projects={mostrarRegistros}
+            projects={props.projects}
             category={props.category}
+            maxProjectsToShow={6}
           />
+          
           
           {/* Botón mostrar más */}
           <div>
             {props.projects && props.projects.length > 6 && (
-              <button  
+              <button
                 className="button_transparent_rounded shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2 flex m-auto
                   justify-center mt-6 w-fit border-[1.5px] border-solid border-border_color1 bg-[black] bg-opacity-40"
-                onClick={toggleMostrarMas}
+                onClick={toggleDisplayMore}
               >
                 <span>
                   {t('TabPanelItem.display_more')}
@@ -71,4 +70,4 @@ const TabCategoryContent = (props) => {
   );
 };
 
-export default TabCategoryContent;
+export default ProjectTabContent;

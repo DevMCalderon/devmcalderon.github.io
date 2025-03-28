@@ -32,38 +32,28 @@ const router = createBrowserRouter(
         },
         {
           element: <ArticleLayout />,
-          children: [
+          children:
+          [
             {
-              path: "/projects",
-              children: [
-                {
-                  path: routes["Projects"],
-                  element: <ProjectsCategoriesIndex />,
-                },
-                {
-                  path: routes["Web Platforms & Applications"],
-                  element: <ProjectsCategoryOverview categoryIndex="0" />,
-                },
-                {
-                  path: routes["Interface Design"],
-                  element: <ProjectsCategoryOverview categoryIndex="1" />,
-                },
-                {
-                  path: routes["Community Contributions"],
-                  element: <ProjectsCategoryOverview categoryIndex="2" />,
-                },
-                {
-                  path: "/projects/:idCategory/:idProject",
-                  // element: <ProjectDetail />,
-                  element: <ProjectsCategoryCommon />,
-                  children: [
-                    {
-                      path: "/projects/:idCategory/:idProject",
-                      element: <ProjectDetail />,
-                    },
-                  ],
-                },
-              ],
+              path: routes["Projects"],
+              element: <ProjectsCategoriesIndex />,
+            },
+            {
+              path: routes["Web Platforms & Applications"],
+              // element: <ProjectsCategoryOverview categoryIndex="0" />,
+            },
+            {
+              path: routes["Interface Design"],
+              // element: <ProjectsCategoryOverview categoryIndex="1" />,
+            },
+            {
+              path: routes["Community Contributions"],
+              // element: <ProjectsCategoryOverview categoryIndex="2" />,
+            },
+            {
+              path: "/projects/:idCategory/:idProject",
+              // element: <ProjectsCategoryCommon />,
+              element: <ProjectDetail />,
             },
           ],
         },

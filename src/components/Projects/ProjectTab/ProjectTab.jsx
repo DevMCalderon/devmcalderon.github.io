@@ -1,11 +1,9 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
-
-import TabCategoryContent from '@/components/Projects/TabCategoryContent/TabCategoryContent';
-
+import ProjectTabContent from './ProjectTabContent';
 
 // componente de pestañas (tabs)
-const ProjectTabs = ({ categories }) => {
+const ProjectTab = ({ categories }) => {
   const [ t ] = useTranslation("global");
   const [activeTab, setActiveTab] = useState(1);
   const indicatorRef = useRef(null);
@@ -61,8 +59,6 @@ const ProjectTabs = ({ categories }) => {
     updateIndicator(activeTab);
   });
   
-  
-  
   return(
     <div>
     
@@ -99,19 +95,16 @@ const ProjectTabs = ({ categories }) => {
       <div className='mt-8'>
       
         {categories.map((category, index) => {
-          // console.log(project)
           return (
-            
             // contenido de cada categoria de tabs
-            <TabCategoryContent
-              key={index} 
+            <ProjectTabContent
+              key={index}
               index={index}
               activeTab={activeTab}
               {...category}
             />
-            
-            )
-          })}
+          )
+        })}
         
       </div>
 
@@ -119,4 +112,4 @@ const ProjectTabs = ({ categories }) => {
   );
 }
 
-export default ProjectTabs;
+export default ProjectTab;

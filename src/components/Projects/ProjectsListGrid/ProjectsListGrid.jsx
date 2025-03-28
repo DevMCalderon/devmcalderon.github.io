@@ -1,17 +1,18 @@
-import React from 'react'
-
 import { routes } from '@/routes.js'
 import ProjectItemCard from '@/components/Projects/ProjectItemCard/ProjectItemCard'
 
-const ProjectsListGrid = ({ projects, category }) => {
+const ProjectsListGrid = ({ projects, category, maxProjectsToShow }) => {
+  
+  const displayedProjects = projects.slice(0, maxProjectsToShow);
   
   return (
-    <div className="grid grid-cols-1 gap-4 max-w-screen-lg mx-auto"> {/* grid */}
+    <div className="grid grid-cols-1 gap-4 max-w-screen-lg mx-auto"> 
     {/* listado de proyectos */}
-      {projects.map((project, index) => {
+      {displayedProjects.map((project, index) => {
         const link = `${routes[category]}/${index+1}`
+        
         return (
-            // tarjeta de proyecto
+            // card de cada proyecto individual
             <ProjectItemCard
               key={index}
               {...project}

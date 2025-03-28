@@ -12,7 +12,7 @@ const Banner = () => {
   const [ t ] = useTranslation("global");  
   
   const typeAnimationArray = [
-    t(`banner.typeAnimation_1`), 
+    t(`banner.typeAnimation_1`),
     t(`banner.typeAnimation_2`),
     t(`banner.typeAnimation_3`),
     t(`banner.typeAnimation_4`)

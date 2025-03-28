@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import ProjectTabs from "@/components/Projects/ProjectTabs/ProjectTabs";
 import CustomHeader from "@/components/UI/CustomHeader/CustomHeader";
+import ProjectTab from "@/components/Projects/ProjectTab/ProjectTab";
 import projectsJSON_en from "@/data/en/projects.json";
 import projectsJSON_es from "@/data/es/projects.json";
-import "@/components/Projects/Projects.css"
-
-// soon: category 'Research and Experimentation'
+import "./Projects.css"
 
 const ProjectsSection = () => {
   const [ t ] = useTranslation("global");
@@ -55,7 +53,7 @@ const ProjectsSection = () => {
           </p>
     
           {/* componente de tabs con categorias de proyectos */}
-          <ProjectTabs
+          <ProjectTab
             categories={categories}
           />
           
