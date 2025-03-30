@@ -12,7 +12,7 @@ const AboutMe = () => {
     <section className="bg_semitransparent bg-container_color2 bg-opacity-90 text-center md:text-start mt-0" id="aboutMe">
       
       {/* separador */}
-      <hr className="hr5 lg:max-w-screen-2xl mx-auto"/>
+      <hr className="hr5 text-border_color1 lg:max-w-screen-2xl mx-auto"/>
         
       {/* main content */}
       <div className="max-w-screen-2xl pt-0 pb-16 mx-auto">

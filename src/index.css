@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    @apply leading-relaxed;
+  }
+}
+
 @layer components {
   .button_transparent_rounded {
     @apply px-11 py-[1.1rem] shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2
@@ -73,10 +79,10 @@
   --neon_color3: rgb(0, 98, 255,0.5);
   --border_color1:#0062ff;
   --border_color2:rgba(0, 98, 255, 0.448); /* used in projectItems*/
-  --highlighted_text_color:#d8db8e;
+  --highlighted_text_color:#fcffab;
   --link_disabled_color:#ff8fff;
   --pink_color2:rgb(255, 186, 255);
-  --link_color:#6fa6ff;
+  --link_color:#9dc2ff;
   --link_color_hover:#faff5c;
   --dark_link_color:#0040a6;
   --dark_link_color_hover:#f6ff00;
@@ -310,11 +316,18 @@ p.danger {
 /* hr separator */
 .hr5 {
   border: 0;
-  border-top: medium double var(--border_color1);
   height: 1px;
+  border-top: medium double;
   overflow: visible;
   padding: 0;
-  /* color: #fff; */
+  text-align: center;
+}
+.hr1 {
+  border: 0;
+  height: 1px;
+  border-top: 0.13rem solid;
+  overflow: visible;
+  padding: 0;
   text-align: center;
 }
 
@@ -354,4 +367,14 @@ p.danger {
   100% {
     border-color: var(--border_color1); /* Vuelve al color original al final de la animación */
   }
+}
+
+/* testing */
+.xd {
+  background: linear-gradient(
+    rgb(27, 30, 68) -5.58%,
+    rgb(46, 38, 133) 100.91%
+  );
+  /* font-family: var(--normal-font-family); */
+  /* font-weight: 500; */
 }

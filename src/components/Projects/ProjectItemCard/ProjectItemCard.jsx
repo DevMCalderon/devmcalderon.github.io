@@ -1,6 +1,6 @@
 import Carousel from 'react-multi-carousel';
-import { motion } from "framer-motion"
 import 'react-multi-carousel/lib/styles.css';
+import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 
 import { routes } from '@/routes';
@@ -83,7 +83,7 @@ const ProjectItemCard = ({ projectData }) => {
                   imgPath = { image.path }
                   title = { title }
                   key={index}
-                  classes="rounded-xl overflow-hidden border-[0.15rem] border-solid border-slate-600 group-hover:border-slate-500 max-h-[10.2rem] w-full object-cover object-top"
+                  classes="rounded-xl overflow-hidden border-[0.15rem] border-solid border-slate-600 max-h-[10.2rem] w-full object-cover object-top"
                 />
               ))}
             </Carousel>

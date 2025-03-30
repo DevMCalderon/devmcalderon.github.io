@@ -39,6 +39,7 @@ export default {
         'dark_link_color_hover': 'var(--dark_link_color_hover)',
         'dark_link_color_hover2': 'var(--dark_link_color_hover2)',
         'link_disabled_color': 'var(--link_disabled_color)',
+        'link_disabled_color2': '#cdfbff',
         'pink_color2': 'var(--pink_color2)',
         'container_color1': '#131636',
         'container_color2': 'rgb(15, 18, 56)',
@@ -54,7 +55,7 @@ export default {
         
       },
       fonts: {
-        'normal-font-family1': 'var(--normal-font-family)',
+        'normal-font-family': 'var(--normal-font-family)',
         'styled-font-family1': 'var(--styled-font-family1)',
       },
       screens: {

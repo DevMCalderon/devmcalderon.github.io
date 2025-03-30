@@ -16,6 +16,7 @@ const ProjectsListGrid = ({ projectsData, maxProjectsToShow }) => {
             key = { index }
             projectData = {{ ...project, categoryName }}
           />
+          //  border-slate-600 group-hover:border-slate-500
         )
       })}
     </div>
