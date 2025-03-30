@@ -10,17 +10,23 @@ function Home() {
   
   return (
     <>
-      <div className="app-container bgBanner1">
-      <NavBar />
-        <main>
-          <Banner />
-          <Skills />
+      <div className="bgBanner1">
+      	<NavBar />
+				
+        <main className='app-container'>
+					<div className='backdrop-blur-sm'>
+						<Banner />
+						<Skills />
+					</div>
+					
           <ProjectsSection />
-          <AboutMe />
-        </main>
-        <Contact />
-      </div>
-      <Footer />
+					<AboutMe />
+				</main>
+				
+				<Contact />
+			</div>
+      
+			<Footer />
     </>
   );
 }

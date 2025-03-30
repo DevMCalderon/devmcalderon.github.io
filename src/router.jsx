@@ -1,34 +1,30 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
+import { Suspense, lazy} from "react";
 
-import { routes } from "./routes";
-import NotFound from "./views/NotFound/NotFound";
-import ScrollRestoration from "@/components/ScrollRestoration/ScrollRestoration";
-// import { ScrollRestoration } from "react-router-dom";
+import { routes } from "@/routes";
+import NotFound from "@/views/NotFound/NotFound";
+import ArticleLayout from "@/layouts/ArticleLayout";
+import AllProjectCategoryList from "@/views/Projects/AllProjectCategoryList";
+import ProjectDetail from "@/views/Projects/ProjectDetail";
+import Loading from "@/views/Loading/Loading";
+import Home from "@/views/Pages/Home";
 
-import App from "./App";
-import ArticleLayout from "./layouts/ArticleLayout";
-import ProjectsCategoryOverview from "./views/Projects/ProjectsCategoryOverview";
-import AllProjectCategoryList from "./views/Projects/AllProjectCategoryList";
-import ProjectDetail from "./views/Projects/ProjectDetail";
-import ProjectsCategoryCommon from "./components/Projects/ProjectsCategoryCommon";
-
-const RootLayout = () => (
-  <>
-    <ScrollRestoration />
-    <Outlet />
-  </>
-);
+const App = lazy(() => import('./App'));
 
 const router = createBrowserRouter(
   [
     {
       path: "/",
-      element: <RootLayout />,
+      element: (
+        <Suspense fallback={<Loading />}>
+          <App />
+        </Suspense>
+      ),
       children: [
         {
           path: "/",
           index: true,
-          element: <App />,
+          element: <Home />,
         },
         {
           element: <ArticleLayout />,
@@ -64,7 +60,6 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: "/" } // Cambia el basename si es necesario.
 );
 
 export default router;

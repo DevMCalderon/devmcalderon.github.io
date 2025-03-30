@@ -11,46 +11,46 @@ const variants = {
 }
 
 // este componente se encarga de renderizar el contenido de cada categoría de las tabs cuando se hace click en una de ellas
-const ProjectTabContent = (props) => {
+const ProjectTabContent = ({activeTab, index, categoryData}) => {
   const [ t ] = useTranslation("global");
   let navigate = useNavigate();
+  const maxProjectsToShow = 6;
 
+  const { category: categoryName, description, projects } = categoryData;
+  
   const toggleDisplayMore = (e) => {
     e.preventDefault();
-    // console.log(props.category);
-    
-    const newURL = routes[props.category];
-
-    navigate(newURL); // Perform navigation immediately
+    // console.log(categoryName);
+    navigate(routes[categoryName]); // Perform navigation immediately
   };
 
   return (
     <>
-    
       { (
         <motion.div
-          animate={props.activeTab === props.index+1 ? "open" : "closed"}
+          animate={activeTab === index+1 ? "open" : "closed"}
           variants={variants} transition={{ duration: 0.8 }}
-          id={`panel-${props.index+1}`}
-          className={`${props.activeTab === props.index+1 ? '' : 'hidden'} `}
+          id={`panel-${index+1}`}
+          className={`
+            lg:max-w-screen-lg mx-auto
+            ${activeTab === index+1 ? '' : 'hidden'} `
+          }
         >
-          {/* texto de la categoria */}
-          <h3 className="pb-[15px] lg:pb-[20px] text-highlighted_text_color">{props.category}</h3>
-          <p className="text-center m-auto pb-[25px] w-[85%] md:w-[90%] lg:pb-[35px] lg:w-[70%]">
-            {props.description}
-          </p>
+          {/* categoryname */}
+          <h3 className="pb-4 lg:pb-5 text-highlighted_text_color">{categoryName}</h3>
           
-          {/* listado de proyectos */}
+          {/* description */}
+          <p className="text-center m-auto pb-6 text-start lg:pb-9">{description}</p>
+          
+          {/* project list */}
           <ProjectsListGrid
-            projects={props.projects}
-            category={props.category}
-            maxProjectsToShow={6}
+            projectsData = {{ projects, categoryName }}
+            maxProjectsToShow = { maxProjectsToShow }
           />
           
-          
-          {/* Botón mostrar más */}
+          {/* display more button */}
           <div>
-            {props.projects && props.projects.length > 6 && (
+            {projects && projects.length > maxProjectsToShow && (
               <button
                 className="button_transparent_rounded shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2 flex m-auto
                   justify-center mt-6 w-fit border-[1.5px] border-solid border-border_color1 bg-[black] bg-opacity-40"

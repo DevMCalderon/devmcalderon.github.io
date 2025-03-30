@@ -10,11 +10,11 @@ const NotFound = () => {
     <>
       <div className="simple_background flex h-screen justify-center items-center text-[white]">
         <div>
-          <h2 className='text-link_disabled_color'>
+          <h2 className='text-link_disabled_color text-5xl mb-5'>
             {t('default.not_found_title')}
           </h2>
    
-          <img src={NotFoundTranparentImg} alt='Not_Found_Image' className="w-[450px] mx-auto" />
+          <img src={NotFoundTranparentImg} alt='Not_Found_Image' className="w-[450px] mx-auto mb-6" />
      
           <p className='text-center text-[#ddd]'>{t('default.not_found_message')}{'.'}</p>
   

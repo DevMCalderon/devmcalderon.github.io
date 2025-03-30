@@ -24,8 +24,8 @@ const BreadCrumb = ({ classes }) => {
     // Construye la URL actual
     currentUrl += `/${crumb}`;
     
-    console.log(crumb)  
-    console.log('url from slug', getURLFromSlug(crumb))
+    // console.log(crumb)  
+    // console.log('url from slug', getURLFromSlug(crumb))
   
     // Agrega el elemento al breadcrumb
     breadcrumbItems.push({ to: currentUrl, label: crumb });

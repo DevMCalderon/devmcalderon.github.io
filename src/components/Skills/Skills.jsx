@@ -27,52 +27,50 @@ const Skills = () => {
   
   return(
     <>
-      <section className='degradado3 pb-20' id='skills'>
-          <div className='skill'>
-            <div className=' mx-auto px-3 md:px-14 lg:px-14'>
-              <div 
-                className='containerShadow1 shadow-2xl pt-12 pb-16 px-[28px] md:py-[50px] md:px-[40px] lg:px-24
-                  rounded-[55px] text-center mt-[-60px] bg-container_color2 bg-opacity-[85%]'
+      <section className='pb-20 bg-[linear-gradient(180deg,rgba(36,31,128,0)_90%,rgba(51,29,140,0.8)_98%,rgb(51,29,140)_100%)]' id='skills'>
+        <div 
+          className='containerShadow1 shadow-2xl pt-12 pb-16 px-[28px] md:py-[50px] md:px-[40px] lg:px-24
+            rounded-[55px] text-center mt-[-60px] bg-container_color2 bg-opacity-[85%] lg:max-w-screen-3xl mx-auto'
+        >
+        
+          <CustomHeader
+            align='center'
+            emoji='📚'
+            text={t(`skills.skills`)}
+          />
+          {/* description */}
+          <p className='text-left w-[95%] text-mdsm2 mx-auto mt-[14px] mb-6 md:mb-8 lg:mb-[70px]'
+          >
+            {skills_description}
+          </p>
+          
+          <div className='w-full flex flex-wrap gap-x- md:gap-4 gap-y-5 md:gap-y-7 justify-center mx-auto pb-14 lg:mb-0'>
+            {imgSkillsJson.map((item, index) => (
+              
+              <div
+                className='flex flex-col md:flex-row items-center text-[1.2rem] basis-[calc(100%/4)] md:basis-[calc(100%/5)]
+                lg:basis-[calc(100%/08)]'
+                key={index}
               >
-              
-                <CustomHeader
-                  align='center'
-                  emoji='📚'
-                  text={t(`skills.skills`)}
+                <img
+                  className='rounded-lg w-8 h-8 md:w-9 mx-auto md:mx-0 md:mr-3'
+                  src={item.img_path}
+                  alt={item.label}
                 />
-                {/* description */}
-                <p className='text-left w-[95%] text-mdsm2 mx-auto mt-[14px] mb-6 md:mb-8 lg:mb-[70px]'
-                >
-                  {skills_description}
-                </p>
-                
-                <div className='w-full flex flex-wrap gap-x- md:gap-4 gap-y-5 md:gap-y-7 justify-center mx-auto pb-14 lg:mb-0'>
-                  {imgSkillsJson.map((item, index) => (
-                    
-                    <div
-                      className='flex flex-col md:flex-row items-center text-[1.2rem] basis-[calc(100%/4)] md:basis-[calc(100%/5)] lg:basis-[calc(100%/08)]'
-                      key={index}
-                    >
-                      <img
-                        className='rounded-lg w-8 h-8 md:w-9 mx-auto md:mx-0 md:mr-3'
-                        src={item.img_path}
-                        alt={item.label}
-                        />
-                      <h5 className='text-base mt-1.5 md:mt-0'>
-                        {/* extrae la clave dentro de t('...') y la traduce */}
-                        {item.label.startsWith("t(")
-                          ? t(item.label.slice(3, -2)) //extrae la clave dentro de t('...')
-                          : item.label
-                        }
-                      </h5>
-                    </div>
-                    
-                  ))}
-                </div>
-              
+                  
+                <h5 className='text-base mt-1.5 md:mt-0'>
+                  {/* extrae la clave dentro de t('...') y la traduce */}
+                  {item.label.startsWith("t(")
+                    ? t(item.label.slice(3, -2)) //extrae la clave dentro de t('...')
+                    : item.label
+                  }
+                </h5>
               </div>
-            </div>
+              
+            ))}
           </div>
+        
+        </div>
       </section>
 
     </>

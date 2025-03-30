@@ -1,8 +1,8 @@
 {
   "default":{
     "loading":"Cargando",
-    "not_found_title":"No encontrado",
-    "not_found_message":"Esta página no se puedo encontrar",
+    "not_found_title":"Código",
+    "not_found_message":"Esta página no existe",
     "not_found_button":"Volver a la página de inicio",
     "copy": "COPIAR"
   },
@@ -67,6 +67,7 @@
   },
   "projects": {
     "title": "Proyectos Destacados",
+    "description": "Me especializo en desarrollo web, creando desde interfaces atractivas hasta plataformas funcionales y expresivas. Mi enfoque es la excelencia, asegurando siempre resultados de alta calidad.",
     "select_category": "Selecciona una categoría para ver los proyectos que he desarrollado en esa área",
     "project_categories": "Categorias de Proyectos"
   },

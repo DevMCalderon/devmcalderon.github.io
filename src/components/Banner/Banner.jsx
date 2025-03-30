@@ -9,7 +9,7 @@ import arrowDown from "@/assets/img/icons/arrow-down.svg";
 import headerImg from "@/assets/img/pfp/difuminado5.png";
 
 const Banner = () => {
-  const [ t ] = useTranslation("global");  
+  const [ t ] = useTranslation("global");
   
   const typeAnimationArray = [
     t(`banner.typeAnimation_1`),
@@ -30,10 +30,14 @@ const Banner = () => {
 
   return(
     <>
-      <section className="banner max-w-[90%] lg:w-full lg:max-w-screen-xl mx-auto text-center md:text-start mt-0 pb-[160px]" id="home">
+      <section
+        className="banner text-center md:text-start mt-0 pb-[160px]
+          bg-[linear-gradient(0deg,rgba(70,111,149,0)_0%,rgba(39,32,94,0.28)_20%,rgba(50,27,124,0.28)_55%,rgba(49,25,122,0.5)_95%)]"
+        id="home"
+      >
         
-        {/* slogan */}
-        <div className="h-screen flex items-center mb-10">
+        {/* slogan section */}
+        <section className="h-screen flex mx-auto items-center mb-10 lg:max-w-screen-xl">
           <h2 className={`paragraphStyles2 text-5xl lg:text-[3.7rem] lg:w-[90%] mx-auto`}>
             {'"'}
             {t(`banner.slogan1`)}
@@ -46,17 +50,21 @@ const Banner = () => {
             </strong>
             {'."'}
           </h2>
-        </div>
+        </section>
           
-          
-        {/* banner main info */}
+        {/* arrow down */}
         <div className="flex justify-center">
           <a href="/#banner">
-            <img src={arrowDown} className="animatedImg w-10 mt-[-10vw] hover:w-12 transition-all duration-150" alt="arrow-down" />
+            <img
+              src={arrowDown}
+              className="animatedImg w-10 mt-[-10vw] hover:w-12 transition-all duration-150"
+              alt="arrow-down"
+            />
           </a>
         </div>
           
-        <div className="container mx-auto flex" id="banner">
+        {/* personal info section */}
+        <section className="flex lg:max-w-screen-2xl mx-auto" id="banner">
           <div className="items-center flex flex-wrap">
             <div className="w-full lg:w-7/12">
                 
@@ -70,9 +78,9 @@ const Banner = () => {
                 </span>
               </span>
               
-              {/* welcome box */}
+              {/* Name & Animated text */}
               <h1 className="text-4xl md:text-5xl lg:text-5xl mb-3">
-              <span className="textShadow">{t(`banner.Fullname`)}</span>
+                <span className="textShadow">{t(`banner.Fullname`)}</span>
                 <div className="h-16 lg:h-12 mt-2">
                   <span className="wrap text-highlighted_text_color" style={{ fontSize: `${fontSize}px` }}>
                     { <TypeAnimation {...typeAnimationArray}/>}
@@ -158,7 +166,7 @@ const Banner = () => {
             </div>
             
           </div>
-        </div>
+        </section>
       </section>
     </>
   );

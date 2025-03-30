@@ -1,63 +1,37 @@
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import CustomHeader from "@/components/UI/CustomHeader/CustomHeader";
 import ProjectTab from "@/components/Projects/ProjectTab/ProjectTab";
-import projectsJSON_en from "@/data/en/projects.json";
-import projectsJSON_es from "@/data/es/projects.json";
 import "./Projects.css"
 
 const ProjectsSection = () => {
   const [ t ] = useTranslation("global");
   
-  const [description, setDescription] = useState("");
-  const [categories, setCategories] = useState([]); 
-  
-  const storedLanguage = localStorage.getItem('language');
-  
-  // establece el contenido de la descripcion y las categorias segun el idioma
-  useEffect(() => {
-    if(storedLanguage === 'es') {
-      setDescription(projectsJSON_es.description)
-      setCategories(projectsJSON_es.categories)
-    } else {
-      setDescription(projectsJSON_en.description)
-      setCategories(projectsJSON_en.categories)
-    }
-  },[storedLanguage])
-  
   return (
     <>
-      <section 
-        className="project bg-container_color2 bg-opacity-90 px-4 md:px-14 pt-12 pb-16 lg:pb-16"
+      <section
+        className="project bg-container_color2 bg-opacity-90 px-4 md:px-14 pt-12 pb-16 lg:pb-16 min-w-screen"
         id="projects"
       >
-        <div className="container mx-auto w-full lg:max-w-screen-xl">
-        
-          {/* titulo */}
-          <CustomHeader
-            align='center'
-            emoji='🗂️'
-            text={t(`projects.title`)}
-          />
+          <div className="lg:max-w-screen-lg mx-auto">
           
-          {/* descripcion */}
-          <p className="mt-[14px] mx-auto mb-[35px] text-center w-[90%] md:w-5/6 lg:mx-30"
-          >
-            {description}
-          </p>
-          
-          {/* texto selecciona una categoria */}
-          <p className="mt-[55px] mx-auto mb-[30px] text-center w-[90%] font-bold text-pink_color2 lg:w-[70%]">
-            {t('projects.select_category')}:
-          </p>
-    
-          {/* componente de tabs con categorias de proyectos */}
-          <ProjectTab
-            categories={categories}
-          />
-          
+            {/* titulo */}
+            <CustomHeader
+              align='center'
+              emoji='🗂️'
+              text={t(`projects.title`)}
+            />
+            
+            {/* descripcion */}
+            <p className="mt-[14px] mb-[35px] text-center lg:mx-30"
+            >
+              {t(`projects.description`)}
+            </p>
         </div>
+        
+          {/* componente de tabs con categorias de proyectos */}
+          <ProjectTab />
+          
       </section>
     </>
   );

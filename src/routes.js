@@ -49,20 +49,20 @@ export const urlRoutes = [
 export const routes = {
   'Home': '/',
   'Projects': '/projects',
-    'Web Platforms & Applications': '/projects/web-apps',
-    'Apps y Plataformas Web': '/projects/web-apps',
-    'Interface Design': '/projects/designs',
-    'Diseño de Interfaces': '/projects/designs',
-    'Community Contributions': '/projects/community',
-    'Contribuciones a Comunidad': '/projects/community',
+    'Web Platforms & Applications': '/projects/apps-y-plataformas-web',
+    'Apps y Plataformas Web': '/projects/apps-y-plataformas-web',
+    'Community Contributions': '/projects/contribuciones-a-comunidad',
+    'Contribuciones a Comunidad': '/projects/contribuciones-a-comunidad',
+    'Interface Design': '/projects/interfaces-y-prototipos',
+    'Diseño de Interfaces': '/projects/interfaces-y-prototipos'
 };
-export const routesES = {
-  'Home': '/',
-  'Projects': '/projects',
-    'Apps y Plataformas Web': '/projects/web-apps',
-    'Diseño de Interfaces': '/projects/designs',
-    'Contribuciones a Comunidad': '/projects/community',
-};
+// export const routesES = {
+//   'Home': '/',
+//   'Projects': '/projects',
+//     'Apps y Plataformas Web': '/projects/apps-y-plataformas-web',
+//     'Diseño de Interfaces': '/projects/designs',
+//     'Contribuciones a Comunidad': '/projects/community',
+// };
 
 export const NavbarRoutesHome = [
   {URL: '/#top', name: 'Home'},

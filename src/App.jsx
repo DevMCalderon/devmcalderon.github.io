@@ -1,15 +1,18 @@
-// import Home from "./views/pages/Home";
-import {Suspense, lazy} from 'react';
-import Loading from './views/Loading/Loading';
+import { Suspense } from 'react';
+import Loading from '@/views/Loading/Loading';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
+import { PortfolioProvider } from './context/PortfolioContext';
 
-const Home = lazy(() => import('./views/Pages/Home'));
 
 function App() {
   return (
     <>
-    <Suspense fallback={<Loading/>}>
-      <Home />
-    </Suspense>
+      <Suspense fallback={<Loading/>}>
+        <ScrollRestoration />
+        <PortfolioProvider>
+          <Outlet />
+        </PortfolioProvider>
+      </Suspense>
     </>
   );
 }

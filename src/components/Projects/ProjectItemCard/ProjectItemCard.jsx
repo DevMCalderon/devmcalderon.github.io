@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import 'react-multi-carousel/lib/styles.css';
 import { Link } from 'react-router-dom'
 
+import { routes } from '@/routes';
 import ProjectImage from "@/components/Projects/ProjectImage/ProjectImage";
 import imgSkillsJson from '@/data/skills/skills.json';
 
@@ -30,7 +31,10 @@ const responsive = {
   }
 };
 
-const ProjectItemCard = ( {title, technologies_used, disciplines_covered, short_description, images, link} ) => {
+const ProjectItemCard = ({ projectData }) => {
+  const { title, technologies_used, short_description, images, slug, categoryName } = projectData;
+  
+  const linkUrl = `${routes[categoryName]}/${slug}`
   
   return (
     <motion.div
@@ -38,7 +42,7 @@ const ProjectItemCard = ( {title, technologies_used, disciplines_covered, short_
       transition={{duration: 0.5}}
     >
     
-      <Link to={link} className="projectItemCard rounded-3xl p-6 flex flex-wrap md:flex-nowrap justify-center group">
+      <Link to={linkUrl} className="projectItemCard rounded-3xl p-6 flex flex-wrap md:flex-nowrap justify-center group">
         {/* image carousel */}
         <div className='w-full md:w-3/12 lg:w-4/12 group'>
           {images && images.length > 0 && (

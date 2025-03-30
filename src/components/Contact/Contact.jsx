@@ -65,7 +65,7 @@ const Contact = () => {
         className='contact degradado4 px-6 md:px-6 lg:px-6 xl:px-28 pt-[50px] pb-[150px]'
         id="contact"
       >
-        <div className='container mx-auto w-full h-full'>
+        <div className='lg:max-w-screen-2xl mx-auto w-full h-full'>
           <div className='flex flex-wrap items-center'>
             
             {/* contact section image */}

@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { ArticleProjectsContext } from "../../contexts/ArticleProjectsContext";
+import { PortfolioContext } from "../../context/PortfolioContext";
 import ProjectsCategoryCommon from "../../components/Projects/ProjectsCategoryCommon";
 
 const ProjectsCategoryOverview = (props) => {
-  const { projectsJSON, URL } = useContext(ArticleProjectsContext);
+  const { projectsJSON, URL } = useContext(PortfolioContext);
   const { categories } = projectsJSON;
   const Selectedcategory = categories[props.categoryIndex];
   const { category, description, projects } = Selectedcategory;

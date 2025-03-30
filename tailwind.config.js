@@ -72,10 +72,20 @@ export default {
   
         'xl': '1280px',
         // => @media (min-width: 1280px) { ... }
-  
+        
         '2xl': '1536px',
         // => @media (min-width: 1536px) { ... }
-      },
+  
+        
+        '3xl': '1800px',
+        // => @media (min-width: 1800px) { ... }
+
+        '4xl': '2100px',
+        // => @media (min-width: 2100px) { ... }
+
+        '5xl': '2560px', //2k
+        // => @media (min-width: 2560px) { ... }
+            },
     },
   },
   plugins: [],

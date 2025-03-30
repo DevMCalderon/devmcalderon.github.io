@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from "react-router-dom";
 
-import { ArticleProjectsContext } from '@/contexts/ArticleProjectsContext'
+import { PortfolioContext } from '@/context/PortfolioContext'
 import projectsJSON from '@/data/es/projects'
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
@@ -29,9 +29,9 @@ const ArticleLayout = () => {
           
           <BreadCrumb />
 
-          <ArticleProjectsContext.Provider value={{ projectsJSON, URL }}>
+          <PortfolioContext.Provider value={{ projectsJSON, URL }}>
             <Outlet />
-          </ArticleProjectsContext.Provider>
+          </PortfolioContext.Provider>
           
           {/* floating button to return to top */}
           <ScrollToTop />
