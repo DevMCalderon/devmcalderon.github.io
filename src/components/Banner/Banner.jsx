@@ -57,15 +57,15 @@ const Banner = () => {
           <a href="/#banner">
             <img
               src={arrowDown}
-              className="animatedImg w-10 mt-[-10vw] hover:w-12 transition-all duration-150"
+              className="animatedImg w-10 mt-[-34vw] md:mt-[-18vw] lg:mt-[-10vw] hover:w-12 transition-all duration-150"
               alt="arrow-down"
             />
           </a>
         </div>
           
         {/* personal info section */}
-        <section className="flex lg:max-w-screen-2xl mx-auto" id="banner">
-          <div className="items-center flex flex-wrap">
+        <section className="flex max-w-screen-2xl mx-auto" id="banner">
+          <div className="items-center flex flex-wrap mx-5 md:mx-16">
             <div className="w-full lg:w-7/12">
                 
               <span className="tagline text-link_disabled_color text-xl">
@@ -106,13 +106,12 @@ const Banner = () => {
               </p>
                 
               {/* list */}
-              <ul className="ml-6 lista-flecha">
+              <ul className="ml-6 lista-flecha text-start">
                 <li className="paragraphStyles bannerList">
                     {t(`banner.description_enfocado_en`)}
                     <strong className="text-highlighted_text_color">{t(`banner.description_enfocado_en2`)}</strong>
                     {t(`banner.p7`)}
                 </li>
-
                 
                 <li className="paragraphStyles bannerList">
                   <span>
@@ -125,13 +124,12 @@ const Banner = () => {
                 <li className="paragraphStyles bannerList">
                   {t(`banner.description_mision`)}
                 </li>
-                  
               </ul>
                 
 
               {/* cv */}
-              <div className="flex mb-6 pt-[0.8rem] w-full">
-                <p>
+              <div className="flex mb-6 pt-[0.8rem] flex-wrap">
+                <p className="mb-2 md:mb-0">
                   {'📂 '}
                   {t(`banner.cv`)}
                 </p>
