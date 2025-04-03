@@ -1,14 +1,25 @@
 import { createContext, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
-const PortfolioContext = createContext("");
+import projectsJSON_es from '@/data/es/projects'
+
+const PortfolioContext = createContext(null);
 
 const PortfolioProvider = ({ children }) => {
-  const [activeProject, setActiveProject] = useState(null);
-  const [projectsData, setProjectsData] = useState([]);
-
+  const [projectData, setProjectData] = useState({
+    category: null,
+    project: null,
+  });
+  
+  const location = useLocation();
+  // currentURL
+  const currentURL = location.pathname;
+  
+  const projectsJSON = projectsJSON_es;
+  
   return (
     <PortfolioContext.Provider
-      value={{ activeProject, projectsData, setProjectsData }}
+      value={{ projectData, setProjectData, projectsJSON, currentURL }}
     >
       {children}
     </PortfolioContext.Provider>

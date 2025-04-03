@@ -33,46 +33,49 @@ const ImageCarousel = ({ imageSrcPaths, imageAltTexts, containerClass, imageClas
     <>
       {/* image carousel */}
       {imageSrcPaths && imageSrcPaths.length > 0 && (
-        <Carousel
-          arrows={false}
-          autoPlay={true}
-          autoPlaySpeed={5500}
-          centerMode={false}
-          className="owl-carousel owl-theme skill-slider pb-6 lg:mb-0 group"
-          dotListClass=""
-          draggable={true}
-          focusOnSelect={false}
-          itemClass=""
-          infinite={true}
-          keyBoardControl={true}
-          minimumTouchDrag={80}
-          pauseOnHover={false}
-          renderArrowsWhenDisabled={false}
-          renderButtonGroupOutside={false}
-          renderDotsOutside={false}
-          responsive={responsive}
-          rewind={false}
-          rtl={false}
-          shouldResetAutoplay
-          showDots={true}
-          sliderClass=''
-          slidesToSlide={1}
-          swipeable={true}
-          ssr={true} // means to render carousel on server-side.
-          // customTransition="all"
-          // transitionDuration={10}
-          containerClass={containerClass}
-        >
-          {/* display project images */}
-          {imageSrcPaths.map((image, index) => (
-            <ProjectImage
-              imgPath = { image.path }
-              title = { imageAltTexts }
-              key={index}
-              classes={`${imageClass} rounded-xl overflow-hidden border-[0.2rem] border-solid object-cover object-top`}
-            />
-          ))}
-        </Carousel>
+        <div className={``}>
+          <Carousel
+            arrows={false}
+            autoPlay={true}
+            autoPlaySpeed={5500}
+            centerMode={false}
+            //  lg:mb-0
+            className={`${containerClass} owl-carousel owl-theme skill-slider pb-6 group`}
+            dotListClass=""
+            draggable={true}
+            focusOnSelect={false}
+            itemClass=""
+            infinite={true}
+            keyBoardControl={true}
+            minimumTouchDrag={80}
+            pauseOnHover={false}
+            renderArrowsWhenDisabled={false}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            responsive={responsive}
+            rewind={false}
+            rtl={false}
+            shouldResetAutoplay
+            showDots={true}
+            sliderClass=''
+            slidesToSlide={1}
+            swipeable={true}
+            ssr={true} // means to render carousel on server-side.
+            // customTransition="all"
+            // transitionDuration={10}
+            // containerClass={`${containerClass}`}
+          >
+            {/* display project images */}
+            {imageSrcPaths.map((image, index) => (
+              <ProjectImage
+                imgPath = { image.path }
+                title = { imageAltTexts }
+                key={index}
+                classes={`${imageClass} overflow-hidden border-[0.2rem] border-solid object-cover object-top`}
+              />
+            ))}
+          </Carousel>
+        </div>
       )}
     </>
   );

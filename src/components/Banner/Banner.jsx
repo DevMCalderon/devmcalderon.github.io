@@ -26,7 +26,6 @@ const Banner = () => {
     const newFontSize = Math.min(35, 700 / text.length); // h,w; Ajusta los valores mínimo y máximo según tus necesidades
     setFontSize(newFontSize);
   }, [text]);
-  
 
   return(
     <>

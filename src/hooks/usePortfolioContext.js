@@ -1,8 +1,9 @@
 import { useContext } from "react";
+
 import { PortfolioContext } from "@/context/PortfolioContext";
 
-const useControl = () => {
+const usePortfolioContext = () => {
   return useContext(PortfolioContext);
 };
 
-export default useControl;
+export default usePortfolioContext;

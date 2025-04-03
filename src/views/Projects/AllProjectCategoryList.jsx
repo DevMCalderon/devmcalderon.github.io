@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 
 import { routes } from "@/routes";
-import { PortfolioContext } from "@/context/PortfolioContext";
+import usePortfolioContext from "@/hooks/usePortfolioContext";
 
 const AllProjectCategoryList = () => {
   const [ t ] = useTranslation("global");
 
-  const { categories } = useContext(PortfolioContext).projectsJSON;
+  const { categories } = usePortfolioContext().projectsJSON;
   return (
     <>
       { categories &&

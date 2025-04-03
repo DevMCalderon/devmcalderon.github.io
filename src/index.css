@@ -370,12 +370,5 @@ p.danger {
 }
 
 /* testing */
-.xd {
-  background: linear-gradient(
-    rgb(27, 30, 68) -5.58%,
-    rgb(46, 38, 133) 100.91%
-  );
-  /* font-family: var(--normal-font-family); */
-  /* font-weight: 500; */
-}
+
 

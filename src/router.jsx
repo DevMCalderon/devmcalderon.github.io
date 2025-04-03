@@ -8,6 +8,8 @@ import AllProjectCategoryList from "@/views/Projects/AllProjectCategoryList";
 import ProjectDetail from "@/views/Projects/ProjectDetail";
 import Loading from "@/views/Loading/Loading";
 import Home from "@/views/Pages/Home";
+import Veterinary from "./views/Projects/Articles/Veterinary";
+import ArticleEmptyView from "./views/Projects/Articles/ArticleEmptyView";
 
 const App = lazy(() => import('./App'));
 
@@ -50,6 +52,16 @@ const router = createBrowserRouter(
               path: "/projects/:idCategory/:idProject",
               // element: <ProjectsCategoryCommon />,
               element: <ProjectDetail />,
+              children: [
+                {
+                  path: "vetcore-pro",
+                  element: <Veterinary />,
+                },
+                {
+                  index: true,
+                  element: <ArticleEmptyView />,
+                }
+              ]
             },
           ],
         },

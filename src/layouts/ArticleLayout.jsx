@@ -1,21 +1,13 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
-import { PortfolioContext } from '@/context/PortfolioContext'
-import projectsJSON from '@/data/es/projects'
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 import BreadCrumb from "@/components/Breadcrumb/Breadcrumb";
 import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
 
 const ArticleLayout = () => {
-  const location = useLocation();
-  const URL = location.pathname; // Obtén la URL actual
-
-  // console.log("provider", URL, projectsJSON);
-
   return(
     <>
-      
       {/* auxiliary container to return to top */}
       <div className="app-container bg-container_color1" id="top">
         {/* header */}
@@ -29,9 +21,7 @@ const ArticleLayout = () => {
           
           <BreadCrumb />
 
-          <PortfolioContext.Provider value={{ projectsJSON, URL }}>
-            <Outlet />
-          </PortfolioContext.Provider>
+          <Outlet />
           
           {/* floating button to return to top */}
           <ScrollToTop />
