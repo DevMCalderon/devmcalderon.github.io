@@ -56,6 +56,8 @@ export const routes = {
     'Interface Design': '/projects/interfaces-y-prototipos',
     'Diseño de Interfaces': '/projects/interfaces-y-prototipos'
 };
+
+
 // export const routesES = {
 //   'Home': '/',
 //   'Projects': '/projects',
@@ -63,6 +65,11 @@ export const routes = {
 //     'Diseño de Interfaces': '/projects/designs',
 //     'Contribuciones a Comunidad': '/projects/community',
 // };
+
+export const articleSlugMap = {
+  'veterinary': 'vetcore-pro',
+  'coffeeShop': 'smartorder',
+}
 
 export const NavbarRoutesHome = [
   {URL: '/#top', name: 'Home'},

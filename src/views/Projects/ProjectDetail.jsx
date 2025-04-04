@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, Outlet, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
-import { getNameByURL, getParentURLByCurrentURL } from '../../routes';
 import usePortfolioContext from "@/hooks/usePortfolioContext";
-import ProjectImage from "@/components/Projects/ProjectImage/ProjectImage";
 import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
 
 const ProjectDetail= () => {
@@ -40,6 +38,7 @@ const ProjectDetail= () => {
     } else {
       navigate("/not-found");
     }
+    
     
   }, [idCategory, idProject]);
   
@@ -144,8 +143,6 @@ const ProjectDetail= () => {
           />
           
           <h2 className="text-4xl text-white mb-5">{t(`projectDetail.subtitle`)+':'}</h2>
-          
-          <Link to="vetcore-pro">Visión general</Link>
           
           <Outlet />
           
