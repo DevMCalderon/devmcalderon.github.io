@@ -69,7 +69,7 @@ const ImageCarousel = ({ imageSrcPaths, imageAltTexts, containerClass, imageClas
             {imageSrcPaths.map((image, index) => (
               <ProjectImage
                 imgPath = { image.path }
-                title = { imageAltTexts }
+                title = {`${imageAltTexts}-${index}`}
                 key={index}
                 classes={`${imageClass} overflow-hidden border-[0.2rem] border-solid object-cover object-top`}
               />

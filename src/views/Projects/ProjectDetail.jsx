@@ -139,7 +139,7 @@ const ProjectDetail= () => {
             containerClass="max-w-screen-2xl mx-auto rounded-3xl mb-9"
             imageClass="border-indigo-700 group-hover:border-indigo-400 rounded-3xl"
             imageSrcPaths={ projectData.project.images }
-            imageAltTexts={ `carousel-img-${projectData.project.title}` }
+            imageAltTexts={ `carousel-img-${projectData.project.slug}` }
           />
           
           <h2 className="text-4xl text-white mb-5">{t(`projectDetail.subtitle`)+':'}</h2>
