@@ -19,7 +19,7 @@ const Veterinary = () => {
   
         {/* <ProjectImage
           imgPath = { data.project.imgPath }
-          title = { data.project.title }
+          altText = { data.project.slug }
           classes="rounded-[1rem] w-full h-auto mb-4"
         /> */}
 

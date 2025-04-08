@@ -1,10 +1,8 @@
-import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 
 import { routes } from '@/routes';
-import ProjectImage from "@/components/Projects/ProjectImage/ProjectImage";
 import imgSkillsJson from '@/data/skills/skills.json';
 import ImageCarousel from '../../ImageCarousel/ImageCarousel';
 
@@ -47,53 +45,12 @@ const ProjectItemCard = ({ projectData }) => {
         {/* image carousel */}
         <div className='w-full md:w-3/12 lg:w-4/12 group'>
           {images && images.length > 0 && (
-            <ImageCarousel 
-              containerClass="max-w-screen-2xl mx-auto rounded-3xl mb-9"
-              imageClass="border-indigo-700 group-hover:border-indigo-400 rounded-3xl"
+            <ImageCarousel
+              containerClass="rounded-3xl"
+              imageClass="rounded-xl border-[0.15rem] border-slate-600 max-h-[10.2rem] w-full"
               imageSrcPaths={ images }
               imageAltTexts={ `carousel-img-${title}` }
             />
-            // <Carousel
-            //   additionalTransfrom={0}
-            //   arrows={false}
-            //   autoPlay={true}
-            //   autoPlaySpeed={5500}
-            //   centerMode={false}
-            //   className="owl-carousel owl-theme skill-slider pb-10 mb-4 lg:mb-0"
-            //   dotListClass=""
-            //   draggable={true}
-            //   focusOnSelect={false}
-            //   itemClass=""
-            //   infinite={true}
-            //   keyBoardControl={true}
-            //   minimumTouchDrag={80}
-            //   pauseOnHover
-            //   renderArrowsWhenDisabled={false}
-            //   renderButtonGroupOutside={false}
-            //   renderDotsOutside={false}
-            //   responsive={responsive}
-            //   rewind={false}
-            //   rtl={false}
-            //   shouldResetAutoplay
-            //   showDots={true}
-            //   sliderClass=''
-            //   slidesToSlide={1}
-            //   swipeable={true}
-            //   ssr={true} // means to render carousel on server-side.
-            //   // customTransition="all"
-            //   // transitionDuration={10}
-            //   containerClass=""
-            // >
-            //   {/* display project images */}
-            //   {images.map((image, index) => (
-            //     <ProjectImage
-            //       imgPath = { image.path }
-            //       title = { title }
-            //       key={index}
-            //       classes="rounded-xl overflow-hidden border-[0.15rem] border-solid border-slate-600 max-h-[10.2rem] w-full object-cover object-top"
-            //     />
-            //   ))}
-            // </Carousel>
           )}
         </div>
         

@@ -137,7 +137,7 @@ const ProjectDetail= () => {
           {/* project image */}
           <ImageCarousel
             containerClass="max-w-screen-2xl mx-auto rounded-3xl mb-9"
-            imageClass="border-indigo-700 group-hover:border-indigo-400 rounded-3xl"
+            imageClass="border-indigo-700 group-hover:border-indigo-400 rounded-3xl border-[0.2rem]"
             imageSrcPaths={ projectData.project.images }
             imageAltTexts={ `carousel-img-${projectData.project.slug}` }
           />

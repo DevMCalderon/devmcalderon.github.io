@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import notFoundImage_en from '@/assets/img/404/404_en.png'
 import notFoundImage_es from '@/assets/img/404/404_es.png'
 
-const ProjectImage = ({ imgPath, title, classes }) => {
+const ProjectImage = ({ imgPath, altText, classes }) => {
   const storedLanguage = localStorage.getItem('language');
   const [image, setImage] = useState(null);
   
@@ -19,7 +19,7 @@ const ProjectImage = ({ imgPath, title, classes }) => {
     <img
       className={classes}
       src={image || notFoundImage_en}
-      alt={title}
+      alt={altText}
     />
   )
 }
