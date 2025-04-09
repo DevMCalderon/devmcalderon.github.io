@@ -33,14 +33,13 @@ const ImageCarousel = ({ imageSrcPaths, imageAltTexts, containerClass, imageClas
     <>
       {/* image carousel */}
       {imageSrcPaths && imageSrcPaths.length > 0 && (
-        <div className={``}>
+        <div className={`rounded-xl w-full relative `}>
           <Carousel
+            className={`${containerClass} owl-carousel owl-theme skill-slider group border-solid `}
             arrows={false}
             autoPlay={true}
             autoPlaySpeed={5500}
             centerMode={false}
-            //  lg:mb-0
-            className={`${containerClass} owl-carousel owl-theme skill-slider pb-6 group`}
             dotListClass=""
             draggable={true}
             focusOnSelect={false}
@@ -51,7 +50,7 @@ const ImageCarousel = ({ imageSrcPaths, imageAltTexts, containerClass, imageClas
             pauseOnHover={false}
             renderArrowsWhenDisabled={false}
             renderButtonGroupOutside={false}
-            renderDotsOutside={false}
+            renderDotsOutside={true}
             responsive={responsive}
             rewind={false}
             rtl={false}
@@ -63,15 +62,15 @@ const ImageCarousel = ({ imageSrcPaths, imageAltTexts, containerClass, imageClas
             ssr={true} // means to render carousel on server-side.
             // customTransition="all"
             // transitionDuration={10}
-            // containerClass={`${containerClass}`}
+            // containerClass={`bg-black`}
           >
             {/* display project images */}
             {imageSrcPaths.map((image, index) => (
               <ProjectImage
-                imgPath = { image.path }
-                altText = {`${imageAltTexts}-${index}`}
-                key={index}
-                classes={`${imageClass} overflow-hidden border-solid object-cover object-top`}
+              imgPath = { image.path }
+              altText = {`${imageAltTexts}-${index}`}
+              key={index}
+              classes={`${imageClass} overflow-hidden border-solid object-cover object-top`}
               />
             ))}
           </Carousel>
