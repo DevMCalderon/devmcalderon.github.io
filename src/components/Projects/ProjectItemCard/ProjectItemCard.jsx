@@ -3,32 +3,9 @@ import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 
 import { routes } from '@/routes';
-import imgSkillsJson from '@/data/skills/skills.json';
-import ImageCarousel from '../../ImageCarousel/ImageCarousel';
+import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
+import ProjectTechnologiesDisplay from "@/components/Projects/ProjectTechnologiesDisplay";
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 1,
-    partialVisibilityGutter: 40
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1,
-    partialVisibilityGutter: 40
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-    partialVisibilityGutter: 30
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    partialVisibilityGutter: 30
-  }
-};
 
 const ProjectItemCard = ({ projectData }) => {
   const { title, technologies_used, short_description, images, slug, categoryName } = projectData;
@@ -63,38 +40,7 @@ const ProjectItemCard = ({ projectData }) => {
           {/* description */}
           <p className="text-mdsm h-[7rem] overflow-hidden text-ellipsis text-slate-300 mb-1.5">{short_description}</p>
           
-          <div>
-            
-            {/* display technologies used */}
-            <div className="flex flex-wrap h-auto gap-y-2 gap-x-3 mb-1.5">
-              {technologies_used && technologies_used.map((technologyName, index) => {
-                // search for technology in imgSkillsJson.json
-                const tech = imgSkillsJson.find(item => item.id === technologyName) || {};
-                return (
-                  // display technology icon and name
-                  <div
-                    className='flex md:flex-row items-center text-blue-300 rounded-xl px-2.5 py-1 border-[0.01rem] border-solid
-                    border-blue-900 bg-blue-950'
-                    key={index}
-                  >
-                    <img
-                      className='rounded-sm w-5 h-[1.2rem] mx-auto mr-1.5'
-                      src={tech ? tech.img_path : ''}
-                      alt={technologyName}
-                    />
-                    <h5 className='text-xs lg:text-sm mt-1.5 md:mt-0'>
-                      {/* extrae la clave dentro de t('...') y la traduce */}
-                      {tech.label && tech.label.startsWith("t(")
-                        ? t(tech.label.slice(3, -2)) //extrae la clave dentro de t('...')
-                        : tech.label
-                      }
-                    </h5>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-          
+          <ProjectTechnologiesDisplay technologies_used={technologies_used} />
         </div>
         
       </Link>

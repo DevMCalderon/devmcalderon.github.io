@@ -122,8 +122,9 @@
   "projectDetail": {
     "title": "Proyecto",
     "subtitle": "Documentación de software",
-    "description": "Descripción corta",
     "extended_description": "Descripción extendida",
-    "Category": "Categoría"
+    "Category": "Categoría:",
+    "used_technologies": "Tecnologias usadas:",
+    "used_dependencies": "Dependencias usadas:"
   }
 }

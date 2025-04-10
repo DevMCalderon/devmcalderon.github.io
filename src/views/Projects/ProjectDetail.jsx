@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import usePortfolioContext from "@/hooks/usePortfolioContext";
 import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
+import ProjectTechnologiesDisplay from "@/components/Projects/ProjectTechnologiesDisplay";
 
 const ProjectDetail= () => {
   const navigate = useNavigate();
@@ -39,7 +40,6 @@ const ProjectDetail= () => {
       navigate("/not-found");
     }
     
-    
   }, [idCategory, idProject]);
   
   const [data, setData] = useState({
@@ -59,8 +59,6 @@ const ProjectDetail= () => {
   //   categories=projectsJSON_en.categories
   // }
 
-  let categoryData = null, projectsInfo = null;
-  
   // const getProjectsDataByCategoryName = () => {
   //   categoryData = categories.find((category) => category.category === categoryName);
   //   if (!categoryData) {
@@ -118,18 +116,25 @@ const ProjectDetail= () => {
             {/* category */}
             <div className="mb-3">
               <h3 className="text-xl text-start text-highlighted_text_color">
-                {t(`projectDetail.Category`)+':'}
+                {t(`projectDetail.Category`)}
               </h3>
               <p className="text-lg text-start">{ projectData.category.category }</p>
             </div>
           
-            {/* proyect short description */}
+            {/* used technologies */}
             <div className="mb-3">
               <h3 className="text-start text-xl text-highlighted_text_color">
-                {t(`projectDetail.description`)+':'}
+                {t(`projectDetail.used_technologies`)}
+              </h3>
+              <ProjectTechnologiesDisplay technologies_used={projectData.project.technologies_used}/ >
+            </div>
+            {/* used dependencies */}
+            <div className="mb-3">
+              <h3 className="text-start text-xl text-highlighted_text_color">
+                {t(`projectDetail.used_dependencies`)}
               </h3>
               <p className="text-lg text-start">
-                { projectData.project.short_description }
+                { projectData.project.used_dependencies }
               </p>
             </div>
           </div>
