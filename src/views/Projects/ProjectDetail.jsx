@@ -101,7 +101,7 @@ const ProjectDetail= () => {
           
           {/* project short description box */}
           <div
-            className="text-xl text-bread border-2 border-indigo-700 rounded-3xl py-3 px-24 mb-6 text-center
+            className="text-xl text-bread border-2 border-indigo-700 rounded-3xl pt-3 pb-4 px-24 mb-6 text-center
               bg-[linear-gradient(0deg,_rgb(27,30,68)_-5%,_rgb(46,38,133)_100%)]"
           >
             {/* title */}
@@ -123,19 +123,10 @@ const ProjectDetail= () => {
           
             {/* used technologies */}
             <div className="mb-3">
-              <h3 className="text-start text-xl text-highlighted_text_color">
+              <h3 className="text-start text-xl text-highlighted_text_color mb-2">
                 {t(`projectDetail.used_technologies`)}
               </h3>
               <ProjectTechnologiesDisplay technologies_used={projectData.project.technologies_used}/ >
-            </div>
-            {/* used dependencies */}
-            <div className="mb-3">
-              <h3 className="text-start text-xl text-highlighted_text_color">
-                {t(`projectDetail.used_dependencies`)}
-              </h3>
-              <p className="text-lg text-start">
-                { projectData.project.used_dependencies }
-              </p>
             </div>
           </div>
 
@@ -147,13 +138,10 @@ const ProjectDetail= () => {
             imageAltTexts={ `carousel-img-${projectData.project.slug}` }
           />
           
-          <h2 className="text-4xl text-white mb-5">{t(`projectDetail.subtitle`)+':'}</h2>
+          <h2 className="text-4xl text-white mb-4">{t(`projectDetail.subtitle`)}</h2>
           
           <Outlet />
-          
         </div>
-
-    
       )}
     </>
   );

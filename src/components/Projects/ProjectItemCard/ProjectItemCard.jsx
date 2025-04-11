@@ -6,7 +6,6 @@ import { routes } from '@/routes';
 import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
 import ProjectTechnologiesDisplay from "@/components/Projects/ProjectTechnologiesDisplay";
 
-
 const ProjectItemCard = ({ projectData }) => {
   const { title, technologies_used, short_description, images, slug, categoryName } = projectData;
   
@@ -30,7 +29,6 @@ const ProjectItemCard = ({ projectData }) => {
             />
           )}
         </div>
-        
         
         {/* text and icons */}
         <div className="text-left ml-0 md:ml-6">

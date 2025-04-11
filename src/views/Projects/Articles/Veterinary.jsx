@@ -5,16 +5,52 @@ import { useTranslation } from "react-i18next";
 const Veterinary = () => {
   const [t] = useTranslation("global");
 
+  const categories = [
+    "Axios" ,
+    "Bootstrap",
+    "Laravel-mix",
+    "Lodash",
+    "Postcss",
+    "Resolve-url-loader",
+    "Sass",
+    "Sass-loader",
+    "Vue",
+    "Vue-loader",
+    "Vue-template-compiler",
+    "Jquery",
+    "Sweetalert2",
+  ]
+
   return(
     <>
       <div className="mb-10">
-        <h3 className="text-start text-xl text-highlighted_text_color">
-          {t(`projectDetail.extended_description`)+':'}
-        </h3>
-        <p className="text-lg text-start">
-          {/* {projectsInfo.description} */}
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis modi quae! Earum explicabo voluptas maxime nemo et qui, quam soluta cupiditate at ad iure sed molestiae quisquam excepturi doloribus?
-        </p>
+      
+        {/* used dependencies */}
+        <div className="mb-5">
+          <h3 className="text-start text-xl text-highlighted_text_color">
+            {t(`projectDetail.used_dependencies`)}
+          </h3>
+          <p className="text-lg text-start"></p>
+
+          {/*list */}
+          <ul className="w-fit mt-2 list-disc ml-4 text-white list-outside flex flex-wrap gap-x-10">
+            {categories.map((category, index)=> (
+              <li className="py-1" key={index}>
+                {category}
+              </li>
+            ))}
+          </ul>
+        </div>
+      
+        {/* extended description */}
+        <div className="mb-5">
+          <h3 className="text-start text-xl text-highlighted_text_color">
+            {t(`projectDetail.extended_description`)}
+          </h3>
+          <p className="text-lg text-start">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus veritatis modi quae! Earum explicabo voluptas maxime nemo et qui, quam soluta cupiditate at ad iure sed molestiae quisquam excepturi doloribus?
+          </p>
+        </div>
       </div>
   
         {/* <ProjectImage
