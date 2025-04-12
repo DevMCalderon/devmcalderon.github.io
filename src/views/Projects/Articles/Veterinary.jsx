@@ -1,77 +1,16 @@
 import { useTranslation } from "react-i18next";
-import Highlight from "@/components/Highlight";
+import HighlightText from "@/components/HighlightText";
 
 
 const Veterinary = () => {
   const [t] = useTranslation("global");
 
-  const categories = [
-    "Axios" ,
-    "Bootstrap",
-    "Laravel-mix",
-    "Lodash",
-    "Postcss",
-    "Resolve-url-loader",
-    "Sass",
-    "Sass-loader",
-    "Vue",
-    "Vue-loader",
-    "Vue-template-compiler",
-    "Jquery",
-    "Sweetalert2",
-  ]
+
   
 
   return(
     <>
-      <div className="mb-10">
       
-        {/* used dependencies */}
-        <div className="mb-10">
-          <h3 className="text-start text-2xl text-highlighted_text_color mb-3">
-            {t(`projectDetail.used_dependencies`)}
-          </h3>
-          <p className="text-lg text-start"></p>
-
-          {/*list */}
-          <ul className="w-fit list-disc ml-4 text-white list-outside flex flex-wrap gap-x-10">
-            {categories.map((category, index)=> (
-              <li className="py-1" key={index}>
-                {category}
-              </li>
-            ))}
-          </ul>
-        </div>
-        
-        {/* extended description */}
-        <div className="mb-5">
-          <h3 className="text-start text-2xl text-highlighted_text_color mb-3">
-            {t(`projectDetail.extended_description`)}
-          </h3>
-          
-          <h4 className="text-xl text-start mb-5">Sistema Integral de Gestión para Clínicas Veterinarias</h4>
-          
-          <p className="text-lg text-start mb-5">
-            Desarrollé, junto a un equipo multidisciplinario, una solución web integral orientada a la administración eficiente de clínicas veterinarias, abarcando módulos clave como: agenda de citas, gestión de clientes, control de mascotas, administración de empresas y sucursales, así como manejo de inventario y productos. El sistema fue construido con un enfoque modular y escalable, permitiendo una experiencia administrativa fluida y centralizada.
-          </p>
-          
-          <p className="text-lg text-start mb-5">
-            <Highlight></Highlight>
-            Mi participación incluyó tanto el backend como el frontend del proyecto, trabajando principalmente con <Highlight>Laravel</Highlight>, <Highlight>MySQL</Highlight>, <Highlight>Blade</Highlight> y <Highlight>Vue.Js</Highlight>. <Highlight>En menos de dos semanas</Highlight>, me adapté completamente a la arquitectura preexistente y aporté mejoras significativas en la mantenibilidad del código mediante el uso de componentes reutilizables y buenas prácticas de desarrollo.
-          </p>
-          
-          <p className="text-lg text-start">
-            En el lado del backend:
-          </p>
-          <ul className="text-lg text-start">
-            <li>
-              Diseñé y desarrollé múltiples endpoints para una API RESTful, asegurando una estructura limpia y escalable.
-            </li>
-          </ul>
-          
-          <p className="text-lg text-start"></p>
-        </div>
-      </div>
   
         {/* <ProjectImage
           imgPath = { data.project.imgPath }

@@ -22,9 +22,9 @@ const AllProjectCategoryList = () => {
           </p>
           
           {/* categories links list */}
-          <ul className="w-fit mx-auto mt-2 list-disc text-white">
+          <ul className="w-fit mx-auto mt-2 list-disc text-white space-y-2">
             {categories.map((category, index)=> (
-              <li className="py-2 px-3" key={index}>
+              <li className="pl-3" key={index}>
                 <Link
                   to={`${routes[category.category]}`}
                   className="text-link_color hover:text-link_color_hover hover:underline"

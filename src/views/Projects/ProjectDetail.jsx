@@ -1,10 +1,12 @@
+import React from 'react';
 import { useEffect, useState } from "react";
 import { Link, Outlet, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
 import usePortfolioContext from "@/hooks/usePortfolioContext";
 import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
-import ProjectTechnologiesDisplay from "@/components/Projects/ProjectTechnologiesDisplay";
+import { veterinary } from "@/data/es/Projects";
+import QuickViewDescriptionBox from '@/components/Projects/QuickViewDescriptionBox';
 
 const ProjectDetail= () => {
   const navigate = useNavigate();
@@ -97,38 +99,9 @@ const ProjectDetail= () => {
     <>
       {projectData && projectData.project && projectData.category && (
         // main container
-        <div className="pb-24">
+        <article aria-labelledby="title" className="pb-24">
           
-          {/* project short description box */}
-          <div
-            className="text-xl text-bread border-2 border-indigo-700 rounded-3xl pt-3 pb-4 px-24 mb-6 text-center
-              bg-[linear-gradient(0deg,_rgb(27,30,68)_-5%,_rgb(46,38,133)_100%)]"
-          >
-            {/* title */}
-            <div className="mb-4">
-              <span className="text-2xl text-highlighted_text_color">Proyecto:</span>
-              <h1 className="text-5xl text-link_disabled_color2 text-center">{projectData.project.title}</h1>
-            </div>
-            
-            {/* separator */}
-            <hr className="hr5 text-border_color1 lg:max-w-screen-2xl mx-auto mb-4 "/>
-            
-            {/* category */}
-            <div className="mb-3">
-              <h3 className="text-xl text-start text-highlighted_text_color">
-                {t(`projectDetail.Category`)}
-              </h3>
-              <p className="text-lg text-start">{ projectData.category.category }</p>
-            </div>
-          
-            {/* used technologies */}
-            <div className="mb-3">
-              <h3 className="text-start text-xl text-highlighted_text_color mb-2">
-                {t(`projectDetail.used_technologies`)}
-              </h3>
-              <ProjectTechnologiesDisplay technologies_used={projectData.project.technologies_used}/ >
-            </div>
-          </div>
+          <QuickViewDescriptionBox projectData={projectData} />
 
           {/* project image */}
           <ImageCarousel
@@ -138,10 +111,35 @@ const ProjectDetail= () => {
             imageAltTexts={ `carousel-img-${projectData.project.slug}` }
           />
           
-          <h2 className="text-4xl text-white mb-4">{t(`projectDetail.subtitle`)}</h2>
+          <h2 className="text-4xl text-white mb-4">{t(`projectDetail.documentation`)}</h2>
+          
+          {/* article content */}
+          <div className="mb-10">
+            {/* dependencies */}
+            <section aria-labelledby='dependencies' className="mb-10">
+              <h3 id='dependencies' className="text-start text-2xl text-highlighted_text_color mb-3">
+                {t(`projectDetail.used_dependencies`)}
+              </h3>
+              {/*list */}
+              <ul className="w-fit list-disc ml-4 text-white list-outside flex flex-wrap gap-x-10">
+                {veterinary.dependencies.map((dep, idx) => <li className="py-1" key={idx}>{dep}</li>)}
+              </ul>
+            </section>
+            
+            {/* content */}
+            <section aria-labelledby="extended-description" className="mb-5">
+              <h3 id="extended-description" className="text-start text-2xl text-highlighted_text_color mb-3">
+                {t(`projectDetail.extended_description`)}
+              </h3>
+              <section>
+                {veterinary.header}
+                {veterinary.paragraphs.map((el, idx) => <React.Fragment key={idx}>{el}</React.Fragment>)}
+              </section>
+            </section>
+          </div>
           
           <Outlet />
-        </div>
+        </article>
       )}
     </>
   );

@@ -121,7 +121,7 @@
   },
   "projectDetail": {
     "title": "Proyecto",
-    "subtitle": "Documentación:",
+    "documentation": "Documentación:",
     "extended_description": "Descripción extendida:",
     "Category": "Categoría:",
     "used_technologies": "Tecnologias usadas:",
