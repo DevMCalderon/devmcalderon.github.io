@@ -1,19 +1,90 @@
 import { useParams } from "react-router-dom"
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import ArticleEmptyView from "@/views/Projects/Articles/ArticleEmptyView"
 import { articleSlugMap } from "@/routes.js"
-import CoffeeShop from "@/views/Projects/Articles/CoffeeShop"
 
-const articleViews = {
-  // [articleSlugMap.veterinary]: <Veterinary />,
-  [articleSlugMap.coffeeShop]: <CoffeeShop />,
+// Function to get the project data dynamically depending on its name
+const loadProject = async (projectName) => {
+  switch (projectName) {
+    case articleSlugMap.veterinary:
+      return (await import("@/views/Projects/Articles/veterinary")).default;
+    case articleSlugMap.coffeeShop:
+      return (await import("@/views/Projects/Articles/coffeeShop")).default;
+    default:
+      throw new Error("Proyecto no encontrado: " + projectName);
+  }
 };
 
 const ProjectDynamicView = () => {
+  const [projectData, setProjectData] = useState(null);
+  const [error, setError] = useState(null);
+  
   const { idProject } = useParams();
+  const [t] = useTranslation("global");
+  
+  
+  useEffect(() => {
+    loadProject(idProject)
+      .then((data) => {
+        setProjectData(data);
+        console.log(data);
+      })
+      .catch((err) => setError(err.message));
+  }, [idProject]);
   
   // if the slug is in the articleViews object return the view, otherwise return the fallback
-  return articleViews[idProject] || <ArticleEmptyView />;
+  if (!projectData || error) return <ArticleEmptyView />;
+      
+  console.log("a",projectData);
+  
+  return (
+    <>
+      {projectData && (
+        <>
+          {/* dependencies */}
+          <section aria-labelledby='dependencies' className="mb-10">
+            <h3 id='dependencies' className="text-start text-2xl text-highlighted_text_color mb-3">
+              {t(`projectDetail.used_dependencies`)}
+            </h3>
+            <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4 "/>
+            
+            {/*list */}
+            <ul className="w-fit list-disc ml-4 text-white list-outside flex flex-wrap gap-x-10">
+              {projectData.dependencies.map((dep, idx) => <li className="py-1" key={idx}>{dep}</li>)}
+            </ul>
+          </section>
+          
+          {/* content */}
+          <section aria-labelledby="extended-description" className="mb-10">
+            <h3 id="extended-description" className="text-start text-2xl text-highlighted_text_color mb-3">
+              {t(`projectDetail.extended_description`)}
+            </h3>
+            <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4 "/>
+            
+            <section>
+              <projectData.Header />
+              <projectData.ExtendedDescription />
+            </section>
+          </section>
+          
+          <section aria-labelledby="features" className="mb-10">
+            <h3 id='features' className="text-start text-2xl text-highlighted_text_color mb-3">
+              {t(`projectDetail.features`)}
+            </h3>
+            <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4"/>
+            
+            <p className="text-lg text-start mb-5">
+              A continuación se presenta una selección de características clave del proyecto en formato multimedia, que reflejan mi participación directa como desarrollador. Cada componente fue diseñado e implementado con un enfoque estratégico en la eficiencia, la escalabilidad y la experiencia del usuario. Esta sección ilustra no solo las funcionalidades desarrolladas, sino también mi capacidad para traducir requerimientos técnicos y de negocio en soluciones concretas y visualmente integradas.
+            </p>
+            
+            <projectData.Features />
+          </section>
+        </>
+      )}
+    </>
+  );
   
 };
 

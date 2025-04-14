@@ -49,19 +49,9 @@ const router = createBrowserRouter(
               // element: <ProjectsCategoryOverview categoryIndex="2" />,
             },
             {
-              path: "/projects/:idCategory",
+              path: "/projects/:idCategory/:idProject",
               // element: <ProjectsCategoryCommon />,
               element: <ProjectDetail />,
-              children: [
-                {
-                  path: ":idProject",
-                  element: <ProjectDynamicView />
-                },
-                {
-                  index: true,
-                  element: <ArticleEmptyView />,
-                },
-              ]
             },
           ],
         },

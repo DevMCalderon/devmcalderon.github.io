@@ -1,21 +1,22 @@
-import React from 'react';
 import { useEffect, useState } from "react";
-import { Outlet, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
 import usePortfolioContext from "@/hooks/usePortfolioContext";
 import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
-import { veterinary } from "@/data/es/Projects";
 import QuickViewDescriptionBox from '@/components/Projects/QuickViewDescriptionBox';
+import ProjectDynamicView from "./Articles/ProjectDynamicView";
+
 
 const ProjectDetail= () => {
+  
   const navigate = useNavigate();
   const [t] = useTranslation("global");
   
   const {idCategory, idProject } = useParams();
   const {projectData, setProjectData, projectsJSON} = usePortfolioContext();
   
-  useEffect(() => {
+  useEffect(() => {    
     // Buscar la categoria por su nombre en el JSON
     const category = projectsJSON.categories.find(
       cat => cat.slug ==idCategory
@@ -70,48 +71,8 @@ const ProjectDetail= () => {
           
           {/* article content */}
           <div className="mb-10">
-            {/* dependencies */}
-            <section aria-labelledby='dependencies' className="mb-10">
-              <h3 id='dependencies' className="text-start text-2xl text-highlighted_text_color mb-3">
-                {t(`projectDetail.used_dependencies`)}
-              </h3>
-              <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4 "/>
-              
-              {/*list */}
-              <ul className="w-fit list-disc ml-4 text-white list-outside flex flex-wrap gap-x-10">
-                {veterinary.dependencies.map((dep, idx) => <li className="py-1" key={idx}>{dep}</li>)}
-              </ul>
-            </section>
-            
-            {/* content */}
-            <section aria-labelledby="extended-description" className="mb-10">
-              <h3 id="extended-description" className="text-start text-2xl text-highlighted_text_color mb-3">
-                {t(`projectDetail.extended_description`)}
-              </h3>
-              <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4 "/>
-              
-              <section>
-                {veterinary.header}
-                {veterinary.extendedDescription.map((el, idx) => <React.Fragment key={idx}>{el}</React.Fragment>)}
-              </section>
-            </section>
-            
-            <section aria-labelledby="features" className="mb-10">
-              <h3 id='features' className="text-start text-2xl text-highlighted_text_color mb-3">
-                {t(`projectDetail.features`)}
-              </h3>
-              <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4"/>
-              
-              <p className="text-lg text-start mb-5">
-                A continuación se presenta una selección de características clave del proyecto en formato multimedia, que reflejan mi participación directa como desarrollador. Cada componente fue diseñado e implementado con un enfoque estratégico en la eficiencia, la escalabilidad y la experiencia del usuario. Esta sección ilustra no solo las funcionalidades desarrolladas, sino también mi capacidad para traducir requerimientos técnicos y de negocio en soluciones concretas y visualmente integradas.
-              </p>
-              
-              {veterinary.features.map((el, idx) => <React.Fragment key={idx}>{el}</React.Fragment>)}
-            </section>
-            
+            <ProjectDynamicView />
           </div>
-          
-          <Outlet />
         </article>
       )}
     </>
