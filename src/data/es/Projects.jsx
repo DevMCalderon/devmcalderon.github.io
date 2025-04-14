@@ -1,5 +1,6 @@
 
 import HighlightText from "@/components/HighlightText";
+import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
 
 export const veterinary = {
   header: (
@@ -22,7 +23,7 @@ export const veterinary = {
     "Jquery",
     "Sweetalert2",
   ],
-  paragraphs: [
+  extendedDescription: [
     <p className="text-lg text-start mb-5">
       Mi participación incluyó tanto el backend como el frontend del proyecto, trabajando principalmente con <HighlightText>Laravel</HighlightText>, <HighlightText>MySQL</HighlightText>, <HighlightText>Blade</HighlightText>, <HighlightText>Vue.Js</HighlightText> y <HighlightText>Bootstrap</HighlightText>. <HighlightText>En menos de dos semanas</HighlightText>, aprendí y me adapté completamente a las tecnologias utilizadas en la arquitectura preexistente y <HighlightText>aporté mejoras significativas</HighlightText> en la mantenibilidad del código mediante el uso de componentes reutilizables y buenas prácticas de desarrollo.
     </p>,
@@ -54,7 +55,7 @@ export const veterinary = {
       </li>
     </ul>,
     <h5 className="text-xl font-semibold mt-6 mb-2">Desde el punto de vista organizacional:</h5>,
-    <ul>
+    <ul className="text-lg text-start list-disc ml-6 space-y-2">
       <li>
         Aplicamos la metodología SCRUM, realizando reuniones diarias, planificación de sprints y revisiones periódicas del backlog.
       </li>
@@ -62,5 +63,53 @@ export const veterinary = {
         Cumplí consistentemente con las tareas asignadas dentro de los plazos establecidos, demostrando compromiso, autonomía y responsabilidad en cada entrega.
       </li>
     </ul>
+  ],
+  features: [
+    <section aria-labelledby="client-operations" className="mb-10">
+      <ArticleVideoSection 
+        labelledby="client-create" 
+        title="Creación de un Cliente:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1743551200/cliente-crear_lhizi2.mp4"
+        caption="Esta funcionalidad está diseñada para gestionar el proceso de registro de un nuevo cliente en la base de datos, asegurando una experiencia fluida y validaciones robustas tanto en el frontend como en el backend."
+      />
+      <ArticleVideoSection 
+        labelledby="client-edit"
+        title="Edición de un Cliente:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1743478270/ycbipkgdwuqpnrpe9uom.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="client-show"
+        title="Visualización de un Cliente:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745197274/cliente-detalle_befbzl.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="client-destroy"
+        title="Eliminación de un Cliente:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/portfolio_videos/veterinary/cliente-eliminar.mp4"
+      />
+    </section>,
+    <section aria-labelledby="client-operations" className="mb-10">
+      <h4 id="client-operations" className="text-start text-2xl text-highlighted_text_color mb-3">Operaciones de Clientes:</h4>
+      <ArticleVideoSection 
+        labelledby="empresa-edit"
+        title="Edición de una Empresa:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745209407/portfolio_videos/veterinary/zpbidilyvla2ei3eoxtm.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="pet-create"
+        title="Creación de una Mascota:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745209627/portfolio_videos/veterinary/cdbg6z29qymilhxuthxu.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="pet-destoy"
+        title="Eliminación de una Mascota y Contador de Mascotas:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745211407/portfolio_videos/veterinary/ralnmtfoytilmgg8becy.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="register-create-empresa"
+        title="Registro, Middleware Validador de Empresa y Creación de Empresa:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745211520/portfolio_videos/veterinary/joaojdbthvi8embyeifr.mp4"
+      />
+    </section>,
   ],
 }

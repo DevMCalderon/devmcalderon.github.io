@@ -369,4 +369,21 @@ p.danger {
   }
 }
 
+.react-multiple-carousel__arrow--left {
+  left: 0.3rem !important;
+  z-index: 0;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: 0.3rem !important;
+  z-index: 0;
+}
+.react-multiple-carousel__arrow {
+  background-color: rgba(0, 0, 0, 0.3) !important; 
+  
+}
+.react-multi-carousel-dot--active button {
+  background-color: rgb(196, 237, 255) !important;
+}
+
 /* testing */

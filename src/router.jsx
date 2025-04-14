@@ -8,7 +8,6 @@ import AllProjectCategoryList from "@/views/Projects/AllProjectCategoryList";
 import ProjectDetail from "@/views/Projects/ProjectDetail";
 import Loading from "@/views/Loading/Loading";
 import Home from "@/views/Pages/Home";
-import Veterinary from "./views/Projects/Articles/Veterinary";
 import ArticleEmptyView from "@/views/Projects/Articles/ArticleEmptyView";
 import ProjectDynamicView from "./views/Projects/Articles/ProjectDynamicView";
 

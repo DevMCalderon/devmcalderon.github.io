@@ -22,6 +22,8 @@ const ProjectItemCard = ({ projectData }) => {
         <div className='w-full md:w-3/12 lg:w-4/12 group'>
           {images && images.length > 0 && (
             <ImageCarousel
+              autoPlay={true}
+              arrows={false}
               containerClass="rounded-3xl border-[0.15rem] border-indigo-500 group-hover:border-indigo-400"
               imageClass="max-h-[10.2rem] h-[100%] w-full"
               imageSrcPaths={ images }

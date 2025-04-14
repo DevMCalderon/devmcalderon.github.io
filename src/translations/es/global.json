@@ -125,6 +125,7 @@
     "extended_description": "Descripción extendida:",
     "Category": "Categoría:",
     "used_technologies": "Tecnologias usadas:",
-    "used_dependencies": "Dependencias usadas:"
+    "used_dependencies": "Dependencias usadas:",
+    "features": "Funcionalidades:"
   }
 }

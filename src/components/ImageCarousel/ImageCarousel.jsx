@@ -27,7 +27,7 @@ const responsive = {
   }
 };
 
-const ImageCarousel = ({ imageSrcPaths, imageAltTexts, containerClass, imageClass }) => {
+const ImageCarousel = ({ imageSrcPaths, imageAltTexts, containerClass, imageClass, arrows, autoPlay }) => {
   
   return (
     <>
@@ -36,8 +36,8 @@ const ImageCarousel = ({ imageSrcPaths, imageAltTexts, containerClass, imageClas
         <div className={`rounded-xl w-full relative `}>
           <Carousel
             className={`${containerClass} owl-carousel owl-theme skill-slider group border-solid `}
-            arrows={false}
-            autoPlay={true}
+            arrows={ arrows }
+            autoPlay={ autoPlay }
             autoPlaySpeed={5500}
             centerMode={false}
             dotListClass=""
