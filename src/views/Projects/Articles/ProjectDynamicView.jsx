@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 import ArticleEmptyView from "@/views/Projects/Articles/ArticleEmptyView"
 import { articleSlugMap } from "@/routes.js"
+import Heading from "@/components/UI/Heading";
 
 // Function to get the project data dynamically depending on its name
 const loadProject = async (projectName) => {
@@ -27,52 +28,42 @@ const ProjectDynamicView = () => {
   
   useEffect(() => {
     loadProject(idProject)
-      .then((data) => {
-        setProjectData(data);
-        console.log(data);
-      })
+      .then((data) => setProjectData(data))
       .catch((err) => setError(err.message));
   }, [idProject]);
   
   // if the slug is in the articleViews object return the view, otherwise return the fallback
   if (!projectData || error) return <ArticleEmptyView />;
       
-  console.log("a",projectData);
-  
   return (
     <>
       {projectData && (
         <>
           {/* dependencies */}
           <section aria-labelledby='dependencies' className="mb-10">
-            <h3 id='dependencies' className="text-start text-2xl text-highlighted_text_color mb-3">
+            <Heading tag="h3" id='dependencies'> 
               {t(`projectDetail.used_dependencies`)}
-            </h3>
+            </Heading>
             <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4 "/>
             
-            {/*list */}
-            <ul className="w-fit list-disc ml-4 text-white list-outside flex flex-wrap gap-x-10">
-              {projectData.dependencies.map((dep, idx) => <li className="py-1" key={idx}>{dep}</li>)}
-            </ul>
+            <projectData.Dependencies />
           </section>
           
           {/* content */}
           <section aria-labelledby="extended-description" className="mb-10">
-            <h3 id="extended-description" className="text-start text-2xl text-highlighted_text_color mb-3">
+            <Heading tag="h3" id="extended-description">
               {t(`projectDetail.extended_description`)}
-            </h3>
+            </Heading>
             <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4 "/>
             
-            <section>
-              <projectData.Header />
-              <projectData.ExtendedDescription />
-            </section>
+            <projectData.Header />
+            <projectData.ExtendedDescription />
           </section>
           
           <section aria-labelledby="features" className="mb-10">
-            <h3 id='features' className="text-start text-2xl text-highlighted_text_color mb-3">
+            <Heading tag="h3" id='features'>
               {t(`projectDetail.features`)}
-            </h3>
+            </Heading>
             <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4"/>
             
             <p className="text-lg text-start mb-5">

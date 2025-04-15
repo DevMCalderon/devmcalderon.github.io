@@ -1,55 +1,103 @@
+import HighlightText from "@/components/HighlightText";
 import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
+import Heading from "@/components/UI/Heading";
+import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
+
+const dependencies = {
+  backend: {
+    composerJSON: [
+      "Fakerphp/faker",
+      "Laravel/framework",
+      "Laravel/pint",
+      "Laravel/sail",
+      "Laravel/sanctum",
+      "Laravel/tinker",
+      "Mockery/mockery",
+      "Nunomaduro/collision",
+      "Phpunit/phpunit",
+      "Spatie/laravel-ignition"
+    ],
+    packageJSON: [
+      "Axios",
+      "Laravel-vite-plugin",
+      "Vite",
+    ],
+  },
+  frontend: {
+    packageJSON: [
+      "Axios",
+      "React",
+      "React-dom",
+      "React-modal",
+      "React-router-dom",
+      "React-toastify",
+      "Swr",
+      "@types/react",
+      "@types/react-dom",
+      "@vitejs/plugin-react",
+      "Autoprefixer",
+      "Eslint",
+      "Eslint-plugin-react",
+      "Eslint-plugin-react-hooks",
+      "Eslint-plugin-react-refresh",
+      "Postcss",
+      "Tailwindcss",
+      "Vite",
+    ],
+  },
+};
 
 const coffeeShop = {
   Header: () => (
-    <h4 className="text-2xl font-semibold mb-5">
-      coffe
+    <h4 className="arrow text-2xl font-semibold mb-5">
+      Sistema de realización y gestión de pedidos para restaurantes
     </h4>
   ),
-  dependencies: [
-    "axios",
-    "laravel-vite-plugin",
-    "vite",
-  ],
+  Dependencies: () => (
+      <DependenciesSection dependencies={dependencies} />
+  ),
   ExtendedDescription: () => (
     <>
-      <p className="text-lg text-start mb-5">
-        Mi particireutilizables y buenas prácticas de desarrollo.
+      <p className="article-description-paragraph">
+        Proyecto desarrollado de forma integral, abarcando tanto el backend con <HighlightText>Laravel</HighlightText> como el frontend con <HighlightText>React y Tailwind</HighlightText>. El sistema gestiona distintos niveles de privilegio según el tipo de usuario, redirigiendo automáticamente tras el inicio de sesión a los módulos correspondientes. Su diseño modular y escalable permite gestionar productos, compras y usuarios de forma eficiente.
       </p>
-      <p className="text-lg text-start mb-5">
-        Desarrollé, junto a un equipo multidisciplinario, una solución web integral orientada a la administración eficiente de clínicas veterinarias, abarcando módulos clave como: agenda de citas, gestión de clientes, control de mascotas, administración de empresas y sucursales, así como manejo de inventario y productos. El sistema fue construido con un enfoque modular y escalable, permitiendo una experiencia administrativa fluida y centralizada.
+      <p className="article-description-paragraph">
+        Incluye funcionalidades de e-commerce básicas, como visualización de productos disponibles, carrito con cálculo automático del total de compra, y administración de órdenes. El sistema está optimizado para operar en tiempo real gracias a técnicas de revalidación automática de datos.
       </p>
-      <h5 className="text-xl font-semibold mt-6 mb-2">Contribuciones en Backend:</h5>
-      <ul className="text-lg text-start list-disc ml-6 space-y-2">
+      <Heading tag="h5">Contribuciones en Backend (Laravel):</Heading>
+      <ul className="article-description-list">
         <li>
-          Desarrollé múltiples endpoints para una , asegurando una estructura limpia y escalable.
+          Desarrollo de API RESTful con controladores, modelos y rutas.
         </li>
         <li>
-          Implementé middleware para la gestión de roles y permisos, fortaleciendo la seguridad del sistema.
+          Configuración de migraciones, seeds y validaciones con Form Requests.
         </li>
         <li>
-          Creé controladores, modelos, migraciones con relaciones complejas, seeders y form requests para validar y estructurar los datos eficientemente.
+          Implementación de políticas de acceso según roles de usuario.
         </li>
         <li>
-        Colaboré en la definición y optimización de la arquitectura de base de datos, enfocándome en la integridad referencial y la eficiencia en las consultas.
+          Organización de lógica con Resources y Collections.
         </li>
       </ul>
-      <h5 className="text-xl font-semibold mt-6 mb-2">Contribuciones en Frontend:</h5>
-      <ul className="text-lg text-start list-disc ml-6 space-y-2">
+      <Heading tag="h5">Contribuciones en Frontend (React, Tailwind):</Heading>
+      <ul className="article-description-list">
         <li>
-          Desarrollé interfaces reactivas e intuitivas utilizando Vue.js, Blade, Bootstrap, priorizando la experiencia del usuario con un diseño UI/UX centrado en la claridad y usabilidad.
+          Diseño de vistas responsivas y layouts reutilizables.
         </li>
         <li>
-          Integré componentes reutilizables que facilitaron el mantenimiento del sistema y aceleraron el desarrollo de nuevas funcionalidades.
-        </li>
-      </ul>
-      <h5 className="text-xl font-semibold mt-6 mb-2">Desde el punto de vista organizacional:</h5>
-      <ul className="text-lg text-start list-disc ml-6 space-y-2">
-        <li>
-          Aplicamos la metodología SCRUM, realizando reuniones diarias, planificación de sprints y revisiones periódicas del backlog.
+          Navegación dinámica con React Router.
         </li>
         <li>
-          Cumplí consistentemente con las tareas asignadas dentro de los plazos establecidos, demostrando compromiso, autonomía y responsabilidad en cada entrega.
+          UI modular: Desarrollo de componentes personalizados.
+        </li>
+        <li>
+          Manejo de estado global con Context y hooks propios.
+        </li>
+        <li>
+          Data fetching eficiente con useSWR, incluyendo caching, revalidación automática y optimización del rendimiento.
+        </li>
+        <li>
+          Creación de helpers reutilizables para lógica de negocio.
         </li>
       </ul>
     </>
@@ -57,10 +105,40 @@ const coffeeShop = {
   Features: () => (
     <div className="mb-10">
       <ArticleVideoSection 
-        labelledby="client-create" 
-        title="Creación de un Cliente:"
-        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1743551200/cliente-crear_lhizi2.mp4"
-        caption="Esta funcionalidad está diseñada para gestionar el proceso de registro de un nuevo cliente en la base de datos, asegurando una experiencia fluida y validaciones robustas tanto en el frontend como en el backend."
+        labelledby="product-index" 
+        title="Listado de Productos por Categoría:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273607/categories_obcoab.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="pedido-create" 
+        title="Añadir, Editar, Eliminar Productos en el Carrito de Compras y Realizar Pedido:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273601/crear-editar-pedido_qwp5ae.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="register" 
+        title="Registro de Usuarios y sus Validaciones:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273600/register_i0c0he.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="login" 
+        title="Inicio de Sesion de Usuarios y sus Validaciones:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273600/login-y-validaciones_o1tlin.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="product-out-of-stock" 
+        title="Un Administrador Puede Establecer un Producto Como Agotado:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273600/producto-agotado_k4byrs.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="product-out-of-stock2" 
+        title="Un Producto Agotado se Oculta para el Cliente del Listado de Productos:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273599/producto-agotado-2_bvy0ym.mp4"
+      />
+      <ArticleVideoSection 
+        labelledby="complete-order" 
+        title="Visualización de Ordenes de Compra y Completar una Orden de Compra:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273599/completar-pedido_bxmgu2.mp4"
+        caption="En el panel de administrador se muestran las ordenes de compra realizadas por los clientes y un administrador puede completar una orden de compra."
       />
     </div>
   ),

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
@@ -6,7 +6,6 @@ import usePortfolioContext from "@/hooks/usePortfolioContext";
 import ImageCarousel from "@/components/ImageCarousel/ImageCarousel";
 import QuickViewDescriptionBox from '@/components/Projects/QuickViewDescriptionBox';
 import ProjectDynamicView from "./Articles/ProjectDynamicView";
-
 
 const ProjectDetail= () => {
   
@@ -45,15 +44,9 @@ const ProjectDetail= () => {
     
   }, [idCategory, idProject]);
   
-  const [data, setData] = useState({
-    category: null,
-    project: null
-  });
-  
   return(
     <>
       {projectData && projectData.project && projectData.category && (
-        // main container
         <article aria-labelledby="title" className="pb-24">
           
           <QuickViewDescriptionBox projectData={projectData} />

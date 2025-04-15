@@ -1,5 +1,5 @@
 const HighlightText = ({ children }) => (
-  <strong className="text-cyan-100">{children}</strong>
+  <strong className="text-blue-50 italic">{children}</strong>
 );
 
 export default HighlightText;

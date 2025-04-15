@@ -1,6 +1,6 @@
 const ArticleVideoSection = ({ labelledby, title, videoSrc, caption }) => {
   return (
-    <section aria-labelledby={ labelledby }>
+    <section aria-labelledby={ labelledby } className="mb-4">
       <h4 id={ labelledby } className="text-start text-xl text-highlighted_text_color mb-3">{ title }</h4>
       
       <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4"/>

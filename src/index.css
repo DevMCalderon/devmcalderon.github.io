@@ -43,6 +43,24 @@
   /* .projects_category_common_bg {
     background: linear-gradient(90deg, rgb(17, 19, 60) 10%, theme('colors.container_color2') 50%);
   } */
+  .h3-title {
+    @apply text-start text-2xl text-highlighted_text_color mb-3;
+  }
+  .h4-title {
+    @apply arrow text-start text-xl text-highlighted_text_color mb-3;
+  }
+  .h5-title {
+    @apply arrow text-start text-xl text-highlighted_text_color mb-3;
+  }
+  .article-description-list {
+    @apply text-lg text-start list-disc ml-6 space-y-2 mb-7;
+  }
+  .article-description-paragraph {
+    @apply text-lg text-start mb-7;
+  }
+  .article-dependencies-list {
+    @apply w-fit list-disc ml-8 text-white list-outside flex flex-wrap gap-x-10 mb-7;
+  }
 }
 
 @font-face {
@@ -350,6 +368,12 @@ p.danger {
   color: #ffcc00; /* Color opcional */
   font-size: 1rem; /* Tamaño opcional */
   margin-right: 8px; /* Espaciado */
+}
+.arrow::before {
+  content: "▶ ";
+  color: #ffcc00;
+  font-size: 1rem;
+  margin-right: 8px;
 }
 @keyframes borderAnimation {
   0% {
