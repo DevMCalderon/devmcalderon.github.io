@@ -17,9 +17,7 @@ type DependenciesSectionProps = {
   dependencies: Dependencies;
 }
 
-
 const DependenciesSection: React.FC<DependenciesSectionProps> = ({ dependencies }) => {
-  console.log(dependencies)
   return (
     <>
       {(dependencies.backend.packageJSON?.length > 0 || dependencies.backend.composerJSON?.length > 0) && (

@@ -70,9 +70,64 @@ const jobVacancies = {
   Features: () => (
     <div className="mb-10">
       <ArticleVideoSection
-        labelledby="product-index" 
-        title="Listado de Productos por Categoría:"
-        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273607/categories_obcoab.mp4"
+        labelledby="register-recruiter-confirm-email1"
+        title="Registrar Reclutador y Enviar Email de Verificación:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360157/register-recruiter-confirm-email_ufr66q.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="register-recruiter-confirm-email2"
+        title="Recibir Email de Verificación y Confirmar Cuenta:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360158/register-recruiter-confirm-email-2_jp5jho.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="email-notification-new-candidate-create"
+        title="Enviar Email de Notificación cuando un Candidato Aplica a una Vacante:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360156/recruiter-email-notification_btqhur.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="app-notification-new-candidate-create"
+        title="Mostrar Notificación en App cuando un Candidato Aplica a una Vacante:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360156/recruiter-app-notification_bndbtd.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="vacancy-search-name-index"
+        title="Busqueda de Vacantes por Nombre:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360163/search-name_egrogk.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="vacancy-search-salary-index"
+        title="Busqueda de Vacantes por Salario:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360158/search-salary_kkymdd.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="vacancy-search-category-index"
+        title="Busqueda de Vacantes por Categoría:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360157/search-category_u1wbls.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="candidate-apply-out-date"
+        title="Candidato Aplicando a Vacante Correctamente:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360158/dev-apply-ok_qf33j5.mp4"
+        />
+      <ArticleVideoSection
+        labelledby="candidate-apply-out-date"
+        title="Candidato Intentando Aplicar a Vacante Incorrectamente (Fuera de Fecha):"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360158/developer-apply-out-date_wykxif.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="vacancy-candidates-index"
+        title="Listar Candidatos que Aplicaron a una Vacante:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360157/recruiter-candidates-index-show_mp9vbd.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="vacancy-create"
+        title="Crear una Vacante:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360156/recruiter-create-vacancy_lyf0ul.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="vacancy-destroy"
+        title="Eliminar una Vacante:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360156/recruiter-delete-vacancy_m0kz4q.mp4"
       />
     </div>
   ),
