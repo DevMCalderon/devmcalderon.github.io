@@ -66,9 +66,10 @@ export const routes = {
 //     'Contribuciones a Comunidad': '/projects/community',
 // };
 
-export const articleSlugMap = {
-  'veterinary': 'vetcore-pro',
-  'coffeeShop': 'smartorder',
+export const articleSlugPathMap = {
+  'vetcore-pro': '/src/views/Projects/Articles/veterinary', 
+  'smartorder': '/src/views/Projects/Articles/coffeeShop',
+  'jobmatch': '/src/views/Projects/Articles/jobVacancies',
 }
 
 export const NavbarRoutesHome = [

@@ -3,19 +3,12 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import ArticleEmptyView from "@/views/Projects/Articles/ArticleEmptyView"
-import { articleSlugMap } from "@/routes.js"
+import { articleSlugPathMap } from "@/routes.js"
 import Heading from "@/components/UI/Heading";
 
 // Function to get the project data dynamically depending on its name
-const loadProject = async (projectName) => {
-  switch (projectName) {
-    case articleSlugMap.veterinary:
-      return (await import("@/views/Projects/Articles/veterinary")).default;
-    case articleSlugMap.coffeeShop:
-      return (await import("@/views/Projects/Articles/coffeeShop")).default;
-    default:
-      throw new Error("Proyecto no encontrado: " + projectName);
-  }
+const loadProject = async (projectSlug) => {
+  return (await import(articleSlugPathMap[projectSlug])).default;
 };
 
 const ProjectDynamicView = () => {

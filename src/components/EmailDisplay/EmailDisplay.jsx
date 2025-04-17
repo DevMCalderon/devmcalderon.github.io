@@ -7,10 +7,11 @@ import "react-toastify/dist/ReactToastify.css";
 
 import emailImg from '@/assets/img/icons/mail.png'
 
-const EmailDisplay = ({ contactEmail }) => {
+const EmailDisplay = () => { 
   const [ t] = useTranslation("global");
+  const contactEmail = import.meta.env.VITE_CONTACT_EMAIL;
   const emailRef = useRef(null);
-
+  
   const mostrarNotificacion = (message) => {
     toast.success(message, {
       position: 'top-right',
@@ -38,8 +39,10 @@ const EmailDisplay = ({ contactEmail }) => {
   };
   
   return(
-    <section className="bg-gradient-to-t from-[#151524ce] to-[#1313466c] mt-11 py-11 rounded-[6rem] text-center px-9 lg:px-10 border-[1.5px] border-solid border-border_color1">
-        
+    <section 
+      className="bg-gradient-to-t from-[#151524ce] to-[#1313466c] mt-11 py-11 rounded-[6rem] text-center px-9 lg:px-10
+        border-[1.5px] border-solid border-border_color1"
+    >
       {/* title */}
       <CustomHeader
         align={"center"}
@@ -64,7 +67,7 @@ const EmailDisplay = ({ contactEmail }) => {
             readOnly
             ref={emailRef}
             type={'text'}
-            value={'elmcwl@gmail.com'}
+            value={contactEmail}
           />
           
         </div>

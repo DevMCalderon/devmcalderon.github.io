@@ -154,7 +154,7 @@ const Contact = () => {
             {/* copy email */}
             <div className='w-full lg:w-9/12 xl:w-8/12 2xl:w-7/12 mx-auto'>
               {/* copy email component */}
-              <EmailDisplay contactEmail={import.meta.env.VITE_APP_CONTACT_EMAIL} />
+              <EmailDisplay />
             </div>
             
           </div>
