@@ -58,7 +58,7 @@ const jobVacancies = {
         <li>Desarrollo de notificaciones automáticas y personalización de emails de verificación.</li>
         <li>Validación avanzada de datos mediante Form Requests.</li>
       </ul>
-      <Heading tag="h5">Contribuciones en Frontend (React, Tailwind):</Heading>
+      <Heading tag="h5">Contribuciones en Frontend (Livewire, Blade, Tailwind):</Heading>
       <ul className="article-description-list">
         <li>Implementación de layouts dinámicos con Blade y TailwindCSS.</li>
         <li>Creación de componentes reutilizables con Livewire.</li>
