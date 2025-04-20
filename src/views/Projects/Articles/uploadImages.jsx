@@ -7,11 +7,27 @@ const dependencies = {
   backend: {
     composerJSON: [
       "Fakerphp/faker",
-  ],
+      "Intervention/image",
+      "Laravel/framework",
+      "Laravel/pint",
+      "Laravel/sail",
+      "Laravel/tinker",
+      "Livewire/livewire",
+      "Mockery/mockery",
+      "Nunomaduro/collision",
+      "Phpunit/phpunit",
+      "Spatie/laravel-ignition"
+    ],
   },
   frontend: {
     packageJSON: [
-      "@tailwindcss/forms",
+      "Autoprefixer",
+      "Axios",
+      "Dropzone",
+      "Laravel-vite-plugin",
+      "Postcss",
+      "Tailwindcss",
+      "Vite"
     ],
   },
 };
@@ -36,6 +52,7 @@ const uploadImages = {
         <li>Creé controladores, modelos, migraciones con relaciones, factories, seeders y form requests para validar y estructurar los datos eficientemente.</li>
         <li>Definí la arquitectura de base de datos, enfocándome en la integridad referencial y la eficiencia en las consultas.</li>
         <li>Creación de Policies de autorización para control de acceso de los endpoints de la RESTful API.</li>
+        <li>Subida de imágenes utilizando la libreria de <HighlightText>Dropzone</HighlightText>.</li>
       </ul>
       <Heading tag="h5">Contribuciones en Frontend (Livewire, Blade, Tailwind):</Heading>
       <ul className="article-description-list">
