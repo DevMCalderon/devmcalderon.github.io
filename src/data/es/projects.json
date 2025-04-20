@@ -36,7 +36,7 @@
         },
         {
           "title": "SmartOrder",
-          "technologies_used": [ 1, 2, 9, 4, 5, 11, 18, 7, 12 ],
+          "technologies_used": [ 1, 2, 9, 4, 5, 11, 18, 7, 12, 26 ],
           "short_description": "Sistema de pedidos y gestión para restaurantes con acceso diferenciado según privilegios. Los clientes pueden seleccionar productos, gestionar su carrito y realizar pedidos, mientras que los empleados administran órdenes en tiempo real y pueden marcar compras como completadas o deshabilitar productos del catálogo.",
           "slug": "smartorder",
           "images":
@@ -90,7 +90,7 @@
         },
         {
           "title": "PicConnect",
-          "technologies_used": [ 2, 24, 25, 9, 5, 11, 7, 12, 18],
+          "technologies_used": [ 2, 24, 25, 9, 5, 11, 7, 12, 18, 26],
           "short_description": "Red social para compartir imágenes, con creaión de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento.",
           "slug": "picconnect",
           "images":
