@@ -6,12 +6,33 @@ import DependenciesSection from "@/components/Projects/Article/DependenciesSecti
 const dependencies = {
   backend: {
     composerJSON: [
+      "Guzzlehttp/guzzle",
+      "Laravel/framework",
+      "Laravel/sanctum",
+      "Laravel/tinker",
+      "Laravel/ui",
       "Fakerphp/faker",
-  ],
-  },
-  frontend: {
+      "Laravel/pint",
+      "Laravel/sail",
+      "Mockery/mockery",
+      "Nunomaduro/collision",
+      "Phpunit/phpunit",
+      "Spatie/laravel-ignition"
+    ],
     packageJSON: [
-      "@tailwindcss/forms",
+      "@Popperjs/core",
+      "@Vitejs/plugin-vue",
+      "Axios",
+      "Bootstrap",
+      "Laravel-vite-plugin",
+      "Lodash",
+      "Postcss",
+      "Sass",
+      "Vite",
+      "Jquery",
+      "Sweetalert2",
+      "Vue",
+      "Vue-loader"
     ],
   },
 };
