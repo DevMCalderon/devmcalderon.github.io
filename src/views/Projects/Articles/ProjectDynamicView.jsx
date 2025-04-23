@@ -6,7 +6,7 @@ import ArticleEmptyView from "@/views/Projects/Articles/ArticleEmptyView"
 import { articleSlugPathMap } from "@/routes.js"
 import Heading from "@/components/UI/Heading";
 
-// Function to get the project data dynamically depending on its name
+// Function to get the project data dynamically depending on its slug
 const loadProject = async (projectSlug) => {
   return (await import(articleSlugPathMap[projectSlug])).default;
 };

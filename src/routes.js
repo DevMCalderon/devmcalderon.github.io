@@ -72,6 +72,7 @@ export const articleSlugPathMap = {
   'jobmatch': '/src/views/Projects/Articles/jobVacancies',
   'picconnect': '/src/views/Projects/Articles/uploadImages',
   'edulink': '/src/views/Projects/Articles/schoolTutoring',
+  'dasc-uabcs': '/src/views/Projects/Articles/universityInfo',
 }
 
 export const NavbarRoutesHome = [

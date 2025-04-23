@@ -4,19 +4,27 @@ import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
 
 const dependencies = {
-  backend: {
-    composerJSON: [
-      "Fakerphp/faker",
+  plugins: [
+    "3D FlipBook - Lite Edition",
+    "Accessibility by UserWay",
+    "Advanced Custom Fields",
+    "Better Font Awesome",
+    "Collapse-O-Matic",
+    "Modal Builder Block",
+    "Presto Player",
+    "Responsive WordPress Slider - Soliloquy Lite",
+    "Staff List",
+    "Starter Templates",
+    "TablePress",
+    "TranslatePress - Multilingual",
+    "UpdraftPlus - Backup/Restore",
+    "What The File",
+    "WPForms Lite",
+    "WPIDE - File Manager & Code Editor"
   ],
-  },
-  frontend: {
-    packageJSON: [
-      "@tailwindcss/forms",
-    ],
-  },
 };
 
-const template = {
+const universityInfo = {
   Header: () => (
     <h4 className="arrow text-2xl font-semibold mb-5">
       Sistema
@@ -30,6 +38,18 @@ const template = {
       <p className="article-description-paragraph">
         Sistema <HighlightText>Herramienta</HighlightText>
       </p>
+      <div className="mb-7">
+        <p className="article-description text-xl mr-2"> 
+        <a 
+          className="text-link_color hover:text-link_color_hover hover:underline"
+          href="https://drive.google.com/file/d/146A4ZWGmUmljx_yUOmFoxRJlAAp7_KWH/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {"Haz click aquí "}
+        </a>
+         para acceder a la documentación extendida.</p>
+      </div>
       <Heading tag="h5">Contribuciones en Backend:</Heading>
       <ul className="article-description-list">
         <li></li>
@@ -51,4 +71,4 @@ const template = {
   ),
 };
 
-export default template;
+export default universityInfo;
