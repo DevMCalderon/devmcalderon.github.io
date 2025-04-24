@@ -2,6 +2,7 @@ import HighlightText from "@/components/HighlightText";
 import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
 import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
+import { IconGlobeWithMeridians, PageFacingUp } from "@/components/Icons";
 
 const dependencies = {
   plugins: [
@@ -38,26 +39,34 @@ const universityInfo = {
       <p className="article-description-paragraph">
         Sistema <HighlightText>Herramienta</HighlightText>
       </p>
+      
       <div className="mb-7">
         <p className="article-description text-xl mr-2"> 
+        <IconGlobeWithMeridians />
         <a 
-          className="text-link_color hover:text-link_color_hover hover:underline"
+          className="link"
+          href="https://www.uabcs.mx/dasc/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" Haz click aquí "}
+        </a>
+         para visitar el sitio web.</p>
+      </div>
+      
+      <div className="mb-7">
+        <p className="article-description text-xl mr-2"> 
+        <PageFacingUp />
+        <a 
+          className="link"
           href="https://drive.google.com/file/d/146A4ZWGmUmljx_yUOmFoxRJlAAp7_KWH/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
-          {"Haz click aquí "}
+          {" Haz click aquí "}
         </a>
          para acceder a la documentación extendida.</p>
       </div>
-      <Heading tag="h5">Contribuciones en Backend:</Heading>
-      <ul className="article-description-list">
-        <li></li>
-      </ul>
-      <Heading tag="h5">Contribuciones en Frontend:</Heading>
-      <ul className="article-description-list">
-        <li>.</li>
-      </ul>
     </>
   ),
   Features: () => (

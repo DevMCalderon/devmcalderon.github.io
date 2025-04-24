@@ -11,6 +11,9 @@
 }
 
 @layer components {
+  .link {
+    @apply text-link_color hover:text-link_color_hover hover:underline;
+  }
   .button_transparent_rounded {
     @apply px-11 py-[1.1rem] shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2
     flex justify-center items-center w-fit border-[1.5px] border-solid border-border_color1 bg-[black] bg-opacity-40
