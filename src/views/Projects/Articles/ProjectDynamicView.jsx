@@ -53,18 +53,21 @@ const ProjectDynamicView = () => {
             <projectData.ExtendedDescription />
           </section>
           
-          <section aria-labelledby="features" className="mb-10">
-            <Heading tag="h3" id='features'>
-              {t(`projectDetail.features`)}
-            </Heading>
-            <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4"/>
-            
-            <p className="text-lg text-start mb-5">
-              A continuación se presenta una selección de características clave del proyecto en formato multimedia, que reflejan mi participación directa como desarrollador. Cada componente fue diseñado e implementado con un enfoque estratégico en la eficiencia, la escalabilidad y la experiencia del usuario. Esta sección ilustra no solo las funcionalidades desarrolladas, sino también mi capacidad para traducir requerimientos técnicos y de negocio en soluciones concretas y visualmente integradas.
-            </p>
-            
-            <projectData.Features />
-          </section>
+          { projectData.Features && (
+              <section aria-labelledby="features" className="mb-10">
+              <Heading tag="h3" id='features'>
+                {t(`projectDetail.features`)}
+              </Heading>
+              <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4"/>
+              
+              <p className="text-lg text-start mb-5">
+                Esta sección presenta una muestra multimedia de las principales características del proyecto, desarrolladas e implementadas por mí con un enfoque estratégico en eficiencia, escalabilidad y experiencia de usuario. Refleja mi capacidad para convertir requerimientos técnicos y de negocio en soluciones funcionales y visualmente integradas.
+              </p>
+              
+              <projectData.Features />
+            </section>
+          )}
+
         </>
       )}
     </>

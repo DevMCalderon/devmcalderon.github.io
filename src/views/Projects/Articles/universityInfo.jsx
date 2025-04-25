@@ -26,18 +26,18 @@ const dependencies = {
 };
 
 const universityInfo = {
-  Header: () => (
-    <h4 className="arrow text-2xl font-semibold mb-5">
-      Sistema
-    </h4>
-  ),
   Dependencies: () => (
       <DependenciesSection dependencies={dependencies} />
+  ),
+  Header: () => (
+    <h4 className="arrow text-2xl font-semibold mb-5">
+      Sitio web informativo
+    </h4>
   ),
   ExtendedDescription: () => (
     <>
       <p className="article-description-paragraph">
-        Sistema <HighlightText>Herramienta</HighlightText>
+        Fue desarrollado durante mi periodo de practicas profesionales para el Departamento de Sistemas Computacionales de la Universidad Autonoma de Baja California Sur, siendo yo estudiante de esta universidad. Fue hecho con <HighlightText>Wordpress</HighlightText> a petición de los docentes. Optimiza la gestión de contenidos, reduciendo la carga de trabajo de profesores y mejorando el acceso a información clave para estudiantes. Incluye herramientas de accesibilidad, diseño supervisado por administradores y desarrollo a medida con integraciones optimizadas para mejorar la experiencia del usuario en base a las funcionalidades requeridas.
       </p>
       
       <div className="mb-7">
@@ -68,15 +68,6 @@ const universityInfo = {
          para acceder a la documentación extendida.</p>
       </div>
     </>
-  ),
-  Features: () => (
-    <div className="mb-10">
-      <ArticleVideoSection
-        labelledby="product-index"
-        title="Listado de Productos por Categoría:"
-        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273607/categories_obcoab.mp4"
-      />
-    </div>
   ),
 };
 
