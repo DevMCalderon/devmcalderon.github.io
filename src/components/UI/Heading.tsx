@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { ReactNode } from "react";
 import clsx from "clsx";
 
 type ValidHeading = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
@@ -8,15 +8,14 @@ type HeadingProps = {
   children: ReactNode;
   id?: string;
   className?: string;
-}
+};
 
-const Heading: FC<HeadingProps> = ({
+const Heading = ({
     tag: Tag = "h5", //h5 default
-    children, 
-    id ="",
-    className ="",
-  }) => {
-
+    children,
+    id,
+    className,
+  }: HeadingProps) => {
   return (
     <Tag 
       id={id} 
@@ -30,7 +29,9 @@ const Heading: FC<HeadingProps> = ({
           "h6-title": Tag === "h6",
         },
         className
-    )}>{children}</Tag>
+    )}>
+      {children}
+    </Tag>
   );
 };
 

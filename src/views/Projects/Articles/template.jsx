@@ -4,10 +4,16 @@ import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
 
 const dependencies = {
+  plugins: [
+    "Tailwindcss",
+  ]
   backend: {
     composerJSON: [
       "Fakerphp/faker",
-  ],
+    ],
+    packageJSON: [
+     "Axios",
+    ]
   },
   frontend: {
     packageJSON: [
@@ -17,12 +23,10 @@ const dependencies = {
 };
 
 const template = {
-  Dependencies: () => (
-      <DependenciesSection dependencies={dependencies} />
-  ),
+  Dependencies: () => <DependenciesSection dependencies={dependencies} />,
   Header: () => (
     <h4 className="arrow text-2xl font-semibold mb-5">
-      Sistema
+      Sistema.
     </h4>
   ),
   ExtendedDescription: () => (

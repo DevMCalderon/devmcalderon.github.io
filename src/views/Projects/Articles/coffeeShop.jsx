@@ -48,13 +48,11 @@ const dependencies = {
 };
 
 const coffeeShop = {
+  Dependencies: () => <DependenciesSection dependencies={dependencies} />,
   Header: () => (
     <h4 className="arrow text-2xl font-semibold mb-5">
-      Sistema de realización y gestión de pedidos para restaurantes
+      Sistema de realización y gestión de pedidos para restaurantes.
     </h4>
-  ),
-  Dependencies: () => (
-      <DependenciesSection dependencies={dependencies} />
   ),
   ExtendedDescription: () => (
     <>

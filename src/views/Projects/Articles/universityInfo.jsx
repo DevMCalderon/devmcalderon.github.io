@@ -1,8 +1,7 @@
 import HighlightText from "@/components/HighlightText";
-import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
-import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
-import { IconGlobeWithMeridians, PageFacingUp } from "@/components/Icons";
+import { IconGlobeWithMeridians, PageFacingUp, IconGitHub } from "@/components/Icons";
+import ExternalLink from "@/components/UI/ExternalLink";
 
 const dependencies = {
   plugins: [
@@ -26,47 +25,29 @@ const dependencies = {
 };
 
 const universityInfo = {
-  Dependencies: () => (
-      <DependenciesSection dependencies={dependencies} />
-  ),
+  Dependencies: () => <DependenciesSection dependencies={dependencies} />,
   Header: () => (
     <h4 className="arrow text-2xl font-semibold mb-5">
-      Sitio web informativo
+      Sitio web informativo universitario.
     </h4>
   ),
   ExtendedDescription: () => (
     <>
       <p className="article-description-paragraph">
-        Fue desarrollado durante mi periodo de practicas profesionales para el Departamento de Sistemas Computacionales de la Universidad Autonoma de Baja California Sur, siendo yo estudiante de esta universidad. Fue hecho con <HighlightText>Wordpress</HighlightText> a petición de los docentes. Optimiza la gestión de contenidos, reduciendo la carga de trabajo de profesores y mejorando el acceso a información clave para estudiantes. Incluye herramientas de accesibilidad, diseño supervisado por administradores y desarrollo a medida con integraciones optimizadas para mejorar la experiencia del usuario en base a las funcionalidades requeridas.
+        Fue desarrollado cuando era yo un estudiante en esta universidad durante mi periodo de practicas profesionales para el Departamento de Sistemas Computacionales de la Universidad Autonoma de Baja California Sur. Construido con <HighlightText>Wordpress</HighlightText> a petición de los docentes. Optimiza la gestión de contenidos, reduciendo la carga de trabajo de profesores y mejorando el acceso a información clave para estudiantes. Incluye herramientas de accesibilidad, diseño supervisado por administradores y desarrollo a medida con integraciones optimizadas para mejorar la experiencia del usuario en base a las funcionalidades requeridas.
       </p>
       
-      <div className="mb-7">
-        <p className="article-description text-xl mr-2"> 
-        <IconGlobeWithMeridians />
-        <a 
-          className="link"
-          href="https://www.uabcs.mx/dasc/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {" Haz click aquí "}
-        </a>
-         para visitar el sitio web.</p>
-      </div>
+      <ExternalLink
+        icon={<IconGlobeWithMeridians className="mr-2" />}
+        text="Visita el sitio web"
+        href="https://www.uabcs.mx/dasc/"
+      />
       
-      <div className="mb-7">
-        <p className="article-description text-xl mr-2"> 
-        <PageFacingUp />
-        <a 
-          className="link"
-          href="https://drive.google.com/file/d/146A4ZWGmUmljx_yUOmFoxRJlAAp7_KWH/view?usp=sharing"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {" Haz click aquí "}
-        </a>
-         para acceder a la documentación extendida.</p>
-      </div>
+      <ExternalLink
+        icon={<PageFacingUp className="mr-2" />}
+        text="Accede a la documentación extendida"
+        href="https://drive.google.com/file/d/146A4ZWGmUmljx_yUOmFoxRJlAAp7_KWH/view?usp=sharing"
+      />
     </>
   ),
 };

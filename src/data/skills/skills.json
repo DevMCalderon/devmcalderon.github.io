@@ -163,5 +163,10 @@
     "id": 33,
     "img_path": "/assets/img/skill_icons/windows.png",
     "label": "Windows"
+  },
+  {
+    "id": 33,
+    "img_path": "/assets/img/skill_icons/typescript.png",
+    "label": "Typescript"
   }
 ]

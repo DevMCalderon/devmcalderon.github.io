@@ -33,18 +33,16 @@ const dependencies = {
 };
 
 const uploadImages = {
+  Dependencies: () => <DependenciesSection dependencies={dependencies} />,
   Header: () => (
     <h4 className="arrow text-2xl font-semibold mb-5">
-      Sistema
+      Red social para compartir imágenes.
     </h4>
-  ),
-  Dependencies: () => (
-      <DependenciesSection dependencies={dependencies} />
   ),
   ExtendedDescription: () => (
     <>
       <p className="article-description-paragraph">
-        Red social para compartir imágenes, con creaión de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento.
+        Implementa una funcionalidad de creación de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento de contenidos.
       </p>
       <Heading tag="h5">Contribuciones en Backend (Laravel):</Heading>
       <ul className="article-description-list">

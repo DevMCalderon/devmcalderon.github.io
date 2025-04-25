@@ -34,18 +34,16 @@ const dependencies = {
 };
 
 const jobVacancies = {
+  Dependencies: () => <DependenciesSection dependencies={dependencies} />,
   Header: () => (
     <h4 className="arrow text-2xl font-semibold mb-5">
-      Sistema
+       Plataforma de reclutamiento y postulación a empleos.
     </h4>
-  ),
-  Dependencies: () => (
-      <DependenciesSection dependencies={dependencies} />
   ),
   ExtendedDescription: () => (
     <>
       <p className="article-description-paragraph">
-        Desarrollé una plataforma de reclutamiento y postulación a empleos utilizando <HighlightText>Laravel</HighlightText> para el backend, combinándolo con <HighlightText>Livewire</HighlightText>, <HighlightText>Blade</HighlightText> y <HighlightText>TailwindCSS</HighlightText> en el frontend. Permite a usuarios registrarse como recruiters o desarrolladores, publicar vacantes y aplicar a ellas. Se integró un sistema de búsqueda avanzada de vacantes por nombre, categoría y salario, además de confirmación de cuenta vía correo electrónico.
+        Desarrollada utilizando <HighlightText>Laravel</HighlightText> para el backend, combinándolo con <HighlightText>Livewire</HighlightText>, <HighlightText>Blade</HighlightText> y <HighlightText>TailwindCSS</HighlightText> en el frontend. Permite a usuarios registrarse como recruiters o desarrolladores, publicar vacantes y aplicar a ellas. Se integró un sistema de búsqueda avanzada de vacantes por nombre, categoría y salario, además de confirmación de cuenta vía correo electrónico.
       </p>
       <p className="article-description-paragraph">
         Los desarrolladores pueden subir su CV en formato PDF al postularse, mientras que los recruiters reciben notificaciones automáticas de nuevas aplicaciones. Se crearon componentes dinámicos reutilizables con Livewire y Blade. Se implementó gestión de archivos, autenticación personalizada, control de roles y permisos, validación avanzada y personalización de notificaciones de correo.

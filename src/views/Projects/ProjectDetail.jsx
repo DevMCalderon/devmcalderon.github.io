@@ -15,7 +15,7 @@ const ProjectDetail= () => {
   const {idCategory, idProject } = useParams();
   const {projectData, setProjectData, projectsJSON} = usePortfolioContext();
   
-  useEffect(() => {    
+  useEffect(() => {
     // Buscar la categoria por su nombre en el JSON
     const category = projectsJSON.categories.find(
       cat => cat.slug ==idCategory

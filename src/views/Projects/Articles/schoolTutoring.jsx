@@ -38,27 +38,24 @@ const dependencies = {
 };
 
 const schoolTutoring = {
-  Dependencies: () => (
-    <DependenciesSection dependencies={dependencies} />
-  ),
+  Dependencies: () => <DependenciesSection dependencies={dependencies} />,
   Header: () => (
     <h4 className="arrow text-2xl font-semibold mb-5">
-      Sistema
+      Plataforma de reclutamiento y postulación a empleos.
     </h4>
   ),
   ExtendedDescription: () => (
     <>
       <p className="article-description-paragraph">
-        Desarrollé una plataforma de reclutamiento y postulación a empleos utilizando <HighlightText>Laravel</HighlightText> para el backend, combinándolo con <HighlightText>Livewire</HighlightText>, <HighlightText>Blade</HighlightText> y <HighlightText>TailwindCSS</HighlightText> en el frontend. Permite a usuarios registrarse como recruiters o desarrolladores, publicar vacantes y aplicar a ellas. Se integró un sistema de búsqueda avanzada de vacantes por nombre, categoría y salario, además de confirmación de cuenta vía correo electrónico.
+        Desarrollada utilizando <HighlightText>Laravel</HighlightText> para el backend, combinándolo con <HighlightText>Livewire</HighlightText>, <HighlightText>Blade</HighlightText> y <HighlightText>TailwindCSS</HighlightText> en el frontend. Permite a usuarios registrarse como recruiters o desarrolladores, publicar vacantes y aplicar a ellas. Se integró un sistema de búsqueda avanzada de vacantes por nombre, categoría y salario, además de confirmación de cuenta vía correo electrónico.
       </p>
       <Heading tag="h5">Contribuciones en Backend (Laravel):</Heading>
-      <ul className="article-description-list">
-        <li>Desarrollo de controladores, modelos, migraciones y seeders.</li>
-      </ul>
-      <Heading tag="h5">Contribuciones en Frontend (React, Tailwind):</Heading>
-      <ul className="article-description-list">
-        <li>Implementación de layouts dinámicos con Blade y TailwindCSS.</li>
-      </ul>
+        <ul className="article-description-list">
+          <li>Integración de API de Zoom para creación y agendamiento de conferencias virtuales según los datos establecidos por el usuario.</li>
+          <li>Desarrollé múltiples endpoints para una <HighlightText>API RESTful</HighlightText>, asegurando una estructura limpia y escalable.</li>
+          <li>Creé controladores, modelos, migraciones con relaciones, factories, seeders y form requests para validar y estructurar los datos eficientemente.</li>
+          <li>Definí la arquitectura de base de datos, enfocándome en la integridad referencial y la eficiencia en las consultas.</li>
+        </ul>
     </>
   ),
   Features: () => (

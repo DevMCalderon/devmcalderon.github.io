@@ -91,7 +91,7 @@
         {
           "title": "PicConnect",
           "technologies_used": [ 2, 24, 25, 9, 5, 11, 7, 12, 18, 26],
-          "short_description": "Red social para compartir imágenes, con creaión de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento.",
+          "short_description": "Red social para compartir imágenes, con creación de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento.",
           "slug": "picconnect",
           "images":
           [
