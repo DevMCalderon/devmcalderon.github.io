@@ -11,7 +11,7 @@ type ImgIconProps = React.ImgHTMLAttributes<HTMLImageElement>;
 
 //  🟨 <span> icon generator
 const createSpanIcon = (emoji: string) => ({ className, ...props }: SpanIconProps) =>
-  <span className={ clsx("inline-block", className) } { ...props }>{ emoji }</span>
+  <span className={ clsx("span-icon", className) } { ...props }>{ emoji }</span>
 
 // 🟦 <img> icon generator
 const createImageIcon = (src: string, defaultAlt: string) => ({ className, alt = defaultAlt, ...props}: ImgIconProps) =>
@@ -22,6 +22,7 @@ export const IconConstruction = createSpanIcon("🚧");
 export const IconBuildingConstruction = createSpanIcon("🏗️");
 export const IconGlobeWithMeridians = createSpanIcon("🌐");
 export const PageFacingUp = createSpanIcon("📄");
+export const OpenFileFolder = createSpanIcon("📂");
 
 // Imágenes como íconos
 export const IconLinkedIn = createImageIcon(navIcon1, "LinkedIn");

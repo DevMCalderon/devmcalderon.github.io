@@ -8,7 +8,7 @@ import '@/components/Banner/Banner.css';
 import arrowDown from "@/assets/img/icons/arrow-down.svg";
 import headerImg from "@/assets/img/pfp/difuminado5.png";
 import ExternalLink from "@/components/UI/ExternalLink";
-import { IconGitHub } from "@/components/Icons";
+import { IconGitHub, OpenFileFolder } from "@/components/Icons";
 
 const Banner = () => {
   const [ t ] = useTranslation("global");
@@ -107,7 +107,7 @@ const Banner = () => {
               </p>
                 
               {/* list */}
-              <ul className="ml-6 lista-flecha text-start">
+              <ul className="ml-6 lista-flecha text-start mb-5">
                 <li className="paragraphStyles bannerList">
                     {t(`banner.description_enfocado_en`)}
                     <strong className="text-highlighted_text_color">{t(`banner.description_enfocado_en2`)}</strong>
@@ -127,33 +127,22 @@ const Banner = () => {
                 </li>
               </ul>
                 
-
               {/* cv */}
-              <div className="flex mb-6 pt-[0.8rem] flex-wrap">
-                <p className="mb-2 md:mb-0">
-                  {'📂 '}
-                </p>
-                <a
-                  className="font-bold text-lg tracking-wider flex align items-center"
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.google.com/search?q=software+development+engineer&sca_esv=580697965&ei=Sk1MZanzOtTDkPIPwJKL2A0&oq=softwar+development+en&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnNvZnR3YXIgZGV2ZWxvcG1lbnQgZW4qAggAMgcQABgNGIAEMgcQABgNGIAEMgcQABgNGIAEMgcQABgNGIAEMgcQABgNGIAEMgcQABgNGIAEMgcQABgNGIAEMgcQABgNGIAEMgcQABgNGIAEMgcQABgNGIAESJxuUABYtGlwBngBkAEAmAGuAaABjCmqAQQwLjQwuAEDyAEA-AEBqAIUwgILEAAYgAQYsQMYgwHCAg4QLhiABBixAxjHARjRA8ICDRAuGIoFGMcBGNEDGEPCAgUQABiABMICCBAAGIoFGLEDwgINEAAYigUYsQMYgwEYQ8ICBxAAGIoFGEPCAgoQABiKBRixAxhDwgIIEAAYgAQYsQPCAgoQABiABBixAxgKwgIHEAAYgAQYCsICEBAAGIoFGOoCGLQCGEPYAQHCAh0QABiKBRjlAhjlAhjqAhi0AhiKAxi3AxjUA9gBAcICFhAAGAMYjwEY5QIY6gIYtAIYjAPYAQLCAhYQLhgDGI8BGOUCGOoCGLQCGIwD2AECwgILEAAYigUYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICERAuGIMBGMcBGLEDGNEDGIAEwgIJEAAYDRiABBgKwgIGEAAYHhgNwgIIEAAYHhgNGArCAgsQABgeGA0Y8QQYCuIDBBgAIEGIBgG6BgQIARgHugYGCAIQARgK&sclient=gws-wiz-serp"
-                >
-                  <span className="linkStyles ml-2">
-                    {t(`banner.cv2`)}
-                  </span>
-                  <div className="justify-start">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="25" height="25" fill="currentColor"><path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"></path></svg>
-                  </div>
-                </a>
-                {/* svg arrow */}
-              </div>
+              <ExternalLink
+                icon={<OpenFileFolder />}
+                text={t(`banner.cv2`)}
+                href=""
+                className="mb-6"
+                showDecoration={true}
+              />
               
+              {/* portfolio source code */}
               <ExternalLink
                 icon={<IconGitHub />}
                 text="Este sitio fue construido por mí mismo — Ver código fuente"
                 href="https://github.com/DevMCalderon/my_portfolio_react_vite"
                 className="mb-6"
+                showDecoration={true}
               />
 
               {/* social networks */}

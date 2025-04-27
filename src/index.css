@@ -11,11 +11,14 @@
 }
 
 @layer components {
+  .span-icon {
+    @apply inline-block mr-2;
+  }
   .image-icon {
     @apply w-6 h-6 mr-2;
   }
   .link {
-    @apply text-link_color hover:text-link_color_hover hover:underline;
+    @apply text-link_color hover:text-link_color_hover hover:underline tracking-wider;
   }
   .button_transparent_rounded {
     @apply px-11 py-[1.1rem] shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2
