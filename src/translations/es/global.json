@@ -43,8 +43,7 @@
     "typeAnimation_3": "Desarrollador Frontend React",
     "typeAnimation_3": "Dev-Ops",
     "typeAnimation_4": "Diseñador de Interfaces",
-    "cv": "Explora mi experiencia y proyectos:",
-    "cv2": " [Descarga mi CV aquí]"
+    "cv2": "Descarga mi Currículum Vitae"
   },
   "skills": {
     "skills": "Habilidades",
@@ -116,8 +115,8 @@
     "chill_out2": "El destinatario \"elmcwl@gmail.com\" tiene demasiadas solicitudes de registro recientes"
   },
   "footer": {
-    "copyright": "© 2023 Martín Calderón. Todos los derechos reservados",
-    "technologies_used": "Este sitio web ha sido desarrollado con React y Vite"
+    "copyright": "© 2025 Martín Calderón. Todos los derechos reservados",
+    "technologies_used": "Este sitio web ha sido desarrollado con React.Js, TypeScript y Tailwind CSS"
   },
   "projectDetail": {
     "title": "Proyecto",

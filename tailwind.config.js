@@ -17,7 +17,7 @@ export default {
         'mdsm': '0.91rem',
         'base': '1rem',
         'smmd': '1.05rem',
-        'mdsm2': '1.09rem',
+        'lgbase': '1.09rem',
         'lg': '1.125rem',
         'xl': '1.25rem',
         '2xl': '1.5rem',

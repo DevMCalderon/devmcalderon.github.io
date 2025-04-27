@@ -37,7 +37,7 @@ const Skills = () => {
             text={t(`skills.skills`)}
           />
           {/* description */}
-          <p className='text-left w-[95%] text-mdsm2 mx-auto mt-[14px] mb-6 md:mb-8 lg:mb-[70px]'
+          <p className='text-left w-[95%] text-lgbase mx-auto mt-[14px] mb-6 md:mb-8 lg:mb-[70px]'
           >
             {skills_description}
           </p>

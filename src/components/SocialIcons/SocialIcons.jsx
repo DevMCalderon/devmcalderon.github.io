@@ -15,7 +15,7 @@ const SocialIcons = () => {
       id: 1,
       src: navIcon2,
       dataTooltip: t(`navbar.go_to`)+' GitHub',
-      href: 'https://github.com/ThePushMaker',
+      href: 'https://github.com/DevMCalderon',
       label: 'GitHub'
     },
     {

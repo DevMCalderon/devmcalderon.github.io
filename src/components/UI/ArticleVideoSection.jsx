@@ -13,7 +13,7 @@ const ArticleVideoSection = ({ labelledby, title, videoSrc, caption }) => {
       </div>
       
       { caption &&
-        <p className="bg-blue-950 rounded-2xl text-mdsm2 p-4 px-5 mb-9">{ caption }</p>
+        <p className="bg-blue-950 rounded-2xl text-lgbase p-4 px-5 mb-9">{ caption }</p>
       }
     </section>
   );

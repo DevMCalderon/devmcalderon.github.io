@@ -15,7 +15,7 @@ const SocialIcons = () => {
       id: 2,
       Icon: () => <IconGitHub />,
       dataTooltip: 'GitHub',
-      href: 'https://github.com/DSW-47'
+      href: 'https://github.com/DevMCalderon'
     },
     {
       id: 3,

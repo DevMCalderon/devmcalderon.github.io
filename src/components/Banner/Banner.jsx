@@ -7,6 +7,8 @@ import '@/components/Banner/Banner.css';
 
 import arrowDown from "@/assets/img/icons/arrow-down.svg";
 import headerImg from "@/assets/img/pfp/difuminado5.png";
+import ExternalLink from "@/components/UI/ExternalLink";
+import { IconGitHub } from "@/components/Icons";
 
 const Banner = () => {
   const [ t ] = useTranslation("global");
@@ -130,7 +132,6 @@ const Banner = () => {
               <div className="flex mb-6 pt-[0.8rem] flex-wrap">
                 <p className="mb-2 md:mb-0">
                   {'📂 '}
-                  {t(`banner.cv`)}
                 </p>
                 <a
                   className="font-bold text-lg tracking-wider flex align items-center"
@@ -147,8 +148,14 @@ const Banner = () => {
                 </a>
                 {/* svg arrow */}
               </div>
+              
+              <ExternalLink
+                icon={<IconGitHub />}
+                text="Este sitio fue construido por mí mismo — Ver código fuente"
+                href="https://github.com/DevMCalderon/my_portfolio_react_vite"
+                className="mb-6"
+              />
 
-                
               {/* social networks */}
               <div className="flex">
                   <SocialIcons />

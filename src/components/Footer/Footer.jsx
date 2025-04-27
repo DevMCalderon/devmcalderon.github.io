@@ -23,8 +23,8 @@ const Footer = () => {
           </div>
           <div className='w-full md:w-1/2 text-end'>
             <SocialIconsSmall />
-            <p className={smTextSize}> {t(`footer.copyright`)}.</p>
-            <p className={smTextSize}> {t(`footer.technologies_used`)}.</p>
+            <p className="text-lg"> {t(`footer.copyright`)}.</p>
+            <p className="text-lgbase"> {t(`footer.technologies_used`)}.</p>
           </div>
         </div>
       </div>

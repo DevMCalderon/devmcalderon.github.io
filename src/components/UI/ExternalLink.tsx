@@ -1,14 +1,16 @@
+import clsx from "clsx";
 import { ReactNode } from "react";
 
 type ExternalLinkProps = {
   icon?: ReactNode;
   text: string;
   href: string;
+  className?: string;
 };
 
-const ExternalLink = ({ icon, text, href }: ExternalLinkProps) => {
+const ExternalLink = ({ icon, text, href, className }: ExternalLinkProps) => {
   return (
-    <div className="mb-5">
+    <div className={clsx("mb-4", className)}>
       <p className="article-description text-xl"> 
         <a
           className="flex items-center"
