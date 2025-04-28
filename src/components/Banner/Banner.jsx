@@ -96,7 +96,7 @@ const Banner = () => {
                   target="_blank"
                   rel="noreferrer"
                   className="hover:underline hover:decoration-link_color_hover"
-                  href="https://www.google.com/search?q=Full+Stack+Developer&oq=full+stack+developer&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDMxNjhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                  href={import.meta.env.VITE_FULLSTACK_URL}
                   >
                     <strong className="text-link_color hover:text-link_color_hover">
                       {t(`banner.full_stack`)}
@@ -140,7 +140,7 @@ const Banner = () => {
               <ExternalLink
                 icon={<IconGitHub />}
                 text="Este sitio fue construido por mí mismo — Ver código fuente"
-                href="https://github.com/DevMCalderon/my_portfolio_react_vite"
+                href={import.meta.env.VITE_GITHUB_PORTFOLIO_URL}
                 className="mb-6"
                 showDecoration={true}
               />

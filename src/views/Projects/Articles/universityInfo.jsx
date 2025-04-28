@@ -40,13 +40,13 @@ const universityInfo = {
       <ExternalLink
         icon={<IconGlobeWithMeridians className="mr-2" />}
         text="Visita el sitio web"
-        href="https://www.uabcs.mx/dasc/"
+        href={import.meta.env.VITE_DASC_URL}
       />
       
       <ExternalLink
         icon={<PageFacingUp className="mr-2" />}
         text="Accede a la documentación extendida"
-        href="https://drive.google.com/file/d/146A4ZWGmUmljx_yUOmFoxRJlAAp7_KWH/view?usp=sharing"
+        href={import.meta.env.VITE_DASC_DOCS_URL}
       />
     </>
   ),

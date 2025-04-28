@@ -27,15 +27,6 @@
   display: block;
 }
 
-.banner a svg {
-  font-size: 25px;
-  margin-left: 10px;
-  transition: 0.3s ease-in-out;
-  line-height: 1;
-}
-.banner a:hover svg {
-  margin-left: 25px;
-}
 .banner .animatedImg {
   animation: updown 9s linear infinite;
    /* border: 3px solid black; */
