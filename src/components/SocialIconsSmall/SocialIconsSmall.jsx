@@ -1,6 +1,6 @@
 import { Tooltip } from 'react-tooltip';
 
-import { IconYouTube, IconLinkedIn, IconGitHub } from '@/components/Icons';
+import { IconYouTube, IconLinkedIn, IconGitHub } from '@/components/UI/Icons';
 import './SocialIconsSmall.css'
 
 const SocialIcons = () => {

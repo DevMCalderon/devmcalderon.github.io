@@ -25,16 +25,17 @@ const createSvgIcon = (SvgComponent: React.FunctionComponent<React.SVGProps<SVGS
 ({ className, title="defaultTitle", ...props }: SVGIconProps ) =>
   <SvgComponent className={ clsx("svg-icon", className) } title={ title } { ...props } />;
 
-// 🚧 Emojis como íconos
+// 🚧 span emojis as icons
 export const IconConstruction = createSpanIcon("🚧");
 export const IconBuildingConstruction = createSpanIcon("🏗️");
 export const IconGlobeWithMeridians = createSpanIcon("🌐");
 export const PageFacingUp = createSpanIcon("📄");
 export const OpenFileFolder = createSpanIcon("📂");
 
-// Imágenes como íconos
+// img svg as icons
 export const IconLinkedIn = createImageIcon(navIcon1, "LinkedIn");
 export const IconGitHub = createImageIcon(navIcon2, "GitHub");
 export const IconYouTube = createImageIcon(navIcon3, "YouTube");
 
+// svg as icons
 export const IconRightArrowCircle = createSvgIcon(RightArrowCircle, "IconRightArrowCircle");

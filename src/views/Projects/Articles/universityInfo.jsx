@@ -1,6 +1,6 @@
 import HighlightText from "@/components/HighlightText";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
-import { IconGlobeWithMeridians, PageFacingUp, IconGitHub } from "@/components/Icons";
+import { IconGlobeWithMeridians, PageFacingUp, IconGitHub } from "@/components/UI/Icons";
 import ExternalLink from "@/components/UI/ExternalLink";
 
 const dependencies = {

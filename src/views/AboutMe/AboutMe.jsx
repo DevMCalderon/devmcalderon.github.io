@@ -64,7 +64,7 @@ const AboutMe = () => {
               <a 
                 className={`mx-auto ${linkStyles}`}
                 target="_blank" rel="noreferrer"
-                href="https://www.google.com/search?q=disc+dc&oq=disc+dc&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIICAEQABgWGB4yCAgCEAAYFhgeMggIAxAAGBYYHjIICAQQABgWGB4yCAgFEAAYFhgeMggIBhAAGBYYHjIICAcQABgWGB4yCAgIEAAYFhgeMggICRAAGBYYHtIBCDEyMzFqMWo3qAIAsAIA&sourceid=chrome&ie=UTF-8"
+                href={import.meta.env.VITE_DISC_URL}
               >
                 DISC: DC
               </a>

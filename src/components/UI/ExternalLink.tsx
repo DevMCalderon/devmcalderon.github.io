@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { ReactNode } from "react";
-import { IconRightArrowCircle } from "@/components/Icons";
+import { IconRightArrowCircle } from "@/components/UI/Icons";
 
 type ExternalLinkProps = {
   icon?: ReactNode;

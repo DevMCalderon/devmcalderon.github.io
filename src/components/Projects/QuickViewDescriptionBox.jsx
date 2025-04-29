@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import ProjectTechnologiesDisplay from "@/components/Projects/ProjectTechnologiesDisplay";
 import ExternalLink from "@/components/UI/ExternalLink";
-import { IconGitHub } from "@/components/Icons";
+import { IconGitHub } from "@/components/UI/Icons";
 
 const QuickViewDescriptionBox = ({ projectData }) => {
   const [t] = useTranslation("global");
@@ -40,7 +40,7 @@ const QuickViewDescriptionBox = ({ projectData }) => {
         <ExternalLink
           icon={<IconGitHub />}
           text="Visita el proyecto en GitHub"
-          href=""
+          href={""}
         />
       </section>
     

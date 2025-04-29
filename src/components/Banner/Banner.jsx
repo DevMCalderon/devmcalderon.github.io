@@ -8,7 +8,7 @@ import '@/components/Banner/Banner.css';
 import arrowDown from "@/assets/img/icons/arrow-down.svg";
 import headerImg from "@/assets/img/pfp/difuminado5.png";
 import ExternalLink from "@/components/UI/ExternalLink";
-import { IconGitHub, OpenFileFolder } from "@/components/Icons";
+import { IconGitHub, OpenFileFolder } from "@/components/UI/Icons";
 
 const Banner = () => {
   const [ t ] = useTranslation("global");

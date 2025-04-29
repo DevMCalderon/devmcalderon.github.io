@@ -1,4 +1,4 @@
-import { IconBuildingConstruction, IconConstruction } from "@/components/Icons";
+import { IconBuildingConstruction, IconConstruction } from "@/components/UI/Icons";
 
 const ArticleEmptyView = () => {
 
