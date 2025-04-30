@@ -2,11 +2,11 @@ import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
 import './TypeAnimation.css'
-import { useTranslation } from 'react-i18next';
+
 function TypedText(typeAnimationArray) {
   const typedRef = useRef(null);
   
-  const Textarray =  Object.values(typeAnimationArray);
+  const Textarray = Object.values(typeAnimationArray);
   
   useEffect(() => {
     const options = {
@@ -24,7 +24,7 @@ function TypedText(typeAnimationArray) {
     }
   }, [typeAnimationArray]);
 
-  return <span ref={typedRef}></span>;
+  return <span className='wrap text-highlighted_text_color' ref={typedRef} ></span>;
 }
 
 function App(typeAnimationArray) {

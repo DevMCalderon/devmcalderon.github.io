@@ -4,11 +4,11 @@ import { useTranslation } from "react-i18next";
 import TypeAnimation from '@/components/Banner/TypeAnimation/TypeAnimation'
 import SocialIcons from "@/components/SocialIcons/SocialIcons";
 import '@/components/Banner/Banner.css';
+import { IconGitHub, OpenFileFolder, IconGlobeWithMeridians } from "@/components/UI/Icons";
+import ExternalLink from "@/components/UI/ExternalLink";
 
 import arrowDown from "@/assets/img/icons/arrow-down.svg";
 import headerImg from "@/assets/img/pfp/difuminado5.png";
-import ExternalLink from "@/components/UI/ExternalLink";
-import { IconGitHub, OpenFileFolder } from "@/components/UI/Icons";
 
 const Banner = () => {
   const [ t ] = useTranslation("global");
@@ -42,7 +42,7 @@ const Banner = () => {
           <h2 className={`paragraphStyles2 text-5xl lg:text-[3.7rem] lg:w-[90%] mx-auto`}>
             {'"'}
             {t(`banner.slogan1`)}
-            <strong className="text-link_color">
+            <strong className="text-blue-300">
               {t(`banner.slogan2`)}
             </strong>
             {t(`banner.slogan3`)}
@@ -65,27 +65,24 @@ const Banner = () => {
         </div>
           
         {/* personal info section */}
-        <section className="flex max-w-screen-2xl mx-auto" id="banner">
+        <section className="flex max-w-screen-2xl mx-auto" id="banner" aria-labelledby="banner">
           <div className="items-center flex flex-wrap mx-5 md:mx-16">
             <div className="w-full lg:w-7/12">
-                
-              <span className="tagline text-link_disabled_color text-xl">
-                <span className="text-sm">
-                  {'🌐 '}
-                </span>
+            
+              {/* welcome box */}
+              <div className="tagline text-link_disabled_color text-xl">
+                  {' '}
+                  <IconGlobeWithMeridians className="text-sm" />
                   {t(`banner.welcome`)}
-                <span className="text-sm">
-                  {' 🌐'}
-                </span>
-              </span>
+                  {' '}
+                  <IconGlobeWithMeridians className="text-sm" />
+              </div>
               
               {/* Name & Animated text */}
-              <h1 className="text-4xl md:text-5xl lg:text-5xl mb-3">
+              <h1 className="text-4xl md:text-5xl lg:text-5xl mb-3" id="banner">
                 <span className="textShadow">{t(`banner.Fullname`)}</span>
-                <div className="h-16 lg:h-12 mt-2">
-                  <span className="wrap text-highlighted_text_color" style={{ fontSize: `${fontSize}px` }}>
-                    { <TypeAnimation {...typeAnimationArray}/>}
-                  </span>
+                <div className="h-16 lg:h-12 mt-2" style={{ fontSize: `${fontSize}px` }}>
+                  { <TypeAnimation {...typeAnimationArray}/>}
                 </div>
               </h1>
                 
@@ -98,7 +95,7 @@ const Banner = () => {
                   className="hover:underline hover:decoration-link_color_hover"
                   href={import.meta.env.VITE_FULLSTACK_URL}
                   >
-                    <strong className="text-link_color hover:text-link_color_hover">
+                    <strong className="text-blue-300 hover:text-link_color_hover">
                       {t(`banner.full_stack`)}
                     </strong>
                 </a>
@@ -139,7 +136,7 @@ const Banner = () => {
               {/* portfolio source code */}
               <ExternalLink
                 icon={<IconGitHub />}
-                text="Este sitio fue construido por mí mismo — Ver código fuente"
+                text={t(`banner.portfolio_source_code_text`)}
                 href={import.meta.env.VITE_GITHUB_PORTFOLIO_URL}
                 className="mb-6"
                 showDecoration={true}
@@ -151,11 +148,9 @@ const Banner = () => {
               </div>
             </div>
             
-            
-            
             {/* profile picture */}
             <div className=" md:w-1/2 lg:w-5/12 mt-16 lg:mt-0 mx-auto self-start">
-                <img className="animatedImg w-96 md:w-80 lg:w-[400px] rounded-full opacity-[92%] shadow-2xl ml-auto" src={headerImg} alt="Header Img" />
+              <img className="animatedImg w-96 md:w-80 lg:w-[400px] rounded-full opacity-[92%] shadow-2xl ml-auto" src={headerImg} alt="Header Img" />
             </div>
             
           </div>

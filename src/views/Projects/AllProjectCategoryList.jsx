@@ -27,7 +27,7 @@ const AllProjectCategoryList = () => {
               <li className="pl-3" key={index}>
                 <Link
                   to={`${routes[category.category]}`}
-                  className="text-link_color hover:text-link_color_hover hover:underline"
+                  className="text-blue-300 hover:text-link_color_hover hover:underline"
                 >
                   {category.category}
                 </Link>

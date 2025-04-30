@@ -18,7 +18,7 @@
     @apply w-6 h-6 mr-2;
   }
   .link {
-    @apply text-link_color hover:text-link_color_hover hover:underline tracking-wider;
+    @apply text-blue-300 hover:text-link_color_hover hover:underline tracking-wider;
   }
   .button_transparent_rounded {
     @apply px-11 py-[1.1rem] shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2
@@ -26,7 +26,7 @@
   text-white font-bold relative transition-all duration-300 ease-in-out rounded-[1.3rem];
   }
   .linkStyles {
-    @apply text-link_color hover:text-link_color_hover hover:underline textShadow cursor-pointer;
+    @apply text-blue-300 hover:text-link_color_hover hover:underline textShadow cursor-pointer;
   }
   .paragraphStyles {
     @apply mb-2 textShadow text-[#ccc];

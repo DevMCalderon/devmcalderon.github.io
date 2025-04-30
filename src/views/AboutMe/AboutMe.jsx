@@ -5,7 +5,7 @@ import CustomHeader from '@/components/UI/CustomHeader/CustomHeader';
 const AboutMe = () => {
   const [t] = useTranslation("global");
 
-  const linkStyles = 'text-link_color hover:text-link_color_hover hover:underline textShadow cursor-pointer'
+  const linkStyles = 'text-blue-300 hover:text-link_color_hover hover:underline textShadow cursor-pointer'
   const paragraphStyles = 'mb-2 textShadow text-[#ccc]'
 
   return (

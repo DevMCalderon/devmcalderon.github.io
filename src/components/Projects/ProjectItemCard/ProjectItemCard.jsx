@@ -35,7 +35,7 @@ const ProjectItemCard = ({ projectData }) => {
         {/* text and icons */}
         <div className="text-left ml-0 md:ml-6">
           {/* <h4 className="text-lg text-white font-bold mb-2">{'- '}{title}{' -'}</h4> */}
-          <h4 className="text-lg text-white font-bold mb-2 group-hover:text-link_color">{title}</h4>
+          <h4 className="text-lg text-white font-bold mb-2 group-hover:text-blue-300">{title}</h4>
           
           {/* description */}
           <p className="text-mdsm h-[7rem] overflow-hidden text-ellipsis text-slate-300 mb-1.5">{short_description}</p>
