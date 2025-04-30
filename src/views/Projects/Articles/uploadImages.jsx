@@ -63,9 +63,24 @@ const uploadImages = {
   Features: () => (
     <div className="mb-10">
       <ArticleVideoSection
-        labelledby="product-index"
-        title="Listado de Productos por Categoría:"
-        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273607/categories_obcoab.mp4"
+        labelledby="create-post-create-comment-show-posts-by-profile"
+        title="Crear, comentar y ver posts de un perfil:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745386132/create-post-create-comment-show-posts-by-profile_doc7ht.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="upload-profile-image-edit-username"
+        title="Subir imagen de perfil y editar username:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745386132/upload-profile-image-edit-username_wfl6kj.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="like-undo-like"
+        title="Dar y quitar me gusta a una publicación:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745386133/like-dislike_khx43q.mp4"
+      />
+      <ArticleVideoSection
+        labelledby="follow-undo-follow"
+        title="Dar y quitar seguir a un perfil:"
+        videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745386132/follow-unfollow_pl7lax.mp4"
       />
     </div>
   ),
