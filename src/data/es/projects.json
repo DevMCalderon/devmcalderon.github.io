@@ -142,32 +142,6 @@
           ]
         },
         {
-          "title": "DASC UABCS",
-          "technologies_used": [ 10, 5, 4, 12, 7],
-          "short_description": "Sitio web informativo para el Departamento de Sistemas Computacionales de la UABCS. Optimiza la gestión de contenidos, reduciendo la carga de trabajo de profesores y mejorando el acceso a información clave para estudiantes. Incluye herramientas de accesibilidad, diseño supervisado por docentes y desarrollo a medida con integraciones optimizadas.",
-          "slug": "dasc-uabcs",
-          "images": [
-            {
-              "id": 1,
-              "path": "/assets/img/projects/dasc-uabcs/1.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
-            },
-            {
-              "id": 2,
-              "path": "/assets/img/projects/dasc-uabcs/2.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
-            },
-            {
-              "id": 3,
-              "path": "/assets/img/projects/dasc-uabcs/3.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
-            }
-          ]
-        },
-        {
           "title": "LearnPlay",
           "technologies_used": [ 5, 4, 12, 7, 18],
           "short_description": "Sitio web educativo para niños de primaria, ofrece una experiencia de aprendizaje interactiva y divertida mediante tres mini-juegos centrados en operaciones matemáticas básicas, reconocimiento de patrones y lectura de reloj analógico. Implementa sistema de vidas, desbloqueo de niveles con localStorage, optimización con componentes reutilizables y carga dinámica de datos desde archivos JSON.",
@@ -188,6 +162,32 @@
             {
               "id": 3,
               "path": "/assets/img/projects/educational-games/3.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            }
+          ]
+        },
+        {
+          "title": "DASC UABCS",
+          "technologies_used": [ 10, 5, 4, 12, 7],
+          "short_description": "Sitio web informativo para el Departamento de Sistemas Computacionales de la UABCS. Optimiza la gestión de contenidos, reduciendo la carga de trabajo de profesores y mejorando el acceso a información clave para estudiantes. Incluye herramientas de accesibilidad, diseño supervisado por docentes y desarrollo a medida con integraciones optimizadas.",
+          "slug": "dasc-uabcs",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/dasc-uabcs/1.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/dasc-uabcs/2.png",
+              "alt": "Panel Administrativo Veterinaria",
+              "caption": "Panel Administrativo Veterinaria"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/dasc-uabcs/3.png",
               "alt": "Panel Administrativo Veterinaria",
               "caption": "Panel Administrativo Veterinaria"
             }

@@ -126,6 +126,8 @@
     "Category": "Categoría:",
     "used_technologies": "Tecnologias usadas:",
     "used_dependencies": "Dependencias usadas:",
-    "features": "Funcionalidades:"
+    "features": "Funcionalidades:",
+    "repository": "Código Fuente:",
+    "repository_link_text": "Visita el repositorio en GitHub"
   }
 }

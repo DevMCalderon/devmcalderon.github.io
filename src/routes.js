@@ -73,6 +73,7 @@ export const articleSlugPathMap = {
   'picconnect': '/src/views/Projects/Articles/uploadImages',
   'edulink': '/src/views/Projects/Articles/schoolTutoring',
   'dasc-uabcs': '/src/views/Projects/Articles/universityInfo',
+  'learnplay': '/src/views/Projects/Articles/educationalGames',
 }
 
 export const NavbarRoutesHome = [

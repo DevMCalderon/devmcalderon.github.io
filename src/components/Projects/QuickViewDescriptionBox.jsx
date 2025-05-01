@@ -36,10 +36,10 @@ const QuickViewDescriptionBox = ({ projectData }) => {
       
       {/* GitHub */}
       <section aria-labelledby="category" className="mb-3">
-        <h3 id="category" className="text-xl text-start text-highlighted_text_color mb-2">GitHub</h3>
+        <h3 id="category" className="text-xl text-start text-highlighted_text_color mb-2">{t(`projectDetail.repository`)}</h3>
         <ExternalLink
           icon={<IconGitHub />}
-          text="Visita el proyecto en GitHub"
+          text={t(`projectDetail.repository_link_text`)}
           href={""}
         />
       </section>

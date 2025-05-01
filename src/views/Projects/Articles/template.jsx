@@ -6,7 +6,7 @@ import DependenciesSection from "@/components/Projects/Article/DependenciesSecti
 const dependencies = {
   plugins: [
     "Tailwindcss",
-  ]
+  ],
   backend: {
     composerJSON: [
       "Fakerphp/faker",
