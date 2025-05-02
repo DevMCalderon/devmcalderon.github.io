@@ -23,6 +23,10 @@ type DependenciesSectionProps = {
 const DependenciesSection: React.FC<DependenciesSectionProps> = ({ dependencies }) => {
   return (
     <>
+      {(!dependencies.plugins?.length > 0 && !dependencies.general?.backend?.length > 0 && !dependencies.frontend?.length > 0) && (
+        <p className="article-dependencies-paragraph">No se incluyeron dependencias en el proyecto.</p>
+      )}
+    
       {(dependencies.plugins?.length > 0) && (
         <section aria-labelledby="general-dependencies">
           <Heading tag="h4" id="general-dependencies">Plugins</Heading>

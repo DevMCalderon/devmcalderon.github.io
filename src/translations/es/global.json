@@ -124,8 +124,8 @@
     "documentation": "Documentación:",
     "extended_description": "Descripción extendida:",
     "Category": "Categoría:",
-    "used_technologies": "Tecnologias usadas:",
-    "used_dependencies": "Dependencias usadas:",
+    "used_technologies": "Tecnologias empleadas:",
+    "used_dependencies": "Dependencias:",
     "features": "Funcionalidades:",
     "repository": "Código Fuente:",
     "repository_link_text": "Visita el repositorio en GitHub"

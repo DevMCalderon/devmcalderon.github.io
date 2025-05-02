@@ -3,45 +3,31 @@ import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
 import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
 
-const dependencies = {
-  plugins: [
-    "Tailwindcss",
-  ],
-  backend: {
-    composerJSON: [
-      "Fakerphp/faker",
-    ],
-    packageJSON: [
-     "Axios",
-    ]
-  },
-  frontend: {
-    packageJSON: [
-      "@tailwindcss/forms",
-    ],
-  },
-};
+const dependencies = {};
 
 const educationalGames = {
   Dependencies: () => <DependenciesSection dependencies={dependencies} />,
   Header: () => (
     <h4 className="arrow text-2xl font-semibold mb-5">
-      Sistema.
+      Sitio web de videojuegos educativos.
     </h4>
   ),
   ExtendedDescription: () => (
     <>
       <p className="article-description-paragraph">
-        Sistema <HighlightText>Herramienta</HighlightText>
+        Desarrollado en mis primeros años de estudiante universitario, utilizando <HighlightText>JavaScript</HighlightText> y <HighlightText>PHP</HighlightText>. Dirigido a niños de nivel primaria, enfocado en reforzar habilidades matemáticas fundamentales mediante mini-juegos interactivos. La plataforma ofrece una experiencia lúdica, accesible y progresiva, abordando temas como suma, resta, secuencias numéricas, reconocimiento de patrones y lectura de reloj analógico. Implementé una mecánica de vidas persistentes mediante localStorage, niveles desbloqueables con dificultad creciente y arquitectura basada en componentes reutilizables. Toda la información del contenido se gestiona dinámicamente desde archivos JSON para mantener un código limpio y modular.
       </p>
-      <Heading tag="h5">Contribuciones en Backend:</Heading>
-      <ul className="article-description-list">
-        <li></li>
-      </ul>
       <Heading tag="h5">Contribuciones en Frontend:</Heading>
       <ul className="article-description-list">
-        <li>.</li>
+        <li>Desarrollo de interfaz intuitiva y responsiva.</li>
+        <li>Diseño e implementación de componentes reutilizables.</li>
+        <li>Integración dinámica de datos con JSON.</li>
+        <li>Lógica de niveles y vidas en la experiencia de usuario.</li>
       </ul>
+      <Heading tag="h5">Contribuciones en Backend:</Heading>
+      <p className="article-description-paragraph">
+        No aplica. El proyecto fue construido en frontend con organización de vistas mediante PHP require, sin lógica de servidor ni persistencia externa.
+      </p>
     </>
   ),
   Features: () => (
