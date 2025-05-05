@@ -9,7 +9,7 @@ const ArticleLayout = () => {
   return(
     <>
       {/* auxiliary container to return to top */}
-      <div className="app-container bg-container_color1" id="top">
+      <div className="app-container bg-container_color7" id="top">
         {/* header */}
         <NavBar hasBackgroundColor={true} />
         

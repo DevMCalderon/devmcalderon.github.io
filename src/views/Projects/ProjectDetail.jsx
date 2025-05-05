@@ -55,7 +55,7 @@ const ProjectDetail= () => {
             autoPlay={false}
             arrows={true}
             containerClass="rounded-3xl border-indigo-700 group-hover:border-indigo-400 border-[0.2rem] max-w-screen-2xl mx-auto mb-9"
-            imageClass=""
+            imageClass="max-h-[36.8rem] h-[100%] w-full"
             imageSrcPaths={ projectData.project.images }
             imageAltTexts={ `carousel-img-${projectData.project.slug}` }
           />

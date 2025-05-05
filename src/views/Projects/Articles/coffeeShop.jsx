@@ -1,9 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 import HighlightText from "@/components/HighlightText";
 import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
 import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
+import ExternalLink from "@/components/UI/ExternalLink";
+import { IconGitHub } from "@/components/UI/Icons";
 
 const dependencies = {
+  hasDependencies: true,
   backend: {
     composerJSON: [
       "Fakerphp/faker",
@@ -48,14 +53,27 @@ const dependencies = {
 };
 
 const coffeeShop = {
+  Links: () => {
+    const [t] = useTranslation("global");
+    return (
+      <>
+        <ExternalLink
+          icon={<IconGitHub />}
+          text={t(`projectDetail.repository_link_text_backend`)}
+          href={import.meta.env.VITE_COFFEE_SHOP_BACKEND_REPOSITORY_URL}
+        />
+        <ExternalLink
+          icon={<IconGitHub />}
+          text={t(`projectDetail.repository_link_text_frontend`)}
+          href={import.meta.env.VITE_COFFEE_SHOP_FRONTEND_REPOSITORY_URL}
+        />
+      </>
+    )
+  },
   Dependencies: () => <DependenciesSection dependencies={dependencies} />,
-  Header: () => (
-    <h4 className="arrow text-2xl font-semibold mb-5">
-      Sistema de realización y gestión de pedidos para restaurantes.
-    </h4>
-  ),
   ExtendedDescription: () => (
     <>
+      <Heading tag="h4" className="text-2xl font-semibold mb-5 text-white">Sistema de realización y gestión de pedidos para restaurantes.</Heading>
       <p className="article-description-paragraph">
         Proyecto desarrollado de forma integral, abarcando tanto el backend con <HighlightText>Laravel</HighlightText> como el frontend con <HighlightText>React y Tailwind</HighlightText>. El sistema gestiona distintos niveles de privilegio según el tipo de usuario, redirigiendo automáticamente tras el inicio de sesión a los módulos correspondientes. Su diseño modular y escalable permite gestionar productos, compras y usuarios de forma eficiente.
       </p>
@@ -101,7 +119,7 @@ const coffeeShop = {
     </>
   ),
   Features: () => (
-    <div className="mb-10">
+    <>
       <ArticleVideoSection 
         labelledby="product-index" 
         title="Listado de Productos por Categoría:"
@@ -138,7 +156,7 @@ const coffeeShop = {
         videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273599/completar-pedido_bxmgu2.mp4"
         caption="En el panel de administrador se muestran las ordenes de compra realizadas por los clientes y un administrador puede completar una orden de compra."
       />
-    </div>
+    </>
   ),
 };
 

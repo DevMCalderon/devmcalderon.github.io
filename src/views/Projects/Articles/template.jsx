@@ -2,8 +2,11 @@ import HighlightText from "@/components/HighlightText";
 import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
 import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
+import ExternalLink from "@/components/UI/ExternalLink";
+import { IconGitHub } from "@/components/UI/Icons";
 
 const dependencies = {
+  hasDependencies: false,
   plugins: [
     "Tailwindcss",
   ],
@@ -23,14 +26,20 @@ const dependencies = {
 };
 
 const template = {
+  Links: () => {
+    const [t] = useTranslation("global");
+    return (
+      <ExternalLink
+        icon={<IconGitHub />}
+        text={t(`projectDetail.repository_link_text`)}
+        href={import.meta.env.VITE_UPLOAD_IMAGES_REPOSITORY_URL}
+      />
+    )
+  },
   Dependencies: () => <DependenciesSection dependencies={dependencies} />,
-  Header: () => (
-    <h4 className="arrow text-2xl font-semibold mb-5">
-      Sistema.
-    </h4>
-  ),
   ExtendedDescription: () => (
     <>
+      <Heading tag="h4" className="text-2xl font-semibold mb-5 text-white">Plataforma.</Heading>
       <p className="article-description-paragraph">
         Sistema <HighlightText>Herramienta</HighlightText>
       </p>
@@ -45,13 +54,13 @@ const template = {
     </>
   ),
   Features: () => (
-    <div className="mb-10">
+    <>
       <ArticleVideoSection
         labelledby="product-index"
         title="Listado de Productos por Categoría:"
         videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745273607/categories_obcoab.mp4"
       />
-    </div>
+    </>
   ),
 };
 

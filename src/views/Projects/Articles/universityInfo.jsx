@@ -1,9 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 import HighlightText from "@/components/HighlightText";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
-import { IconGlobeWithMeridians, PageFacingUp, IconGitHub } from "@/components/UI/Icons";
+import { IconGlobeWithMeridians, PageFacingUp } from "@/components/UI/Icons";
 import ExternalLink from "@/components/UI/ExternalLink";
+import Heading from "@/components/UI/Heading";
 
 const dependencies = {
+  hasDependencies: true,
   plugins: [
     "3D FlipBook - Lite Edition",
     "Accessibility by UserWay",
@@ -25,29 +29,39 @@ const dependencies = {
 };
 
 const universityInfo = {
+  Links: () => {
+    const [t] = useTranslation("global");
+    return (
+      <>
+        <ExternalLink
+          icon={<IconGlobeWithMeridians className="mr-2" />}
+          text="Visita el sitio web"
+          href={import.meta.env.VITE_DASC_URL}
+        />
+        
+        <ExternalLink
+          icon={<PageFacingUp className="mr-2" />}
+          text="Accede a la documentación extendida"
+          href={import.meta.env.VITE_DASC_DOCS_URL}
+        />
+      </>
+    )
+  },
   Dependencies: () => <DependenciesSection dependencies={dependencies} />,
-  Header: () => (
-    <h4 className="arrow text-2xl font-semibold mb-5">
-      Sitio web informativo universitario.
-    </h4>
-  ),
   ExtendedDescription: () => (
     <>
+      <Heading tag="h4" className="text-2xl font-semibold mb-5 text-white">Sitio web informativo universitario.</Heading>
       <p className="article-description-paragraph">
-        Fue desarrollado cuando era yo un estudiante en esta universidad durante mi periodo de practicas profesionales para el Departamento de Sistemas Computacionales de la Universidad Autonoma de Baja California Sur. Construido con <HighlightText>Wordpress</HighlightText> a petición de los docentes. Optimiza la gestión de contenidos, reduciendo la carga de trabajo de profesores y mejorando el acceso a información clave para estudiantes. Incluye herramientas de accesibilidad, diseño supervisado por administradores y desarrollo a medida con integraciones optimizadas para mejorar la experiencia del usuario en base a las funcionalidades requeridas.
+        Sitio web institucional desarrollado durante mis prácticas profesionales en el Departamento de Sistemas Computacionales (DASC) de la Universidad Autónoma de Baja California Sur (UABCS). Construido en <HighlightText>WordPress</HighlightText> por solicitud del personal docente, el proyecto tuvo como objetivo mejorar el acceso a información clave para estudiantes y reducir la carga administrativa de los profesores mediante un sistema de gestión de contenidos visual, rápido e intuitivo. El diseño fue realizado bajo revisión constante de los profesores y se personalizó con funcionalidades hechas a medida e integraciones específicas, optimizando así la experiencia del usuario. El sitio incluye información sobre carreras, horarios, actividades, contactos, noticias y enlaces de interés, además de herramientas de accesibilidad para usuarios con necesidades especiales.
       </p>
-      
-      <ExternalLink
-        icon={<IconGlobeWithMeridians className="mr-2" />}
-        text="Visita el sitio web"
-        href={import.meta.env.VITE_DASC_URL}
-      />
-      
-      <ExternalLink
-        icon={<PageFacingUp className="mr-2" />}
-        text="Accede a la documentación extendida"
-        href={import.meta.env.VITE_DASC_DOCS_URL}
-      />
+      <Heading tag="h5">Contribuciones en Frontend:</Heading>
+        <ul className="article-description-list">
+          <li>Diseño personalizado supervisado por docentes.</li>
+          <li>Implementación de funcionalidades a medida.</li>
+          <li>Integración de plugins optimizados y personalizados.</li>
+          <li>Adaptación del sitio para accesibilidad.</li>
+          <li>Mejora de la estructura visual, navegabilidad y gestión de contenidos respecto a versiones previas.</li>
+        </ul>
     </>
   ),
 };

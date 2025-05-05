@@ -1,9 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 import HighlightText from "@/components/HighlightText";
 import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
 import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
+import ExternalLink from "@/components/UI/ExternalLink";
+import { IconGitHub } from "@/components/UI/Icons";
 
 const dependencies = {
+  hasDependencies: true,
   backend: {
     composerJSON: [
       "Guzzlehttp/guzzle",
@@ -38,16 +43,22 @@ const dependencies = {
 };
 
 const schoolTutoring = {
+  Links: () => {
+    const [t] = useTranslation("global");
+    return (
+      <ExternalLink
+        icon={<IconGitHub />}
+        text={t(`projectDetail.repository_link_text`)}
+        href={import.meta.env.VITE_SCHOOL_TUTORING_REPOSITORY_URL}
+      />
+    )
+  },
   Dependencies: () => <DependenciesSection dependencies={dependencies} />,
-  Header: () => (
-    <h4 className="arrow text-2xl font-semibold mb-5">
-      Plataforma de reclutamiento y postulación a empleos.
-    </h4>
-  ),
   ExtendedDescription: () => (
     <>
+      <Heading tag="h4" className="text-2xl font-semibold mb-5 text-white">Plataforma de tutorías en línea.</Heading>
       <p className="article-description-paragraph">
-        Desarrollada utilizando <HighlightText>Laravel</HighlightText> para el backend, combinándolo con <HighlightText>Livewire</HighlightText>, <HighlightText>Blade</HighlightText> y <HighlightText>TailwindCSS</HighlightText> en el frontend. Permite a usuarios registrarse como recruiters o desarrolladores, publicar vacantes y aplicar a ellas. Se integró un sistema de búsqueda avanzada de vacantes por nombre, categoría y salario, además de confirmación de cuenta vía correo electrónico.
+        Integrada a la API de Zoom, diseñada para facilitar la conexión entre estudiantes y tutores mediante una experiencia accesible, automatizada y colaborativa. Optimiza la gestión de tutorías al permitir a los alumnos crear o inscribirse en sesiones, mientras que los profesores administradores pueden revisar, aprobar o rechazar solicitudes de creación de tutoria desde una interfaz intuitiva. Al programar una tutoría, el sistema genera automáticamente una videollamada en Zoom con los datos ingresados. Esta solución promueve un entorno de aprendizaje cercano y flexible, mejorando la organización académica y fomentando la el aprendizaje y la interacciónen tiempo real entre alumnos.
       </p>
       <Heading tag="h5">Contribuciones en Backend (Laravel):</Heading>
         <ul className="article-description-list">
@@ -59,7 +70,7 @@ const schoolTutoring = {
     </>
   ),
   Features: () => (
-    <div className="mb-10">
+    <>
       <ArticleVideoSection
         labelledby="alumno-activar-tutor"
         title="Activación de tutor por parte del alumno:"
@@ -110,7 +121,7 @@ const schoolTutoring = {
         title="Registrar alumno:"
         videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745388785/registrar-alumno_cxdj2w.mp4"
       />
-    </div>
+    </>
   ),
 };
 

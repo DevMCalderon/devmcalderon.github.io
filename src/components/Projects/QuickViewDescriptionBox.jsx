@@ -1,8 +1,6 @@
 import { useTranslation } from "react-i18next";
 
 import ProjectTechnologiesDisplay from "@/components/Projects/ProjectTechnologiesDisplay";
-import ExternalLink from "@/components/UI/ExternalLink";
-import { IconGitHub } from "@/components/UI/Icons";
 
 const QuickViewDescriptionBox = ({ projectData }) => {
   const [t] = useTranslation("global");
@@ -10,7 +8,7 @@ const QuickViewDescriptionBox = ({ projectData }) => {
   return (
     <div
       className="text-xl text-bread border-2 border-indigo-700 rounded-3xl pt-3 pb-4 px-24 mb-6 text-center
-        bg-[linear-gradient(0deg,_rgb(27,30,68)_-5%,_rgb(46,38,133)_100%)]"
+        bg-[linear-gradient(0deg,_rgb(20,40,60)_-5%,_rgb(36,38,110)_100%)]"
     >
       {/* title */}
       <section aria-labelledby="title" className="mb-4">
@@ -32,16 +30,6 @@ const QuickViewDescriptionBox = ({ projectData }) => {
           {t(`projectDetail.Category`)}
         </h3>
         <p className="text-lg text-start">{ projectData.category.category }</p>
-      </section>
-      
-      {/* GitHub */}
-      <section aria-labelledby="category" className="mb-3">
-        <h3 id="category" className="text-xl text-start text-highlighted_text_color mb-2">{t(`projectDetail.repository`)}</h3>
-        <ExternalLink
-          icon={<IconGitHub />}
-          text={t(`projectDetail.repository_link_text`)}
-          href={""}
-        />
       </section>
     
       {/* technologies */}

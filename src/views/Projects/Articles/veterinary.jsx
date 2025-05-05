@@ -1,9 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 import HighlightText from "@/components/HighlightText";
 import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
 import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
+import ExternalLink from "@/components/UI/ExternalLink";
+import { IconGitHub } from "@/components/UI/Icons";
 
 const dependencies = {
+  hasDependencies: true,
   backend: {
     composerJSON: [
       "Barryvdh/laravel-dompdf",
@@ -45,14 +50,20 @@ const dependencies = {
 };
 
 const veterinary = {
+  Links: () => {
+    const [t] = useTranslation("global");
+    return (
+      <ExternalLink
+        icon={<IconGitHub />}
+        text={t(`projectDetail.repository_link_text`)}
+        href={import.meta.env.VITE_VETERINARY_REPOSITORY_URL}
+      />
+    )
+  },
   Dependencies: () => <DependenciesSection dependencies={dependencies} />,
-  Header: () => (
-    <h4 className="arrow text-2xl font-semibold mb-5">
-      Sistema Integral de Gestión para Clínicas Veterinarias.
-    </h4>
-  ),
   ExtendedDescription: () => (
     <>
+      <Heading tag="h4" className="text-2xl font-semibold mb-5 text-white">Sistema Integral de Gestión para Clínicas Veterinarias.</Heading>
       <p className="article-description-paragraph">
         Mi participación incluyó tanto el backend como el frontend del proyecto, trabajando principalmente con <HighlightText>Laravel</HighlightText>, <HighlightText>MySQL</HighlightText>, <HighlightText>Blade</HighlightText>, <HighlightText>Vue.Js</HighlightText> y <HighlightText>Bootstrap</HighlightText>. <HighlightText>En menos de dos semanas</HighlightText>, aprendí y me adapté completamente a las tecnologias utilizadas en la arquitectura preexistente y <HighlightText>aporté mejoras significativas</HighlightText> en la mantenibilidad del código mediante el uso de componentes reutilizables y buenas prácticas de desarrollo.
       </p>
@@ -95,7 +106,7 @@ const veterinary = {
     </>
   ),
   Features: () => (
-    <div className="mb-10">
+    <>
       <ArticleVideoSection 
         labelledby="client-create" 
         title="Creación de un Cliente:"
@@ -137,7 +148,7 @@ const veterinary = {
         title="Registro, Middleware Validador de Empresa y Creación de Empresa:"
         videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745211520/portfolio_videos/veterinary/joaojdbthvi8embyeifr.mp4"
       />
-    </div>
+    </>
   ),
 };
 

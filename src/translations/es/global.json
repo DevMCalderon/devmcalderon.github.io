@@ -127,7 +127,10 @@
     "used_technologies": "Tecnologias empleadas:",
     "used_dependencies": "Dependencias:",
     "features": "Funcionalidades:",
-    "repository": "Código Fuente:",
-    "repository_link_text": "Visita el repositorio en GitHub"
+    "links": "Enlaces:",
+    "repository_link_text": "Visita el repositorio en GitHub",
+    "repository_link_text_backend": "Visita el repositorio de backend en GitHub",
+    "repository_link_text_frontend": "Visita el repositorio de frontend en GitHub",
+    "no_dependencies": "No se incluyeron dependencias en el proyecto."
   }
 }

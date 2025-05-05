@@ -32,12 +32,21 @@ const ProjectDynamicView = () => {
     <>
       {projectData && (
         <>
+          {/* GitHub */}
+          <section on aria-labelledby="category" className="mb-10">
+            <Heading tag="h3" id='features'>
+              {t(`projectDetail.links`)}
+            </Heading>
+            <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4"/>
+            <projectData.Links />
+          </section>
+        
           {/* dependencies */}
           <section aria-labelledby='dependencies' className="mb-10">
             <Heading tag="h3" id='dependencies'> 
               {t(`projectDetail.used_dependencies`)}
             </Heading>
-            <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4 "/>
+            <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4"/>
             
             <projectData.Dependencies />
           </section>
@@ -47,9 +56,8 @@ const ProjectDynamicView = () => {
             <Heading tag="h3" id="extended-description">
               {t(`projectDetail.extended_description`)}
             </Heading>
-            <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4 "/>
+            <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4"/>
             
-            <projectData.Header />
             <projectData.ExtendedDescription />
           </section>
           
@@ -64,7 +72,9 @@ const ProjectDynamicView = () => {
                 Esta sección presenta una muestra multimedia de las principales características del proyecto, desarrolladas e implementadas por mí con un enfoque estratégico en eficiencia, escalabilidad y experiencia de usuario. Refleja mi capacidad para convertir requerimientos técnicos y de negocio en soluciones funcionales y visualmente integradas.
               </p>
               
-              <projectData.Features />
+              <div className="mb-10">
+                <projectData.Features />
+              </div>
             </section>
           )}
 

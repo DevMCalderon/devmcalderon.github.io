@@ -1,9 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 import HighlightText from "@/components/HighlightText";
 import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
 import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
+import ExternalLink from "@/components/UI/ExternalLink";
+import { IconGitHub } from "@/components/UI/Icons";
 
 const dependencies = {
+  hasDependencies: true,
   backend: {
     composerJSON: [
       "Fakerphp/faker",
@@ -33,14 +38,20 @@ const dependencies = {
 };
 
 const uploadImages = {
+  Links: () => {
+    const [t] = useTranslation("global");
+    return (
+      <ExternalLink
+        icon={<IconGitHub />}
+        text={t(`projectDetail.repository_link_text`)}
+        href={import.meta.env.VITE_UPLOAD_IMAGES_REPOSITORY_URL}
+      />
+    )
+  },
   Dependencies: () => <DependenciesSection dependencies={dependencies} />,
-  Header: () => (
-    <h4 className="arrow text-2xl font-semibold mb-5">
-      Red social para compartir imágenes.
-    </h4>
-  ),
   ExtendedDescription: () => (
     <>
+      <Heading tag="h4" className="text-2xl font-semibold mb-5 text-white">Red social para compartir imágenes.</Heading>
       <p className="article-description-paragraph">
         Implementa una funcionalidad de creación de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento de contenidos.
       </p>
@@ -61,7 +72,7 @@ const uploadImages = {
     </>
   ),
   Features: () => (
-    <div className="mb-10">
+    <>
       <ArticleVideoSection
         labelledby="create-post-create-comment-show-posts-by-profile"
         title="Crear, comentar y ver posts de un perfil:"
@@ -82,7 +93,7 @@ const uploadImages = {
         title="Dar y quitar seguir a un perfil:"
         videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745386132/follow-unfollow_pl7lax.mp4"
       />
-    </div>
+    </>
   ),
 };
 

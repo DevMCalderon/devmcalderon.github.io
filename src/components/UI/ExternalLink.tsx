@@ -13,23 +13,21 @@ type ExternalLinkProps = {
 const ExternalLink = ({ icon, text, href, className, showDecoration=false }: ExternalLinkProps) => {
   return (
     <div className={clsx("mb-4 flex", className)}>
-      <p className="article-description text-xl"> 
-        <a
-          className="flex items-center group"
-          href={ href }
-          target="_blank"
-          rel="noreferrer noopener"
-          >
-          { icon && <span className="link">{ icon }</span>}
-          <span className="link">{ text }</span>
+      <a
+        className="flex items-center group article-description text-xl"
+        href={ href }
+        target="_blank"
+        rel="noreferrer noopener"
+        >
+        { icon && <span className="link">{ icon }</span>}
+        <span className="link">{ text }</span>
 
-          { showDecoration && (
-            <div className="justify-start ml-2 group-hover:ml-5 duration-500 ease-in-out transition-all ">
-            <IconRightArrowCircle />
-          </div>
-          )}
-        </a>
-      </p>
+        { showDecoration && (
+          <div className="justify-start ml-2 group-hover:ml-5 duration-500 ease-in-out transition-all ">
+          <IconRightArrowCircle />
+        </div>
+        )}
+      </a>
     </div>
   );
 };

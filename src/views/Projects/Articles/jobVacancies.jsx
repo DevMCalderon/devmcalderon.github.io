@@ -1,9 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 import HighlightText from "@/components/HighlightText";
 import ArticleVideoSection from "@/components/UI/ArticleVideoSection";
 import Heading from "@/components/UI/Heading";
 import DependenciesSection from "@/components/Projects/Article/DependenciesSection";
+import ExternalLink from "@/components/UI/ExternalLink";
+import { IconGitHub } from "@/components/UI/Icons";
 
 const dependencies = {
+  hasDependencies: true,
   backend: {
     composerJSON: [
       "Fakerphp/faker",
@@ -34,14 +39,20 @@ const dependencies = {
 };
 
 const jobVacancies = {
+  Links: () => {
+    const [t] = useTranslation("global");
+    return (
+      <ExternalLink
+        icon={<IconGitHub />}
+        text={t(`projectDetail.repository_link_text`)}
+        href={import.meta.env.VITE_JOB_VACANCIES_REPOSITORY_URL}
+      />
+    )
+  },
   Dependencies: () => <DependenciesSection dependencies={dependencies} />,
-  Header: () => (
-    <h4 className="arrow text-2xl font-semibold mb-5">
-       Plataforma de reclutamiento y postulación a empleos.
-    </h4>
-  ),
   ExtendedDescription: () => (
     <>
+      <Heading tag="h4" className="text-2xl font-semibold mb-5 text-white">Plataforma de reclutamiento y postulación a empleos.</Heading>
       <p className="article-description-paragraph">
         Desarrollada utilizando <HighlightText>Laravel</HighlightText> para el backend, combinándolo con <HighlightText>Livewire</HighlightText>, <HighlightText>Blade</HighlightText> y <HighlightText>TailwindCSS</HighlightText> en el frontend. Permite a usuarios registrarse como recruiters o desarrolladores, publicar vacantes y aplicar a ellas. Se integró un sistema de búsqueda avanzada de vacantes por nombre, categoría y salario, además de confirmación de cuenta vía correo electrónico.
       </p>
@@ -66,7 +77,7 @@ const jobVacancies = {
     </>
   ),
   Features: () => (
-    <div className="mb-10">
+    <>
       <ArticleVideoSection
         labelledby="register-recruiter-confirm-email1"
         title="Registrar Reclutador y Enviar Email de Verificación:"
@@ -127,7 +138,7 @@ const jobVacancies = {
         title="Eliminar una Vacante:"
         videoSrc="https://res.cloudinary.com/detst5oqb/video/upload/v1745360156/recruiter-delete-vacancy_m0kz4q.mp4"
       />
-    </div>
+    </>
   ),
 };
 
