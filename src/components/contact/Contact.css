@@ -1,0 +1,45 @@
+.degradado4 {
+  background: var(--degradado4);
+  
+}
+
+.bgBannerContacto {
+  background-image: linear-gradient(to right, rgb(55, 0, 255), rgba(14, 0, 17, 0.73)), url("../../assets/img/bg2.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/** Contact **/
+.contact .contact-img {
+  width: 92%;
+}
+
+
+.transparentInput input, .contact form textarea {
+  width: 100%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 1.14rem;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.transparentInput input::placeholder, .contact form textarea::placeholder {
+  font-weight: 400;
+  color: #fff;
+}
+.transparentInput input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #000000;
+  opacity: 0.8;
+}
+.bg_white_hover input:focus, .contact form textarea:focus {
+  background: rgba(255, 255, 255, 0.75);
+  color: #28004e;
+  backdrop-filter: brightness(200%);
+}

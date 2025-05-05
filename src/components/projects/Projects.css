@@ -1,0 +1,34 @@
+
+/** projects **/
+
+#projects-tabs  {
+  margin: 0 auto;
+  border-radius: 50px;
+  opacity: 80%;
+  overflow: hidden;
+}
+.project .nav.nav-pills .nav-link {
+  letter-spacing: 0.8px;
+  z-index: 0;
+}
+.project .nav.nav-pills .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+
+.indicator {
+  content: "";
+  /* background: transparent; */
+  background: linear-gradient(90.21deg, var(--gradient_color1) 5.91%, var(--gradient_color2) 95.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: .4s;
+}

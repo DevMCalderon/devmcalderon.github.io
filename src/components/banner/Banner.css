@@ -1,0 +1,47 @@
+
+/* p blink cursos */
+.cursor {
+  animation: typedjsBlink 0.7s infinite;
+  -webkit-animation: typedjsBlink 0.7s infinite;
+  animation: typedjsBlink 0.7s infinite;
+}
+
+/* welcome box */
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  background: linear-gradient(
+    90.21deg,
+    rgba(105, 0, 140, 0.35) -5.91%,
+    rgba(0, 2, 68, 0.35) 111.58%
+  );
+  border: 1px solid var(--border_color1);
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.banner h1 {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  display: block;
+}
+
+.banner .animatedImg {
+  animation: updown 9s linear infinite;
+   /* border: 3px solid black; */
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform:translateY(15px) 
+  }
+  100% {
+    transform:translateY(-15px) 
+  }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
