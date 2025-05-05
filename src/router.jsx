@@ -1,15 +1,14 @@
-import { createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import { Suspense, lazy} from "react";
 
 import { routes } from "@/routes";
-import NotFound from "@/views/NotFound/NotFound";
+import NotFound from "@/views/notFound/NotFound";
 import ArticleLayout from "@/layouts/ArticleLayout";
-import AllProjectCategoryList from "@/views/Projects/AllProjectCategoryList";
-import ProjectDetail from "@/views/Projects/ProjectDetail";
-import Loading from "@/views/Loading/Loading";
-import Home from "@/views/Pages/Home";
-import ArticleEmptyView from "@/views/Projects/Articles/ArticleEmptyView";
-import ProjectDynamicView from "./views/Projects/Articles/ProjectDynamicView";
+import AllProjectCategoryList from "@/views/projects/AllProjectCategoryList";
+import ProjectDetail from "@/views/projects/ProjectDetail";
+import Loading from "@/views/loading/Loading";
+import Home from "@/views/pages/Home";
+import ProjectsCategoryOverview from "./views/projects/ProjectsCategoryOverview";
 
 const App = lazy(() => import('./App'));
 
@@ -38,19 +37,18 @@ const router = createBrowserRouter(
             },
             {
               path: routes["Web Platforms & Applications"],
-              // element: <ProjectsCategoryOverview categoryIndex="0" />,
+              element: <ProjectsCategoryOverview categoryIndex="0" />,
             },
             {
               path: routes["Interface Design"],
-              // element: <ProjectsCategoryOverview categoryIndex="1" />,
+              element: <ProjectsCategoryOverview categoryIndex="1" />,
             },
             {
               path: routes["Community Contributions"],
-              // element: <ProjectsCategoryOverview categoryIndex="2" />,
+              element: <ProjectsCategoryOverview categoryIndex="2" />,
             },
             {
               path: "/projects/:idCategory/:idProject",
-              // element: <ProjectsCategoryCommon />,
               element: <ProjectDetail />,
             },
           ],

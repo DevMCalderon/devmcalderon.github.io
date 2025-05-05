@@ -67,13 +67,13 @@ export const routes = {
 // };
 
 export const articleSlugPathMap = {
-  'vetcore-pro': '/src/views/Projects/Articles/veterinary', 
-  'smartorder': '/src/views/Projects/Articles/coffeeShop',
-  'jobmatch': '/src/views/Projects/Articles/jobVacancies',
-  'picconnect': '/src/views/Projects/Articles/uploadImages',
-  'edulink': '/src/views/Projects/Articles/schoolTutoring',
-  'dasc-uabcs': '/src/views/Projects/Articles/universityInfo',
-  'learnplay': '/src/views/Projects/Articles/educationalGames',
+  'vetcore-pro': 'veterinary', 
+  'smartorder': 'coffeeShop',
+  'jobmatch': 'jobVacancies',
+  'picconnect': 'uploadImages',
+  'edulink': 'schoolTutoring',
+  'dasc-uabcs': 'universityInfo',
+  'learnplay': 'educationalGames',
 }
 
 export const NavbarRoutesHome = [

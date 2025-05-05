@@ -1,7 +1,7 @@
 import { createContext, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
-import projectsJSON_es from '@/data/es/projects'
+import projectsJSON_es from '@/data/es/projects';
 
 const PortfolioContext = createContext(null);
 

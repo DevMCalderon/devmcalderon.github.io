@@ -1,7 +1,8 @@
 import { Suspense } from 'react';
-import Loading from '@/views/Loading/Loading';
 import { Outlet, ScrollRestoration } from 'react-router-dom';
+
 import { PortfolioProvider } from './context/PortfolioContext';
+import Loading from '@/views/loading/Loading';
 
 
 function App() {

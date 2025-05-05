@@ -1,39 +1,37 @@
 import { Outlet } from "react-router-dom";
 
-import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
-import BreadCrumb from "@/components/Breadcrumb/Breadcrumb";
-import ScrollToTop from "@/components/ScrollToTop/ScrollToTop";
+import Footer from "@/components/footer/Footer";
+import NavBar from "@/components/navBar/NavBar";
+import BreadCrumb from "@/components/breadcrumb/Breadcrumb";
+import ScrollToTop from "@/components/scrollToTop/ScrollToTop";
 
-const ArticleLayout = () => {
-  return(
-    <>
-      {/* auxiliary container to return to top */}
-      <div className="app-container bg-container_color7" id="top">
-        {/* header */}
-        <NavBar hasBackgroundColor={true} />
+const ArticleLayout = () => (
+  <>
+    {/* auxiliary container to return to top */}
+    <div className="app-container bg-container_color7" id="top">
+      {/* header */}
+      <NavBar hasBackgroundColor={true} />
+      
+      {/* container */}
+      <div className="min-h-screen shadow-2xl text-white mt-5">
+      
+        {/* container to center content */}
+        <div className="w-9/12 mx-auto">
         
-        {/* container */}
-        <div className="min-h-screen shadow-2xl text-white mt-5">
-        
-          {/* container to center content */}
-          <div className="w-9/12 mx-auto">
-          
-          <BreadCrumb />
+        <BreadCrumb />
 
-          <Outlet />
-          
-          {/* floating button to return to top */}
-          <ScrollToTop />
-            
-          </div>
+        <Outlet />
+        
+        {/* floating button to return to top */}
+        <ScrollToTop />
           
         </div>
         
       </div>
-      <Footer />
-    </>
-  );
-}
+      
+    </div>
+    <Footer />
+  </>
+);
 
 export default ArticleLayout;
