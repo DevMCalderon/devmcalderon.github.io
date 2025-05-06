@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const BreadCrumb = ({ classes }) => {
+  const location = useLocation();
   const url=location.pathname;
   // p
   // console.log('slug', getSlugFromURL(url));
@@ -24,7 +26,7 @@ const BreadCrumb = ({ classes }) => {
   
     // Agrega el elemento al breadcrumb
     breadcrumbItems.push({ to: currentUrl, label: crumb });
-  }, []);
+  }, [location.pathname]);
 
  
   

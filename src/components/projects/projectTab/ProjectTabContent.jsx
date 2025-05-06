@@ -44,7 +44,7 @@ const ProjectTabContent = ({activeTab, index, categoryData}) => {
           
           {/* project list */}
           <ProjectsListGrid
-            projectsData = {{ categoryName }}
+            selectedCategoryName = { categoryName }
             maxProjectsToShow = { maxProjectsToShow }
           />
           
