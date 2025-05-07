@@ -151,11 +151,16 @@ const Contact = () => {
               
             </div>
             
-            {/* copy email */}
-            <div className='w-full lg:w-9/12 xl:w-8/12 2xl:w-7/12 mx-auto'>
-              {/* copy email component */}
-              <EmailDisplay />
-            </div>
+            {/* copy email component */}
+            <EmailDisplay />
+            
+            <section className="mt-11 mb-[-15rem] w-full mx-auto">
+              <div className="bg-container_color3 py-6 md:py-8 px-24 rounded-full w-fit mx-auto">
+                <p className="text-2xl text-sky-900 font-bold text-center w-full">
+                  {t(`contact.thanks_for_visiting`)} 
+                </p>
+              </div>
+            </section>
             
           </div>
         </div>

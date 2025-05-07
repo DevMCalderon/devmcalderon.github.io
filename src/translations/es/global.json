@@ -95,25 +95,14 @@
     "placeholder_email": "Correo Electrónico",
     "placeholder_message": "Mensaje",
     "submit": "ENVIAR",
-    "fill_out_all": "Por favor, complete todos los campos",
-    "message_sent": "El mensaje se envió exitosamente",
-    "something_wrong": "Algo salió mal, por favor inténtelo de nuevo más tarde",
+    "fill_out_all": "Por favor, complete todos los campos.",
+    "message_sent": "El mensaje se envió exitosamente.",
+    "something_wrong": "Algo salió mal, por favor inténtelo de nuevo más tarde.",
     "sending": "Enviando...",
     "copy_email_header": "¿Apresurado?",
     "copy_email": "Copia mi correo electrónico y conversemos. ¡Espero tu mensaje!",
-    "email_copied": "Copiado al portapapeles"
-  },
-  "newsletter": {
-    "main_message": "Suscríbete a mi boletín y nunca te pierdas las nuevas contribuciones",
-    "placeholder_email":"Correo Electrónico",
-    "submit": "SUSCRIBIRSE",
-    "write_email": "Por favor, escribe tu correo electrónico",
-    "error_invalid_email": "La parte del dominio de la dirección de correo electrónico no es válida",
-    "sending": "Enviando...",
-    "subscribed": "¡Gracias por suscribirte!",
-    "already_subscribed": "Ya estás suscrito, tu perfil ha sido actualizado. ¡Gracias!",
-    "chill_out": "Demasiados intentos de suscripción para esta dirección de correo electrónico. Por favor, inténtalo de nuevo en unos 5 minutos",
-    "chill_out2": "El destinatario \"elmcwl@gmail.com\" tiene demasiadas solicitudes de registro recientes"
+    "email_copied": "Copiado al portapapeles.",
+    "thanks_for_visiting": "¡Gracias por visitar mi sitio web!"
   },
   "footer": {
     "copyright": "© 2025 Martín Calderón. Todos los derechos reservados",

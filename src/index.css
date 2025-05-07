@@ -419,4 +419,15 @@ p.danger {
   background-color: rgba(84, 72, 255, 0.4) !important;
 }
 
+/** footer **/
+.footer p {
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: auto; /* Empuja el pie de página hacia abajo para que quede en la parte inferior */
+}
+
+
 /* testing */
