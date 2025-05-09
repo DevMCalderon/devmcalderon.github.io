@@ -84,70 +84,7 @@ const Contact = () => {
               />
               <p className='mb-5 text-center'> {t(`contact.description`)}</p>
               
-              {/* form */}
-              <form onSubmit={handleSubmit}>
-                <div className='flex flex-wrap'>
-                  
-                  {/* input name */}
-                  <TransparentInput
-                    autoComplete='off'
-                    name={"fullName"}
-                    onChange={handleInputChange}
-                    placeholder={t(`contact.placeholder_name`)}
-                    type={"text"}
-                    value={formData.fullName}
-                    required
-                  />
-                  
-                  {/* input email */}
-                  <TransparentInput
-                    autoComplete='on'
-                    name={"email"}
-                    onChange={handleInputChange}
-                    placeholder={t(`contact.placeholder_email`)}
-                    type={"email"}
-                    value={formData.email}
-                    required
-                  />
-                  
-                  {/* form message */}
-                  <div className='w-full'>
-                    <textarea 
-                      className='bg-[white] bg-opacity-[4%]'
-                      placeholder= {t(`contact.placeholder_message`)}
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      required
-                    ></textarea>
-                  </div>
-                  
-                  {/* submit button */}
-                  <div className='w-full'>
-                    <div
-                      className='mx-auto my-3 w-fit flex justify-center'
-                      >
-                      <button type="submit" className='button_transparent_rounded border-white bg-opacity-[30%]'>
-                        <span> {t(`contact.submit`)} <span className='styledFontFamily' >{'>'}</span></span>
-                      </button>
-                    </div>
-                  </div>
-                  
-                  {/* status message */}
-                  <div className='w-full'>
-                    {
-                      <div className='w-full'>
-                        <div className='flex justify-center pt-2'>
-                          <p className={`${status.success === false ? 'danger' : 'success'} text-center`}>
-                            {status.message}
-                          </p>
-                        </div>
-                      </div>
-                    }
-                    
-                  </div>
-                </div>
-              </form>
+
               
             </div>
             
