@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import { routes } from '@/routes.js';
 import ProjectsListGrid from "@/components/projects/projectsListGrid/ProjectsListGrid";
+import MainButton from "@/components/uI/MainButton";
 
 const variants = {
   open: { opacity: 1 },
@@ -51,17 +52,8 @@ const ProjectTabContent = ({activeTab, index, categoryData}) => {
           {/* display more button */}
           <div>
             {projects && projects.length > maxProjectsToShow && (
-              <button
-                className="button_transparent_rounded shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2 flex m-auto
-                  justify-center mt-6 w-fit border-[1.5px] border-solid border-border_color1 bg-[black] bg-opacity-40"
-                onClick={toggleDisplayMore}
-              >
-                <span>
-                  {t('TabPanelItem.display_more')}
-                </span>
-              </button>
+              <MainButton {...{toggleDisplayMore}}/>
             )}
-          
           </div>
         </motion.div>
       )}
