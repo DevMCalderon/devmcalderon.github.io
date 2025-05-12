@@ -52,12 +52,11 @@ const ProjectTabContent = ({activeTab, index, categoryData}) => {
           {/* display more button */}
           <div>
             {projects && projects.length > maxProjectsToShow && (
-              <MainButton {...{toggleDisplayMore}}/>
+              <MainButton {...{toggleDisplayMore, text: t(`TabPanelItem.display_more`)}}/>
             )}
           </div>
         </motion.div>
       )}
-      
     </>
   );
 };
