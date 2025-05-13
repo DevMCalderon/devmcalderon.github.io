@@ -1,14 +1,17 @@
+import clsx from "clsx";
+
 interface MainButtonProps {
-  toggleDisplayMore: () => void;
+  onClick: () => void;
   text: string;
+  className?: string;
 }
 
-const MainButton = ({toggleDisplayMore, text}: MainButtonProps) => {
+const MainButton = ({onClick, text, className}: MainButtonProps) => {
   
   return(
     <button
-      className="button_transparent_rounded"
-      onClick={toggleDisplayMore}
+      className={clsx("button_transparent_rounded", className)}
+      onClick={onClick}
       type="button"
     >
       <span className="relative z-[1]">

@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { ToastContainer, toast } from 'react-toastify';
 
 import "react-toastify/dist/ReactToastify.css";
+import MainButton from "@/components/uI/MainButton";
 import CustomHeader from '@/components/uI/customHeader/CustomHeader';
 
 import emailImg from '@/assets/img/icons/mail.png'
@@ -70,19 +71,14 @@ const EmailDisplay = () => {
               type={'text'}
               value={contactEmail}
             />
-            
           </div>
             
           {/* copy button */}
           <div className='mt-3 lg:mt-0'>
-            <button
-              className="button_transparent_rounded" 
+            <MainButton 
               onClick={copyToClipboard}
-              >
-              <span className='hover:text-black'>
-                {t(`default.copy`)}
-              </span>
-            </button>
+              text={t(`default.copy`)}
+            />
           </div>
             
           {/* notificación */}

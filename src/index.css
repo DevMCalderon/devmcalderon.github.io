@@ -25,7 +25,7 @@
     flex justify-center items-center w-fit border-[1.5px] border-solid border-border_color1 bg-[black] bg-opacity-40
   text-white font-bold relative transition-all duration-300 ease-in-out rounded-[1.3rem]
     shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2
-    m-auto mt-6 hover:text-black  before:hover:w-full overflow-hidden before:content-['']
+    m-auto hover:text-black  before:hover:w-full overflow-hidden before:content-['']
     before:absolute before:top-0 before:left-0 before:z-0 before:h-full before:w-0 before:rounded-[18px] before:bg-white 
     before:transition-all before:duration-300 before:ease-in-out;
   }

@@ -2,7 +2,7 @@
   "default":{
     "loading":"Cargando",
     "not_found_title":"Código",
-    "not_found_message":"Esta página no existe",
+    "not_found_message":"Esta página no existe.",
     "not_found_button":"Volver a la página de inicio",
     "copy": "COPIAR"
   },
