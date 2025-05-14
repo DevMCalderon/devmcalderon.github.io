@@ -1,62 +1,15 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { ToastContainer } from 'react-toastify';
 
 import EmailDisplay from '@/components/emailDisplay/EmailDisplay';
-import TransparentInput from '@/components/uI/transparentInput/TransparentInput';
 import CustomHeader from '@/components/uI/customHeader/CustomHeader';
-
 import '@/components/contact/Contact.css'
 
 import contactImg from '@/assets/img/contact-img.png'
 
 const Contact = () => {
   const [ t] = useTranslation("global");
-  
-  const resetFormData = {
-    fullName: '',
-    email: '',
-    message: ''
-  }
-  const [formData, setFormData] = useState(resetFormData);
-  const [buttonText, setButtonText] = useState('');
-  const [status, setStatus] = useState({useState});
-    
-  const handleInputChange= (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    })
-  }
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-  
-    // validate data
-    // if(!formData.fullName ||!formData.email || !formData.message){
-    //   setStatus({ success: false, message: t(`contact.fill_out_all`) });
-    // } else {
-      // console.log(formData)
-      setButtonText(t(`contact.sending`));
-      let response = await fetch(import.meta.env.VITE_APP_NODEMAILER_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formData),
-      })
-      
-      setButtonText(t(`contact.submit`))
-      let resonseJSON = await response.json();
-      // setFormData(resetFormData);
-      if (resonseJSON.code == 200){
-        setStatus ({ success: true, message: t(`contact.message_sent`) });
-      } else {
-        // console.log(resonseJSON)
-        setStatus({ success: false, message: resonseJSON.code + ' ' + t(`contact.something_wrong`) });
-      }
-    // }
-  };
   
   return(
     
@@ -65,8 +18,7 @@ const Contact = () => {
         className='contact degradado4 px-6 md:px-6 lg:px-6 xl:px-28 pt-[50px] pb-[150px]'
         id="contact"
       >
-        <div className='lg:max-w-screen-2xl mx-auto w-full h-full'>
-          <div className='flex flex-wrap items-center'>
+        <div className='lg:max-w-screen-2xl mx-auto w-full h-full flex flex-wrap items-center'>
             
             {/* contact section image */}
             <div className='w-full lg:w-5/12 xl:w-1/2'>
@@ -84,26 +36,22 @@ const Contact = () => {
               />
               <p className='mb-5 text-center'> {t(`contact.description`)}</p>
               
-
-              
-            </div>
-            
-            {/* copy email component */}
-            <EmailDisplay />
-            
-            <section className="mt-11 mb-[-15rem] w-full mx-auto">
-              <div className="bg-container_color3 py-6 md:py-8 px-24 rounded-full w-fit mx-auto">
-                <p className="text-2xl text-sky-900 font-bold text-center w-full">
-                  {t(`contact.thanks_for_visiting`)} 
-                </p>
-              </div>
-            </section>
-            
+              {/* copy email component */}
+              <EmailDisplay />
           </div>
+          <section className="mt-11 mb-[-15rem] w-full mx-auto">
+            <div className="bg-container_color3 py-6 md:py-8 px-24 rounded-full w-fit mx-auto">
+              <p className="text-2xl text-sky-900 font-bold text-center w-full">
+                {t(`contact.thanks_for_visiting`)} 
+              </p>
+            </div>
+          </section>
         </div>
       </div>
+      
+      {/* copy email notification */}
+      <ToastContainer />
     </section>
-    
   );
 }
 

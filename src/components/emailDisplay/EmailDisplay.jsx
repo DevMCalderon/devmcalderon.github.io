@@ -1,12 +1,12 @@
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 import "react-toastify/dist/ReactToastify.css";
 import MainButton from "@/components/uI/MainButton";
 import CustomHeader from '@/components/uI/customHeader/CustomHeader';
 
-import emailImg from '@/assets/img/icons/mail.png'
+import emailImg from '@/assets/img/icons/email.png'
 
 const EmailDisplay = () => { 
   const [ t] = useTranslation("global");
@@ -40,15 +40,15 @@ const EmailDisplay = () => {
   };
   
   return(
-    <section className='w-full lg:w-9/12 xl:w-8/12 2xl:w-7/12 mx-auto'>
+    <section className='w-full lg:w-10/12 mx-auto'>
       <div 
-        className="bg-gradient-to-t from-[#151524ce] to-[#1313466c] mt-11 py-11 rounded-[6rem] text-center px-9 lg:px-10
-          border-[1.5px] border-solid border-border_color1"
+        className="bg-gradient-to-t from-[#0f0f222a] to-[#0303466d] mt-11 py-11 rounded-[6rem] text-center px-9 lg:px-10
+          border-[1.5px] border-solid border-border_color1 backdrop-blur-[0.15rem]"
       >
         {/* title */}
         <CustomHeader
           align={"center"}
-          classes={"text-highlighted_text_color"}
+          className={"text-[#91d3ff]"}
           text={t(`contact.copy_email_header`)}
         />
         
@@ -59,11 +59,11 @@ const EmailDisplay = () => {
       
         {/* email input and copy button */}
         <div className="flex flex-col lg:flex-row items-center justify-center space-x-4 mt-8">
-          <div className='w-6/12'>
+          <div className='md:w-6/12'>
   
             {/* email input */}
             <input
-              className='text-center bg-[#dce0ea] text-[#28004e] cursor-default w-full border-1 border-solid border-[#fff]
+              className='text-center bg-[#16104d] text-[#dcfaff] cursor-default w-full border-1 border-solid border-[#fff]
               rounded-[20px] py-4 px-6 font-normal text-lg tracking-[0.8px] transition-all duration-300 ease-in-out'
               name={'contactEmail'}
               readOnly
@@ -80,9 +80,6 @@ const EmailDisplay = () => {
               text={t(`default.copy`)}
             />
           </div>
-            
-          {/* notificación */}
-          <ToastContainer />
             
         </div>
       </div>
