@@ -1,0 +1,40 @@
+import clsx from 'clsx';
+import React from 'react';
+
+interface ImageWithReflectionProps {
+  src: string;
+  alt?: string;
+  className?: string;
+  imageClasses?: string;
+  rounded?: string;
+}
+
+const ImageWithReflection = ({ src, alt, className, imageClasses, rounded }: ImageWithReflectionProps) => {
+  return (
+    <div className={clsx("relative w-fit", className)}>
+      {/* Imagen principal */}
+      <img src={src} alt={alt} className={clsx("block w-full", imageClasses, rounded)} />
+
+      {/* Contenedor del reflejo */}
+      <div className="relative w-full overflow-hidden h-20"
+        style={{
+          WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.1) 5%, rgba(0,0,0,0.99) 25%, rgba(0,0,0,0.25) 70%, rgba(0,0,0,0.15) 80%, rgba(0,0,0,0) 100%)',
+          maskImage: 'linear-gradient(to bottom, rgba(0,0,0,0.01) 0%, rgba(0,0,0,0.1) 5%, rgba(0,0,0,0.99) 25%, rgba(0,0,0,0.25) 70%, rgba(0,0,0,0.15) 80%, rgba(0,0,0,0) 100%)',
+          WebkitMaskSize: '100% 100%',
+          maskSize: '100% 100%',
+          WebkitMaskRepeat: 'no-repeat',
+          maskRepeat: 'no-repeat',
+        }}
+      >
+        {/* Reflejo con máscara de degradado */}
+        <img
+          src={src}
+          alt={`${alt} reflection`}
+          className={clsx("block w-full transform scale-y-[-1] opacity-100 blur-[0.12rem] pointer-events-none", rounded)}
+        />
+      </div>
+    </div>
+  );
+};
+
+export default ImageWithReflection;

@@ -2,6 +2,9 @@ import { useTranslation } from "react-i18next";
 
 import CustomHeader from '@/components/uI/customHeader/CustomHeader';
 
+import AboutMeImg from '@/assets/img/about-me.gif'
+import ImageWithReflection from "../../components/uI/ImageWithReflection";
+
 const AboutMe = () => {
   const [t] = useTranslation("global");
 
@@ -19,17 +22,17 @@ const AboutMe = () => {
 
         {/* left side */}
         <div className="flex flex-wrap-reverse pt-14">
-          <div className="w-full lg:w-5/12 lg:px-8 my-auto flex justify-center">
-            <div className="w-64 md:w-80 lg:w-[24rem]">
-              {/* text of img */}
-              <img
-                className="rounded-[3rem] opacity-90 border-[0.15rem] border-border_color1"
-                src={'https://camo.githubusercontent.com/bc425a5c4e99161dca81a32820bad4d14290d90de6308f16eb8e1d904526f5ab/68747470733a2f2f6d656469612e6c6963646e2e636f6d2f646d732f696d6167652f44353631324151474f6d77664945356d6c57412f61727469636c652d636f7665725f696d6167652d736872696e6b5f3732305f313238302f302f313637343631373934373232383f653d3231343734383336343726763d6265746126743d4654555f697351365659665635445f7565464850577654385a716744654a47337972384d69386c70666b30'} 
-                alt="Header Img2"
-              />
-              <p className={`mt-4 text-2xl font-bold text-center ${paragraphStyles}`}>{t(`about_me.img_description`)}</p>
-            </div>
-
+          <div className="w-full lg:w-5/12 lg:px-8 my-auto flex justify-center flex-col">
+            <p className={`mt-4 text-2xl font-bold text-center text-[#bbe2ff] ${paragraphStyles}`}>
+              {t(`about_me.img_description`)}
+            </p>
+            <ImageWithReflection
+              className="opacity-[0.93] w-full md:w-72 mx-auto"
+              imageClasses="border-[0.12rem] border-border_color1"
+              rounded="md:rounded-[4rem] "
+              src={AboutMeImg}
+              alt="About-me-image"
+            />
           </div>
 
           {/* right side */}
