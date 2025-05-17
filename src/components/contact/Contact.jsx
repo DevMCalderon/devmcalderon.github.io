@@ -5,8 +5,9 @@ import { ToastContainer } from 'react-toastify';
 import EmailDisplay from '@/components/emailDisplay/EmailDisplay';
 import CustomHeader from '@/components/uI/customHeader/CustomHeader';
 import '@/components/contact/Contact.css'
+import ImageWithReflection from "@/components/uI/ImageWithReflection";
 
-import contactImg from '@/assets/img/contact-img.png'
+import AboutMeImg from '@/assets/img/about-me.gif'
 
 const Contact = () => {
   const [ t] = useTranslation("global");
@@ -22,7 +23,14 @@ const Contact = () => {
             
             {/* contact section image */}
             <div className='w-full lg:w-5/12 xl:w-1/2'>
-              <img src={contactImg} alt="contact_image" className='contact-img' />
+              {/* <img src={contactImg} alt="contact_image" className='contact-img' /> */}
+              <ImageWithReflection
+                className="opacity-[0.93] w-full md:w-72 mx-auto"
+                bothClassName="md:rounded-[4rem] border-[0.12rem] border-border_color1"
+                reflectionWidth="h-20"
+                src={AboutMeImg}
+                alt="contact-me-image"
+              />
             </div>
             
             {/* div for form */}

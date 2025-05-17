@@ -5,16 +5,16 @@ interface ImageWithReflectionProps {
   src: string;
   alt?: string;
   className?: string;
-  imageClasName?: string;
+  imageClassName?: string;
   bothClassName?: string;
   reflectionWidth?: string;
 }
 
-const ImageWithReflection = ({ src, alt = 'image', className = '', imageClasName = '', bothClassName='bothClassName-lg', reflectionWidth = 'h-20' }: ImageWithReflectionProps) => {
+const ImageWithReflection = ({ src, alt = 'image', className = '', imageClassName = '', bothClassName='bothClassName-lg', reflectionWidth = 'h-20' }: ImageWithReflectionProps) => {
   return (
     <div className={clsx("relative w-fit", className)}>
       {/* Imagen principal */}
-      <img src={src} alt={alt} className={clsx("block w-full", imageClasName, bothClassName)} />
+      <img src={src} alt={alt} className={clsx("block w-full", imageClassName, bothClassName)} />
 
       {/* Contenedor del reflejo */}
       <div className={clsx('relative w-full overflow-hidden', reflectionWidth)}

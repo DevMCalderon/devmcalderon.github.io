@@ -10,7 +10,16 @@
   }
 }
 
+@layer utilities {
+  .font-terminal {
+    font-family: 'Monaspace Krypton', monospace; /* o cualquier fuente tipo terminal */
+  }
+}
+
 @layer components {
+  .terminal_text {
+    @apply font-terminal text-green-600 py-4 text-base word-spacing tracking-wider whitespace-pre-line leading-relaxed;
+  }
   .span-icon {
     @apply inline-block mr-2;
   }
@@ -98,6 +107,14 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: Monaspace Krypton;
+  src: url('/fonts/MonaspaceKrypton/MonaspaceKrypton.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* faff5c  yellow*/
 /* ff8fff pink */
 /* 6fa6ff lightblue1 */
@@ -141,6 +158,7 @@
   --containerShadow3: 0px 1px 1px 1px var(--neon_color3);
   --normal-font-family: 'Chakra', sans-serif;
   --styled-font-family1: "Cyber", sans-serif;
+  --terminal-font: "Monaspace Krypton", sans-serif;
 
 }
 

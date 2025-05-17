@@ -9,12 +9,13 @@ import ExternalLink from "@/components/uI/ExternalLink";
 import ImageWithReflection from "@/components/uI/ImageWithReflection";
 
 import arrowDown from "@/assets/img/icons/arrow-down.svg";
-import headerImg from "@/assets/img/pfp/difuminado5.png";
+// import headerImg from "@/assets/img/pfp/difuminado5.png";
+import headerImg from "@/assets/img/pfp/2.png";
 
 const Banner = () => {
   const [ t ] = useTranslation("global");
   
-  const typeAnimationArray = [
+  const words = [
     t(`banner.typeAnimation_1`),
     t(`banner.typeAnimation_2`),
     t(`banner.typeAnimation_3`),
@@ -84,7 +85,10 @@ const Banner = () => {
               <h1 className="text-4xl md:text-5xl lg:text-5xl mb-3" id="banner">
                 <span className="textShadow">{t(`banner.Fullname`)}</span>
                 <div className="h-16 lg:h-12 mt-2" style={{ fontSize: `${fontSize}px` }}>
-                  { <TypeAnimation {...typeAnimationArray}/>}
+                  <TypeAnimation 
+                    words={words}
+                    className="text-highlighted_text_color"
+                  />
                 </div>
               </h1>
                 
@@ -150,10 +154,11 @@ const Banner = () => {
               </div>
             </div>
             
+            {/* imageClassName */}
             {/* profile picture */}
             <ImageWithReflection
               className="animatedImg md:w-1/2 lg:w-5/12 mt-16 lg:mt-0 mx-auto self-start w-96 md:w-80 lg:w-[400px]"
-              imageClasName="opacity-[92%] shadow-2xl ml-auto "
+              imageClassName="opacity-[92%] shadow-2xl ml-auto bg-gradient-to-l from-[#69008c59] to-[#35338fAA]"
               bothClassName="rounded-full border-[0.25rem] border-black"
               reflectionWidth="h-32"
               src={headerImg}

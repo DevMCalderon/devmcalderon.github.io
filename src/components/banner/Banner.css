@@ -1,10 +1,5 @@
 
 /* p blink cursos */
-.cursor {
-  animation: typedjsBlink 0.7s infinite;
-  -webkit-animation: typedjsBlink 0.7s infinite;
-  animation: typedjsBlink 0.7s infinite;
-}
 
 /* welcome box */
 .banner .tagline {
@@ -42,6 +37,4 @@
     transform:translateY(-15px) 
   }
 }
-.txt-rotate > .wrap {
-  border-right: 0.08em solid #666;
-}
+

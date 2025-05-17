@@ -32,6 +32,7 @@ export default {
       colors: {
         transparent: 'transparent',
         current: 'currentColor',
+        'neon_green': '#a5ff91',
         'white': '#ffffff',
         'purple': '#3f3cbb',
         'midnight': '#121063',
@@ -69,6 +70,7 @@ export default {
       fonts: {
         'normal-font-family': 'var(--normal-font-family)',
         'styled-font-family1': 'var(--styled-font-family1)',
+        'terminal-font': 'var(--terminal-font)',
       },
       screens: {
         'sm': '640px',
@@ -101,7 +103,15 @@ export default {
             },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.word-spacing': {
+          'word-spacing': '0.2rem',
+        },
+      })
+    }
+  ],
 }
 
 

@@ -1,38 +1,32 @@
 import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
+import clsx from 'clsx';
 
-import './TypeAnimation.css'
+import './TypeAnimation.css';
 
-function TypedText(typeAnimationArray) {
+function TypeAnimation({ words, className }) {
   const typedRef = useRef(null);
-  
-  const Textarray = Object.values(typeAnimationArray);
-  
+
   useEffect(() => {
     const options = {
-      strings: [... Textarray],
-      typeSpeed: 80, // Velocidad de escritura en milisegundos
-      backSpeed: 25, // Velocidad de borrado en milisegundos
-      loop: true, // Repetir el ciclo
+      strings: words,
+      typeSpeed: 80,
+      backSpeed: 25,
+      loop: true,
     };
 
-    if (typedRef.current) {
-      const typed = new Typed(typedRef.current, options);
-      return () => {
-        typed.destroy(); // Destruir Typed.js al desmontar el componente
-      };
-    }
-  }, [typeAnimationArray]);
+    const typed = new Typed(typedRef.current, options);
 
-  return <span className='wrap text-highlighted_text_color' ref={typedRef} ></span>;
-}
+    return () => {
+      typed.destroy();
+    };
+  }, [words]);
 
-function App(typeAnimationArray) {
   return (
-    <div className="App">
-      <TypedText {... typeAnimationArray}/>
+    <div className={clsx(className)}>
+      <span ref={typedRef} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default TypeAnimation;
