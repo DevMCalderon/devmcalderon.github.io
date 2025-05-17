@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 
 import CustomHeader from '@/components/uI/customHeader/CustomHeader';
+import ImageWithReflection from "@/components/uI/ImageWithReflection";
 
 import AboutMeImg from '@/assets/img/about-me.gif'
-import ImageWithReflection from "../../components/uI/ImageWithReflection";
 
 const AboutMe = () => {
   const [t] = useTranslation("global");
@@ -28,8 +28,8 @@ const AboutMe = () => {
             </p>
             <ImageWithReflection
               className="opacity-[0.93] w-full md:w-72 mx-auto"
-              imageClasses="border-[0.12rem] border-border_color1"
-              rounded="md:rounded-[4rem] "
+              bothClassName="md:rounded-[4rem] border-[0.12rem] border-border_color1"
+              reflectionWidth="h-20"
               src={AboutMeImg}
               alt="About-me-image"
             />

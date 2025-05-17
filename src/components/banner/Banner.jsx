@@ -6,6 +6,7 @@ import SocialIcons from "@/components/socialIcons/SocialIcons";
 import '@/components/banner/Banner.css';
 import { IconGitHub, OpenFileFolder, IconGlobeWithMeridians } from "@/components/uI/Icons";
 import ExternalLink from "@/components/uI/ExternalLink";
+import ImageWithReflection from "@/components/uI/ImageWithReflection";
 
 import arrowDown from "@/assets/img/icons/arrow-down.svg";
 import headerImg from "@/assets/img/pfp/difuminado5.png";
@@ -21,11 +22,12 @@ const Banner = () => {
   ];
   
   const [text] = useState('');
-  const [fontSize, setFontSize] = useState(16); // Tamaño de fuente inicial en píxeles
+  const [fontSize, setFontSize] = useState(16); // initial font size in pixels
   
   useEffect(() => {
-    // Calcula el nuevo tamaño de fuente basado en la longitud del texto
-    const newFontSize = Math.min(35, 700 / text.length); // h,w; Ajusta los valores mínimo y máximo según tus necesidades
+    // it calculates the new font size based on the length of the text
+    // h,w; adjust the minimum and maximum font sizes values accordingly to your needs
+    const newFontSize = Math.min(35, 700 / text.length); 
     setFontSize(newFontSize);
   }, [text]);
 
@@ -149,9 +151,14 @@ const Banner = () => {
             </div>
             
             {/* profile picture */}
-            <div className=" md:w-1/2 lg:w-5/12 mt-16 lg:mt-0 mx-auto self-start">
-              <img className="animatedImg w-96 md:w-80 lg:w-[400px] rounded-full opacity-[92%] shadow-2xl ml-auto" src={headerImg} alt="Header Img" />
-            </div>
+            <ImageWithReflection
+              className="animatedImg md:w-1/2 lg:w-5/12 mt-16 lg:mt-0 mx-auto self-start w-96 md:w-80 lg:w-[400px]"
+              imageClasName="opacity-[92%] shadow-2xl ml-auto "
+              bothClassName="rounded-full border-[0.25rem] border-black"
+              reflectionWidth="h-32"
+              src={headerImg}
+              alt="Header Img"
+            />
             
           </div>
         </section>
