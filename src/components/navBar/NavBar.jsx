@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import clsx from "clsx";
 
 import { NavbarRoutesHome, NavbarRoutes } from '@/routes.js';
 import MobileNavBar from "@/components/navBar/MobileNavBar";
@@ -32,18 +33,19 @@ const NavBar = ({ hasBackgroundColor }) => {
     setActiveLink(value);
   };
 
-  const navLinkStyles = 'navbar-link text-sm xlNavbar:text-smmd py-0 px-[14px] xlNavbar:px-[25px]';
-
   return (
     <>
       {/* NAVBAR */}
-      <header className={`${hasBackgroundColor ? 'pt-28' : ''}`}>
+      <header className={clsx({'pt-28': hasBackgroundColor})}>
         <nav
-          className={`
-            navbar
-            ${scrolled ? 'scrolled bg-opacity-0' : 'bg-opacity-100'}
-            ${ hasBackgroundColor ? 'bg-container_color6' : ''}
-          `}
+          className={clsx(
+            'navbar',
+            {
+              'scrolled bg-opacity-0': scrolled,
+              'bg-opacity-100': scrolled === false,
+              'bg-container_color6': hasBackgroundColor,
+            },
+          )}
         >
           <div className="mx-auto max-w-[90vw] flex justify-between">
 
@@ -64,7 +66,7 @@ const NavBar = ({ hasBackgroundColor }) => {
                         <li key={index}>
                           {/* a href */}
                           <a href={item.URL} className={`${activateLink === item.name ? "active" : ""
-                            }  ${navLinkStyles} hover:text-link_color_hover`}
+                            } navLinkStyles navbar-link hover:text-link_color_hover`}
                             onClick={() => onUpdateActiveLink(item.name)}
                           >
                             <span>
@@ -88,7 +90,7 @@ const NavBar = ({ hasBackgroundColor }) => {
                   <div className="invisible hidden lg:inline lg:visible">
                     {NavbarRoutes.map((item, index) => (
                       <Link to={item.URL} key={index} className={`${activateLink === item.name ? "active" : ""
-                        }  ${navLinkStyles}`}
+                        } navLinkStyles navbar-link`}
                         onClick={() => onUpdateActiveLink(item.name)}
                       >
                         {t(`navbar.${item.name}`)}

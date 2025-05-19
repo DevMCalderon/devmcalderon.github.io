@@ -6,7 +6,7 @@
   top: 0;
   z-index: 10;
   padding: 2rem 0;
-  transition: padding 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 @media (min-width: 768px) {
   .navbar{
@@ -36,7 +36,6 @@
   padding: 0.4rem 0;
   backdrop-filter: blur(4px);
   box-shadow: 0 3px 8px 0px rgba(0,0,0,0.4);
-  transition: all 0.8s ease-in-out;
   }
   .scrolled::before {
     opacity: 1;

@@ -17,6 +17,9 @@
 }
 
 @layer components {
+  .navLinkStyles {
+    @apply text-sm xlNavbar:text-smmd py-0 px-[14px] xlNavbar:px-[25px];
+  }
   .terminal_text {
     @apply font-terminal text-green-600 py-4 text-base word-spacing tracking-wider whitespace-pre-line leading-relaxed;
   }
