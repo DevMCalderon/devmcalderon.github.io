@@ -34,56 +34,54 @@ const DependenciesSection: React.FC<DependenciesSectionProps> = ({ dependencies 
   
   return (
     <>
-       
-          {(dependencies.plugins?.length > 0) && (
-            <section aria-labelledby="general-dependencies">
-              <Heading tag="h4" id="general-dependencies">Plugins</Heading>
-              <ul className="article-dependencies-list">
-                {dependencies.plugins.map((dep, idx) => <li className="py-1" key={idx}><HighlightText>{dep}</HighlightText></li>)}
-              </ul>
-            </section>
-          )}
-        
-        
-          {(dependencies.backend?.packageJSON?.length > 0 || dependencies.backend?.composerJSON?.length > 0) && (        
-            <section aria-labelledby="backend-dependencies">
-              <Heading tag="h4" id="backend-dependencies">Backend</Heading>
-              
-              <div className="ml-8">
-                {dependencies.backend.composerJSON?.length > 0 && (
-                  <>
-                    <Heading tag="h5" id="dependencies">composer.json</Heading>
-                    <ul className="article-dependencies-list">
-                      {dependencies.backend.composerJSON.map((dep, idx) => <li className="py-1" key={idx}><HighlightText>{dep}</HighlightText></li>)}
-                    </ul>
-                  </>
-                )}
-                
-                {dependencies.backend.packageJSON?.length > 0 && (
-                  <>
-                    <Heading tag="h5" id="dependencies">package.json</Heading>
-                    <ul className="article-dependencies-list">
-                      {dependencies.backend.packageJSON.map((dep, idx) => <li className="py-1" key={idx}><HighlightText>{dep}</HighlightText></li>)}
-                    </ul>
-                  </>
-                )}
-              </div>
-            </section>
-          )}
-      
-          {dependencies.frontend?.packageJSON?.length > 0 && (
-            <section aria-labelledby="frontend-dependencies">
-              <Heading tag="h4" id="frontend-dependencies">Frontend</Heading>
-        
-              <div className="ml-8">
+      {(dependencies.plugins?.length > 0) && (
+        <section aria-labelledby="general-dependencies">
+          <Heading tag="h4" id="general-dependencies">Plugins</Heading>
+          <ul className="article-dependencies-list">
+            {dependencies.plugins.map((dep, idx) => <li className="py-1" key={idx}><HighlightText>{dep}</HighlightText></li>)}
+          </ul>
+        </section>
+      )}
+    
+    
+      {(dependencies.backend?.packageJSON?.length > 0 || dependencies.backend?.composerJSON?.length > 0) && (        
+        <section aria-labelledby="backend-dependencies">
+          <Heading tag="h4" id="backend-dependencies">Backend</Heading>
+          
+          <div className="ml-8">
+            {dependencies.backend.composerJSON?.length > 0 && (
+              <>
+                <Heading tag="h5" id="dependencies">composer.json</Heading>
+                <ul className="article-dependencies-list">
+                  {dependencies.backend.composerJSON.map((dep, idx) => <li className="py-1" key={idx}><HighlightText>{dep}</HighlightText></li>)}
+                </ul>
+              </>
+            )}
+            
+            {dependencies.backend.packageJSON?.length > 0 && (
+              <>
                 <Heading tag="h5" id="dependencies">package.json</Heading>
                 <ul className="article-dependencies-list">
-                  {dependencies.frontend.packageJSON.map((dep, idx) => <li className="py-1" key={idx}><HighlightText>{dep}</HighlightText></li>)}
+                  {dependencies.backend.packageJSON.map((dep, idx) => <li className="py-1" key={idx}><HighlightText>{dep}</HighlightText></li>)}
                 </ul>
-              </div>
-            </section>
-          )}
-      
+              </>
+            )}
+          </div>
+        </section>
+      )}
+  
+      {dependencies.frontend?.packageJSON?.length > 0 && (
+        <section aria-labelledby="frontend-dependencies">
+          <Heading tag="h4" id="frontend-dependencies">Frontend</Heading>
+    
+          <div className="ml-8">
+            <Heading tag="h5" id="dependencies">package.json</Heading>
+            <ul className="article-dependencies-list">
+              {dependencies.frontend.packageJSON.map((dep, idx) => <li className="py-1" key={idx}><HighlightText>{dep}</HighlightText></li>)}
+            </ul>
+          </div>
+        </section>
+      )}
     </>
   );
 };

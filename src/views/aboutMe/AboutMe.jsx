@@ -10,7 +10,7 @@ const AboutMe = () => {
   const words = [''];
 
   return (
-    <section className="bg-[#0b1525] bg-opacity-100 text-center md:text-start mt-0" id="aboutMe">
+    <section className="bg-[#0b1525e8] bg-opacity-100 text-center md:text-start mt-0" id="aboutMe">
       
       {/* separador */}
       <hr className="hr5 text-border_color1 lg:max-w-screen-2xl mx-auto"/>

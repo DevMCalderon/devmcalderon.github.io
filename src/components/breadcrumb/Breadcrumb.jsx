@@ -27,10 +27,8 @@ const BreadCrumb = ({ classes }) => {
     // Agrega el elemento al breadcrumb
     breadcrumbItems.push({ to: currentUrl, label: crumb });
   }, [location.pathname]);
-
  
-  
-  return(
+  return (
     <>
       <nav className={`${classes} text-start italic mb-8 text-text_dark-gray bg-transparent px-7 py-[1.2rem] rounded-[1.2rem]
         w-fit border-solid border-[1px] border-neon_color1`}
@@ -38,12 +36,10 @@ const BreadCrumb = ({ classes }) => {
         {breadcrumbItems.map((item, index) => (
           <React.Fragment key={item.to}>
             <Link to={item.to}
-              className='text-[20.5px] text-blue-300 hover:text-link_color_hover hover:underline px-[0.8rem]'>
+              className='link px-2'>
               {item.label}
-              {/* {t(`navbar.${item.label}`)} */}
             </Link>
             { index < breadcrumbItems.length - 1 && (<span className='normal_font_family_aux text-white'> {'/'} </span>) }
-            {/* {' / '} */}
           </React.Fragment>
         ))}
       </nav>

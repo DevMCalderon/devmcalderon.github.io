@@ -69,7 +69,9 @@
     "title": "Proyectos Destacados",
     "description": "Me especializo en desarrollo web, creando desde interfaces atractivas hasta plataformas funcionales y expresivas. Mi enfoque es la excelencia, asegurando siempre resultados de alta calidad.",
     "select_category": "Selecciona una categoría para ver los proyectos que he desarrollado en esa área",
-    "project_categories": "Categorias de Proyectos"
+    "project_categories": "Categorias de Proyectos",
+    "all_projects": "Mostrar Todos",
+    "selected_category": "Categoría Seleccionada:"
   },
   "about_me": {
     "more_about_me": "Acerca de mí",

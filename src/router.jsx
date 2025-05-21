@@ -33,19 +33,19 @@ const router = createBrowserRouter(
           [
             {
               path: routes["Projects"],
-              element: <AllProjectCategoryList />,
+              element: <AllProjectCategoryList selectedCategoryId={0} />,
             },
             {
               path: routes["Web Platforms & Applications"],
-              element: <ProjectsCategoryOverview categoryIndex="0" />,
+              element: <AllProjectCategoryList selectedCategoryId={1} />,
             },
             {
               path: routes["Interface Design"],
-              element: <ProjectsCategoryOverview categoryIndex="1" />,
+              element: <AllProjectCategoryList selectedCategoryId={2} />,
             },
             {
               path: routes["Community Contributions"],
-              element: <ProjectsCategoryOverview categoryIndex="2" />,
+              element: <AllProjectCategoryList selectedCategoryId={3} />,
             },
             {
               path: "/projects/:idCategory/:idProject",

@@ -3,6 +3,7 @@
   [
     {
       "category": "Apps y Plataformas Web",
+      "id": 1,
       "description": "Desarrollo soluciones web adaptadas a lo que realmente necesita su empresa. Me ocupo de todo el proceso: desde la planificación y documentación hasta el desarrollo, implementación y mantenimiento. Mi objetivo es entregarle una plataforma eficiente que optimice su productividad y facilite la gestión de su negocio.",
       "slug": "apps-y-plataformas-web",
       "projects":
@@ -196,9 +197,10 @@
       ]
     },
     {
-      "category": "Contribuciones a Comunidad",
-      "description": "Participo activamente en la comunidad a través de proyectos de código abierto y creación de contenido. Me motiva compartir conocimientos mientras sigo profundizando en mis áreas de especialización.",
-      "slug": "contribuciones-a-comunidad",
+      "category": "Diseño de Interfaces",
+      "id": 3,
+      "description": "Diseño interfaces de usuario que combinan estética y funcionalidad. Busco crear experiencias que sean cómodas, pero también memorables.",
+      "slug": "interfaces",
       "projects":
       [
         {
@@ -209,9 +211,10 @@
       ]
     },
     {
-      "category": "Interfaces y Prototipos",
-      "description": "Diseño interfaces de usuario que combinan estética y funcionalidad. Busco crear experiencias que sean cómodas, pero también memorables.",
-      "slug": "interfaces-y-prototipos",
+      "category": "Contribuciones a Comunidad",
+      "id": 2,
+      "description": "Participo activamente en la comunidad a través de proyectos de código abierto y creación de contenido. Me motiva compartir conocimientos mientras sigo profundizando en mis áreas de especialización.",
+      "slug": "contribuciones-a-comunidad",
       "projects":
       [
         {

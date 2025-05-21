@@ -29,8 +29,8 @@ const ProjectsSection = () => {
             </p>
         </div>
         
-          {/* componente de tabs con categorias de proyectos */}
-          <ProjectTab />
+        {/* componente de tabs con categorias de proyectos */}
+        <ProjectTab />
           
       </section>
     </>

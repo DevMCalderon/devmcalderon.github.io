@@ -30,7 +30,7 @@
     @apply w-6 h-6 mr-2;
   }
   .link {
-    @apply text-blue-300 hover:text-link_color_hover hover:underline tracking-wider;
+    @apply text-blue-300 hover:text-link_color_hover hover:underline tracking-wider duration-150 ease-in-out transition-all;
   }
   .button_transparent_rounded {
     @apply px-11 py-[1.1rem] shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2

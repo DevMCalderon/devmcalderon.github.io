@@ -39,32 +39,17 @@ export const getURLFromSlug = (slug) => {
   return null; // Devuelve null si el slug no se encuentra en las rutas
 }
 
-// p
-export const urlRoutes = [
-  {URL : '/', label : 'Home'},
-  {URL : '/projects', label : 'Projects'},
-]
-
 // routes.js
 export const routes = {
   'Home': '/',
   'Projects': '/projects',
     'Web Platforms & Applications': '/projects/apps-y-plataformas-web',
     'Apps y Plataformas Web': '/projects/apps-y-plataformas-web',
-    'Community Contributions': '/projects/contribuciones-a-comunidad',
+    'Interface Design': '/projects/interfaces',
+    'Diseño de Interfaces': '/projects/interfaces',
     'Contribuciones a Comunidad': '/projects/contribuciones-a-comunidad',
-    'Interface Design': '/projects/interfaces-y-prototipos',
-    'Diseño de Interfaces': '/projects/interfaces-y-prototipos'
+    'Community Contributions': '/projects/contribuciones-a-comunidad',
 };
-
-
-// export const routesES = {
-//   'Home': '/',
-//   'Projects': '/projects',
-//     'Apps y Plataformas Web': '/projects/apps-y-plataformas-web',
-//     'Diseño de Interfaces': '/projects/designs',
-//     'Contribuciones a Comunidad': '/projects/community',
-// };
 
 export const articleSlugPathMap = {
   'vetcore-pro': 'veterinary', 
