@@ -41,14 +41,16 @@ export const getURLFromSlug = (slug) => {
 
 // routes.js
 export const routes = {
+  'Inicio': '/',
   'Home': '/',
-  'Projects': '/projects',
-    'Web Platforms & Applications': '/projects/apps-y-plataformas-web',
-    'Apps y Plataformas Web': '/projects/apps-y-plataformas-web',
-    'Interface Design': '/projects/interfaces',
-    'Diseño de Interfaces': '/projects/interfaces',
-    'Contribuciones a Comunidad': '/projects/contribuciones-a-comunidad',
-    'Community Contributions': '/projects/contribuciones-a-comunidad',
+  'Projectos': '/proyectos',
+  'Projects': '/proyectos',
+    'Web Platforms & Applications': '/proyectos/apps-y-plataformas-web',
+    'Apps y Plataformas Web': '/proyectos/apps-y-plataformas-web',
+    'Interface Design': '/proyectos/interfaces',
+    'Diseño de Interfaces': '/proyectos/interfaces',
+    'Contribuciones a Comunidad': '/proyectos/contribuciones-a-comunidad',
+    'Community Contributions': '/proyectos/contribuciones-a-comunidad',
 };
 
 export const articleSlugPathMap = {

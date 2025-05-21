@@ -5,25 +5,21 @@ import { useLocation } from 'react-router-dom';
 const BreadCrumb = ({ classes }) => {
   const location = useLocation();
   const url=location.pathname;
-  // p
-  // console.log('slug', getSlugFromURL(url));
   
   //split the actual url using the '/' separator when crumb is not an empty string
   const crumbs = url.split('/')
     .filter(crumb => crumb !== '');
   
   // Inicializa el array de elementos del breadcrumb con el enlace a la página de inicio
-  const breadcrumbItems = [{ to: '/', label: 'Home' }];
+  const breadcrumbItems = [{ to: '/', label: 'inicio' }];
   
   let currentUrl = '';  
+  
   // Itera sobre las partes de la URL y crea dinámicamente los elementos del breadcrumb
   crumbs.forEach((crumb, index) => { 
     // Construye la URL actual
     currentUrl += `/${crumb}`;
     
-    // console.log(crumb)  
-    // console.log('url from slug', getURLFromSlug(crumb))
-  
     // Agrega el elemento al breadcrumb
     breadcrumbItems.push({ to: currentUrl, label: crumb });
   }, [location.pathname]);

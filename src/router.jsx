@@ -48,7 +48,7 @@ const router = createBrowserRouter(
               element: <AllProjectCategoryList selectedCategoryId={3} />,
             },
             {
-              path: "/projects/:idCategory/:idProject",
+              path: routes["Projects"] + "/:idCategory/:idProject",
               element: <ProjectDetail />,
             },
           ],

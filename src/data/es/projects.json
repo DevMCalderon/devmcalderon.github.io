@@ -203,11 +203,6 @@
       "slug": "interfaces",
       "projects":
       [
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        }
       ]
     },
     {
@@ -217,11 +212,6 @@
       "slug": "contribuciones-a-comunidad",
       "projects":
       [
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        }
       ]
     }
   ]
