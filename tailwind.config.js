@@ -5,6 +5,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'main-gradient': 'linear-gradient(to bottom, theme("colors.container_color5"), #0d0436)',
+      },
       boxShadow: {
         'large1': '0 20px 25px -20px rgba(0, 0, 0, 0.3)',
         'large2': '0 20px 20px -20px rgba(0, 0, 0, 0.3)',

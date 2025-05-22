@@ -30,7 +30,7 @@ const AllProjectCategoryList = ({ selectedCategoryId }) => {
   }, [selectedCategoryId]);
   
   return (
-    <>
+    <div className="mb-12">
       <div>
         {/* categories links list */}
         <Heading tag="h2" className="text-center text-4xl mb-3">
@@ -62,7 +62,7 @@ const AllProjectCategoryList = ({ selectedCategoryId }) => {
       <ProjectsCategoryOverview categoryData={categoryData} />
 
       <ProjectsListGrid selectedCategoryName={categoryData.selectedCategoryName} />
-    </>
+    </div>
   );
 };
 

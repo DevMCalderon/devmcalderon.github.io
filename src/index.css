@@ -10,6 +10,7 @@
   }
 }
 
+
 @layer utilities {
   .font-terminal {
     font-family: 'Monaspace Krypton', monospace; /* o cualquier fuente tipo terminal */
@@ -21,7 +22,7 @@
     @apply text-sm xlNavbar:text-smmd py-0 px-[14px] xlNavbar:px-[25px];
   }
   .terminal_text {
-    @apply font-terminal text-green-600 py-4 text-base word-spacing tracking-wider whitespace-pre-line leading-relaxed;
+    @apply font-terminal text-blue-500 py-4 text-base word-spacing tracking-wider whitespace-pre-line leading-relaxed;
   }
   .span-icon {
     @apply inline-block mr-2;
@@ -223,6 +224,13 @@ body {
   border: 1px solid var(--border_color1); /* Decoración alrededor de la página */
   animation: borderAnimation 30s infinite; /* Aplica la animación al borde */
 }
+.border-animation{
+  border: 1px solid var(--border_color1); /* Decoración alrededor de la página */
+  animation: borderAnimation 30s infinite; /* Aplica la animación al borde */
+}
+.rgb-animation{
+  animation: rgb-animation 30s infinite; /* Aplica la animación al borde */
+}
 html, body {
   width: 100%;
   margin: 0;
@@ -400,6 +408,23 @@ p.danger {
   }
   100% {
     border-color: var(--border_color1); /* Vuelve al color original al final de la animación */
+  }
+}
+@keyframes rgb-animation {
+  0% {
+    color: var(--border_color1); /* Inicia con el color del borde */
+  }
+  25% {
+    color: rgb(255, 0, 0); /* Cambia a rojo al 25% de la animación */
+  }
+  50% {
+    color: rgb(0, 255, 0); /* Cambia a verde al 50% de la animación */
+  }
+  75% {
+    color: rgb(0, 0, 255); /* Cambia a azul al 75% de la animación */
+  }
+  100% {
+    color: var(--border_color1); /* Vuelve al color original al final de la animación */
   }
 }
 

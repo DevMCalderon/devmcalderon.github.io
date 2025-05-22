@@ -8,7 +8,7 @@ const Footer = () => {
   const [t] = useTranslation("global");
   
   return (
-    <footer className='footer bg-container_color6 px-6 md:px-14 lg:px-20'>
+    <footer className='footer px-6 md:px-14 lg:px-20'>
       <div className='container mx-auto pt-16 pb-16 lg:max-w-screen-3xl mx-auto flex flex-wrap items-center'>
         
         <div className='w-full md:w-1/2 flex'>
