@@ -10,17 +10,17 @@ const AboutMe = () => {
   const words = [''];
 
   return (
-    <section className="bg-[#0b1525e8] bg-opacity-100 text-center md:text-start mt-0" id="aboutMe">
+    <section className=" bg-[#0b1525e8] bg-opacity-100 text-center md:text-start mt-0" id="aboutMe">
       
       {/* separador */}
       <hr className="hr5 text-border_color1 lg:max-w-screen-2xl mx-auto"/>
         
       {/* main content */}
-      <div className="max-w-screen-2xl pt-0 pb-16 mx-auto">
+      <div className="max-w-screen-2xl pt-0 pb-16 mx-auto max-w-sm md:max-w-screen-2xl">
 
         {/* left side */}
         <div className="flex flex-wrap-reverse pt-14">
-          <div className="border-animation w-full lg:w-4/12 ml-9 mr-16 rounded-3xl p-4 lg:px-8 my-auto flex justify-center flex-col">
+          <div className="border-animation w-full lg:w-4/12 ml-9 mr-16 rounded-3xl p-4 my-auto flex justify-center flex-col">
             <p className={`rgb-animation mb-4 text-2xl font-bold text-center terminal_text py-0`}>
               {t(`about_me.img_description`)}
             </p>
@@ -55,17 +55,15 @@ const AboutMe = () => {
                 {t(`about_me.paragraph2_5`)}
               </p>
               
-              <p className="h-16 lg:h-12 text-lg">
-                <TypeAnimation 
-                 words={words}
-                 className="text-blue-600 terminal_text"
-                />
-              </p>
+              <TypeAnimation 
+              words={words}
+              className="text-blue-600 terminal_text text-lg"
+              />
             </div>
             
             <p className={`flex w-full `}>
               <a 
-                className={`mx-auto text-blue-200 hover:text-link_color_hover hover:underline textShadow cursor-pointer terminal_text`}
+                className={`link terminal_text py-0 mx-auto text-blue-200 textShadow`}
                 target="_blank" rel="noreferrer"
                 href={import.meta.env.VITE_DISC_URL}
               >

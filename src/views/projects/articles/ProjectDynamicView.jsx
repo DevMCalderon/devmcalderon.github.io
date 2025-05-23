@@ -12,8 +12,8 @@ const loadProject = async (projectSlug) => {
 };
 
 const ProjectDynamicView = () => {
-  const [projectData, setProjectData] = useState(null);
-  const [error, setError] = useState(null);
+  const [projectData, setProjectData] = useState([]);
+  const [error, setError] = useState([]);
   
   const { idProject } = useParams();
   const [t] = useTranslation("global");

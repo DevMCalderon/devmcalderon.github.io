@@ -49,10 +49,8 @@ const Contact = () => {
           
           {/* thanks for visiting */}
           <section className="mb-[-12rem] w-full mx-auto">
-            <div className="bg-container_color3 py-6 md:py-8 px-24 rounded-full w-fit mx-auto">
-              <p className="text-2xl text-sky-900 font-bold text-center w-full">
-                {t(`contact.thanks_for_visiting`)} 
-              </p>
+            <div className="bg-container_color3 py-2 md:py-8 px-8 md:px-24 rounded-full w-fit mx-auto">
+              <p className="text-2xl text-sky-900 font-bold text-center w-full">{t(`contact.thanks_for_visiting`)}</p>
             </div>
           </section>
         </div>
