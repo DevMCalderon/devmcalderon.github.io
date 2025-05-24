@@ -22,7 +22,7 @@ const Contact = () => {
         <div className='lg:max-w-screen-2xl mx-auto w-full h-full flex flex-wrap items-center'>
             
             {/* contact text */}
-            <section className='w-full mt-10 md:mt-0 lg:w-7/12 xl:w-6/12'>
+            <section className='w-full mt-10 md:mt-0 lg:w-7/12 xl:w-6/12 mb-10 md:lg-0'>
               {/* title and description */}
               <CustomHeader
                 align='center'
