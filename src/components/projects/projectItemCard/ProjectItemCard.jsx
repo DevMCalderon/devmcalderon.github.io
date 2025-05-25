@@ -19,7 +19,7 @@ const ProjectItemCard = ({ projectData }) => {
     
       <Link to={linkUrl} className="projectItemCard rounded-3xl p-6 flex flex-wrap md:flex-nowrap justify-center group">
         {/* image carousel */}
-        <div className='w-full md:w-3/12 lg:w-4/12 group'>
+        <div className='w-full md:w-3/12 lg:w-4/12 group mb-4 md:mb-0'>
           {images && images.length > 0 && (
             <ImageCarousel
               autoPlay={true}
@@ -35,7 +35,7 @@ const ProjectItemCard = ({ projectData }) => {
         {/* text and icons */}
         <div className="text-left ml-0 md:ml-6">
           {/* <h4 className="text-lg text-white font-bold mb-2">{'- '}{title}{' -'}</h4> */}
-          <h4 className="text-lg text-white font-bold mb-2 group-hover:text-blue-300">{title}</h4>
+          <h4 className="text-center md:text-start text-lg text-white font-bold mb-2 group-hover:text-blue-300">{title}</h4>
           
           {/* description */}
           <p className="text-mdsm h-[7rem] overflow-hidden text-ellipsis text-slate-300 mb-1.5">{short_description}</p>
