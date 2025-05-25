@@ -102,9 +102,7 @@ const ProjectTab = () => {
                   hover:text-dark_link_color_hover transition-all duration-300"
                 onClick={() => handleTabClick(index+1)}
               >
-                <span
-                  className=" text-xl font-bold md:font-bold"
-                >
+                <span className="text-lg md:text-base lg:text-xl font-bold md:font-bold">
                   {category.category}
                 </span>
               </button>
