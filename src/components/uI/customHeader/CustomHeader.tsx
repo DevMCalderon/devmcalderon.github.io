@@ -9,7 +9,7 @@ type CustomHeaderProps = {
 
 const CustomHeader = ({ emoji, text, align, className }: CustomHeaderProps) => (
     <h2
-      className={clsx('text-3xl mb-3',
+      className={clsx('text-2xl md:text-3xl mb-3',
         {
           'lg:text-left': align==='left',
           'lg:text-center': align==='center',

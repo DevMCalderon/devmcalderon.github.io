@@ -14,7 +14,6 @@ const ProjectsSection = () => {
         id="projects"
       >
           <div className="lg:max-w-screen-lg mx-auto">
-          
             {/* titulo */}
             <CustomHeader
               align='center'
