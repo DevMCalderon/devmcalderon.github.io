@@ -29,8 +29,9 @@ const AboutMe = () => {
           </div>
 
           {/* right side */}
-          <div className="w-full lg:w-7/12 text-center lg:text-left mb-5 lg:mb-0 font-terminal text-blue-300 ">
+          <div className="w-full lg:w-7/12 text-center lg:text-left mb-5 lg:mb-0 text-blue-300 font-terminal">
             <CustomHeader
+              className="font-size-2xl"
               align='left'
               emoji='🚀'
               text={t(`about_me.more_about_me`)}

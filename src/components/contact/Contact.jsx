@@ -16,7 +16,7 @@ const Contact = () => {
     
     <section className='bgBannerContacto'>
       <div
-        className='contact degradado4 px-6 md:px-6 lg:px-6 xl:px-28 pt-[4rem] pb-[6rem]'
+        className='contact degradado4 px-6 md:px-6 lg:px-6 xl:px-28 pt-2 md:pt-12 pb-[6rem]'
         id="contact"
       >
         <div className='lg:max-w-screen-2xl mx-auto w-full h-full flex flex-wrap items-center'>
