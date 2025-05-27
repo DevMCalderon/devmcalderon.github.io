@@ -27,17 +27,23 @@ const Skills = () => {
   
   return(
     <>
-      <section className='pb-20 bg-[linear-gradient(180deg,rgba(36,31,128,0)_90%,rgba(51,29,140,0.8)_98%,rgb(51,29,140)_100%)]' id='skills'>
-        <div className='containerShadow1 shadow-2xl pt-12 pb-16 px-[28px] md:py-[50px] md:px-[40px] lg:px-24
-          rounded-[55px] text-center mt-[-60px] bg-container_color2 bg-opacity-[85%] xl:max-w-screen-3xl mx-auto w-[93%]'>
+      <section 
+        className='pb-20 bg-[linear-gradient(180deg,rgba(36,31,128,0)_90%,rgba(51,29,140,0.8)_98%,rgb(51,29,140)_100%)]'
+        id='skills'
+      >
+        <div 
+          className='containerShadow1 shadow-2xl pt-12 px-7 md:pb-3 md:px-10 lg:px-24 rounded-[55px]
+            text-center mt-[-60px] bg-container_color2 bg-opacity-[85%] xl:max-w-screen-3xl mx-auto w-[93%]'
+        >
         
           <CustomHeader
             align='center'
             emoji='📚'
             text={t(`skills.skills`)}
           />
+          
           {/* description */}
-          <p className='text-left w-[95%] text-lgbase mx-auto mt-[14px] mb-6 md:mb-8 lg:mb-[70px]'
+          <p className='text-left text-lgbase mx-auto mt-[14px] mb-8 lg:mb-7'
           >
             {skills_description}
           </p>
