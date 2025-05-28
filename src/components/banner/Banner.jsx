@@ -35,7 +35,7 @@ const Banner = () => {
   return(
     <>
       <section
-        className="banner text-center md:text-start mt-0 pb-[160px]
+        className="banner text-center md:text-start mt-0 pb-16 lg:pb-32
           bg-[linear-gradient(0deg,rgba(70,111,149,0)_0%,rgba(39,32,94,0.28)_20%,rgba(50,27,124,0.28)_55%,rgba(49,25,122,0.5)_95%)]"
         id="home"
       >
@@ -154,13 +154,12 @@ const Banner = () => {
               </div>
             </div>
             
-            {/* imageClassName */}
             {/* profile picture */}
             <ImageWithReflection
-              className="animatedImg md:w-1/2 lg:w-5/12 mt-16 lg:mt-0 mx-auto self-start w-96 md:w-80 lg:w-[400px]"
+              className="animatedImg md:w-1/2 lg:w-5/12 mt-16 lg:mt-0 mx-auto self-start w-[70%] lg:w-[23rem]"
               imageClassName="opacity-[92%] shadow-2xl ml-auto bg-gradient-to-l from-[#69008c59] to-[#35338fAA]"
               bothClassName="rounded-full border-[0.25rem] border-black"
-              reflectionWidth="h-32"
+              reflectionWidth="h-16 lg:h-32"
               src={headerImg}
               alt="Header Img"
             />
