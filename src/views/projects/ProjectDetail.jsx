@@ -47,7 +47,8 @@ const ProjectDetail= () => {
   return(
     <>
       {projectData && projectData.project && projectData.category && (
-        <article aria-labelledby="title" className="pb-24">
+        <article aria-labelledby="title" className="pb-24 w-[90vw] lg:w-[70vw] mx-auto">
+        <div className="mx-auto">
           
           <QuickViewDescriptionBox projectData={projectData} />
 
@@ -65,6 +66,7 @@ const ProjectDetail= () => {
           {/* article content */}
           <div className="mb-10">
             <ProjectDynamicView />
+          </div>
           </div>
         </article>
       )}

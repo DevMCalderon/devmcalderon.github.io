@@ -13,10 +13,10 @@ const ArticleLayout = () => (
       <NavBar hasBackgroundColor={true} />
       
       {/* container */}
-      <div className="min-h-screen shadow-2xl text-white mt-5">
+      <div className="shadow-2xl text-white mt-5">
       
         {/* container to center content */}
-        <div className="w-9/12 mx-auto">
+        <div className="w-11/12 md:w-11/12 lg:w-9/12 mx-auto">
         
         <BreadCrumb />
 
