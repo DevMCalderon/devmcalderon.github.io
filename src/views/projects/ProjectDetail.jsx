@@ -41,15 +41,13 @@ const ProjectDetail= () => {
     } else {
       navigate("/not-found");
     }
-    
+        
   }, [idCategory, idProject]);
   
   return(
     <>
       {projectData && projectData.project && projectData.category && (
         <article aria-labelledby="title" className="pb-24 w-[90vw] lg:w-[70vw] mx-auto">
-        <div className="mx-auto">
-          
           <QuickViewDescriptionBox projectData={projectData} />
 
           <ImageCarousel
@@ -64,10 +62,7 @@ const ProjectDetail= () => {
           <h2 className="text-4xl text-white mb-4">{t(`projectDetail.documentation`)}</h2>
           
           {/* article content */}
-          <div className="mb-10">
-            <ProjectDynamicView />
-          </div>
-          </div>
+          <ProjectDynamicView />
         </article>
       )}
     </>

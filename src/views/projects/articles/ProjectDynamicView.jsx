@@ -12,24 +12,25 @@ const loadProject = async (projectSlug) => {
 };
 
 const ProjectDynamicView = () => {
-  const [projectData, setProjectData] = useState([]);
-  const [error, setError] = useState([]);
-  
-  const { idProject } = useParams();
   const [t] = useTranslation("global");
   
+  const { idProject } = useParams();
+  const [projectData, setProjectData] = useState(null);
+  const [error, setError] = useState(null);
   
+    
   useEffect(() => {
     loadProject(idProject)
       .then((data) => setProjectData(data))
       .catch((err) => setError(err.message));
-  }, [idProject]);
-  
+    }, [idProject]);
+    
   // if the slug is in the articleViews object return the view, otherwise return the fallback
   if (!projectData || error) return <ArticleEmptyView />;
       
+  
   return (
-    <>
+    <div className="mb-10">
       {projectData && (
         <>
           {/* GitHub */}
@@ -80,7 +81,7 @@ const ProjectDynamicView = () => {
 
         </>
       )}
-    </>
+    </div>
   );
   
 };
