@@ -45,12 +45,9 @@ export const routes = {
   'Home': '/',
   'Projectos': '/proyectos',
   'Projects': '/proyectos',
-    'Web Platforms & Applications': '/proyectos/apps-y-plataformas-web',
-    'Apps y Plataformas Web': '/proyectos/apps-y-plataformas-web',
-    'Interface Design': '/proyectos/interfaces',
-    'Diseño de Interfaces': '/proyectos/interfaces',
-    'Contribuciones a Comunidad': '/proyectos/contribuciones-a-comunidad',
-    'Community Contributions': '/proyectos/contribuciones-a-comunidad',
+    "category_web": '/proyectos/apps-y-plataformas-web',
+    "category_interfaces": '/proyectos/interfaces',
+    "category_contributions": '/proyectos/contribuciones-a-comunidad',
 };
 
 export const articleSlugPathMap = {

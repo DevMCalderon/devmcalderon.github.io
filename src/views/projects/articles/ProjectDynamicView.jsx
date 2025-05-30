@@ -27,7 +27,6 @@ const ProjectDynamicView = () => {
     
   // if the slug is in the articleViews object return the view, otherwise return the fallback
   if (!projectData || error) return <ArticleEmptyView />;
-      
   
   return (
     <div className="mb-10">
@@ -69,9 +68,7 @@ const ProjectDynamicView = () => {
               </Heading>
               <hr className="hr1 text-indigo-500 lg:max-w-screen-2xl w-[20rem] mb-4"/>
               
-              <p className="text-lg text-start mb-5">
-                Esta sección presenta una muestra multimedia de las principales características del proyecto, desarrolladas e implementadas por mí con un enfoque estratégico en eficiencia, escalabilidad y experiencia de usuario. Refleja mi capacidad para convertir requerimientos técnicos y de negocio en soluciones funcionales y visualmente integradas.
-              </p>
+              <p className="text-lg text-start mb-5">{t(`projectDetail.features_description`)}</p>
               
               <div className="mb-10">
                 <projectData.Features />

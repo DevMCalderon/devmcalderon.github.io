@@ -78,7 +78,7 @@ const ProjectTab = () => {
   return(
     <>
       {/* instructions */}
-      <p className="mt-10 mx-auto mb-[30px] text-center w-[90%] font-bold text-pink_color2">
+      <p className="mt-5 mb-7 mx-auto text-center w-[90%] font-bold text-pink_color2">
         {t('projects.select_category')}:
       </p>
 

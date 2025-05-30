@@ -4,15 +4,15 @@
     {
       "category": "Apps y Plataformas Web",
       "id": 1,
-      "description": "Desarrollo soluciones web adaptadas a lo que realmente necesita su empresa. Me ocupo de todo el proceso: desde la planificación y documentación hasta el desarrollo, implementación y mantenimiento. Mi objetivo es entregarle una plataforma eficiente que optimice su productividad y facilite la gestión de su negocio.",
+      "description": "A continuación, se muestran algunos de mis proyectos de aplicaciones y plataformas web desarrollados durante mi carrera personal y profesional como desarrollador Full Stack. Para ver más proyectos, puedes visitar mi GitHub.",
       "slug": "apps-y-plataformas-web",
       "projects":
       [
         {
           "title": "VetCore Pro",
           "article_id": 1,
-          "technologies_used": [ 2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
-          "short_description": "Sistema para la gestión de clínicas veterinarias, optimiza el control de clientes, mascotas, empresas, citas e inventario. Trabajé colaborativamente con SCRUM, participando en la arquitectura de base de datos y el diseño UI/UX. Implementé una API RESTful, gestioné roles y permisos con middleware, y mejoré la mantenibilidad y escalabilidad con componentes reutilizables, y más.",
+          "technologies_used": [2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
+          "short_description": "Sistema para la gestión de clínicas veterinarias que optimiza el control de clientes, mascotas, empresas, citas e inventario. Trabajé colaborativamente con SCRUM, participando en la arquitectura de la base de datos y el diseño UI/UX. Implementé una API RESTful, gestioné roles y permisos con middleware, y mejoré la mantenibilidad y escalabilidad con componentes reutilizables, entre otras cosas.",
           "slug": "vetcore-pro",
           "images": [
             {
@@ -37,11 +37,10 @@
         },
         {
           "title": "SmartOrder",
-          "technologies_used": [ 1, 2, 9, 4, 5, 11, 18, 7, 12, 26 ],
+          "technologies_used": [1, 2, 9, 4, 5, 11, 18, 7, 12, 26],
           "short_description": "Sistema de pedidos y gestión para restaurantes con acceso diferenciado según privilegios. Los clientes pueden seleccionar productos, gestionar su carrito y realizar pedidos, mientras que los empleados administran órdenes en tiempo real y pueden marcar compras como completadas o deshabilitar productos del catálogo.",
           "slug": "smartorder",
-          "images":
-          [
+          "images": [
             {
               "id": 1,
               "path": "/assets/img/projects/coffee-shop/1.png",
@@ -64,11 +63,10 @@
         },
         {
           "title": "JobMatch",
-          "technologies_used": [ 2, 24, 25, 9, 23, 5, 11, 7, 12, 18 ],
-          "short_description": "Plataforma web de reclutamiento y postulación laboral, donde recruiters pueden gestionar y publicar vacantes, y desarrolladores pueden postularse con su CV en PDF. Incorpora un sistema de búsqueda avanzada por nombre, categoría y salario, notificaciones en tiempo real y confirmación de cuenta por correo. Diseñada para optimizar el proceso de contratación con eficiencia y usabilidad.",
+          "technologies_used": [2, 24, 25, 9, 23, 5, 11, 7, 12, 18],
+          "short_description": "Plataforma web de reclutamiento y postulación laboral, donde los recruiters pueden gestionar y publicar vacantes, y los desarrolladores pueden postularse con su CV en PDF. Incorpora un sistema de búsqueda avanzada por nombre, categoría y salario, notificaciones en tiempo real y confirmación de cuenta por correo. Diseñada para optimizar el proceso de contratación con eficiencia y usabilidad.",
           "slug": "jobmatch",
-          "images":
-          [
+          "images": [
             {
               "id": 1,
               "path": "/assets/img/projects/job-vacancies/1.png",
@@ -91,11 +89,10 @@
         },
         {
           "title": "PicConnect",
-          "technologies_used": [ 2, 24, 25, 9, 5, 11, 7, 12, 18, 26],
-          "short_description": "Red social para compartir imágenes, con creación de url dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento.",
+          "technologies_used": [2, 24, 25, 9, 5, 11, 7, 12, 18, 26],
+          "short_description": "Red social para compartir imágenes, con creación de URLs dinámicas para perfiles, publicación de posts, sistema de seguidores y likes. Permite subir imágenes, comentar publicaciones y personalizar el perfil con foto. Incluye un feed interactivo que muestra contenido de usuarios seguidos, optimizando la experiencia de interacción y descubrimiento.",
           "slug": "picconnect",
-          "images":
-          [
+          "images": [
             {
               "id": 1,
               "path": "/assets/img/projects/upload-images/1.png",
@@ -118,79 +115,79 @@
         },
         {
           "title": "EduLink",
-          "technologies_used": [ 2, 3, 11, 4, 5, 12, 7, 18],
-          "short_description": "Plataforma de tutorías en línea integrada con Zoom, diseñada para ofrecer un aprendizaje accesible y colaborativo. Permite a estudiantes y tutores gestionar, filtrar y participar en tutorías de manera eficiente. Automatiza la creación de videollamadas y la gestión de solicitudes, mientras los profesores validan la aprobación de nuevos tutores.",
+          "technologies_used": [2, 3, 11, 4, 5, 12, 7, 18],
+          "short_description": "Plataforma de tutorías en línea integrada con Zoom, diseñada para ofrecer un aprendizaje accesible y colaborativo. Permite a estudiantes y tutores gestionar, filtrar y participar en tutorías de manera eficiente. Automatiza la creación de videollamadas y la gestión de solicitudes, mientras que los profesores validan la aprobación de nuevos tutores.",
           "slug": "edulink",
           "images": [
             {
               "id": 1,
               "path": "/assets/img/projects/school-tutoring/1.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "alt": "Vista general del panel de administración de EduLink",
+              "caption": "Panel principal de gestión de tutorías"
             },
             {
               "id": 2,
               "path": "/assets/img/projects/school-tutoring/2.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "alt": "Panel de gestión de solicitudes de tutorías",
+              "caption": "Gestión de solicitudes y aprobaciones"
             },
             {
               "id": 3,
               "path": "/assets/img/projects/school-tutoring/3.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "alt": "Interfaz de administración de usuarios y validaciones",
+              "caption": "Administración y validación de usuarios"
             }
           ]
         },
         {
           "title": "LearnPlay",
-          "technologies_used": [ 5, 4, 12, 7, 18],
-          "short_description": "Sitio web educativo para niños de primaria, ofrece una experiencia de aprendizaje interactiva y divertida mediante tres mini-juegos centrados en operaciones matemáticas básicas, reconocimiento de patrones y lectura de reloj analógico. Implementa sistema de vidas, desbloqueo de niveles con localStorage, optimización con componentes reutilizables y carga dinámica de datos desde archivos JSON.",
+          "technologies_used": [5, 4, 12, 7, 18],
+          "short_description": "Sitio web educativo para niños de primaria. Ofrece una experiencia de aprendizaje interactiva y divertida con mini-juegos centrados en operaciones matemáticas básicas, patrones y lectura de reloj. Implementa un sistema de vidas, desbloqueo de niveles con localStorage y componentes reutilizables con carga dinámica desde JSON.",
           "slug": "learnplay",
           "images": [
             {
               "id": 1,
               "path": "/assets/img/projects/educational-games/1.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "alt": "Juego de matemáticas con operaciones básicas",
+              "caption": "Mini-juego de sumas y restas"
             },
             {
               "id": 2,
               "path": "/assets/img/projects/educational-games/2.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "alt": "Juego de reconocimiento de patrones para niños",
+              "caption": "Mini-juego de patrones lógicos"
             },
             {
               "id": 3,
               "path": "/assets/img/projects/educational-games/3.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "alt": "Juego educativo para aprender a leer el reloj analógico",
+              "caption": "Mini-juego de lectura de reloj"
             }
           ]
         },
         {
           "title": "DASC UABCS",
-          "technologies_used": [ 10, 5, 4, 12, 7],
-          "short_description": "Sitio web informativo para el Departamento de Sistemas Computacionales de la UABCS. Optimiza la gestión de contenidos, reduciendo la carga de trabajo de profesores y mejorando el acceso a información clave para estudiantes. Incluye herramientas de accesibilidad, diseño supervisado por docentes y desarrollo a medida con integraciones optimizadas.",
+          "technologies_used": [10, 5, 4, 12, 7],
+          "short_description": "Sitio web institucional para el Departamento de Sistemas Computacionales de la UABCS. Optimiza la gestión de contenidos y mejora el acceso a la información para estudiantes. Incluye herramientas de accesibilidad y diseño supervisado por docentes, con integraciones eficientes y desarrollo personalizado.",
           "slug": "dasc-uabcs",
           "images": [
             {
               "id": 1,
               "path": "/assets/img/projects/dasc-uabcs/1.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "alt": "Vista general del sitio institucional del DASC",
+              "caption": "Página principal con navegación estructurada"
             },
             {
               "id": 2,
               "path": "/assets/img/projects/dasc-uabcs/2.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "alt": "Sección de información académica para alumnos",
+              "caption": "Información clave para estudiantes"
             },
             {
               "id": 3,
               "path": "/assets/img/projects/dasc-uabcs/3.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "alt": "Panel con recursos y avisos para la comunidad universitaria",
+              "caption": "Recursos y avisos institucionales"
             }
           ]
         }
@@ -199,20 +196,16 @@
     {
       "category": "Diseño de Interfaces",
       "id": 3,
-      "description": "Diseño interfaces de usuario que combinan estética y funcionalidad. Busco crear experiencias que sean cómodas, pero también memorables.",
+      "description": "Diseño interfaces de usuario UI/UX que combinan estética y funcionalidad. Busco crear experiencias que sean atractivas, eficientes e intuitivas.",
       "slug": "interfaces",
-      "projects":
-      [
-      ]
+      "projects": []
     },
     {
-      "category": "Contribuciones a Comunidad",
+      "category": "Contribuciones a la Comunidad",
       "id": 2,
-      "description": "Participo activamente en la comunidad a través de proyectos de código abierto y creación de contenido. Me motiva compartir conocimientos mientras sigo profundizando en mis áreas de especialización.",
+      "description": "He aportado a la comunidad a través de proyectos de código abierto y la creación de contenido. Me gusta compartir conocimientos mientras sigo profundizando en mis áreas de especialización.",
       "slug": "contribuciones-a-comunidad",
-      "projects":
-      [
-      ]
+      "projects": []
     }
   ]
 }

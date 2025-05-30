@@ -36,15 +36,15 @@ const router = createBrowserRouter(
               element: <AllProjectCategoryList selectedCategoryId={0} />,
             },
             {
-              path: routes["Web Platforms & Applications"],
+              path: routes["category_web"],
               element: <AllProjectCategoryList selectedCategoryId={1} />,
             },
             {
-              path: routes["Interface Design"],
+              path: routes["category_interfaces"],
               element: <AllProjectCategoryList selectedCategoryId={2} />,
             },
             {
-              path: routes["Community Contributions"],
+              path: routes["category_contributions"],
               element: <AllProjectCategoryList selectedCategoryId={3} />,
             },
             {

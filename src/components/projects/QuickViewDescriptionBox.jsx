@@ -7,15 +7,15 @@ const QuickViewDescriptionBox = ({ projectData }) => {
   
   return (
     <div
-      className="text-xl text-bread border-2 border-indigo-700 rounded-3xl pt-3 pb-4 px-24 mb-6 text-center
+      className="text-xl text-bread border-2 border-indigo-700 rounded-3xl pt-3 pb-4 px-6 md:px-12 lg:px-24 mb-6 text-center
         bg-[linear-gradient(0deg,_rgb(20,40,60)_-5%,_rgb(36,38,110)_100%)]"
     >
       {/* title */}
       <section aria-labelledby="title" className="mb-4">
-        <span className="text-2xl text-highlighted_text_color">Proyecto:</span>
+        <span className="text-2xl text-highlighted_text_color">{t(`projectDetail.title`)}</span>
         <h1 
           id="title"
-          className="text-5xl text-link_disabled_color2 text-center"
+          className="text-3xl md:text-5xl text-link_disabled_color2 text-center"
         >
           {projectData.project.title}
         </h1>

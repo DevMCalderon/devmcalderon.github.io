@@ -17,12 +17,12 @@ const ProjectTabContent = ({activeTab, index, categoryData}) => {
   let navigate = useNavigate();
   const maxProjectsToShow = 6;
 
-  const { category: categoryName, description, projects } = categoryData;
+  const { category: categoryName, description, projects, id } = categoryData;
   
   const toggleDisplayMore = (e) => {
     e.preventDefault();
-    // console.log(categoryName);
-    navigate(routes[categoryName]); // Perform navigation immediately
+    console.log(routes[id])
+    navigate(routes[id]); // Perform navigation immediately
   };
 
   return (

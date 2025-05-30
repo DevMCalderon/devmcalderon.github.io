@@ -1,264 +1,211 @@
 {
-  "description": "I specialize in web development: from interfaces to expressive and functional platforms. Always striving for excellence, committed to delivering quality results",
-  "categories": [
+  "categories":
+  [
     {
-      "category": "Web Platforms & Applications",
-      "description": "Multi-platform web solutions tailored to meet your specific needs. From planning, documentation, and development to implementation and maintenance, my commitment is to provide you with the best web platform that will maximize your company's productivity and management",
-      "projects": [
+      "category": "Web Apps and Platforms",
+      "id": 1,
+      "description": "Below are some of my web apps and platform projects developed throughout my personal and professional career as a Full Stack developer. To see more projects, you can visit my GitHub.",
+      "slug": "apps-y-plataformas-web",
+      "projects":
+      [
         {
-          "title": "Professional Portfolio",
-          "description": "Design, Development and Deploy",
-          "participantes": "Martín Calderón",
-          "imgPath": "",
-          "sections": [
+          "title": "VetCore Pro",
+          "article_id": 1,
+          "technologies_used": [2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
+          "short_description": "Veterinary clinic management system that optimizes control of clients, pets, companies, appointments, and inventory. I worked collaboratively using SCRUM, participating in database architecture and UI/UX design. Implemented a RESTful API, managed roles and permissions with middleware, and improved maintainability and scalability with reusable components, among other tasks.",
+          "slug": "vetcore-pro",
+          "images": [
             {
-              "title": "Portada y Resumen Ejecutivo",
-              "data" : [
-                {
-                  "type": "image",
-                  "value": ""
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Proposito del Proyecto"
-                },
-                {
-                  "type": "text",
-                  "value": "Consequat qui amet consectetur culpa velit dolore nisi laborum reprehenderit veniam sint consectetur fugiat magna."
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Objetivos Generales"
-                },
-                {
-                  "type": "text",
-                  "value": "Consequat qui amet consectetur culpa velit dolore nisi laborum reprehenderit veniam sint consectetur fugiat magna."
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Logros"
-                },
-                {
-                  "type": "text",
-                  "value": "Consequat qui amet consectetur culpa velit dolore nisi laborum reprehenderit veniam sint consectetur fugiat magna."
-                }
-              ]
+              "id": 1,
+              "path": "/assets/img/projects/veterinary/1.png",
+              "alt": "Veterinary Admin Panel",
+              "caption": "Veterinary Admin Panel"
             },
             {
-              "title": "Diseño y Arquitectura",
-              "data" : [
-                {
-                  "type": "subtitle",
-                  "value": "Estructura de navegación"
-                },
-                {
-                  "type": "image",
-                  "value": ""
-                },
-                {
-                  "type": "text",
-                  "value": "Consequat qui amet consectetur culpa velit dolore nisi laborum reprehenderit veniam sint consectetur fugiat magna."
-                }
-              ]
+              "id": 2,
+              "path": "/assets/img/projects/veterinary/2.png",
+              "alt": "Veterinary Admin Panel",
+              "caption": "Veterinary Admin Panel"
             },
             {
-              "title": "Implementación",
-              "data" : [
-                {
-                  "type": "subtitle",
-                  "value": "Lenguaje de programación utilizado"
-                },
-                {
-                  "type": "text",
-                  "value": "Proident proident Lorem ex excepteur deserunt."
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Herramientas y tecnologías"
-                },
-                {
-                  "type": "text",
-                  "value": "Enim id sint magna sint ullamco ut esse Lorem sint incididunt sunt sit non quis."
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Desafios enfrentados"
-                },
-                {
-                  "type": "text",
-                  "value": "Anim pariatur ut irure ut aliquip voluptate est culpa tempor veniam."
-                }
-              ]
-            },
-            {
-              "title": "Caracteristicas principales",
-              "data" : [
-                {
-                  "type": "subtitle",
-                  "value": "Laborum in id eiusmod enim dolore excepteur."
-                },
-                {
-                  "type": "image",
-                  "value": ""
-                },
-                {
-                  "type": "text",
-                  "value": "Proident proident Lorem ex excepteur deserunt."
-                },
-                {
-                  "type": "subtitle",
-                  "value": "Laborum in id eiusmod enim dolore excepteur."
-                },
-                {
-                  "type": "image",
-                  "value": ""
-                },
-                {
-                  "type": "text",
-                  "value": "Proident proident Lorem ex excepteur deserunt."
-                } 
-              ]
+              "id": 3,
+              "path": "/assets/img/projects/veterinary/3.png",
+              "alt": "Veterinary Admin Panel",
+              "caption": "Veterinary Admin Panel"
             }
           ]
         },
         {
-          "title": "Business Staraaatup",
-          "description": "Deaaasign & Development",
-          "imgPath": ""
+          "title": "SmartOrder",
+          "technologies_used": [1, 2, 9, 4, 5, 11, 18, 7, 12, 26],
+          "short_description": "Order and management system for restaurants with differentiated access based on privileges. Customers can select products, manage their carts, and place orders, while employees handle orders in real-time and can mark purchases as completed or disable products from the catalog.",
+          "slug": "smartorder",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/coffee-shop/1.png",
+              "alt": "Restaurant Admin Panel",
+              "caption": "Restaurant Admin Panel"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/coffee-shop/2.png",
+              "alt": "Restaurant Admin Panel",
+              "caption": "Restaurant Admin Panel"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/coffee-shop/3.png",
+              "alt": "Restaurant Admin Panel",
+              "caption": "Restaurant Admin Panel"
+            }
+          ]
         },
         {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
+          "title": "JobMatch",
+          "technologies_used": [2, 24, 25, 9, 23, 5, 11, 7, 12, 18],
+          "short_description": "Job recruitment and application web platform where recruiters can manage and post vacancies, and developers can apply with their CV in PDF. Includes advanced search by name, category, and salary, real-time notifications, and account confirmation via email. Designed to optimize the hiring process with efficiency and usability.",
+          "slug": "jobmatch",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/job-vacancies/1.png",
+              "alt": "JobMatch Admin Panel",
+              "caption": "JobMatch Admin Panel"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/job-vacancies/2.png",
+              "alt": "JobMatch Admin Panel",
+              "caption": "JobMatch Admin Panel"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/job-vacancies/3.png",
+              "alt": "JobMatch Admin Panel",
+              "caption": "JobMatch Admin Panel"
+            }
+          ]
         },
         {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
+          "title": "PicConnect",
+          "technologies_used": [2, 24, 25, 9, 5, 11, 7, 12, 18, 26],
+          "short_description": "Social network for sharing images, featuring dynamic URLs for profiles, post publishing, followers and likes system. Allows image uploads, commenting on posts, and profile customization with a photo. Includes an interactive feed showing content from followed users, optimizing interaction and discovery experience.",
+          "slug": "picconnect",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/upload-images/1.png",
+              "alt": "PicConnect Admin Panel",
+              "caption": "PicConnect Admin Panel"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/upload-images/2.png",
+              "alt": "PicConnect Admin Panel",
+              "caption": "PicConnect Admin Panel"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/upload-images/3.png",
+              "alt": "PicConnect Admin Panel",
+              "caption": "PicConnect Admin Panel"
+            }
+          ]
         },
         {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
+          "title": "EduLink",
+          "technologies_used": [2, 3, 11, 4, 5, 12, 7, 18],
+          "short_description": "Online tutoring platform integrated with Zoom, designed to provide accessible and collaborative learning. Allows students and tutors to manage, filter, and participate in tutoring sessions efficiently. Automates video call creation and request management, while teachers validate the approval of new tutors.",
+          "slug": "edulink",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/school-tutoring/1.png",
+              "alt": "Overview of EduLink admin panel",
+              "caption": "Main tutoring management panel"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/school-tutoring/2.png",
+              "alt": "Tutoring request management panel",
+              "caption": "Request and approval management"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/school-tutoring/3.png",
+              "alt": "User administration and validation interface",
+              "caption": "User administration and validation"
+            }
+          ]
         },
         {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
+          "title": "LearnPlay",
+          "technologies_used": [5, 4, 12, 7, 18],
+          "short_description": "Educational website for elementary school children. Offers an interactive and fun learning experience with mini-games focused on basic math operations, patterns, and clock reading. Implements a lives system, level unlocking with localStorage, and reusable components loaded dynamically from JSON.",
+          "slug": "learnplay",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/educational-games/1.png",
+              "alt": "Math game with basic operations",
+              "caption": "Mini-game of addition and subtraction"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/educational-games/2.png",
+              "alt": "Pattern recognition game for kids",
+              "caption": "Logical pattern mini-game"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/educational-games/3.png",
+              "alt": "Educational game to learn analog clock reading",
+              "caption": "Clock reading mini-game"
+            }
+          ]
         },
         {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
+          "title": "DASC UABCS",
+          "technologies_used": [10, 5, 4, 12, 7],
+          "short_description": "Institutional website for the Computer Systems Department of UABCS. Optimizes content management and improves information access for students. Includes accessibility tools and faculty-supervised design, with efficient integrations and custom development.",
+          "slug": "dasc-uabcs",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/dasc-uabcs/1.png",
+              "alt": "Overview of the DASC institutional website",
+              "caption": "Main page with structured navigation"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/dasc-uabcs/2.png",
+              "alt": "Academic information section for students",
+              "caption": "Key information for students"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/dasc-uabcs/3.png",
+              "alt": "Panel with resources and announcements for the university community",
+              "caption": "Institutional resources and announcements"
+            }
+          ]
         }
       ]
     },
     {
       "category": "Interface Design",
-      "description": "Designing attractive and functional user interfaces. My goal is to provide users with a comfortable yet memorable experience",
-      "projects": [
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        }
-      ]
+      "id": 2,
+      "description": "I design UI/UX interfaces that combine aesthetics and functionality. I aim to create experiences that are attractive, efficient, and intuitive.",
+      "slug": "interfaces",
+      "projects": []
     },
     {
       "category": "Community Contributions",
-      "description": "I contribute to the community through open-source projects and active participation in content creation. My goal is to share experience and knowledge while delving even deeper into my areas of expertise",
-      "projects": [
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        },
-        {
-          "title": "Business Startup",
-          "description": "Design & Development",
-          "imgPath": ""
-        }
-      ]
+      "id": 3,
+      "description": "I've contributed to the community through open-source projects and content creation. I enjoy sharing knowledge while continuing to deepen my areas of expertise.",
+      "slug": "contribuciones-a-comunidad",
+      "projects": []
     }
   ]
 }

@@ -20,12 +20,6 @@ const ProjectsSection = () => {
               emoji='🗂️'
               text={t(`projects.title`)}
             />
-            
-            {/* descripcion */}
-            <p className="mt-4 text-center lg:mx-30"
-            >
-              {t(`projects.description`)}
-            </p>
         </div>
         
         {/* componente de tabs con categorias de proyectos */}

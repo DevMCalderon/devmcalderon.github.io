@@ -19,7 +19,8 @@ const Banner = () => {
     t(`banner.typeAnimation_1`),
     t(`banner.typeAnimation_2`),
     t(`banner.typeAnimation_3`),
-    t(`banner.typeAnimation_4`)
+    t(`banner.typeAnimation_4`),
+    t(`banner.typeAnimation_5`)
   ];
   
   const [text] = useState('');
@@ -112,21 +113,15 @@ const Banner = () => {
               {/* list */}
               <ul className="ml-6 lista-flecha text-start mb-5">
                 <li className="paragraphStyles bannerList">
+                  {t(`banner.description_mision`)}
+                </li>
+                <li className="paragraphStyles bannerList">
+                  {t(`banner.description_mision2`)}
+                </li>
+                <li className="paragraphStyles bannerList">
                     {t(`banner.description_enfocado_en`)}
                     <strong className="text-highlighted_text_color">{t(`banner.description_enfocado_en2`)}</strong>
                     {t(`banner.p7`)}
-                </li>
-                
-                <li className="paragraphStyles bannerList">
-                  <span>
-                      {t(`banner.p4`)}
-                      <strong className="text-highlighted_text_color">{t(`banner.description_tecnologias1`)}</strong>
-                      {t(`banner.description_tecnologias2`)}
-                  </span>
-                </li>
-                
-                <li className="paragraphStyles bannerList">
-                  {t(`banner.description_mision`)}
                 </li>
               </ul>
                 
