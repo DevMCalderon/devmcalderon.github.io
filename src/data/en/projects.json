@@ -2,8 +2,8 @@
   "categories":
   [
     {
+      "id": "projects-web",
       "category": "Web Apps and Platforms",
-      "id": 1,
       "description": "Below are some of my web apps and platform projects developed throughout my personal and professional career as a Full Stack developer. To see more projects, you can visit my GitHub.",
       "slug": "apps-y-plataformas-web",
       "projects":
@@ -194,15 +194,15 @@
       ]
     },
     {
+      "id": "projects-interfaces",
       "category": "Interface Design",
-      "id": 2,
       "description": "I design UI/UX interfaces that combine aesthetics and functionality. I aim to create experiences that are attractive, efficient, and intuitive.",
       "slug": "interfaces",
       "projects": []
     },
     {
+      "id": "projects-contributions",
       "category": "Community Contributions",
-      "id": 3,
       "description": "I've contributed to the community through open-source projects and content creation. I enjoy sharing knowledge while continuing to deepen my areas of expertise.",
       "slug": "contribuciones-a-comunidad",
       "projects": []

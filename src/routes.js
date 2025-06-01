@@ -45,9 +45,9 @@ export const routes = {
   'Home': '/',
   'Projectos': '/proyectos',
   'Projects': '/proyectos',
-    "category_web": '/proyectos/apps-y-plataformas-web',
-    "category_interfaces": '/proyectos/interfaces',
-    "category_contributions": '/proyectos/contribuciones-a-comunidad',
+    "projects-web": '/proyectos/apps-y-plataformas-web',
+    "projects-interfaces": '/proyectos/interfaces',
+    "projects-contributions": '/proyectos/contribuciones-a-comunidad',
 };
 
 export const articleSlugPathMap = {

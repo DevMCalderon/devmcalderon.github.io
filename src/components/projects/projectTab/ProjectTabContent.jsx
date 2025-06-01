@@ -21,7 +21,6 @@ const ProjectTabContent = ({activeTab, index, categoryData}) => {
   
   const toggleDisplayMore = (e) => {
     e.preventDefault();
-    console.log(routes[id])
     navigate(routes[id]); // Perform navigation immediately
   };
 
@@ -45,7 +44,7 @@ const ProjectTabContent = ({activeTab, index, categoryData}) => {
           
           {/* project list */}
           <ProjectsListGrid
-            selectedCategoryName = { categoryName }
+            selectedCategoryId = { id }
             maxProjectsToShow = { maxProjectsToShow }
           />
           

@@ -7,9 +7,9 @@ import ImageCarousel from "@/components/imageCarousel/ImageCarousel";
 import ProjectTechnologiesDisplay from "@/components/projects/ProjectTechnologiesDisplay";
 
 const ProjectItemCard = ({ projectData }) => {
-  const { title, technologies_used, short_description, images, slug, categoryName } = projectData;
+  const { title, technologies_used, short_description, images, slug, categoryId } = projectData;
   
-  const linkUrl = `${routes[categoryName]}/${slug}`
+  const linkUrl = `${routes[categoryId]}/${slug}`
   
   return (
     <motion.div

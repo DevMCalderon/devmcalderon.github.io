@@ -24,7 +24,7 @@ const AllProjectCategoryList = ({ selectedCategoryId }) => {
       setCategoryData({
         category: t(`projects.all_projects`),
         description: t(`banner.description_mision2`),
-        selectedCategoryName: "all"
+        selectedCategoryId: "all"
       });
     }
   }, [selectedCategoryId]);
@@ -49,7 +49,7 @@ const AllProjectCategoryList = ({ selectedCategoryId }) => {
           {categories.map((category, index) => (
             <li className="pl-3" key={index}>
               <Link
-                to={`${routes[category.category]}`}
+                to={`${routes[category.id]}`}
                 className="link"
               >
                 {category.category}
@@ -61,7 +61,7 @@ const AllProjectCategoryList = ({ selectedCategoryId }) => {
       
       <ProjectsCategoryOverview categoryData={categoryData} />
 
-      <ProjectsListGrid selectedCategoryName={categoryData.selectedCategoryName} />
+      <ProjectsListGrid selectedCategoryId={categoryData.id} />
     </div>
   );
 };

@@ -33,19 +33,19 @@ const router = createBrowserRouter(
           [
             {
               path: routes["Projects"],
-              element: <AllProjectCategoryList selectedCategoryId={0} />,
+              element: <AllProjectCategoryList selectedCategoryId="" />,
             },
             {
-              path: routes["category_web"],
-              element: <AllProjectCategoryList selectedCategoryId={1} />,
+              path: routes["projects-web"],
+              element: <AllProjectCategoryList selectedCategoryId="projects-web" />,
             },
             {
-              path: routes["category_interfaces"],
-              element: <AllProjectCategoryList selectedCategoryId={2} />,
+              path: routes["projects-interfaces"],
+              element: <AllProjectCategoryList selectedCategoryId="projects-interfaces" />,
             },
             {
-              path: routes["category_contributions"],
-              element: <AllProjectCategoryList selectedCategoryId={3} />,
+              path: routes["projects-contributions"],
+              element: <AllProjectCategoryList selectedCategoryId="projects-contributions" />,
             },
             {
               path: routes["Projects"] + "/:idCategory/:idProject",

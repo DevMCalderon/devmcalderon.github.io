@@ -3,18 +3,21 @@ import usePortfolioContext from "@/hooks/usePortfolioContext";
 import ArticleEmptyView from '@/views/projects/articles/ArticleEmptyView';
 import { useTranslation } from 'react-i18next';
 
-const ProjectsListGrid = ({ maxProjectsToShow=6, selectedCategoryName="all" }) => {
+const ProjectsListGrid = ({ maxProjectsToShow=6, selectedCategoryId="" }) => {
   const [ t ] = useTranslation("global");
   
   const { projectsJSON: { categories } } = usePortfolioContext();
   
-  const displayedProjects = selectedCategoryName === "all"
-    ? categories.flatMap(({category, projects}) => 
-        projects.map(project => ({ ...project, categoryName: category }))
-      )
-    : (categories.find(({ category }) => category === selectedCategoryName)?.projects || [])
-      .slice(0, maxProjectsToShow)
-      .map(project => ({ ...project, categoryName: selectedCategoryName }));
+  // si se ha seleccionado una categoría, se muestran solo los proyectos de esa categoría
+  let displayedProjects = (categories.find( c => c.id === selectedCategoryId )?.projects || [])
+    .slice(0, maxProjectsToShow)
+    .map(project => ({ ...project, categoryId: selectedCategoryId }))
+  
+  // si no se ha seleccionado ninguna categoría, se muestran todos  
+  if (!selectedCategoryId) {
+    displayedProjects = categories.flatMap(({ c, projects }) =>
+      projects.map(project => ({ ...project, categoryId: c })));
+  } 
   
   if (displayedProjects.length === 0) return <ArticleEmptyView noun={t(`article_empty_view.noun_category`)} />;
   
