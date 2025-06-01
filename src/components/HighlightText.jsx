@@ -1,5 +1,7 @@
-const HighlightText = ({ children }) => (
-  <strong className="text-blue-50 italic">{children}</strong>
+import clsx from "clsx";
+
+const HighlightText = ({ className="text-blue-50", children }) => (
+  <strong className={clsx('italic', className)}>{children}</strong>
 );
 
 export default HighlightText;

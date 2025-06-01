@@ -13,11 +13,12 @@ const ProjectTab = () => {
   
   
   const storedLanguage = localStorage.getItem('language');
+  
   const [categoryData, setCategoryData] = useState([]);
   
   // establece el contenido de la descripcion y las categorias segun el idioma
   useEffect(() => {
-    if(storedLanguage === 'es') {
+    if (storedLanguage === 'es') {
       setCategoryData(projectsJSON_es.categories);
     } else {
       setCategoryData(projectsJSON_en.categories);
@@ -71,7 +72,7 @@ const ProjectTab = () => {
     };
   }, []);
   
-  useEffect(()=> {
+  useEffect(() => {
     updateIndicator(activeTab);
   });
   

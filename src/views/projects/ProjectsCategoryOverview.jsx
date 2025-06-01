@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-const ProjectsCategoryOverview = ({ categoryData, }) => {
+const ProjectsCategoryOverview = ({ categoryData }) => {
   const [ t ] = useTranslation("global");
   return (
     <>

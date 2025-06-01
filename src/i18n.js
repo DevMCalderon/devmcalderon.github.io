@@ -1,11 +1,15 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import global_es from './translations/es/global.json'
-import global_en from './translations/en/global.json'
 
-import projectsJSON_en from './data/en/projects.json'
-import projectsJSON_es from './data/es/projects.json'
+import global_es from '@/translations/es/global.json'
+import global_en from '@/translations/en/global.json'
+
+import projectsJSON_en from '@/data/en/projects.json'
+import projectsJSON_es from '@/data/es/projects.json'
+
+import veterinaryJSON_es from '@/translations/es/projectArticles/veterinary.json'
+import veterinaryJSON_en from '@/translations/en/projectArticles/veterinary.json'
 
 
 
@@ -27,11 +31,13 @@ i18n
     resources: {
       es: {
         global: global_es,
-        projectsjson: projectsJSON_es
+        projects: projectsJSON_es,
+        projectVeterinary: veterinaryJSON_es
       },
       en: {
         global: global_en,
-        projectsjson: projectsJSON_en
+        projects: projectsJSON_en,
+        projectVeterinary: veterinaryJSON_en
       }
     }
   });

@@ -40,7 +40,7 @@ const ProjectTabContent = ({activeTab, index, categoryData}) => {
           <h3 className="text-2xl md:text-3xl pb-4 lg:pb-5 text-highlighted_text_color">{categoryName}</h3>
           
           {/* description */}
-          <p className="text-center m-auto pb-6 text-start lg:pb-9">{description}</p>
+          <p className="m-auto pb-6 text-start lg:pb-9">{description}</p>
           
           {/* project list */}
           <ProjectsListGrid

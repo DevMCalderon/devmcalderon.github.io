@@ -10,13 +10,13 @@ import ProjectDynamicView from "./articles/ProjectDynamicView";
 const ProjectDetail= () => {
   
   const navigate = useNavigate();
-  const [t] = useTranslation("global");
+  const [t] = useTranslation(["global", "projects"]);
   
   const {idCategory, idProject } = useParams();
   const {projectData, setProjectData, projectsJSON} = usePortfolioContext();
   
   useEffect(() => {
-    // Buscar la categoria por su nombre en el JSON
+    // Buscar la categoria por su slug en el JSON
     const category = projectsJSON.categories.find(
       cat => cat.slug ==idCategory
     );
@@ -42,7 +42,7 @@ const ProjectDetail= () => {
       navigate("/not-found");
     }
         
-  }, [idCategory, idProject]);
+  }, [idCategory, idProject, t]);
   
   return(
     <>

@@ -1,0 +1,51 @@
+{
+  "veterinary": {
+    "title": "Comprehensive Management System for Veterinary Clinics.",
+    "paragraph1": "My involvement covered both the backend and frontend of the project, working mainly with <0>Laravel</0>, <0>MySQL</0>, <0>Blade</0>, <0>Vue.js</0>, and <0>Bootstrap</0>. <0>In less than two weeks</0>, I fully learned and adapted to the technologies used in the preexisting architecture, and <6>contributed significant improvements</6> to code maintainability by implementing reusable components and development best practices.",
+    "paragraph2": "Together with a multidisciplinary team, I developed a comprehensive web solution aimed at the efficient management of veterinary clinics, covering key modules such as appointment scheduling, client management, pet control, company and branch administration, as well as inventory and product management. The system was built with a modular and scalable approach, enabling a smooth and centralized administrative experience.",
+    "backendHeading": "Backend Contributions (Laravel):",
+    "backendList": {
+      "0": "Developed multiple endpoints for a <0>RESTful API</0>, ensuring a clean and scalable structure.",
+      "1": "Implemented middleware for role and permission management, strengthening the system’s security.",
+      "2": "Created controllers, models, migrations with complex relationships, seeders, and form requests to efficiently validate and structure data.",
+      "3": "Collaborated in the definition and optimization of the database architecture, focusing on referential integrity and query efficiency."
+    },
+    "frontendHeading": "Frontend Contributions (Vue.js, Bootstrap, Blade):",
+    "frontendList": {
+      "0": "Developed reactive and intuitive interfaces using Vue.js, Blade, and Bootstrap, prioritizing user experience through a UI/UX design focused on clarity and usability.",
+      "1": "Integrated reusable components that facilitated system maintenance and accelerated the development of new features."
+    },
+    "organizationHeading": "From an organizational perspective:",
+    "organizationList": {
+      "0": "We applied the SCRUM methodology, holding daily meetings, sprint planning, and periodic backlog reviews.",
+      "1": "I consistently completed assigned tasks within the established deadlines, demonstrating commitment, autonomy, and responsibility in each delivery."
+    },
+    "videos": {
+      "clientCreate": {
+        "title": "Client Creation:",
+        "caption": "This functionality is designed to manage the process of registering a new client in the database, ensuring a smooth experience and robust validations on both the frontend and backend."
+      },
+      "clientEdit": {
+        "title": "Client Editing:"
+      },
+      "clientShow": {
+        "title": "Client View:"
+      },
+      "clientDestroy": {
+        "title": "Client Deletion:"
+      },
+      "empresaEdit": {
+        "title": "Company Editing:"
+      },
+      "petCreate": {
+        "title": "Pet Creation:"
+      },
+      "petDestroy": {
+        "title": "Pet Deletion and Pet Counter:"
+      },
+      "register": {
+        "title": "Registration, Company Validation Middleware, and Company Creation:"
+      }
+    }
+  }
+}

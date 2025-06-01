@@ -1,22 +1,38 @@
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-
-import projectsJSON_es from '@/data/es/projects';
+import { useTranslation } from 'react-i18next';
 
 const PortfolioContext = createContext(null);
 
 const PortfolioProvider = ({ children }) => {
+  const { i18n } = useTranslation();
   const [projectData, setProjectData] = useState({
     category: null,
     project: null,
   });
-  
+
+  const [projectsJSON, setProjectsJSON] = useState(
+    i18n.getResource(i18n.language, 'projects')
+  );
+
+  useEffect(() => {
+    const handleLanguageChanged = (lng) => {
+      const data = i18n.getResource(lng, 'projects');
+      setProjectsJSON(data);
+    };
+
+    i18n.on('languageChanged', handleLanguageChanged);
+    
+    // Cleanup
+    return () => {
+      i18n.off('languageChanged', handleLanguageChanged);
+    };
+  }, [i18n]);
+
+  // Para breadcrumb
   const location = useLocation();
-  // currentURL
   const currentURL = location.pathname;
-  
-  const projectsJSON = projectsJSON_es;
-  
+
   return (
     <PortfolioContext.Provider
       value={{ projectData, setProjectData, projectsJSON, currentURL }}
@@ -24,6 +40,6 @@ const PortfolioProvider = ({ children }) => {
       {children}
     </PortfolioContext.Provider>
   );
-}
+};
 
 export { PortfolioProvider, PortfolioContext };

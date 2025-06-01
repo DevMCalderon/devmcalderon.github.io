@@ -5,8 +5,9 @@ import navIcon1 from '../../assets/img/icons/nav-icon1.svg';
 import navIcon2 from '../../assets/img/icons/nav-icon2.svg';
 import navIcon3 from '../../assets/img/icons/nav-icon3.svg';
 import './SocialIcons.css'
+import clsx from 'clsx';
 
-const SocialIcons = () => {
+const SocialIcons = ({ className }) => {
   const [ t ] = useTranslation("global"); 
   
   const imagesArray = [
@@ -35,7 +36,7 @@ const SocialIcons = () => {
   
   return(
     <>
-      <div className='social-icon'>
+      <div className={clsx("social-icon", className)}>
         {imagesArray.map((item, index) => (
           <a key={index} className="w-11 h-11 mx-[3px]" href={item.href} target='_blank' rel='noreferrer' data-tooltip-id='myTooltip' data-tooltip-content={item.dataTooltip}>
             <img src={item.src} />

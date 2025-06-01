@@ -34,10 +34,9 @@
     @apply text-blue-300 hover:text-link_color_hover hover:underline tracking-wider duration-150 ease-in-out transition-all;
   }
   .button_transparent_rounded {
-    @apply px-11 py-[1.1rem] shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2
-    flex justify-center items-center w-fit border-[1.5px] border-solid border-border_color1 bg-[black] bg-opacity-40
-  text-white font-bold relative transition-all duration-300 ease-in-out rounded-[1.3rem]
-    shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2
+    @apply px-11 py-[1.1rem] flex justify-center items-center w-fit border-[1.5px] border-solid
+    border-border_color1 bg-[black] bg-opacity-40 text-white font-bold relative transition-all duration-300 
+    ease-in-out rounded-[1.3rem] shadow-sm shadow-border_color1 hover:shadow-md hover:shadow-neon_color2
     m-auto hover:text-black  before:hover:w-full overflow-hidden before:content-['']
     before:absolute before:top-0 before:left-0 before:z-0 before:h-full before:w-0 before:rounded-[18px] before:bg-white 
     before:transition-all before:duration-300 before:ease-in-out;
@@ -66,9 +65,6 @@
   .language-list li:hover, li.selected {
     @apply bg-container_color3;
   }
-  /* .projects_category_common_bg {
-    background: linear-gradient(90deg, rgb(17, 19, 60) 10%, theme('colors.container_color2') 50%);
-  } */
   .h3-title {
     @apply text-start text-2xl text-highlighted_text_color mb-3;
   }
@@ -337,6 +333,7 @@ p.danger {
 }
 
 .bgBanner1 {
+  /* background-image: linear-gradient(to right, rgb(11, 2, 38,0), rgba(21, 2, 25, 0.0)), url("./assets/img/bg1.jpg"); */
   background-image: linear-gradient(to right, rgb(11, 2, 38), rgba(21, 2, 25, 0.51)), url("./assets/img/bg1.jpg");
   background-position: top center;
   background-size: cover;

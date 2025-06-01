@@ -13,7 +13,7 @@ const QuickViewDescriptionBox = ({ projectData }) => {
       {/* title */}
       <section aria-labelledby="title" className="mb-4">
         <span className="text-2xl text-highlighted_text_color">{t(`projectDetail.title`)}</span>
-        <h1 
+        <h1
           id="title"
           className="text-3xl md:text-5xl text-link_disabled_color2 text-center"
         >
