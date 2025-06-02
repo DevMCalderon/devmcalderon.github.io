@@ -7,8 +7,9 @@ import { IconGlobeWithMeridians } from "@/components/uI/Icons";
 import ImageWithReflection from "@/components/uI/ImageWithReflection";
 import HighlightText from "@/components/HighlightText";
 import Slogan from "@/components/banner/Slogan";
+import AnimatedOnScroll from "@/components/AnimatedOnScroll";
 
-import headerImg from "@/assets/img/pfp/2.png";
+import headerImg from "@/assets/img/pfp/pfp.png";
 import BannerLinks from "@/components/banner/BannerLinks";
 
 const Banner = () => {
@@ -43,11 +44,12 @@ const Banner = () => {
 
         <Slogan t={t} />
 
+
         {/* personal info section */}
         <section className="flex max-w-screen-2xl mx-auto" id="banner" aria-labelledby="banner">
-          <div className="items-center flex flex-wrap mx-5 md:mx-16">
-            <div className="w-full lg:w-7/12">
-            
+          <div className="items-center mx-5 md:mx-16 flex flex-wrap w-full">
+          
+            <AnimatedOnScroll variant="fadeLeft" className="w-full lg:w-7/12">
               {/* welcome box */}
               <div className="tagline text-link_disabled_color text-xl rounded-md">
                   <IconGlobeWithMeridians className="mr-2 text-sm" />
@@ -110,17 +112,19 @@ const Banner = () => {
               </ul>
               
               <BannerLinks t={t} />
-            </div>
-            
-            {/* profile picture */}
-            <ImageWithReflection
-              className="animatedImg md:w-1/2 lg:w-[23rem] mt-16 lg:mt-0 mx-auto self-start w-[70%]"
-              imageClassName="opacity-[92%] shadow-2xl ml-auto bg-gradient-to-l from-[#69008c59] to-[#35338fAA]"
-              bothClassName="rounded-full border-[0.25rem] border-black"
-              reflectionWidth="h-16 lg:h-32"
-              src={headerImg}
-              alt="Header Img"
-            />
+            </AnimatedOnScroll>
+              
+            <AnimatedOnScroll variant="fadeRight" className="md:w-1/2 lg:w-[23rem] mx-auto">
+              {/* profile picture */}
+              <ImageWithReflection
+                className="animatedImg md:w-1/2 lg:w-[23rem] mt-16 lg:mt-0 mx-auto self-start w-[70%]"
+                imageClassName="opacity-[92%] shadow-2xl ml-auto bg-gradient-to-l from-[#69008c59] to-[#35338fAA]"
+                bothClassName="rounded-full border-[0.25rem] border-black"
+                reflectionWidth="h-16 lg:h-32"
+                src={headerImg}
+                alt="Header Img"
+              />
+            </AnimatedOnScroll>
           </div>
           
         </section>

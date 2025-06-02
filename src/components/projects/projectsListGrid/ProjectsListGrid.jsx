@@ -3,7 +3,7 @@ import usePortfolioContext from "@/hooks/usePortfolioContext";
 import ArticleEmptyView from '@/views/projects/articles/ArticleEmptyView';
 import { useTranslation } from 'react-i18next';
 
-const ProjectsListGrid = ({ maxProjectsToShow=6, selectedCategoryId="" }) => {
+const ProjectsListGrid = ({ maxProjectsToShow, selectedCategoryId="" }) => {
   const [ t ] = useTranslation("global");
   
   const { projectsJSON: { categories } } = usePortfolioContext();

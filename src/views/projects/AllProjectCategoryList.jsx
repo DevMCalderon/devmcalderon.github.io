@@ -23,7 +23,7 @@ const AllProjectCategoryList = ({ selectedCategoryId }) => {
     } else {
       setCategoryData({
         category: t(`projects.all_projects`),
-        description: t(`banner.description_mision2`),
+        description: "",
         selectedCategoryId: "all"
       });
     }

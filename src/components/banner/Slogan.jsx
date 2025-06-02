@@ -1,13 +1,14 @@
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 
 import HighlightText from "@/components/HighlightText";
+import AnimatedOnScroll from "@/components/AnimatedOnScroll";
 
 import arrowDown from "@/assets/img/icons/arrow-down.svg";
 
 const Slogan = ({ t }) => {
   
   return (
-    <>
+    <AnimatedOnScroll variant="fadeUp">
       {/* slogan section */}
       <section className="h-screen flex mx-auto items-center mb-10 lg:max-w-screen-xl">
         <h2 className={`paragraphStyles2 text-5xl lg:text-[3.7rem] lg:w-[90%] mx-auto`}>
@@ -31,7 +32,7 @@ const Slogan = ({ t }) => {
           />
         </a>
       </div>
-    </>
+    </AnimatedOnScroll>
   );
 };
 

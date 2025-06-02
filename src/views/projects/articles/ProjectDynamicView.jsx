@@ -33,7 +33,7 @@ const ProjectDynamicView = () => {
       {projectData && (
         <>
           {/* GitHub */}
-          <section on aria-labelledby="category" className="mb-10">
+          <section aria-labelledby="category" className="mb-10">
             <Heading tag="h3" id='features'>
               {t(`projectDetail.links`)}
             </Heading>

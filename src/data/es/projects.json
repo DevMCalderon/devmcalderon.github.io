@@ -12,7 +12,7 @@
           "title": "VetCore Pro",
           "article_id": 1,
           "technologies_used": [2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
-          "short_description": "Sistema para la gestión de clínicas veterinarias que optimiza el control de clientes, mascotas, empresas, citas e inventario. Trabajé colaborativamente con SCRUM, participando en la arquitectura de la base de datos y el diseño UI/UX. Implementé una API RESTful, gestioné roles y permisos con middleware, y mejoré la mantenibilidad y escalabilidad con componentes reutilizables, entre otras cosas.",
+          "short_description": "Sistema para gestión de clínicas veterinarias que optimiza el control de clientes, mascotas, empresas, citas e inventario. Trabajé colaborativamente con SCRUM, participando en la arquitectura de la base de datos y el diseño UI/UX. Implementé una API RESTful, gestioné roles y permisos con middleware, y mejoré la mantenibilidad y escalabilidad con componentes reutilizables, entre otras cosas.",
           "slug": "vetcore-pro",
           "images": [
             {

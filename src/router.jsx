@@ -8,7 +8,6 @@ import AllProjectCategoryList from "@/views/projects/AllProjectCategoryList";
 import ProjectDetail from "@/views/projects/ProjectDetail";
 import Loading from "@/views/loading/Loading";
 import Home from "@/views/pages/Home";
-import ProjectsCategoryOverview from "./views/projects/ProjectsCategoryOverview";
 
 const App = lazy(() => import('./App'));
 
