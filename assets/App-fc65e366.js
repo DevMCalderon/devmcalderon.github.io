@@ -1,1 +1,0 @@
-import{j as s,r,L as t,S as a,P as e,O as o}from"./index-c3db49a8.js";function i(){return s.jsx(s.Fragment,{children:s.jsxs(r.Suspense,{fallback:s.jsx(t,{}),children:[s.jsx(a,{}),s.jsx(e,{children:s.jsx(o,{})})]})})}export{i as default};
