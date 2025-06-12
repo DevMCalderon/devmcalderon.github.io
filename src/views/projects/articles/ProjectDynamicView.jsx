@@ -3,13 +3,14 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import ArticleEmptyView from "@/views/projects/articles/ArticleEmptyView"
-import { articleSlugPathMap } from "@/routes.js"
+// import { articleSlugPathMap } from "@/routes.js"
+import { getArticleComponent } from "@/views/projects/articles/articleSlugPathMap";
 import Heading from "@/components/uI/Heading";
 
 // Function to get the project data dynamically depending on its slug
-const loadProject = async (projectSlug) => {
-  return (await import("/src/views/projects/articles/"+articleSlugPathMap[projectSlug])).default;
-};
+// const loadProject = async (projectSlug) => {
+//   return (await import("/src/views/projects/articles/"+articleSlugPathMap[projectSlug])).default;
+// };
 
 const ProjectDynamicView = () => {
   const [t] = useTranslation("global");
@@ -20,9 +21,12 @@ const ProjectDynamicView = () => {
   
     
   useEffect(() => {
-    loadProject(idProject)
-      .then((data) => setProjectData(data))
-      .catch((err) => setError(err.message));
+    const Component = getArticleComponent(idProject);
+    setProjectData(Component);
+    
+    // getArticleComponent(idProject)
+      // .then((data) => setProjectData(data))
+      // .catch((err) => setError(err.message));
     }, [idProject]);
     
   // if the slug is in the articleViews object return the view, otherwise return the fallback

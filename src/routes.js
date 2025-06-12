@@ -50,16 +50,6 @@ export const routes = {
     "projects-contributions": '/proyectos/contribuciones-a-comunidad',
 };
 
-export const articleSlugPathMap = {
-  'vetcore-pro': 'veterinary', 
-  'smartorder': 'coffeeShop',
-  'jobmatch': 'jobVacancies',
-  'picconnect': 'uploadImages',
-  'edulink': 'schoolTutoring',
-  'dasc-uabcs': 'universityInfo',
-  'learnplay': 'educationalGames',
-}
-
 export const NavbarRoutesHome = [
   {URL: '/#top', name: 'Home'},
   {URL: '/#skills', name: 'Skills'},

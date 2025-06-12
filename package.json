@@ -1,7 +1,7 @@
 {
   "name": "myofficialportfolioreactvite",
   "private": true,
-  "homepage": "https://DevMCalderon.github.io/my-portfolio-react-typescript-tailwindcss",
+  "homepage": "https://DevMCalderon.github.io/", 
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp dist/index.html dist/404.html",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
