@@ -52,9 +52,9 @@ const Banner = () => {
             <AnimatedOnScroll variant="fadeLeft" className="w-full lg:w-7/12">
               {/* welcome box */}
               <div className="tagline text-link_disabled_color text-xl rounded-md">
-                  <IconGlobeWithMeridians className="mr-2 text-sm" />
+                  <IconGlobeWithMeridians className="mr-2 hidden md:inline text-sm" />
                   {t(`banner.welcome`)}
-                  <IconGlobeWithMeridians className="ml-2 text-sm" />
+                  <IconGlobeWithMeridians className="ml-2 text-sm hidden md:inline" />
               </div>
               
               {/* Name & Animated text */}
@@ -63,13 +63,13 @@ const Banner = () => {
                 <div className="h-16 lg:h-12 mt-2" style={{ fontSize: `${fontSize}px` }}>
                   <TypeAnimation
                     words={words}
-                    className="text-highlighted_text_color"
+                    className="text-highlighted_text_color text-3xl md:text-4xl"
                   />
                 </div>
               </h1>
                 
               {/* main description paragraph */}
-              <p className="paragraphStyles">
+              <p className="paragraphStyles text-left">
                 <strong className="font-normal">
                   <Trans
                     i18nKey={t('banner.main_paragraph1')}
@@ -90,7 +90,7 @@ const Banner = () => {
               </p>
 
               {/* paragraph list */}
-              <ul className="ml-6 lista-flecha text-start mb-5">
+              <ul className="ml-6 lista-flecha text-start">
                 <li className="paragraphStyles bannerList">
                   <Trans
                     i18nKey={t('banner.paragraph1')}

@@ -25,10 +25,10 @@
     @apply font-terminal text-blue-500 py-4 text-base word-spacing tracking-wider whitespace-pre-line leading-relaxed;
   }
   .span-icon {
-    @apply inline-block mr-2;
+    @apply inline-block text-2xl mr-3;
   }
   .image-icon {
-    @apply w-6 h-6 mr-2;
+    @apply w-7 h-7 mr-3;
   }
   .link {
     @apply text-blue-300 hover:text-link_color_hover hover:underline tracking-wider duration-150 ease-in-out transition-all;
@@ -45,10 +45,7 @@
     @apply text-blue-300 hover:text-link_color_hover hover:underline textShadow cursor-pointer;
   }
   .paragraphStyles {
-    @apply mb-2 textShadow text-[#ccc];
-  }
-  .paragraphStyles2 {
-    @apply mb-2 textShadow text-[#eee];
+    @apply mb-6 md:mb-2 textShadow text-[#eee];
   }
   .bannerList {
     @apply py-0.5 px-0.5;

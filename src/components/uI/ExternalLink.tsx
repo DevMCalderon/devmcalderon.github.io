@@ -14,7 +14,7 @@ type ExternalLinkProps = {
 const ExternalLink = ({ icon, text, href, className, showDecoration=false }: ExternalLinkProps) => (
   <div className={clsx("mb-4 flex", className)}>
     <a
-      className="flex items-center group article-description text-xl"
+      className="flex items-center group article-description text-lg md:text-xl text-start"
       href={ href }
       target="_blank"
       rel="noreferrer noopener"

@@ -11,7 +11,7 @@ const Slogan = ({ t }) => {
     <AnimatedOnScroll variant="fadeUp">
       {/* slogan section */}
       <section className="h-screen flex mx-auto items-center mb-10 lg:max-w-screen-xl">
-        <h2 className={`paragraphStyles2 text-5xl lg:text-[3.7rem] lg:w-[90%] mx-auto`}>
+        <h2 className={`paragraphStyles text-4xl md:text-5xl lg:text-6xl w-[80vw] lg:w-[60vw] mx-auto`}>
            <Trans
             i18nKey={t('banner.slogan')}
             components={[ 

@@ -11,7 +11,7 @@ function TypeAnimation({ words, className }) {
     const options = {
       strings: words,
       typeSpeed: 80,
-      backSpeed: 25,
+      backSpeed: 30,
       loop: true,
     };
 

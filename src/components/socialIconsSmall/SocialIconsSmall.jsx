@@ -41,7 +41,7 @@ const SocialIcons = () => {
             <item.Icon />
           </a>
         ))}
-        <Tooltip id={'myTooltip'} place='top' type='dark' effect='solid' style={{fontSize:'17px'}}/>
+        <Tooltip id={'myTooltip'} place='top' type='dark' effect='solid' style={{fontSize:'1.05rem'}}/>
       </div>
       
     </>

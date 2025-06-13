@@ -17,8 +17,11 @@ const createSpanIcon = (emoji: string) => ({ className, ...props }: SpanIconProp
   <span className={ clsx("span-icon", className) } { ...props }>{ emoji }</span>
 
 // <img> icon generator
-const createImageIcon = (src: string, defaultAlt: string) => ({ className, alt = defaultAlt, ...props}: ImgIconProps) =>
-  <img className={ clsx("image-icon", className) } src={ src } alt={ alt } { ...props } />
+const createImageIcon = (src: string, defaultAlt: string) => ({ className, alt = defaultAlt, ...props}: ImgIconProps) => (
+  <div className={ clsx("image-icon", className) }>
+    <img src={ src } alt={ alt } { ...props } />
+  </div>
+)
 
 // <svg> icon generator
 const createSvgIcon = (SvgComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement>>, defaultTitle: string) =>

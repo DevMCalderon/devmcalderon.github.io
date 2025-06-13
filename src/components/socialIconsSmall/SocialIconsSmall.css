@@ -20,14 +20,14 @@
   transform: scale(1);
 }
 .socialIconSmall a img {
-  width: 55%;
+  /* width: 55%; */
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
 .socialIconSmall a:hover img {
   filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
     hue-rotate(346deg) brightness(95%) contrast(86%);
-    width: 55%;
+    /* width: 55%; */
 }
 .socialIconSmall a:hover {
   transform: scale(1.05);
