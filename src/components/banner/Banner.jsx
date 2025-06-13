@@ -114,7 +114,7 @@ const Banner = () => {
               <BannerLinks t={t} />
             </AnimatedOnScroll>
               
-            <AnimatedOnScroll variant="fadeRight" className="md:w-1/2 lg:w-[23rem] mx-auto">
+            <AnimatedOnScroll variant="fadeRight" className="w-full md:w-1/2 lg:w-[23rem] mx-auto">
               {/* profile picture */}
               <ImageWithReflection
                 className="animatedImg md:w-1/2 lg:w-[23rem] mt-16 lg:mt-0 mx-auto self-start w-[70%]"
