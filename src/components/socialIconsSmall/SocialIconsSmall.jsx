@@ -3,7 +3,7 @@ import { Tooltip } from 'react-tooltip';
 import { IconYouTube, IconLinkedIn, IconGitHub } from '@/components/uI/Icons';
 import './SocialIconsSmall.css'
 
-const SocialIcons = () => {
+const SocialIconsSmall = () => {
   const imagesArray = [
     {
       id: 1,
@@ -30,9 +30,9 @@ const SocialIcons = () => {
       <div className='socialIconSmall'>
         {imagesArray.map((item, index) => (
           <a 
-            key={index}
-            className="w-9 h-9 xl:w-11 xl:h-11 mx-1.5 lg:mx-[3px] xl:mx-[3px]"
-            data-tooltip-id='myTooltip'
+          key={index}
+          className="w-9 h-9 xl:w-11 xl:h-11 mx-1.5 lg:mx-1 xl:mx-[0.3rem]"
+          data-tooltip-id='myTooltip'
             data-tooltip-content={item.dataTooltip}
             href={item.href}
             target='_blank'
@@ -42,10 +42,9 @@ const SocialIcons = () => {
           </a>
         ))}
         <Tooltip id={'myTooltip'} place='top' type='dark' effect='solid' style={{fontSize:'1.05rem'}}/>
-      </div>
-      
+    </div>
     </>
   );
-}
+};
 
-export default SocialIcons;
+export default SocialIconsSmall;

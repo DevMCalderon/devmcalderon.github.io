@@ -44,7 +44,6 @@ const Banner = () => {
 
         <Slogan t={t} />
 
-
         {/* personal info section */}
         <section className="flex max-w-screen-2xl mx-auto" id="banner" aria-labelledby="banner">
           <div className="items-center mx-5 md:mx-16 flex flex-wrap w-full">
@@ -58,12 +57,12 @@ const Banner = () => {
               </div>
               
               {/* Name & Animated text */}
-              <h1 className="text-4xl md:text-5xl lg:text-5xl mb-3" id="banner">
+              <h1 className="text-4xl md:text-5xl lg:text-[2.7rem] mb-3" id="banner">
                 <span className="textShadow">{t(`banner.Fullname`)}</span>
                 <div className="h-16 lg:h-12 mt-2" style={{ fontSize: `${fontSize}px` }}>
                   <TypeAnimation
                     words={words}
-                    className="text-highlighted_text_color text-3xl md:text-4xl"
+                    className="text-highlighted_text_color text-2xl md:text-3xl"
                   />
                 </div>
               </h1>

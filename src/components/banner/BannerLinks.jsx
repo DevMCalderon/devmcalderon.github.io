@@ -1,6 +1,6 @@
 import { IconGitHub, OpenFileFolder } from "@/components/uI/Icons";
 import ExternalLink from "@/components/uI/ExternalLink";
-import SocialIcons from "@/components/socialIcons/SocialIcons";
+import SocialIconsSmall from "@/components/socialIconsSmall/SocialIconsSmall";
 
 const BannerLinks = ({ t }) => {
   return (
@@ -24,7 +24,10 @@ const BannerLinks = ({ t }) => {
       />
 
       {/* social networks */}
-      <SocialIcons />
+      <div className="flex flex-wrap">
+        <p className="mb-3 h-full md:my-auto text-xl paragraphStyles text-left mr-2">Mis redes sociales:</p>
+        <SocialIconsSmall />
+      </div>
     </>
   );
 };

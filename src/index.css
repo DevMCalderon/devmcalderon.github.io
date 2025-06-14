@@ -247,6 +247,7 @@ h6 {
 
 p,
 a,
+span,
 li,
 button,
 ul,
@@ -257,7 +258,6 @@ button, input, optgroup, select, textarea
   line-height: normal;
   text-decoration: none;
   font-family: var(--normal-font-family);
-  font-size: var(--default_md_text_size);
 }
 p,
 a,
@@ -329,6 +329,14 @@ p.danger {
   stroke: var(--link_color_hover);
 }
 
+.bgBannerLowQuality {
+  /* background-image: linear-gradient(to right, rgb(11, 2, 38,0), rgba(21, 2, 25, 0.0)), url("./assets/img/bg1-low-quality.jpg"); */
+  background-image: linear-gradient(to right, rgb(11, 2, 38), rgba(21, 2, 25, 0.51)), url("./assets/img/bg1-low-quality.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .bgBanner1 {
   /* background-image: linear-gradient(to right, rgb(11, 2, 38,0), rgba(21, 2, 25, 0.0)), url("./assets/img/bg1.jpg"); */
   background-image: linear-gradient(to right, rgb(11, 2, 38), rgba(21, 2, 25, 0.51)), url("./assets/img/bg1.jpg");

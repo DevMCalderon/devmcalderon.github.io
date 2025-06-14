@@ -1,36 +1,17 @@
 import { useTranslation } from 'react-i18next';
-import { useEffect } from 'react';
 
-import loadingImg from '../../assets/img/loading1.svg'
+import loadingImg from '@/assets/img/loading1.svg';
 
 const Loading = () => {
-  const [ t, i18n ] = useTranslation("global");
-
-  // get navigator default langugage & convert it to a compatible code to set it as the app language
-  useEffect(() => {
-    const storedLanguage = localStorage.getItem('language');
-    
-    // if doesn't exist
-    if(!storedLanguage) {
-      const languageCode = navigator.language;
-      const parts = languageCode.split('-');
-      
-      changeLang(parts[0])
-    }
-  }, []); 
-  
-  const changeLang = newLng => {
-    i18n.changeLanguage(newLng);
-    localStorage.setItem('language', newLng);
-  }
+  const [ t ] = useTranslation("global");
   
   return(
-    <div className='simple_background flex h-screen justify-center items-center text-[white]'>
-      <div>
-        <span className='text-[45px]'>
-          {t(`default.loading`)}{'...'}
-          <img src={loadingImg} alt='loading-img' />
-        </span>
+    <div className='bgBannerLowQuality'>
+      <div className='backdrop-blur-2xl w-full h-screen flex flex-col h-screen justify-center items-center'>
+          <span className='text-5xl text-center text-sky-300'>
+            {t(`default.loading`)}
+          </span>
+          <img className='mx-auto' src={loadingImg} alt='loading-img' />
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import SocialIcons from "@/components/socialIcons/SocialIcons";
+import SocialIconsSmall from "@/components/socialIconsSmall/SocialIconsSmall";
 
 const MobileNavBar = ({ NavbarRoutesHome, NavbarRoutes }) => {
   const [ t ] = useTranslation("global");
@@ -68,7 +68,7 @@ const MobileNavBar = ({ NavbarRoutesHome, NavbarRoutes }) => {
           )}
         </ul>
         <div className="flex justify-center absolute bottom-0 left-0 w-[100%] text-center py-[50px] ">
-          <SocialIcons />
+          <SocialIconsSmall />
         </div>
       </div>
       

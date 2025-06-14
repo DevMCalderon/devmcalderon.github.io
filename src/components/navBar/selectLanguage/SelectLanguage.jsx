@@ -49,13 +49,11 @@ const SelectLanguage = () => {
     }
   }, []);
  
- 
   const changeLang = newLng => {
     i18n.changeLanguage(newLng);
     setSelectedElement(newLng);
     localStorage.setItem('language', newLng);
   }
-  
 
 // when select is open or closed
   const toggleSelect = () => {
