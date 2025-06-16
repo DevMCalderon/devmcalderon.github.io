@@ -1,6 +1,6 @@
 import 'react-multi-carousel/lib/styles.css';
-import { motion } from "framer-motion"
-import { Link } from 'react-router-dom'
+import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 
 import { routes } from '@/routes';
 import ImageCarousel from "@/components/imageCarousel/ImageCarousel";
@@ -34,11 +34,13 @@ const ProjectItemCard = ({ projectData }) => {
         
         {/* text and icons */}
         <div className="text-left ml-0 md:ml-6">
-          {/* <h4 className="text-lg text-white font-bold mb-2">{'- '}{title}{' -'}</h4> */}
           <h4 className="text-center md:text-start text-lg text-white font-bold mb-2 group-hover:text-blue-300">{title}</h4>
           
           {/* description */}
-          <p className="text-mdsm h-[7rem] overflow-hidden text-ellipsis text-slate-300 mb-1.5">{short_description}</p>
+          <p className="text-base text-slate-300 mb-1.5">
+            {short_description}
+          </p>
+
           
           <ProjectTechnologiesDisplay technologies_used={technologies_used} />
         </div>
@@ -47,6 +49,6 @@ const ProjectItemCard = ({ projectData }) => {
     </motion.div>
 
   );
-}
+};
 
 export default ProjectItemCard;

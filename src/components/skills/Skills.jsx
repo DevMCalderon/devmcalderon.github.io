@@ -31,7 +31,7 @@ const Skills = () => {
         className='pb-20 bg-[linear-gradient(180deg,rgba(36,31,128,0)_90%,rgba(51,29,140,0.8)_98%,rgb(51,29,140)_100%)]'
         id='skills'
       >
-        <div 
+        <div
           className='containerShadow1 shadow-2xl pt-12 md:pb-3 px-5 md:px-10 lg:px-24 rounded-[3.8rem]
             text-center mt-[-60px] bg-container_color2 bg-opacity-[85%] xl:max-w-screen-3xl mx-auto w-[95vw]'
         >
@@ -43,10 +43,7 @@ const Skills = () => {
           />
           
           {/* description */}
-          <p className='text-left text-lgbase mx-auto mt-[14px] mb-8 lg:mb-7'
-          >
-            {skills_description}
-          </p>
+          <p className='text-left text-lgbase mx-auto mt-[14px] mb-8 lg:mb-7'>{skills_description}</p>
           
           <div className='flex flex-wrap gap-x-0 md:gap-4 gap-y-5 md:gap-y-7 justify-center mx-auto pb-14 lg:mb-0'>
             {imgSkillsJson.map((item, index) => (

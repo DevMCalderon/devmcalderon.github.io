@@ -125,7 +125,7 @@ const SelectLanguage = () => {
       
       {/* select button with selected language */}
       <div className="select-btn" onClick={toggleSelect}>
-        <span className='text-xl xlNavbar:text-md'>{selectedElement}</span>
+        <span className='text-lgbase'>{selectedElement}</span>
         <img src={arrowDownIcon} alt="arrowDownIcon" />
       </div>
 
@@ -153,7 +153,7 @@ const SelectLanguage = () => {
                 <li
                   key={index}
                   onClick={() => handleItemSelection(item.label, item.code)}
-                  className={`text-smmd ${selectedItem === item.label ? 'selected' : ''}`}
+                  className={`text-lgbase1 ${selectedItem === item.label ? 'selected' : ''}`}
                 >
                   <img className='w-7 pr-2' src={flagImages[item.code]} alt={item.code}/>
                   {item.label}

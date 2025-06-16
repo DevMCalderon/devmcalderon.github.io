@@ -12,7 +12,7 @@
           "title": "VetCore Pro",
           "article_id": 1,
           "technologies_used": [2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
-          "short_description": "Veterinary clinic management system that optimizes control of clients, pets, companies, appointments, and inventory. I worked collaboratively using SCRUM, participating in database architecture and UI/UX design. Implemented a RESTful API, managed roles and permissions with middleware, and improved maintainability and scalability with reusable components, among other tasks.",
+          "short_description": "I developed a dashboard for veterinary clinics with client, pet, appointment, and inventory management. I collaborated using SCRUM, designed the database and UI/UX, built a RESTful API, managed roles through middleware, and enhanced scalability with reusable components.",
           "slug": "vetcore-pro",
           "images": [
             {
@@ -38,7 +38,7 @@
         {
           "title": "SmartOrder",
           "technologies_used": [1, 2, 9, 4, 5, 11, 18, 7, 12, 26],
-          "short_description": "Order and management system for restaurants with differentiated access based on privileges. Customers can select products, manage their carts, and place orders, while employees handle orders in real-time and can mark purchases as completed or disable products from the catalog.",
+          "short_description": "I built an order management system for restaurants with role-based access. Customers manage their carts and place orders, while employees handle orders in real time, complete purchases, and update the product catalog.",
           "slug": "smartorder",
           "images": [
             {
@@ -64,7 +64,7 @@
         {
           "title": "JobMatch",
           "technologies_used": [2, 24, 25, 9, 23, 5, 11, 7, 12, 18],
-          "short_description": "Job recruitment and application web platform where recruiters can manage and post vacancies, and developers can apply with their CV in PDF. Includes advanced search by name, category, and salary, real-time notifications, and account confirmation via email. Designed to optimize the hiring process with efficiency and usability.",
+          "short_description": "I created a web-based recruitment platform where recruiters can post job openings and developers can apply with their PDF resumes. It includes advanced search, real-time notifications, and email verification, optimizing the hiring process with efficiency and usability.",
           "slug": "jobmatch",
           "images": [
             {
@@ -90,7 +90,7 @@
         {
           "title": "PicConnect",
           "technologies_used": [2, 24, 25, 9, 5, 11, 7, 12, 18, 26],
-          "short_description": "Social network for sharing images, featuring dynamic URLs for profiles, post publishing, followers and likes system. Allows image uploads, commenting on posts, and profile customization with a photo. Includes an interactive feed showing content from followed users, optimizing interaction and discovery experience.",
+          "short_description": "I developed a social media platform for sharing images, featuring dynamic profile URLs, a post system, followers, and likes. Users can upload images, comment, and customize their profiles. It includes an interactive feed that enhances content discovery and user interaction.",
           "slug": "picconnect",
           "images": [
             {
@@ -116,7 +116,7 @@
         {
           "title": "EduLink",
           "technologies_used": [2, 3, 11, 4, 5, 12, 7, 18],
-          "short_description": "Online tutoring platform integrated with Zoom, designed to provide accessible and collaborative learning. Allows students and tutors to manage, filter, and participate in tutoring sessions efficiently. Automates video call creation and request management, while teachers validate the approval of new tutors.",
+          "short_description": "I built an online tutoring platform integrated with Zoom, facilitating the management, filtering, and participation in educational sessions. It automates video calls and request handling, and allows teachers to validate new tutors, promoting accessible and collaborative learning.",
           "slug": "edulink",
           "images": [
             {
@@ -140,35 +140,9 @@
           ]
         },
         {
-          "title": "LearnPlay",
-          "technologies_used": [5, 4, 12, 7, 18],
-          "short_description": "Educational website for elementary school children. Offers an interactive and fun learning experience with mini-games focused on basic math operations, patterns, and clock reading. Implements a lives system, level unlocking with localStorage, and reusable components loaded dynamically from JSON.",
-          "slug": "learnplay",
-          "images": [
-            {
-              "id": 1,
-              "path": "/assets/img/projects/educational-games/1.png",
-              "alt": "Math game with basic operations",
-              "caption": "Mini-game of addition and subtraction"
-            },
-            {
-              "id": 2,
-              "path": "/assets/img/projects/educational-games/2.png",
-              "alt": "Pattern recognition game for kids",
-              "caption": "Logical pattern mini-game"
-            },
-            {
-              "id": 3,
-              "path": "/assets/img/projects/educational-games/3.png",
-              "alt": "Educational game to learn analog clock reading",
-              "caption": "Clock reading mini-game"
-            }
-          ]
-        },
-        {
           "title": "DASC UABCS",
           "technologies_used": [10, 5, 4, 12, 7],
-          "short_description": "Institutional website for the Computer Systems Department of UABCS. Optimizes content management and improves information access for students. Includes accessibility tools and faculty-supervised design, with efficient integrations and custom development.",
+          "short_description": "I developed an institutional website for the UABCS Systems Department that enhances content management, accessibility, and the student experience. The design was supervised by faculty, and the development was fully customized.",
           "slug": "dasc-uabcs",
           "images": [
             {
@@ -188,6 +162,32 @@
               "path": "/assets/img/projects/dasc-uabcs/3.png",
               "alt": "Panel with resources and announcements for the university community",
               "caption": "Institutional resources and announcements"
+            }
+          ]
+        },
+        {
+          "title": "LearnPlay",
+          "technologies_used": [5, 4, 12, 7, 18],
+          "short_description": "I created an educational website for elementary children featuring interactive mini-games on math, patterns, and clock reading. It includes a lives system, unlockable levels using localStorage, and dynamic content loading from JSON, utilizing reusable components for a fun and modular experience.",
+          "slug": "learnplay",
+          "images": [
+            {
+              "id": 1,
+              "path": "/assets/img/projects/educational-games/1.png",
+              "alt": "Math game with basic operations",
+              "caption": "Mini-game of addition and subtraction"
+            },
+            {
+              "id": 2,
+              "path": "/assets/img/projects/educational-games/2.png",
+              "alt": "Pattern recognition game for kids",
+              "caption": "Logical pattern mini-game"
+            },
+            {
+              "id": 3,
+              "path": "/assets/img/projects/educational-games/3.png",
+              "alt": "Educational game to learn analog clock reading",
+              "caption": "Clock reading mini-game"
             }
           ]
         }

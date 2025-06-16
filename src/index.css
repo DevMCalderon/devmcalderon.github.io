@@ -19,10 +19,10 @@
 
 @layer components {
   .navLinkStyles {
-    @apply text-sm xlNavbar:text-smmd py-0 px-[14px] xlNavbar:px-[25px];
+    @apply text-sm md:text-lgbase1 py-0 px-4 xlNavbar:px-6;
   }
   .terminal_text {
-    @apply font-terminal text-blue-500 py-4 text-base word-spacing tracking-wider whitespace-pre-line leading-relaxed;
+    @apply font-terminal text-blue-500 py-4 text-mdsm md:text-base word-spacing tracking-wider whitespace-pre-line leading-relaxed;
   }
   .span-icon {
     @apply inline-block text-2xl mr-3;
@@ -450,7 +450,6 @@ p.danger {
 /** footer **/
 .footer p {
   letter-spacing: 0.5px;
-  margin-top: 20px;
 }
 
 footer {
@@ -462,3 +461,6 @@ footer {
 }
 
 /* testing */
+.contact-header {
+  font-size: 1.4rem !important;
+}

@@ -42,7 +42,7 @@ const EmailDisplay = () => {
   return(
     <section className='w-full lg:w-10/12 mx-auto'>
       <div 
-        className="bg-gradient-to-t from-[#0f0f222a] to-[#0303466d] mt-11 py-11 rounded-[6rem] text-center px-9 lg:px-10
+        className="bg-gradient-to-t from-[#0f0f222a] to-[#0303466d] mt-11 pt-7 pb-8 rounded-[6rem] text-center px-0 lg:px-10
           border-[1.5px] border-solid border-border_color1 backdrop-blur-[0.15rem]"
       >
         {/* title */}
@@ -55,16 +55,16 @@ const EmailDisplay = () => {
         <img src={emailImg} alt="email_img" className='h-40 mx-auto mb-6' />
         
         {/* description */}
-        <p className='w-10/12 mx-auto text-md'>{t(`contact.copy_email`)} 😉</p>
+        <p className='w-10/12 mx-auto text-md mb-5'>{t(`contact.copy_email`)} 😉</p>
       
         {/* email input and copy button */}
-        <div className="flex flex-col lg:flex-row items-center justify-center space-x-4 mt-8">
+        <div className="flex flex-col lg:flex-row items-center justify-center space-x-4">
           <div className='md:w-6/12'>
   
             {/* email input */}
             <input
-              className='text-center bg-[#16104d] text-[#dcfaff] cursor-default w-full border-1 border-solid border-[#fff]
-              rounded-[20px] py-4 px-6 font-normal text-lg tracking-[0.8px] transition-all duration-300 ease-in-out'
+              className='text-center overflow-hidden text-ellipsis bg-[#16104d] text-[#dcfaff] cursor-default w-full border-1 border-solid border-[#fff]
+              rounded-[20px] py-4 px-6 font-normal text-lgbase tracking-[0.8px] transition-all duration-300 ease-in-out'
               name={'contactEmail'}
               readOnly
               ref={emailRef}

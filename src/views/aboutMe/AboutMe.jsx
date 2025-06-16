@@ -30,7 +30,7 @@ const AboutMe = () => {
           {/* right side */}
           <div className="w-full md:w-7/12 text-center lg:text-left mb-5 lg:mb-0 text-blue-300 font-terminal">
             <CustomHeader
-              className="font-size-2xl"
+              className="contact-header"
               align='left'
               emoji='🚀'
               text={t(`about_me.more_about_me`)}

@@ -91,8 +91,8 @@
     "something_wrong": "Algo salió mal, por favor inténtelo de nuevo más tarde.",
     "sending": "Enviando...",
     "copy_email_header": "¿Apresurado?",
-    "copy_email": "Copia mi correo electrónico y conversemos. ¡Espero tu mensaje!",
-    "email_copied": "¡Correo copiado al portapapeles!",
+    "copy_email": "Copia mi información de contacto y conversemos. ¡Espero tu mensaje!",
+    "email_copied": "Información copiada al portapapeles!",
     "thanks_for_visiting": "¡Gracias por visitar mi sitio web!"
   },
   "footer": {

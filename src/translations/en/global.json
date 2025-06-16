@@ -91,8 +91,8 @@
     "something_wrong": "Something went wrong, please try again later.",
     "sending": "Sending...",
     "copy_email_header": "In a hurry?",
-    "copy_email": "Copy my email and let’s talk. I look forward to your message!",
-    "email_copied": "Email copied to clipboard!",
+    "copy_email": "Copy my contact information and let’s talk. I’m looking forward to your message!",
+    "email_copied": "Information copied to clipboard!",
     "thanks_for_visiting": "Thanks for visiting my website!"
   },
   "footer": {
