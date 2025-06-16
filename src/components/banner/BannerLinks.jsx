@@ -9,7 +9,7 @@ const BannerLinks = ({ t }) => {
       <ExternalLink
         icon={<OpenFileFolder />}
         text={t(`banner.cv2`)}
-        href=""
+        href={import.meta.env.VITE_CV_URL}
         className="mb-6"
         showDecoration={true}
       />
