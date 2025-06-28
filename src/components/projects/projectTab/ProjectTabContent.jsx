@@ -46,6 +46,7 @@ const ProjectTabContent = ({activeTab, index, categoryData}) => {
           <ProjectsListGrid
             selectedCategoryId = { id }
             maxProjectsToShow = { maxProjectsToShow }
+            articleNotFoundClasses ='w-10/12'
           />
           
           {/* display more button */}

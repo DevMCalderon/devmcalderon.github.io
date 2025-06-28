@@ -60,7 +60,6 @@ const AllProjectCategoryList = ({ selectedCategoryId }) => {
       </div>
       
       <ProjectsCategoryOverview categoryData={categoryData} />
-
       <ProjectsListGrid selectedCategoryId={categoryData.id} />
     </div>
   );

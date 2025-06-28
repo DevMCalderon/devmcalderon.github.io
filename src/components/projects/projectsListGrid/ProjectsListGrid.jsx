@@ -1,9 +1,9 @@
 import ProjectItemCard from '@/components/projects/projectItemCard/ProjectItemCard'
 import usePortfolioContext from "@/hooks/usePortfolioContext";
-import ArticleEmptyView from '@/views/projects/articles/ArticleEmptyView';
+import ArticleNotFoundNotice from "@/components/ArticleNotFoundNotice";
 import { useTranslation } from 'react-i18next';
 
-const ProjectsListGrid = ({ maxProjectsToShow, selectedCategoryId="" }) => {
+const ProjectsListGrid = ({ maxProjectsToShow, selectedCategoryId="", articleNotFoundClasses="w-full md:w-9/12" }) => {
   const [ t ] = useTranslation("global");
   
   const { projectsJSON: { categories } } = usePortfolioContext();
@@ -19,7 +19,7 @@ const ProjectsListGrid = ({ maxProjectsToShow, selectedCategoryId="" }) => {
       projects.map(project => ({ ...project, categoryId: c })));
   } 
   
-  if (displayedProjects.length === 0) return <ArticleEmptyView noun={t(`article_empty_view.noun_category`)} />;
+  if (displayedProjects.length === 0) return <ArticleNotFoundNotice className={articleNotFoundClasses} noun={t(`article_empty_view.noun_category`)} />;
   
   return (
     <div className="grid grid-cols-1 gap-4 lg:max-w-screen-lg mx-auto">

@@ -2,7 +2,8 @@ import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import ArticleEmptyView from "@/views/projects/articles/ArticleEmptyView"
+import ArticleNotFoundNotice from "@/components/ArticleNotFoundNotice";
+
 // import { articleSlugPathMap } from "@/routes.js"
 import { getArticleComponent } from "@/views/projects/articles/articleSlugPathMap";
 import Heading from "@/components/uI/Heading";
@@ -30,7 +31,7 @@ const ProjectDynamicView = () => {
     }, [idProject]);
     
   // if the slug is in the articleViews object return the view, otherwise return the fallback
-  if (!projectData || error) return <ArticleEmptyView />;
+  if (!projectData || error) return <ArticleNotFoundNotice />;
   
   return (
     <div className="mb-10">
