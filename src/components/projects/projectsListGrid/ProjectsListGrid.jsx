@@ -3,7 +3,12 @@ import usePortfolioContext from "@/hooks/usePortfolioContext";
 import ArticleNotFoundNotice from "@/components/ArticleNotFoundNotice";
 import { useTranslation } from 'react-i18next';
 
-const ProjectsListGrid = ({ maxProjectsToShow, selectedCategoryId="", articleNotFoundClasses="w-full md:w-9/12" }) => {
+const ProjectsListGrid = ({
+  maxProjectsToShow,
+  selectedCategoryId="",
+  articleNotFoundClasses="w-full md:w-9/12"
+}) => {
+  
   const [ t ] = useTranslation("global");
   
   const { projectsJSON: { categories } } = usePortfolioContext();
@@ -15,12 +20,16 @@ const ProjectsListGrid = ({ maxProjectsToShow, selectedCategoryId="", articleNot
   
   // si no se ha seleccionado ninguna categoría, se muestran todos  
   if (!selectedCategoryId) {
-    displayedProjects = categories.flatMap(({ c, projects }) =>
-      projects.map(project => ({ ...project, categoryId: c })));
-  } 
+    displayedProjects = categories.flatMap(({ id, projects }) =>
+      projects.map(project => ({ ...project, categoryId: id }))) || [];
+  }
   
-  if (displayedProjects.length === 0) return <ArticleNotFoundNotice className={articleNotFoundClasses} noun={t(`article_empty_view.noun_category`)} />;
-  
+  if (displayedProjects.length === 0 || !categories) return (
+    <ArticleNotFoundNotice
+      className={articleNotFoundClasses}
+      noun={t(`article_empty_view.noun_category`)}
+    />
+  )  
   return (
     <div className="grid grid-cols-1 gap-4 lg:max-w-screen-lg mx-auto">
     {/* listado de proyectos */}
