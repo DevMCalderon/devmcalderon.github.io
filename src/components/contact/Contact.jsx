@@ -39,7 +39,7 @@ const Contact = () => {
           <div className='w-full lg:w-5/12 xl:w-1/2'>
             {/* <img src={contactImg} alt="contact_image" className='contact-img' /> */}
             <ImageWithReflection
-              className="opacity-[0.93] w-full md:w-8/12 mx-auto"
+              className="opacity-[0.93] w-full md:w-7/12 mx-auto"
               bothClassName="md:rounded-lg border-[0.2rem] border-white"
               reflectionWidth="h-20"
               src={AboutMeImg}

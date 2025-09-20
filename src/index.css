@@ -331,7 +331,7 @@ p.danger {
 
 .bgBannerLowQuality {
   /* background-image: linear-gradient(to right, rgb(11, 2, 38,0), rgba(21, 2, 25, 0.0)), url("./assets/img/bg1-low-quality.jpg"); */
-  background-image: linear-gradient(to right, rgb(11, 2, 38), rgba(21, 2, 25, 0.51)), url("./assets/img/bg1-low-quality.jpg");
+  background-image: linear-gradient(to right, rgba(11, 4, 34, 0.826), rgba(21, 2, 25, 0.398)), url("./assets/img/bg1-low-quality.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -339,7 +339,7 @@ p.danger {
 }
 .bgBanner1 {
   /* background-image: linear-gradient(to right, rgb(11, 2, 38,0), rgba(21, 2, 25, 0.0)), url("./assets/img/bg1.jpg"); */
-  background-image: linear-gradient(to right, rgb(11, 2, 38), rgba(21, 2, 25, 0.51)), url("./assets/img/bg1.jpg");
+  background-image: linear-gradient(to right, rgba(11, 4, 34, 0.826), rgba(21, 2, 25, 0.398)), url("./assets/img/bg1.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;

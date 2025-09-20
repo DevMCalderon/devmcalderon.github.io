@@ -14,7 +14,7 @@ function Home() {
       	<NavBar />
 				
         <main className='app-container'>
-					<div className='backdrop-blur-sm'>
+					<div className='backdrop-blur-[0.2rem]'>
 						<Banner />
 						<Skills />
 					</div>

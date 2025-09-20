@@ -29,7 +29,7 @@ const Banner = () => {
   useEffect(() => {
     // it calculates the new font size based on the length of the text
     // h,w; adjust the minimum and maximum font sizes values accordingly to your needs
-    const newFontSize = Math.min(35, 700 / text.length); 
+    const newFontSize = Math.min(35, 700 / text.length);
     setFontSize(newFontSize);
   }, [text]);
 
