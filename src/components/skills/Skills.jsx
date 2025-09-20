@@ -6,25 +6,6 @@ import imgSkillsJson from '@/data/skills/skills.json';
 const Skills = () => {
   const [ t ] = useTranslation("global");
   
-  const skills_description =
-    <span>
-      {t(`skills.description1`)}
-      <strong className="text-highlighted_text_color">{t(`skills.description2`)}</strong>
-      {t(`skills.description2_2`)}
-      <strong className="text-highlighted_text_color">{t(`skills.description2_3`)}</strong>
-      {t(`skills.description3`)}
-      <strong className="text-highlighted_text_color">{t(`skills.description4`)}</strong>
-      {t(`skills.description5`)}
-      <strong className="text-highlighted_text_color">{t(`skills.description5_2`)}</strong>
-      {t(`skills.description5_3`)}
-      <strong className="text-highlighted_text_color">{t(`skills.description6`)}</strong>
-      {t(`skills.description7`)}
-      <strong className="text-highlighted_text_color">{t(`skills.description7_1`)}</strong>
-      {t(`skills.description7_2`)}
-      <strong className="text-highlighted_text_color">{t(`skills.description7_3`)}</strong>
-    </span>
-  ;
-  
   return(
     <>
       <section 
@@ -42,10 +23,7 @@ const Skills = () => {
             text={t(`skills.skills`)}
           />
           
-          {/* description */}
-          <p className='text-left text-lgbase mx-auto mt-[14px] mb-8 lg:mb-7'>{skills_description}</p>
-          
-          <div className='flex flex-wrap gap-x-0 md:gap-4 gap-y-5 md:gap-y-7 justify-center mx-auto pb-14 lg:mb-0'>
+          <div className='flex flex-wrap gap-x-0 md:gap-4 gap-y-5 md:gap-y-7 justify-center mx-auto pb-12 lg:mb-0 mt-6'>
             {imgSkillsJson.map((item, index) => (
               <div
                 className='flex flex-col md:flex-row items-center basis-[calc(100%/4)] md:basis-[calc(100%/5)]
@@ -68,6 +46,23 @@ const Skills = () => {
               </div>
             ))}
           </div>
+          
+          <p>{t(`skills.other_skills_heading`)}</p>
+          <div className='w-full flex flex-wrap mx-auto'>
+            <div className='w-6/12 flex mx-auto'>
+              <ul className="text-left text-lgbase mx-auto mt-[14px] mb-8 lg:mb-7 mb-7 list-disc text-white space-y-2">
+                <li className="pl-3">{t(`skills.other_skills_list.0`)}</li>
+                <li className="pl-3">{t(`skills.other_skills_list.1`)}</li>
+              </ul>
+            </div>
+            <div className='w-6/12 flex mx-auto'>
+              <ul className="text-left text-lgbase mx-auto mt-[14px] mb-8 lg:mb-7 mb-7 list-disc text-white space-y-2">
+                <li className="pl-3">{t(`skills.other_skills_list.2`)}</li>
+                <li className="pl-3">{t(`skills.other_skills_list.3`)}</li>
+              </ul>
+            </div>
+          </div>
+          
         
         </div>
       </section>

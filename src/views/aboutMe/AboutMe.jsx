@@ -1,8 +1,9 @@
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import TypeAnimation from '@/components/banner/typeAnimation/TypeAnimation'
 import CustomHeader from '@/components/uI/customHeader/CustomHeader';
 import AsciiArt from "@/components/AsciiArt";
+import HighlightText from "@/components/HighlightText";
 
 const AboutMe = () => {
   const [t] = useTranslation("global");
@@ -38,26 +39,39 @@ const AboutMe = () => {
 
             <div className="text-left">
               <p className={`terminal_text pb-4`}>
-                {t(`about_me.paragraph1_1`)}
-                <strong className="text-blue-300">{t(`about_me.paragraph1_2`)}</strong>
+                <Trans
+                  i18nKey={t('about_me.paragraphs.0')}
+                  components={[ <HighlightText className="text-blue-300"/> ]}
+                />
               </p>
               <p className={`terminal_text pb-4`}>
-                {t(`about_me.paragraph2_1`)}
-                <strong className="text-blue-300">{t(`about_me.paragraph2_2`)}</strong>
-                {t(`about_me.paragraph2_3`)}
-                <strong className="text-blue-300">{t(`about_me.paragraph2_4`)}</strong>
+                <Trans
+                  i18nKey={t('about_me.paragraphs.1')}
+                  components={[ <HighlightText className="text-blue-300"/> ]}
+                />
               </p>
               <p className={`terminal_text pb-4`}>
-                {t(`about_me.paragraph3_1`)}
-                <strong className="text-blue-300">{t(`about_me.paragraph3_2`)}</strong>
+                <Trans
+                  i18nKey={t('about_me.paragraphs.2')}
+                  components={[ <HighlightText className="text-blue-300"/> ]}
+                />
               </p>
               <p className={`terminal_text pb-4`}>
-                {t(`about_me.paragraph2_5`)}
+                <Trans
+                  i18nKey={t('about_me.paragraphs.3')}
+                  components={[ <HighlightText className="text-blue-300"/> ]}
+                />
+              </p>
+              <p className={`terminal_text pb-4`}>
+                <Trans
+                  i18nKey={t('about_me.paragraphs.4')}
+                  components={[ <HighlightText className="text-blue-300"/> ]}
+                />
               </p>
               
-              <TypeAnimation 
-              words={words}
-              className="text-blue-600 terminal_text text-lg"
+              <TypeAnimation
+                words={words}
+                className="text-blue-600 terminal_text text-lg flex flex-wrap"
               />
             </div>
             
