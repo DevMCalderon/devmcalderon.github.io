@@ -18,40 +18,33 @@
     "go_to": "Go to",
     "language_not_found": "No results found."
   },
-  "banner": {
-    "slogan": "<0>Web Development</0> is an art and your project is our <1>masterpiece</1>.",
+ "banner": {
+    "slogan": "<0>Web Development</0> is an art, and your project is our <1>masterpiece</1>.",
     "welcome": "Welcome to my digital world",
     "Fullname": "Martín Calderón",
     "x": "Full Stack Developer",
-    "main_paragraph1": "I’m a <0>{{linkText}}</0>, creator of effective digital experiences and solutions <1>since I was 15</1>.",
-    "paragraph1": "<0>I develop web solutions</0> tailored to real client needs, <0>covering the entire process</0>: planning, design, development, documentation, deployment, and maintenance.",
-    "paragraph2": "Specialized in <0>Laravel, React.js, and Vue.js</0>, with a strong ability to <0>quickly learn new technologies</0> and apply them to solve complex problems efficiently.",
-    "paragraph3": "Proactive, organized, and solution-oriented. <0>Team player</0>. I manage time well and prioritize swiftly. <0>I adapt under pressure</0> and <0>seek challenges</0> that fuel my growth.",
-    "description_tooltip": "The mysterious one-man band, skilled at handling both front-end and back-end!",
+    "main_paragraph1": "I am a <0>{{linkText}}</0>, Software Development Engineer with <1>3+ years of freelance experience</1> and complex projects in Laravel, React, and Vue.",
+    "paragraph1": "<0>I master the full development cycle</0> (design, automated unit testing, CI/CD, and more).",
+    "paragraph2": "Specialized in <0>scalable architectures, REST APIs, performance optimization, and leadership</0> of small teams.",
+    "paragraph3": "I deliver <0>high-quality results under tight deadlines</0>, combining technical precision with strategic vision.",
+    "description_tooltip": "The mysterious one-man band, capable of operating both on the front-end and the back-end.",
     "typeAnimation_1": "Full Stack Developer",
-    "typeAnimation_2": "Backend Developer – Laravel",
-    "typeAnimation_3": "Frontend Developer – React.js & Vue.js",
+    "typeAnimation_2": "Backend Developer with Laravel",
+    "typeAnimation_3": "Frontend Developer with React.js and Vue.js",
     "typeAnimation_4": "DevOps",
     "typeAnimation_5": "UI/UX Interface Designer",
-    "cv2": "[Download my Curriculum Vitae]",
-    "portfolio_source_code_text": "This site was built entirely by me — [View source code]"
+    "cv2": "[Download my résumé]",
+    "portfolio_source_code_text": "This site was entirely built by me — [View source code]"
   },
   "skills": {
     "skills": "Skills",
-    "description1": "I have ",
-    "description2": " over 9 years of creating software",
-    "description2_2": " with a",
-    "description2_3": " wide range of technologies",
-    "description3": ". However,",
-    "description4": " my strongest areas are Laravel and React.js",
-    "description5": ". Additionally, I have experience working in ",
-    "description5_2": " collaborative environments",
-    "description5_3": " operating with ",
-    "description6": " agile methodologies like Scrum",
-    "description7": " Beyond my knowledge, my ",
-    "description7_1": " dedication to continuous learning",
-    "description7_2": " allows me to",
-    "description7_3": " quickly adapt to new technologies and build effective solutions.",
+    "other_skills_heading": "Other skills:",
+    "other_skills_list": {
+      "0": "Fast adoption of new tools and methodologies.",
+      "1": "Problem-solving under pressure and tight deadlines.",
+      "3": "Experience in remote work.",
+      "2": "Programmer since 2015."
+    },
     "english_skill": "English B1",
     "spanish_skill": "Spanish C2"
   },
@@ -62,18 +55,16 @@
     "all_projects": "Show All",
     "selected_category": "Selected Category:"
   },
-  "about_me": {
+ "about_me": {
     "more_about_me": "About Me",
     "img_description": "Programming is fascinating!",
-    "paragraph1_1": "Full Stack Developer based in La Paz, Mexico. Soon to graduate as a Software Development Engineer,",
-    "paragraph1_2": " maintaining a 92 out of 100 GPA.",
-    "paragraph2_1": "Over time I discovered that, without a doubt,",
-    "paragraph2_2": "my greatest strength is engineering.",
-    "paragraph2_3": " I'm passionate about creating tools that are as useful as they are fascinating.",
-    "paragraph2_4": " I aspire to master everything needed to build high-level software.",
-    "paragraph3_1": "Currently,",
-    "paragraph3_2": " I dedicate most of my time to developing technical and soft skills that enhance my professional performance.",
-    "paragraph2_5": "'Do whatever it takes to learn what others are unwilling to learn, as fast as possible.' - Elon Musk.",
+    "paragraphs": {
+      "0": "Full Stack Developer based in La Paz, Mexico. About to graduate as a Software Development Engineer, <0>maintaining an average grade of 92 out of 100</0>.",
+      "1": "Over time, I discovered that, without a doubt, <0>my greatest strength is engineering</0>.",
+      "2": "I am passionate about creating tools that are as useful as they are fascinating. <0>I aspire to master everything necessary to build high-level software</0>.",
+      "3": "Currently, <0>I dedicate most of my time to developing both technical and soft skills that enhance my professional performance</0>.",
+      "4": "'It's not just about solving problems, but anticipating and eliminating them before they arise.'"
+    },
     "classifications": "Classifications"
   },
   "TabPanelItem": {
