@@ -47,7 +47,7 @@ const Skills = () => {
             ))}
           </div>
           
-          <p>{t(`skills.other_skills_heading`)}</p>
+          <p className='font-bold text-xl'>{t(`skills.other_skills_heading`)}</p>
           <div className='w-full flex flex-wrap mx-auto'>
             <div className='w-6/12 flex mx-auto'>
               <ul className="text-left text-lgbase mx-auto mt-[14px] mb-8 lg:mb-7 mb-7 list-disc text-white space-y-2">

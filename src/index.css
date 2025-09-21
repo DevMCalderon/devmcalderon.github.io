@@ -83,30 +83,42 @@
 }
 
 @font-face {
-  font-family: Cyber;
-  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-family: 'Cyber';
+  src: url("/fonts/blenderPro/Blender-Pro-Bold.otf") format('opentype');
+  font-weight: 700;  /* Bold weight */
+  font-display: swap;  /* Magic: Shows fallback while loading */
+  font-style: normal;
+}
+
+/* Chakra Family - Multiple Weights */
+@font-face {
+  font-family: 'Chakra';
+  src: url("/fonts/chakraPetch/ChakraPetch-Light.ttf") format('truetype');
+  font-weight: 200; /* Light */
   font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: Chakra;
-  src: url("./assets/font/ChakraPetch-Light.ttf");
-  font-weight: 200;
-}
-@font-face {
-  font-family: Chakra;
-  src: url("./assets/font/ChakraPetch-Regular.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: Chakra;
-  src: url("./assets/font/ChakraPetch-Bold.ttf");
-  font-weight: 700;
+  font-family: 'Chakra';
+  src: url("/fonts/chakraPetch/ChakraPetch-Regular.ttf") format('truetype');
+  font-weight: 400;  /* Regular */
+  font-display: swap;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: Monaspace Krypton;
-  src: url('/fonts/MonaspaceKrypton/MonaspaceKrypton.ttf');
+  font-family: 'Chakra';
+  src: url("/fonts/chakraPetch/ChakraPetch-Bold.ttf") format('truetype');
+  font-weight: 700;  /* Bold */
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Monaspace Krypton */
+@font-face {
+  font-family: 'Monaspace Krypton';
+  src: url('/fonts/monaspaceKrypton/MonaspaceKrypton.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -153,9 +165,9 @@
   --degradado6: linear-gradient(180deg, rgba(34, 44, 144, 0.2) 50.58%, rgba(3, 6, 38, 0.2) 100.91%);/*used in ProjectItemCard*/
   --containerShadow2: 0 7px 10px 2px rgba(0,0,0,0.2); /*used in projectItemCard*/
   --containerShadow3: 0px 1px 1px 1px var(--neon_color3);
-  --normal-font-family: 'Chakra', sans-serif;
-  --styled-font-family1: "Cyber", sans-serif;
-  --terminal-font: "Monaspace Krypton", sans-serif;
+  --normal-font-family: 'Chakra', -apple-system, BlinkMacSystemFont, sans-serif;
+  --styled-font-family1: 'Cyber', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --terminal-font: 'Monaspace Krypton', 'Chakra', monospace;
 
 }
 
@@ -217,6 +229,11 @@ body {
   border: 1px solid var(--border_color1); /* Decoración alrededor de la página */
   animation: borderAnimation 30s infinite; /* Aplica la animación al borde */
 }
+
+code {
+  font-family: var(--terminal-font);
+}
+
 .border-animation{
   border: 1px solid var(--border_color1); /* Decoración alrededor de la página */
   animation: borderAnimation 30s infinite; /* Aplica la animación al borde */

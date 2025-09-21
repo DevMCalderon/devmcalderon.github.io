@@ -38,7 +38,7 @@
   },
   "skills": {
     "skills": "Skills",
-    "other_skills_heading": "Other skills:",
+    "other_skills_heading": "Additional Skills:",
     "other_skills_list": {
       "0": "Fast adoption of new tools and methodologies.",
       "1": "Problem-solving under pressure and tight deadlines.",
@@ -63,7 +63,7 @@
       "1": "Over time, I discovered that, without a doubt, <0>my greatest strength is engineering</0>.",
       "2": "I am passionate about creating tools that are as useful as they are fascinating. <0>I aspire to master everything necessary to build high-level software</0>.",
       "3": "Currently, <0>I dedicate most of my time to developing both technical and soft skills that enhance my professional performance</0>.",
-      "4": "'It's not just about solving problems, but anticipating and eliminating them before they arise.'"
+      "4": "'It's not just about solving problems, but anticipating and eliminating them before they arise'."
     },
     "classifications": "Classifications"
   },
