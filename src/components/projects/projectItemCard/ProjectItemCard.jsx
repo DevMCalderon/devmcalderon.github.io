@@ -20,21 +20,22 @@ const ProjectItemCard = ({ projectData }) => {
       transition={{duration: 0.5}}
     >
     
-      <Link to={linkUrl} className="projectItemCard rounded-3xl p-5 flex flex-wrap md:flex-nowrap justify-center group">
-        {/* cover image */}
-          <div className='w-full md:max-w-[8rem] lg:max-w-[18rem]'>
-            {images && images.length > 0 && (
-              <ProjectImage
-              imgPath = { images[0].path }
-              altText = {`${slug}-cover-image`}
-              classes={`max-h-[10.2rem] h-[100%] overflow-hidden object-cover object-top rounded-lg  border-[0.15rem] border-indigo-500 group-hover:border-indigo-400  group border-solid`}
-              />
-            )}
+      <Link to={linkUrl} className="w-full projectItemCard rounded-3xl p-5 flex flex-wrap lg:flex-nowrap justify-center group">
+        
+        {/* thumbnail image */}
+        <div className='w-full md:w-9/12 lg:w-[45%] h-auto lg:h-56 mb-3'>
+          {images && images.length > 0 && (
+            <ProjectImage
+            imgPath = { images[0].path }
+            altText = {`${slug}-cover-image`}
+            classes={`w-full h-full overflow-hidden object-fill object-top object-left rounded-lg  border-solid border-[0.15rem] border-indigo-500 group-hover:border-indigo-400  group`}
+            />
+          )}
         </div>
         
-        {/* text and icons */}
-        <div className="text-left ml-0 md:ml-6">
-          <h4 className="text-center md:text-start text-lg text-white font-bold mb-2 group-hover:text-blue-300">{title}</h4>
+        {/* texts and skill icons */}
+        <div className="w-full lg:w-7/12 text-left ml-0 md:ml-6">
+          <h4 className="text-[1.5rem] md:text-lg text-center md:text-start text-white font-bold mb-2 group-hover:text-blue-300">{title}</h4>
           
           {/* description */}
           <p className="text-base text-slate-300 mb-1.5">

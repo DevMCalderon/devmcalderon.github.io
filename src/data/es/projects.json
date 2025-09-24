@@ -17,21 +17,19 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/veterinary/1.png",
-              "alt": "panel-administrativo-veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/veterinary/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/veterinary/2.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/veterinary/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/veterinary/3.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/veterinary/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/veterinary/3.png"
             }
           ]
         },
