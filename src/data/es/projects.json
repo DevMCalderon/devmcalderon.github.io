@@ -125,47 +125,83 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/upload-images/1.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/upload-images/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/upload-images/2.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/upload-images/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/upload-images/3.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/upload-images/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/upload-images/3.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/upload-images/4.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/upload-images/5.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/upload-images/6.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/upload-images/7.png"
+            },
+            {
+              "id": 9,
+              "path": "/assets/img/projects/upload-images/8.png"
             }
           ]
         },
         {
           "title": "EduLink",
-          "technologies_used": [2, 3, 11, 4, 5, 12, 7, 18],
+          "technologies_used": [2, 3, 11, 4, 5, 18],
           "short_description": "Construí una plataforma de tutorías en línea integrada con Zoom, que facilita la gestión, filtrado y participación en sesiones educativas. Automatiza videollamadas y solicitudes, y permite a los profesores validar nuevos tutores, promoviendo un aprendizaje accesible y colaborativo.",
           "slug": "edulink",
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/school-tutoring/1.png",
-              "alt": "Vista general del panel de administración de EduLink",
-              "caption": "Panel principal de gestión de tutorías"
+              "path": "/assets/img/projects/school-tutoring/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/school-tutoring/2.png",
-              "alt": "Panel de gestión de solicitudes de tutorías",
-              "caption": "Gestión de solicitudes y aprobaciones"
+              "path": "/assets/img/projects/school-tutoring/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/school-tutoring/3.png",
-              "alt": "Interfaz de administración de usuarios y validaciones",
-              "caption": "Administración y validación de usuarios"
+              "path": "/assets/img/projects/school-tutoring/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/school-tutoring/3.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/school-tutoring/4.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/school-tutoring/5.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/school-tutoring/6.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/school-tutoring/7.png"
+            },
+            {
+              "id": 9,
+              "path": "/assets/img/projects/school-tutoring/8.png"
             }
           ]
         },
@@ -177,21 +213,35 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/dasc-uabcs/1.png",
-              "alt": "Vista general del sitio institucional del DASC",
-              "caption": "Página principal con navegación estructurada"
+              "path": "/assets/img/projects/dasc-uabcs/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/dasc-uabcs/2.png",
-              "alt": "Sección de información académica para alumnos",
-              "caption": "Información clave para estudiantes"
+              "path": "/assets/img/projects/dasc-uabcs/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/dasc-uabcs/3.png",
-              "alt": "Panel con recursos y avisos para la comunidad universitaria",
-              "caption": "Recursos y avisos institucionales"
+              "path": "/assets/img/projects/dasc-uabcs/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/dasc-uabcs/3.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/dasc-uabcs/4.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/dasc-uabcs/5.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/dasc-uabcs/6.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/dasc-uabcs/7.png"
             }
           ]
         },
@@ -203,21 +253,35 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/educational-games/1.png",
-              "alt": "Juego de matemáticas con operaciones básicas",
-              "caption": "Mini-juego de sumas y restas"
+              "path": "/assets/img/projects/educational-games/1.png"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/educational-games/2.png",
-              "alt": "Juego de reconocimiento de patrones para niños",
-              "caption": "Mini-juego de patrones lógicos"
+              "path": "/assets/img/projects/educational-games/2.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/educational-games/3.png",
-              "alt": "Juego educativo para aprender a leer el reloj analógico",
-              "caption": "Mini-juego de lectura de reloj"
+              "path": "/assets/img/projects/educational-games/3.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/educational-games/4.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/educational-games/5.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/educational-games/6.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/educational-games/7.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/educational-games/8.png"
             }
           ]
         }

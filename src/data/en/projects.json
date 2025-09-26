@@ -17,21 +17,19 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/veterinary/1.png",
-              "alt": "Veterinary Admin Panel",
-              "caption": "Veterinary Admin Panel"
+              "path": "/assets/img/projects/veterinary/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/veterinary/2.png",
-              "alt": "Veterinary Admin Panel",
-              "caption": "Veterinary Admin Panel"
+              "path": "/assets/img/projects/veterinary/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/veterinary/3.png",
-              "alt": "Veterinary Admin Panel",
-              "caption": "Veterinary Admin Panel"
+              "path": "/assets/img/projects/veterinary/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/veterinary/3.png"
             }
           ]
         },
@@ -43,21 +41,35 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/coffee-shop/1.png",
-              "alt": "Restaurant Admin Panel",
-              "caption": "Restaurant Admin Panel"
+              "path": "/assets/img/projects/coffee-shop/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/coffee-shop/2.png",
-              "alt": "Restaurant Admin Panel",
-              "caption": "Restaurant Admin Panel"
+              "path": "/assets/img/projects/coffee-shop/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/coffee-shop/3.png",
-              "alt": "Restaurant Admin Panel",
-              "caption": "Restaurant Admin Panel"
+              "path": "/assets/img/projects/coffee-shop/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/coffee-shop/3.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/coffee-shop/4.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/coffee-shop/5.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/coffee-shop/6.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/coffee-shop/7.png"
             }
           ]
         },
@@ -69,21 +81,39 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/job-vacancies/1.png",
-              "alt": "JobMatch Admin Panel",
-              "caption": "JobMatch Admin Panel"
+              "path": "/assets/img/projects/job-vacancies/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/job-vacancies/2.png",
-              "alt": "JobMatch Admin Panel",
-              "caption": "JobMatch Admin Panel"
+              "path": "/assets/img/projects/job-vacancies/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/job-vacancies/3.png",
-              "alt": "JobMatch Admin Panel",
-              "caption": "JobMatch Admin Panel"
+              "path": "/assets/img/projects/job-vacancies/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/job-vacancies/3.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/job-vacancies/4.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/job-vacancies/5.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/job-vacancies/6.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/job-vacancies/7.png"
+            },
+            {
+              "id": 9,
+              "path": "/assets/img/projects/job-vacancies/8.png"
             }
           ]
         },
@@ -95,21 +125,39 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/upload-images/1.png",
-              "alt": "PicConnect Admin Panel",
-              "caption": "PicConnect Admin Panel"
+              "path": "/assets/img/projects/upload-images/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/upload-images/2.png",
-              "alt": "PicConnect Admin Panel",
-              "caption": "PicConnect Admin Panel"
+              "path": "/assets/img/projects/upload-images/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/upload-images/3.png",
-              "alt": "PicConnect Admin Panel",
-              "caption": "PicConnect Admin Panel"
+              "path": "/assets/img/projects/upload-images/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/upload-images/3.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/upload-images/4.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/upload-images/5.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/upload-images/6.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/upload-images/7.png"
+            },
+            {
+              "id": 9,
+              "path": "/assets/img/projects/upload-images/8.png"
             }
           ]
         },
@@ -121,21 +169,39 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/school-tutoring/1.png",
-              "alt": "Overview of EduLink admin panel",
-              "caption": "Main tutoring management panel"
+              "path": "/assets/img/projects/school-tutoring/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/school-tutoring/2.png",
-              "alt": "Tutoring request management panel",
-              "caption": "Request and approval management"
+              "path": "/assets/img/projects/school-tutoring/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/school-tutoring/3.png",
-              "alt": "User administration and validation interface",
-              "caption": "User administration and validation"
+              "path": "/assets/img/projects/school-tutoring/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/school-tutoring/3.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/school-tutoring/4.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/school-tutoring/5.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/school-tutoring/6.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/school-tutoring/7.png"
+            },
+            {
+              "id": 9,
+              "path": "/assets/img/projects/school-tutoring/8.png"
             }
           ]
         },
@@ -144,24 +210,38 @@
           "technologies_used": [10, 5, 4, 12, 7],
           "short_description": "I developed an institutional website for the UABCS Systems Department that enhances content management, accessibility, and the student experience. The design was supervised by faculty, and the development was fully customized.",
           "slug": "dasc-uabcs",
-          "images": [
+           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/dasc-uabcs/1.png",
-              "alt": "Overview of the DASC institutional website",
-              "caption": "Main page with structured navigation"
+              "path": "/assets/img/projects/dasc-uabcs/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/dasc-uabcs/2.png",
-              "alt": "Academic information section for students",
-              "caption": "Key information for students"
+              "path": "/assets/img/projects/dasc-uabcs/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/dasc-uabcs/3.png",
-              "alt": "Panel with resources and announcements for the university community",
-              "caption": "Institutional resources and announcements"
+              "path": "/assets/img/projects/dasc-uabcs/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/dasc-uabcs/3.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/dasc-uabcs/4.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/dasc-uabcs/5.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/dasc-uabcs/6.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/dasc-uabcs/7.png"
             }
           ]
         },
@@ -173,21 +253,35 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/educational-games/1.png",
-              "alt": "Math game with basic operations",
-              "caption": "Mini-game of addition and subtraction"
+              "path": "/assets/img/projects/educational-games/1.png"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/educational-games/2.png",
-              "alt": "Pattern recognition game for kids",
-              "caption": "Logical pattern mini-game"
+              "path": "/assets/img/projects/educational-games/2.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/educational-games/3.png",
-              "alt": "Educational game to learn analog clock reading",
-              "caption": "Clock reading mini-game"
+              "path": "/assets/img/projects/educational-games/3.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/educational-games/4.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/educational-games/5.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/educational-games/6.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/educational-games/7.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/educational-games/8.png"
             }
           ]
         }
