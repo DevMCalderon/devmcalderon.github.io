@@ -41,21 +41,35 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/coffee-shop/1.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/coffee-shop/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/coffee-shop/2.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/coffee-shop/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/coffee-shop/3.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/coffee-shop/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/coffee-shop/3.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/coffee-shop/4.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/coffee-shop/5.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/coffee-shop/6.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/coffee-shop/7.png"
             }
           ]
         },
@@ -67,21 +81,39 @@
           "images": [
             {
               "id": 1,
-              "path": "/assets/img/projects/job-vacancies/1.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/job-vacancies/0-thumbnail.jpg"
             },
             {
               "id": 2,
-              "path": "/assets/img/projects/job-vacancies/2.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/job-vacancies/1.png"
             },
             {
               "id": 3,
-              "path": "/assets/img/projects/job-vacancies/3.png",
-              "alt": "Panel Administrativo Veterinaria",
-              "caption": "Panel Administrativo Veterinaria"
+              "path": "/assets/img/projects/job-vacancies/2.png"
+            },
+            {
+              "id": 4,
+              "path": "/assets/img/projects/job-vacancies/3.png"
+            },
+            {
+              "id": 5,
+              "path": "/assets/img/projects/job-vacancies/4.png"
+            },
+            {
+              "id": 6,
+              "path": "/assets/img/projects/job-vacancies/5.png"
+            },
+            {
+              "id": 7,
+              "path": "/assets/img/projects/job-vacancies/6.png"
+            },
+            {
+              "id": 8,
+              "path": "/assets/img/projects/job-vacancies/7.png"
+            },
+            {
+              "id": 9,
+              "path": "/assets/img/projects/job-vacancies/8.png"
             }
           ]
         },

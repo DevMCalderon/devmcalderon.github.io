@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 
 import { routes } from '@/routes';
-import ImageCarousel from "@/components/imageCarousel/ImageCarousel";
 import ProjectTechnologiesDisplay from "@/components/projects/ProjectTechnologiesDisplay";
 import ProjectImage from "@/components/projects/projectImage/ProjectImage";
 
@@ -11,8 +10,6 @@ const ProjectItemCard = ({ projectData }) => {
   const { title, technologies_used, short_description, images, slug, categoryId } = projectData;
   
   const linkUrl = `${routes[categoryId]}/${slug}`
-  
-  console.log(images[0])
   
   return (
     <motion.div
@@ -41,7 +38,6 @@ const ProjectItemCard = ({ projectData }) => {
           <p className="text-base text-slate-300 mb-1.5">
             {short_description}
           </p>
-
           
           <ProjectTechnologiesDisplay technologies_used={technologies_used} />
         </div>
