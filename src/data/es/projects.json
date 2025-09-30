@@ -162,9 +162,9 @@
           ]
         },
         {
-          "title": "EduLink",
-          "technologies_used": [2, 3, 11, 4, 5, 18],
-          "short_description": "Construí una plataforma de tutorías en línea integrada con Zoom, que facilita la gestión, filtrado y participación en sesiones educativas. Automatiza videollamadas y solicitudes, y permite a los profesores validar nuevos tutores, promoviendo un aprendizaje accesible y colaborativo.",
+          "title": "EduLink: Plataforma de Tutorías en Línea",
+          "technologies_used": [2, 3, 11, 5, 18],
+          "short_description": "Plataforma de tutorías universitarias en línea, automatizando creación y agenda de videollamadas con integración a API externa. Lideré desarrollo: Propuse la iniciativa, obtuve aprobación, diseñé y desarrollé.",
           "slug": "edulink",
           "images": [
             {
@@ -198,10 +198,6 @@
             {
               "id": 8,
               "path": "/assets/img/projects/school-tutoring/7.png"
-            },
-            {
-              "id": 9,
-              "path": "/assets/img/projects/school-tutoring/8.png"
             }
           ]
         },
