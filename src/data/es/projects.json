@@ -74,7 +74,7 @@
           ]
         },
         {
-          "title": "JobMatch",
+          "title": "JobMatch: Plataforma de Empleos",
           "technologies_used": [2, 24, 25, 9, 23, 5, 11, 7, 12, 18],
           "short_description": "Cree una plataforma web de reclutamiento donde recruiters publican vacantes y desarrolladores se postulan con su CV en PDF. Incluye búsqueda avanzada, notificaciones en tiempo real y verificación por correo, optimizando el proceso de contratación con eficiencia y usabilidad.",
           "slug": "jobmatch",
@@ -118,9 +118,9 @@
           ]
         },
         {
-          "title": "PicConnect",
+          "title": "PicConnect: Red Social Fotográfica",
           "technologies_used": [2, 24, 25, 9, 5, 11, 7, 12, 18, 26],
-          "short_description": "Programé una red social para compartir imágenes con URLs dinámicas para perfiles, sistema de publicaciones, seguidores y likes. Permite subir imágenes, comentar y personalizar el perfil. Integra un feed interactivo que mejora la experiencia de descubrimiento e interacción entre usuarios.",
+          "short_description": "Red social fotográfica con subida de imágenes, feed, comentarios, likes y creación de URLs dinámicas, funcionando veloz con +500 publicaciones. Sistema de notificaciones en app y envío de correos electrónicos de validación.",
           "slug": "picconnect",
           "images": [
             {
