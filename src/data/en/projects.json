@@ -12,7 +12,7 @@
           "title": "VetCore Pro: Veterinary Administration Panel",
           "article_id": 1,
           "technologies_used": [2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
-          "short_description": "I developed a comprehensive system for veterinary clinics using Laravel, Vue.js, and Bootstrap. Implemented secure authentication, client management, inventory, appointments, pets, and more. Collaborated remotely using Scrum.",
+          "short_description": "Comprehensive system for veterinary clinics. Implemented secure authentication, middleware, role-based access, client management, inventory, appointments, and more. Improved maintainability, scalability, and security. Collaborated remotely using Scrum.",
           "slug": "vetcore-pro",
           "images": [
             {

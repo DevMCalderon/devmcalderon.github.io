@@ -12,7 +12,7 @@
           "title": "VetCore Pro: Panel Administrativo de Veterinaria",
           "article_id": 1,
           "technologies_used": [2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
-          "short_description": "Desarrollé un sistema integral para clínicas veterinarias usando Laravel, Vue.Js y Bootstrap. Implementé autenticación segura, control de clientes, inventario, citas, mascotas, etc. Colaboré en remoto con Scrum.",
+          "short_description": "Sistema integral para clínicas veterinarias. Autenticación segura, middleware, acceso por roles, control de clientes, inventario, citas, etc. Escalabilidad, mantenibilidad y seguridad. Trabajo en remoto con Scrum.",
           "slug": "vetcore-pro",
           "images": [
             {
@@ -34,9 +34,9 @@
           ]
         },
         {
-          "title": "SmartOrder",
+          "title": "SmartOrder: Sistema E-commerce de Restaurante",
           "technologies_used": [1, 2, 9, 4, 5, 11, 18, 7, 12, 26],
-          "short_description": "Construí un sistema de pedidos para restaurantes con acceso según roles. Los clientes gestionan su carrito y hacen pedidos; los empleados administran órdenes en tiempo real, completan compras y actualizan el catálogo.",
+          "short_description": "Sistema e-commerce para restaurantes con dashboard y pedidos en tiempo real capaz de procesar +100 pedidos con rapidez. API RESTful en Laravel integrada con React en microservicios. Políticas de acceso por roles y caching avanzado con useSWR.",
           "slug": "smartorder",
           "images": [
             {
