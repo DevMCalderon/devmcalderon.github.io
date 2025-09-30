@@ -10,7 +10,6 @@
       [
         {
           "title": "VetCore Pro: Panel Administrativo de Veterinaria",
-          "article_id": 1,
           "technologies_used": [2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
           "short_description": "Sistema integral para clínicas veterinarias. Autenticación segura, middleware, acceso por roles, control de clientes, inventario, citas, etc. Escalabilidad, mantenibilidad y seguridad. Trabajo en remoto con Scrum.",
           "slug": "vetcore-pro",
@@ -76,7 +75,7 @@
         {
           "title": "JobMatch: Plataforma de Empleos",
           "technologies_used": [2, 24, 25, 9, 23, 5, 11, 7, 12, 18],
-          "short_description": "Cree una plataforma web de reclutamiento donde recruiters publican vacantes y desarrolladores se postulan con su CV en PDF. Incluye búsqueda avanzada, notificaciones en tiempo real y verificación por correo, optimizando el proceso de contratación con eficiencia y usabilidad.",
+          "short_description": "Plataforma de empleos por roles donde reclutadores publican vacantes y profesionistas se postulan con su CV en PDF. Incluye búsqueda avanzada, notificaciones en tiempo real y verificación por correo, optimizando el proceso de contratación con eficiencia y usabilidad.",
           "slug": "jobmatch",
           "images": [
             {
@@ -202,9 +201,9 @@
           ]
         },
         {
-          "title": "DASC UABCS",
+          "title": "DASC UABCS: Sistema de Gestión de Contenidos",
           "technologies_used": [10, 5, 4, 12, 7],
-          "short_description": "Desarrollé un sitio web institucional para el Departamento de Sistemas de la UABCS que mejora la gestión de contenidos, accesibilidad y experiencia para estudiantes, con diseño supervisado por docentes y desarrollo personalizado.",
+          "short_description": "Sistema de gestión de contenidos universitario, alcanzando miles de usuarios hasta la fecha. Aumenté la velocidad de publicación en más de un 200%. Capacité personal sobre arquitectura y uso del sistema.",
           "slug": "dasc-uabcs",
           "images": [
             {

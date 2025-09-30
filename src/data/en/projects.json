@@ -12,7 +12,7 @@
           "title": "VetCore Pro: Veterinary Administration Panel",
           "article_id": 1,
           "technologies_used": [2, 3, 8, 4, 25, 5, 11, 7, 12, 18, 20],
-          "short_description": "Comprehensive system for veterinary clinics. Implemented secure authentication, middleware, role-based access, client management, inventory, appointments, and more. Improved maintainability, scalability, and security. Collaborated remotely using Scrum.",
+          "short_description": "Comprehensive system for veterinary clinics. Secure authentication, middleware, role-based access, client management, inventory, appointments, and more. Focused on scalability, maintainability, and security. Remote collaboration using Scrum.","short_description": "Comprehensive system for veterinary clinics. Secure authentication, middleware, role-based access, client management, inventory, appointments, and more. Focused on scalability, maintainability, and security. Remote collaboration using Scrum.",
           "slug": "vetcore-pro",
           "images": [
             {
@@ -34,9 +34,9 @@
           ]
         },
         {
-          "title": "SmartOrder",
+          "title": "SmartOrder: Restaurant E-commerce System",
           "technologies_used": [1, 2, 9, 4, 5, 11, 18, 7, 12, 26],
-          "short_description": "I built an order management system for restaurants with role-based access. Customers manage their carts and place orders, while employees handle orders in real time, complete purchases, and update the product catalog.",
+          "short_description": "E-commerce system for restaurants with a dashboard and real-time orders, capable of handling 100+ orders efficiently. RESTful API in Laravel integrated with React microservices. Role-based access policies and advanced caching with useSWR.",
           "slug": "smartorder",
           "images": [
             {
@@ -74,9 +74,9 @@
           ]
         },
         {
-          "title": "JobMatch",
+          "title": "JobMatch: Job Platform",
           "technologies_used": [2, 24, 25, 9, 23, 5, 11, 7, 12, 18],
-          "short_description": "I created a web-based recruitment platform where recruiters can post job openings and developers can apply with their PDF resumes. It includes advanced search, real-time notifications, and email verification, optimizing the hiring process with efficiency and usability.",
+          "short_description": "Role-based job platform where recruiters post vacancies and professionals apply with their PDF CVs. Includes advanced search, real-time notifications, and email verification, optimizing the hiring process with efficiency and usability.",
           "slug": "jobmatch",
           "images": [
             {
@@ -118,9 +118,9 @@
           ]
         },
         {
-          "title": "PicConnect",
+          "title": "PicConnect: Photo Social Network",
           "technologies_used": [2, 24, 25, 9, 5, 11, 7, 12, 18, 26],
-          "short_description": "I developed a social media platform for sharing images, featuring dynamic profile URLs, a post system, followers, and likes. Users can upload images, comment, and customize their profiles. It includes an interactive feed that enhances content discovery and user interaction.",
+          "short_description": "Photo-based social network with image uploads, feed, comments, likes, and dynamic URL generation, performing smoothly with 500+ posts. In-app notification system and email validation.",
           "slug": "picconnect",
           "images": [
             {
@@ -162,9 +162,9 @@
           ]
         },
         {
-          "title": "EduLink",
+          "title": "EduLink: Online Tutoring Platform",
           "technologies_used": [2, 3, 11, 4, 5, 12, 7, 18],
-          "short_description": "I built an online tutoring platform integrated with Zoom, facilitating the management, filtering, and participation in educational sessions. It automates video calls and request handling, and allows teachers to validate new tutors, promoting accessible and collaborative learning.",
+          "short_description": "Online university tutoring platform, automating video call scheduling with external API integration. Led development: proposed the initiative, obtained approval, designed, and implemented the system.",
           "slug": "edulink",
           "images": [
             {
@@ -202,9 +202,9 @@
           ]
         },
         {
-          "title": "DASC UABCS",
+          "title": "DASC UABCS: Content Management System",
           "technologies_used": [10, 5, 4, 12, 7],
-          "short_description": "I developed an institutional website for the UABCS Systems Department that enhances content management, accessibility, and the student experience. The design was supervised by faculty, and the development was fully customized.",
+          "short_description": "University content management system, reaching thousands of users to date. Increased publishing speed by over 200%. Trained staff on system architecture and usage.",
           "slug": "dasc-uabcs",
            "images": [
             {
