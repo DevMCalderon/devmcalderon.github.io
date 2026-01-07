@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ToastContainer } from 'react-toastify';
 
@@ -6,19 +5,20 @@ import EmailDisplay from '@/components/emailDisplay/EmailDisplay';
 import CustomHeader from '@/components/uI/customHeader/CustomHeader';
 import '@/components/contact/Contact.css'
 import ImageWithReflection from "@/components/uI/ImageWithReflection";
+import AnimatedOnScroll from "@/components/AnimatedOnScroll";
 
 import AboutMeImg from '@/assets/img/about-me.gif'
 
 const Contact = () => {
   const [ t] = useTranslation("global");
   
-  return(
-    
+  return (
     <section className='bgBannerContacto'>
       <div
         className='contact degradado4 px-6 md:px-6 lg:px-6 xl:px-28 pt-2 md:pt-12 pb-[6rem]'
         id="contact"
       >
+        <AnimatedOnScroll variant="fadeLeft">
         <div className='lg:max-w-screen-2xl mx-auto w-full h-full flex flex-wrap items-center'>
             
             {/* contact text */}
@@ -54,6 +54,7 @@ const Contact = () => {
             </div>
           </section>
         </div>
+        </AnimatedOnScroll>
       </div>
       
       {/* copy email notification */}

@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 import SocialIconsSmall from '@/components/socialIconsSmall/SocialIconsSmall';
+import AnimatedOnScroll from "@/components/AnimatedOnScroll";
 
 import logo from '@/assets/img/logo.png';
 
@@ -9,6 +10,7 @@ const Footer = () => {
   
   return (
     <footer className='footer px-6 md:px-14 lg:px-20'>
+      <AnimatedOnScroll variant="fadeDown">
       <div className='container mx-auto pt-16 pb-16 lg:max-w-screen-3xl mx-auto flex flex-wrap items-center'>
         
         <div className='w-full md:w-1/2 flex'>
@@ -23,6 +25,7 @@ const Footer = () => {
         </div>
         
       </div>
+      </AnimatedOnScroll>
     </footer>
   );
 }

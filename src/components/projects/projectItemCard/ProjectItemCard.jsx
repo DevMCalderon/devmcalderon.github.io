@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { routes } from '@/routes';
 import ProjectTechnologiesDisplay from "@/components/projects/ProjectTechnologiesDisplay";
 import ProjectImage from "@/components/projects/projectImage/ProjectImage";
+import AnimatedOnScroll from "@/components/AnimatedOnScroll";
 
 const ProjectItemCard = ({ projectData }) => {
   const { title, technologies_used, short_description, images, slug, categoryId } = projectData;
@@ -12,10 +13,7 @@ const ProjectItemCard = ({ projectData }) => {
   const linkUrl = `${routes[categoryId]}/${slug}`
   
   return (
-    <motion.div
-      animate={{scale: [0, 1]}}
-      transition={{duration: 0.5}}
-    >
+    <AnimatedOnScroll variant="fadeLeft">
     
       <Link to={linkUrl} className="w-full projectItemCard rounded-3xl p-5 flex flex-wrap lg:flex-nowrap justify-center group">
         
@@ -43,8 +41,7 @@ const ProjectItemCard = ({ projectData }) => {
         </div>
         
       </Link>
-    </motion.div>
-
+      </AnimatedOnScroll>
   );
 };
 

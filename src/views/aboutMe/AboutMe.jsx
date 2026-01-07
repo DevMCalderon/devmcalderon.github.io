@@ -4,6 +4,7 @@ import TypeAnimation from '@/components/banner/typeAnimation/TypeAnimation'
 import CustomHeader from '@/components/uI/customHeader/CustomHeader';
 import AsciiArt from "@/components/AsciiArt";
 import HighlightText from "@/components/HighlightText";
+import AnimatedOnScroll from "@/components/AnimatedOnScroll";
 
 const AboutMe = () => {
   const [t] = useTranslation("global");
@@ -15,7 +16,7 @@ const AboutMe = () => {
       
       {/* separador */}
       <hr className="hr5 text-border_color1 lg:max-w-screen-2xl mx-auto"/>
-        
+      <AnimatedOnScroll variant="fadeRight">
       {/* main content */}
       <div className="max-w-screen-2xl pt-0 pb-16 mx-auto md:max-w-screen-2xl">
 
@@ -90,7 +91,8 @@ const AboutMe = () => {
         </div>
 
       </div>
-
+      </AnimatedOnScroll>
+      
     </section>
   );
 }

@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import CustomHeader from '@/components/uI/customHeader/CustomHeader';
 import imgSkillsJson from '@/data/skills/skills.json';
+import AnimatedOnScroll from "@/components/AnimatedOnScroll";
 
 const Skills = () => {
   const [ t ] = useTranslation("global");
@@ -16,7 +17,7 @@ const Skills = () => {
           className='containerShadow1 shadow-2xl pt-12 md:pb-3 px-5 md:px-10 lg:px-24 rounded-[3.8rem]
             text-center mt-[-60px] bg-container_color2 bg-opacity-[85%] xl:max-w-screen-3xl mx-auto w-[95vw]'
         >
-        
+        <AnimatedOnScroll variant="fadeLeft">
           <CustomHeader
             align='center'
             emoji='📚'
@@ -63,7 +64,7 @@ const Skills = () => {
             </div>
           </div>
           
-        
+        </AnimatedOnScroll>
         </div>
       </section>
 

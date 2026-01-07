@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import ProjectTabContent from './ProjectTabContent';
 import projectsJSON_en from "@/data/en/projects.json";
 import projectsJSON_es from "@/data/es/projects.json";
+import AnimatedOnScroll from "@/components/AnimatedOnScroll";
 
 // componente de pestañas (tabs)
 const ProjectTab = () => {
@@ -78,6 +79,7 @@ const ProjectTab = () => {
   
   return(
     <>
+      <AnimatedOnScroll variant="fadeDown">
       {/* instructions */}
       <p className="mt-5 mb-7 mx-auto text-center w-[90%] font-bold text-pink_color2">
         {t('projects.select_category')}:
@@ -111,7 +113,9 @@ const ProjectTab = () => {
           })}
         </div>
       </div>
-
+      
+      </AnimatedOnScroll>
+      
       {/* Contenido de las pestañas */}
       <div className='mt-8'>
       
