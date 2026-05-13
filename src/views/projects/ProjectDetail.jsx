@@ -16,6 +16,8 @@ const ProjectDetail= () => {
   const {projectData, setProjectData, projectsJSON} = usePortfolioContext();
   
   useEffect(() => {
+    if (!projectsJSON || !projectsJSON.categories) return;
+
     // Buscar la categoria por su slug en el JSON
     const category = projectsJSON.categories.find(
       cat => cat.slug ==idCategory
@@ -42,7 +44,7 @@ const ProjectDetail= () => {
       navigate("/not-found");
     }
         
-  }, [idCategory, idProject, t]);
+  }, [idCategory, idProject, t, projectsJSON]);
   
   return(
     <>
