@@ -1,28 +1,97 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Martín Calderón | Full Stack Developer &amp; Tech Strategist</title>
-    
-    <!-- Preload Cyber font (Public folder) -->
-    <link rel="preload" href="/fonts/blenderPro/Blender-Pro-Bold.otf" as="font" type="font/otf" crossorigin>
-        
-    <!-- Preload Chakra fonts (Public folder) -->
-    <link rel="preload" href="/fonts/chakraPetch/ChakraPetch-Light.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/fonts/chakraPetch/ChakraPetch-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/fonts/chakraPetch/ChakraPetch-Bold.ttf" as="font" type="font/ttf" crossorigin>
-    
-    <!-- Preload Monaspace Krypton (Public folder) -->
-    <link rel="preload" href="/fonts/monaspaceKrypton/MonaspaceKrypton.ttf" as="font" type="font/ttf" crossorigin>
-    
-    <!-- Other preloads -->
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Martín Calderón | Full Stack Developer &amp; Tech Strategist
+        </title>
+
+        <!-- Preload Cyber font (Public folder) -->
+        <link
+            rel="preload"
+            href="/fonts/blenderPro/Blender-Pro-Bold.otf"
+            as="font"
+            type="font/otf"
+            crossorigin
+        />
+
+        <!-- Preload Chakra fonts (Public folder) -->
+        <link
+            rel="preload"
+            href="/fonts/chakraPetch/ChakraPetch-Light.ttf"
+            as="font"
+            type="font/ttf"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            href="/fonts/chakraPetch/ChakraPetch-Regular.ttf"
+            as="font"
+            type="font/ttf"
+            crossorigin
+        />
+        <link
+            rel="preload"
+            href="/fonts/chakraPetch/ChakraPetch-Bold.ttf"
+            as="font"
+            type="font/ttf"
+            crossorigin
+        />
+
+        <!-- Preload Monaspace Krypton (Public folder) -->
+        <link
+            rel="preload"
+            href="/fonts/monaspaceKrypton/MonaspaceKrypton.ttf"
+            as="font"
+            type="font/ttf"
+            crossorigin
+        />
+
+        <!-- Other preloads -->
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+        <!-- Start Single Page Apps for GitHub Pages -->
+        <script type="text/javascript">
+            // Single Page Apps for GitHub Pages
+            // https://github.com/rafgraph/spa-github-pages
+            // This script checks to see if a redirect is present in the query string,
+            // converts it back into the correct url and adds it to the
+            // browser's history using window.history.replaceState(...),
+            // which won't cause the browser to refresh the page. When the
+            // framework (e.g. React Router) loads, it will see the new url and
+            // load the correct page.
+            (function (l) {
+                if (
+                    l.search[1] === "p" &&
+                    l.search[2] === "=" &&
+                    l.search[3] === "/"
+                ) {
+                    var decoded = l.search
+                        .slice(1)
+                        .split("&")
+                        .map(function (s) {
+                            return s.replace(/~and~/g, "&");
+                        })
+                        .filter(function (v) {
+                            return v.indexOf("p=/") === 0;
+                        })[0];
+                    if (decoded !== undefined) {
+                        window.history.replaceState(
+                            null,
+                            null,
+                            l.pathname.slice(0, -1) + decoded.slice(3) + l.hash,
+                        );
+                    }
+                }
+            })(window.location);
+        </script>
+        <!-- End Single Page Apps for GitHub Pages -->
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.jsx"></script>
+    </body>
 </html>
