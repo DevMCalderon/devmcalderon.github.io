@@ -13,7 +13,7 @@ const AboutMe = () => {
 
   return (
     <section className=" bg-[#0b1525e8] bg-opacity-100 text-center md:text-start mt-0" id="aboutMe">
-      
+    
       {/* separador */}
       <hr className="hr5 text-border_color1 lg:max-w-screen-2xl mx-auto"/>
       <AnimatedOnScroll variant="fadeRight">
@@ -22,7 +22,7 @@ const AboutMe = () => {
 
         {/* left side */}
         <div className="flex flex-wrap-reverse md:flex-nowrap pt-14 w-[90%] mx-auto">
-          <div className="border-animation w-full md:w-5/12 lg:w-4/12 md:mr-0 my-auto md:mr-10 xl:mr-16 rounded-3xl p-4 flex justify-center flex-col overflow-hidden">
+          <div className="border-animation w-4/12 hidden lg:inline md:mr-0 my-auto md:mr-10 xl:mr-16 rounded-3xl p-4 flex justify-center flex-col overflow-hidden">
             <p className={`rgb-animation mb-4 text-base xl:text-xl font-bold text-center terminal_text py-0`}>
               {t(`about_me.img_description`)}
             </p>
@@ -30,7 +30,7 @@ const AboutMe = () => {
           </div>
 
           {/* right side */}
-          <div className="w-full md:w-7/12 text-center lg:text-left mb-5 lg:mb-0 text-blue-300 font-terminal">
+          <div className="text-center w-full lg:w-7/12 lg:text-left mb-5 lg:mb-0 text-blue-300 font-terminal">
             <CustomHeader
               className="contact-header"
               align='left'
@@ -60,12 +60,6 @@ const AboutMe = () => {
               <p className={`terminal_text pb-4`}>
                 <Trans
                   i18nKey={t('about_me.paragraphs.3')}
-                  components={[ <HighlightText className="text-blue-300"/> ]}
-                />
-              </p>
-              <p className={`terminal_text pb-4`}>
-                <Trans
-                  i18nKey={t('about_me.paragraphs.4')}
                   components={[ <HighlightText className="text-blue-300"/> ]}
                 />
               </p>

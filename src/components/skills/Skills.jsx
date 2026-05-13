@@ -7,7 +7,7 @@ import AnimatedOnScroll from "@/components/AnimatedOnScroll";
 const Skills = () => {
   const [ t ] = useTranslation("global");
   
-  return(
+  return (
     <>
       <section 
         className='pb-20 bg-[linear-gradient(180deg,rgba(36,31,128,0)_90%,rgba(51,29,140,0.8)_98%,rgb(51,29,140)_100%)]'

@@ -19,14 +19,15 @@
     "language_not_found": "No results found."
   },
  "banner": {
-    "slogan": "<0>Web Development</0> is an art, and your project is our <1>masterpiece</1>.",
-    "welcome": "Welcome to my digital world",
+    "slogan": "<0>TRANSFORMING</0> COMPLEX PROCESSES INTO <1>AUTOMATED</1> ONES.",
+    "welcome": "SOFTWARE DEVELOPMENT ENGINEER",
     "Fullname": "Martín Calderón",
     "x": "Full Stack Developer",
-    "main_paragraph1": "I am a <0>{{linkText}}</0>, Software Development Engineer with <1>3+ years of freelance experience</1> and complex projects in Laravel, React, and Vue.",
-    "paragraph1": "<0>I master the full development cycle</0> (design, automated unit testing, CI/CD, and more).",
-    "paragraph2": "Specialized in <0>scalable architectures, REST APIs, performance optimization, and leadership</0> of small teams.",
-    "paragraph3": "I deliver <0>high-quality results under tight deadlines</0>, combining technical precision with strategic vision.",
+    "main_paragraph1": "<0>Full Stack Developer with 3+ years of experience</0> freelancing, transforming complex processes into custom automated digital systems with <0>Next.js, Laravel (PHP), WordPress, and other modern technologies</0>.",
+    "paragraph1": "<0>Experience creating management systems</0> for universities, veterinary clinics, coffee shops, and more.",
+    "paragraph2": "I work across <0>all phases of development</0> (requirements gathering, design, implementation, testing, and deployment).",
+    "paragraph3": "<0>I learn quickly</0> new tools and methodologies.",
+    "paragraph4": "<0>Proactive communication</0> with clients and remote teams.",
     "description_tooltip": "The mysterious one-man band, capable of operating both on the front-end and the back-end.",
     "typeAnimation_1": "Full Stack Developer",
     "typeAnimation_2": "Backend Developer with Laravel",
@@ -34,6 +35,7 @@
     "typeAnimation_4": "DevOps",
     "typeAnimation_5": "UI/UX Interface Designer",
     "cv2": "[Download my résumé]",
+    "other_links": "Other links of interest:",
     "portfolio_source_code_text": "This site was entirely built by me — [View source code]"
   },
   "skills": {
@@ -59,11 +61,10 @@
     "more_about_me": "About Me",
     "img_description": "Programming is fascinating!",
     "paragraphs": {
-      "0": "Full Stack Developer based in La Paz, Mexico. About to graduate as a Software Development Engineer, <0>maintaining an average grade of 92 out of 100</0>.",
-      "1": "Over time, I discovered that, without a doubt, <0>my greatest strength is engineering</0>.",
-      "2": "I am passionate about creating tools that are as useful as they are fascinating. <0>I aspire to master everything necessary to build high-level software</0>.",
-      "3": "Currently, <0>I dedicate most of my time to developing both technical and soft skills that enhance my professional performance</0>.",
-      "4": "'It's not just about solving problems, but anticipating and eliminating them before they arise'."
+      "0": "Over time, I discovered that, without a doubt, <0>my greatest strength is engineering</0>.",
+      "1": "I am passionate about creating tools that are as useful as they are surprising. <0>I aspire to master everything necessary to build high-level software</0>.",
+      "2": "Currently, <0>I dedicate most of my time to developing technical and soft skills that enhance my professional performance</0>.",
+      "3": "'It's not just about solving problems, but anticipating them and neutralizing them before they arise.'"
     },
     "classifications": "Classifications"
   },
@@ -87,7 +88,7 @@
     "thanks_for_visiting": "Thanks for visiting my website!"
   },
   "footer": {
-    "copyright": "© 2025 Martín Calderón. All rights reserved.",
+    "copyright": "© 2026 Martín Calderón. All rights reserved.",
     "technologies_used": "This website was developed using React.js, TypeScript, and Tailwind CSS."
   },
   "projectDetail": {

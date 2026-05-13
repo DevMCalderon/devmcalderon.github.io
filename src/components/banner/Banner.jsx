@@ -72,20 +72,10 @@ const Banner = () => {
                 <strong className="font-normal">
                   <Trans
                     i18nKey={t('banner.main_paragraph1')}
-                    components={[ 
-                      <a
-                        key="link"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="hover:underline text-sky-300 hover:text-link_color_hover"
-                        href={import.meta.env.VITE_FULLSTACK_URL}
-                        >
-                    </a>,
-                      <HighlightText className="text-amber-100"/>,
-                    ]}
+                    components={[ <HighlightText className="text-amber-100"/> ]}
                     values={{ linkText: t(`banner.x`) }}
-                    />
-                  </strong>
+                  />
+                </strong>
               </p>
 
               {/* paragraph list */}
@@ -105,6 +95,12 @@ const Banner = () => {
                 <li className="paragraphStyles bannerList">
                   <Trans
                     i18nKey={t('banner.paragraph3')}
+                    components={[ <HighlightText className="text-amber-100"/> ]}
+                  />
+                </li>
+                <li className="paragraphStyles bannerList">
+                  <Trans
+                    i18nKey={t('banner.paragraph4')}
                     components={[ <HighlightText className="text-amber-100"/> ]}
                   />
                 </li>

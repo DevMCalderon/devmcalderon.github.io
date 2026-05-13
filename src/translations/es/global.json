@@ -19,14 +19,15 @@
     "language_not_found": "Sin resultados."
   },
  "banner": {
-    "slogan": "El <0>Desarrollo Web</0> es un arte y su proyecto, nuestra <1>obra maestra</1>.",
-    "welcome": "Bienvenido a mi mundo digital",
+    "slogan": "<1>Transformando</1> Procesos <0>Complejos</0> en <1>Automáticos</1>.",
+    "welcome": "ING. DESARROLLADOR DE SOFTWARE",
     "Fullname": "Martín Calderón",
-    "x": "Desarrollador Full Stack",
-    "main_paragraph1": "Soy un <0>{{linkText}}</0>, ingeniero en Desarrollo de Software con <1>+3 años de experiencia como freelancer</1> y proyectos complejos en Laravel, React y Vue.",
-    "paragraph1": "<0>Domino el ciclo completo de desarrollo</0> (diseño, pruebas unitarias automatizadas, CI/CD y más).",
-    "paragraph2": "Especializado en <0>arquitecturas escalables, APIs REST, optimización de rendimiento y liderazgo</0> de equipos pequeños.",
-    "paragraph3": "Entrego resultados de <0>alta calidad bajo plazos ajustados</0>, combinando precisión técnica con visión estratégica.",
+    "x": "Ingeniero en Desarrollo de Software",
+    "main_paragraph1": "<0>Full Stack Developer con +3 años de experiencia</0> freelance transformando procesos complejos en sistemas digitales automáticos a medida con <0>Next.js, Laravel (PHP), WordPress y otras tecnologías modernas</0>.",
+    "paragraph1": "<0>Experiencia creando sistemas de gestión</0> para universidades, veterinarias, cafeterías y más.",
+    "paragraph2": "Trabajo en <0>todas las fases del desarrollo</0> (levantamiento de requisitos, diseño, implementación, pruebas y despliegue)",
+    "paragraph3": "<0>Asimilo pronto</0> nuevas herramientas y metodologías.",
+    "paragraph4": "<0>Comunicación proactiva</0> con clientes y equipos remotos.",
     "description_tooltip": "El misterioso hombre orquesta, capaz de operar tanto en el front-end como en el back-end.",
     "typeAnimation_1": "Desarrollador Full Stack",
     "typeAnimation_2": "Desarrollador Backend con Laravel",
@@ -34,6 +35,7 @@
     "typeAnimation_4": "DevOps",
     "typeAnimation_5": "Diseñador de Interfaces UI/UX",
     "cv2": "[Descargar mi currículum vitae]",
+    "other_links": "Otros enlaces de interés:",
     "portfolio_source_code_text": "Este sitio fue construido íntegramente por mí — [Ver código fuente]"
   },
   "skills": {
@@ -59,11 +61,10 @@
     "more_about_me": "Acerca de mí",
     "img_description": "¡Programar es fascinante!",
     "paragraphs": {
-      "0": "Desarrollador Full Stack con sede en La Paz, México. Próximo a egresar como Ingeniero en Desarrollo de Software, <0>manteniendo un promedio de 92 sobre 100</0>",
-      "1": "Con el tiempo descubrí que, sin lugar a dudas, <0>mi mayor fortaleza es la ingeniería</0>.",
-      "2": "Me apasiona crear herramientas que sean tan útiles como fascinantes. <0>Aspiro a dominar todo lo necesario para construir software de alto nivel</0>.",
-      "3": "En la actualidad, <0>dedico la mayor parte de mi tiempo al desarrollo de habilidades técnicas y blandas que potencialicen  mi desempeño profesional</0>.",
-      "4": "'No se trata solo de resolver problemas, sino de anticiparlos y anularlos antes de que surjan'."
+      "0": "Con el pasar del tiempo descubrí que, sin lugar a dudas, <0>mi mayor fortaleza es la ingeniería</0>.",
+      "1": "Me apasiona crear herramientas que sean tan útiles como sorprendentes. <0>Aspiro a dominar todo lo necesario para construir software de alto nivel</0>.",
+      "2": "En la actualidad, <0>dedico la mayor parte de mi tiempo al desarrollo de habilidades técnicas y blandas que potencialicen  mi desempeño profesional</0>.",
+      "3": "'No se trata solo de resolver problemas, sino de anticiparlos y anularlos antes de que surjan'."
     },
     "classifications": "Clasificaciones"
   },
@@ -87,7 +88,7 @@
     "thanks_for_visiting": "¡Gracias por visitar mi sitio web!"
   },
   "footer": {
-    "copyright": "© 2025 Martín Calderón. Derechos reservados.",
+    "copyright": "© 2026 Martín Calderón. Derechos reservados.",
     "technologies_used": "Este sitio web fue desarrollado con React.js, TypeScript y Tailwind CSS."
   },
   "projectDetail": {
