@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Martín Calderón | Full Stack Developer</title>
+        <script type="text/javascript">
+            // Single Page Apps for GitHub Pages
+            // https://github.com/rafgraph/spa-github-pages
+            // This script takes the current url and converts the path and query string into arguments:
+            // 'p' for the path and 'q' for the query string then redirects the browser
+            // to the new url with only a query string and hash fragment,
+            // e.g. http://www.foo.tld/one/two?a=b#anchor becomes http://www.foo.tld/?p=/one/two&q=a=b#anchor
+            // Note: the script works for both user/organization pages and project pages
+            // For a project page, the index.html file must be in the root directory of the repository
+            // and the script must be in the 404.html file in the root directory of the repository.
+            var pathSegmentsToKeep = 0;
+
+            var l = window.location;
+            l.replace(
+                l.protocol +
+                    "//" +
+                    l.hostname +
+                    (l.port ? ":" + l.port : "") +
+                    l.pathname
+                        .split("/")
+                        .slice(0, 1 + pathSegmentsToKeep)
+                        .join("/") +
+                    "/?p=/" +
+                    l.pathname
+                        .split("/")
+                        .slice(1 + pathSegmentsToKeep)
+                        .join("/")
+                        .replace(/&/g, "~and~") +
+                    (l.search
+                        ? "&q=" + l.search.slice(1).replace(/&/g, "~and~")
+                        : "") +
+                    l.hash,
+            );
+        </script>
+    </head>
+    <body></body>
+</html>
